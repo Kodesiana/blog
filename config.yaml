@@ -61,9 +61,9 @@ params:
 
   twitterSite: '@fahminoorfiqri'
   googleAdsense: '6850104426944295'
-  googleAnalyticsId: G-WCSBJTCX6E
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
-  microsoftClarityId: 54zpth9y8i
+  googleAnalytics: G-WCSBJTCX6E
+  googleSiteVerification: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  microsoftClarity: 54zpth9y8i
   mailchimpFormUri: c9b6346f906dad1b1a2a309c1/ed7023095897a6d39d7ca5dde.js
   youtubeChannelId: UCmUBi-QDPy_k0LLmBdsandA
 
