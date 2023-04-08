@@ -1,9 +1,10 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import { YouTubeDataProvider, GithubDataProvider } from './data';
+import { GithubDataProvider, YouTubeDataProvider } from './data';
 
-// create a list of data fetchers
+(async () => {
+  // create a list of data fetchers
 const fetchers = [new YouTubeDataProvider(), new GithubDataProvider()];
 
 // create download queues
@@ -21,3 +22,4 @@ const tasks = fetchers.map(async (fetcher) => {
 await Promise.all(tasks);
 
 console.log('Done!');
+})();

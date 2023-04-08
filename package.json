@@ -4,7 +4,6 @@
   "description": "",
   "author": "fahminlb33",
   "license": "Apache Licence 2.0",
-  "type": "module",
   "scripts": {
     "prepare": "run-p -l install:*",
     "dev": "run-p -l data watch:*",

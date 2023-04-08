@@ -1,6 +1,5 @@
 import path from 'path';
 import fs from 'fs/promises';
-import { fileURLToPath } from 'url';
 
 import { uniq } from 'lodash-es';
 import axios, { AxiosError } from 'axios';
@@ -12,7 +11,7 @@ import { optimizeSvg } from './svg-tools';
 export const WATCH_GLOBS = ['./content/**/*.md', './layouts/**/*.html', './*.yaml'];
 
 // cache directory
-const CACHE_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../.cache/icons');
+const CACHE_DIR = path.resolve(process.cwd(), './.cache/icons');
 
 // available icon packs
 const ICON_PACKS = {
@@ -77,6 +76,8 @@ async function processIcon(name: string) {
 
   // cache not available, download it
   if (!cacheExists) {
+    console.log(`Downloading '${icon}'...`);
+
     // download the icon
     const result = await download(pack as IconPack, icon, cachePath);
     if (!result) return FALLBACK_ICON;
@@ -99,8 +100,11 @@ export async function makeDirs() {
   }
 }
 
-export async function handleFile(fileName: string) {
-  console.log('Processing: ', path.basename(fileName));
+export async function handleFile(fileName: string, echo: boolean) {
+  // echo if needed
+  if (echo) {
+    console.log(`Processing ${fileName}...`);
+  }
 
   // read the file
   const contents = await fs.readFile(fileName, 'utf-8');
@@ -119,7 +123,6 @@ export async function handleFile(fileName: string) {
 
   // match all icons
   for (const icon of uniq(allMatches)) {
-    console.log(`Processing icon '${icon}'...`);
     await processIcon(icon);
   }
 }

@@ -1,4 +1,4 @@
-export * from './types';
+export * from "./types";
 
-export * from './data-github';
-export * from './data-youtube';
+export * from "./data-github";
+export * from "./data-youtube";

@@ -1,6 +1,5 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
 import axios from 'axios';
 
@@ -17,7 +16,7 @@ export class GithubDataProvider implements IDataProvider {
   public name = 'GitHub repositories';
 
   constructor() {
-    this._dataPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../data/github_repos.json');
+    this._dataPath = path.resolve(process.cwd(), './data/github_repos.json');
   }
 
   async shouldFetch(): Promise<boolean> {
@@ -42,7 +41,7 @@ export class GithubDataProvider implements IDataProvider {
       'https://api.github.com/graphql',
       {
         query: `
-        query { 
+        query {
           viewer {
             repositories(
                 first:100
@@ -62,14 +61,14 @@ export class GithubDataProvider implements IDataProvider {
                 name
                 description
                 url
-                forkCount 
-                stargazerCount 
-                isArchived 
+                forkCount
+                stargazerCount
+                isArchived
                 updatedAt
                 pushedAt
                 issues {
                     totalCount
-                } 
+                }
               }
             }
           }

@@ -1,6 +1,5 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
 import axios from 'axios';
 import { parse } from 'yaml';
@@ -27,8 +26,8 @@ export class YouTubeDataProvider implements IDataProvider {
   public name = 'Latest YouTube video upload';
 
   constructor() {
-    this._dataPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../data/latest_video.json');
-    this._configPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../config.yaml');
+    this._dataPath = path.resolve(process.cwd(), './data/latest_video.json');
+    this._configPath = path.resolve(process.cwd(), './config.yaml');
   }
 
   async shouldFetch(): Promise<boolean> {
