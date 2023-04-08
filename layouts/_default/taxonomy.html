@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+{{ partial "widgets/header.html" . }}
+
+<section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+  <!-- Render title -->
+  {{ if (eq .Type "category") }}
+  {{ partial "blog/headline.html" (dict "title" "Kategori") }}
+  {{ else }}
+  {{ partial "blog/headline.html" (dict "title" "Tags") }}
+  {{ end }}
+
+  <!-- Render terms page -->
+  {{ if (eq .Kind "term") }}
+  {{ $paginator := .Paginate .Pages }}
+
+  <!-- Post List -->
+  <ul>
+    {{ range $paginator.Pages }}
+    <li class="mb-12 md:mb-12">
+      {{ partial "blog/list-item.html" . }}
+    </li>
+    {{ end }}
+  </ul>
+
+  <!-- Pagination -->
+  {{ if gt $paginator.TotalPages 1 }}
+  <div class="container flex">
+    <div class="flex flex-row mx-auto container justify-between">
+      <a href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ end }}" class="btn btn-ghost md:px-3 px-3 mr-2 {{ if $paginator.HasPrev }}{{ else }}invisible{{ end }}">
+        <div class="flex flex-row align-middle">
+          {{ partial "integration/icon.html" (dict "name" "tabler:chevron-left" "class" "w-6 h-6") }}
+          <p class="ml-2">Artikel Sebelumnya</p>
+        </div>
+      </a>
+      <a href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ end }}" class="btn btn-ghost md:px-3 px-3 {{ if $paginator.HasNext }}{{ else }}invisible{{ end }}">
+        <div class="flex flex-row align-middle">
+          <span class="mr-2">Artikel Selanjutnya</span>
+          {{ partial "integration/icon.html" (dict "name" "tabler:chevron-right" "class" "w-6 h-6") }}
+        </div>
+      </a>
+    </div>
+  </div>
+  {{ end }}
+
+  {{ else }}
+  <!-- Render taxonomy page -->
+  {{ $term_with_count := slice }}
+  {{ range .Pages }}
+  {{ $term_with_count = $term_with_count | append (dict "Term" .Title "Count" (len .Pages)) }}
+  {{ end }}
+
+  <div class="flex flex-wrap justify-center p-5">
+    {{ range (sort $term_with_count "Count" "desc") }}
+    <a href="{{ .Term }}" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+      {{ .Term }} ({{ .Count }})
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- Render back to home button -->
+  <div class="mt-5 flex justify-center">
+    {{ partial "blog/to-blog-link.html" . }}
+  </div>
+</section>
+
+{{ partial "widgets/footer.html" . }}
+
+{{ end }}

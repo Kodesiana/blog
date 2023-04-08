@@ -1,0 +1,30 @@
+<article class="max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8">
+  <div class="mt-2">
+    <header>
+      <div class="mb-1">
+        <span class="text-sm">
+          {{ partial "integration/icon.html" (dict "name" "tabler:clock" "class" "w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400") }}
+          <time datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time> ·
+          <a class="capitalize hover:underline" href="{{ " /category/" | relURL }}{{ urlize .Params.category }}">
+            {{ .Params.category }}
+          </a>
+        </span>
+      </div>
+      <h2 class="text-xl sm:text-2xl font-bold leading-tight mb-2 font-heading dark:text-slate-300">
+        <a class="hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </h2>
+    </header>
+
+    {{ if .Params.excerpt }}
+    <p class="flex-grow text-muted dark:text-slate-400 text-lg">{{ .Params.excerpt }}</p>
+    {{ else }}
+    <p class="flex-grow text-muted dark:text-slate-400 text-lg">{{ .Summary }}</p>
+    {{ end }}
+
+    <footer class="mt-5">
+      {{ partial "blog/tags.html" . }}
+    </footer>
+  </div>
+</article>

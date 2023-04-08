@@ -1,0 +1,14 @@
+<!-- Bundle katex style -->
+{{ if eq .emit "styles" }}
+{{ with resources.Get "styles/katex.css" | postCSS }}
+<link rel="stylesheet preload" as="style" href="{{ .RelPermalink }}" />
+{{ end }}
+{{ end }}
+
+
+<!-- Bundle katex scripts -->
+{{ if eq .emit "scripts" }}
+{{ with resources.Get "scripts/katex.ts" | js.Build "scripts/katex.min.js" }}
+<script async src="{{ .RelPermalink }}"></script>
+{{ end }}
+{{ end }}

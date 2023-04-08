@@ -1,0 +1,148 @@
+{{ define "main" }}
+
+{{ partial "widgets/header.html" . }}
+
+<main>
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
+    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">{{ .Title }}</h1>
+    <div
+      class="mx-auto prose prose-lg max-w-4xl dark:prose-invert dark:prose-headings:text-slate-300 prose-md prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-img:rounded-md prose-img:shadow-lg mt-8">
+      <div class="mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-start">
+          <img class="object-contain m-auto w-72" src="/img/me.jpg" alt="Fahmi Noor Fiqri" />
+        </div>
+        <div class="w-full md:w-3/5">
+          <p>
+            Kodesiana.com dirintis pada tanggal 10 April 2018 oleh seorang penulis yaitu Fahmi Noor Fiqri yang merupakan
+            <i>software engineer</i> dan juga penggiat <i>data science</i> dengan pengalaman sebagai <i>developer</i>
+            hingga lebih dari 7 tahun.
+          </p>
+          <p>
+            Penulis saat ini bekerja sebagai <b>backend developer NodeJS/Golang</b> di <a href="https://logee.id/">Logee
+              by Telkom Indonesia</a> sejak Oktober 2019 dan diberi kepercayaan sebagai salah satu <i>maintainer</i>
+            di ekosistem Logee. Selain itu, penulis juga suka menulis umumnya di blog ini maupun dalam bentuk buku dan
+            penelitian/riset ilmiah. Penulis juga sering berkontribusi pada <i>open source</i> melalui akun GitHub penulis.
+          </p>
+          <p>
+            Kamu bisa menghubungi penulis melalui media sosial yang terdapat di bagian bawah blog ini atau melalui email
+            ke fahmi@kodesiana.com.
+          </p>
+          <p>
+            Salam kenal semuanya!
+          </p>
+        </div>
+      </div>
+
+      <h2>Tech Stack</h2>
+
+      <h3>Languages</h3>
+      <div class="flex flex-wrap justify-left">
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:c-sharp" "description" "C#") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:typescript-icon" "description" "TypeScript") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:python" "description" "Python") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:go" "description" "Golang") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:dotnet" "description" ".NET") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "skill-icons:NodeJS-Dark" "description" "NodeJS") }}
+      </div>
+
+      <h3>Frameworks</h3>
+      <div class="flex flex-wrap justify-left">
+        {{ partial "widgets/icon-badge.html" (dict "icon" "" "description" "ASP.NET Core") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "" "description" "EntityFramework") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "" "description" "Echo") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "skill-icons:ExpressJS-Light" "description" "Express") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:react" "description" "React") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:vitejs" "description" "Vite") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:astro" "description" "Astro") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:tensorflow" "description" "TensorFlow") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:numpy" "description" "NumPy") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:opencv" "description" "OpenCV") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "simple-icons:pandas" "description" "Pandas") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "simple-icons:modin" "description" "Intel Modin") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "simple-icons:scikitlearn" "description" "Scikit-Learn") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "tabler:timeline" "description" "Statsmodels") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "" "description" "XGBoost") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:intel" "description" "Intel oneAPI") }}
+      </div>
+
+      <h3>Databases</h3>
+      <div class="flex flex-wrap justify-left">
+        {{ partial "widgets/icon-badge.html" (dict "icon" "skill-icons:MongoDB" "description" "MongoDB") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:redis" "description" "Redis") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:postgresql" "description" "PostgreSQL") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:sqlite" "description" "SQLite") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:elasticsearch" "description" "Elasticsearch") }}
+      </div>
+
+      <h3>Tools</h3>
+      <div class="flex flex-wrap justify-left">
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:git-icon" "description" "Git") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:kubernetes" "description" "Kubernetes") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:openshift" "description" "OpenShift") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:rancher-icon" "description" "Rancher") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:helm" "description" "Helm") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:ansible" "description" "Ansible") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:terraform-icon" "description" "TerraForm") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:jenkins" "description" "Jenkins") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:github-actions" "description" "Github Actions") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:github-copilot" "description" "GitHub Copilot") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:logstash" "description" "Logstash") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:kibana" "description" "Kibana") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:datadog" "description" "DataDog") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:nginx" "description" "Nginx") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:curl" "description" "Curl") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:postman-icon" "description" "Postman") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:sonarqube" "description" "SonarQube") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:codecov-icon" "description" "Codecov") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:hashicorp-icon" "description" "HashiCorp") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:datagrip" "description" "DataGrip") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "simple-icons:resharper" "description" "ReSharper") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:kafka-icon" "description" "Apache Kafka") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "simple-icons:ffmpeg" "description" "ffmpeg") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "skill-icons:Powershell-Light" "description" "PowerShell") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:bash-icon" "description" "Bash/zsh") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:gnu" "description" "Makefile") }}
+      </div>
+
+      <h3>IDE</h3>
+      <div class="flex flex-wrap justify-left">
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:visual-studio" "description" "Visual Studio") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:visual-studio-code" "description" "Visual Studio Code") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:jupyter" "description" "Jupyter Notebook") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:google-data-studio" "description" "Google Data Studio") }}
+      </div>
+
+      <h3>Platforms</h3>
+      <div class="flex flex-wrap justify-left">
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:microsoft-azure" "description" "Azure") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:google-cloud" "description" "GCP") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:firebase" "description" "Firebase") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:cloudflare" "description" "CloudFlare") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:raspberry-pi" "description" "Raspberry Pi") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "logos:arduino" "description" "Arduino") }}
+      </div>
+
+      <h2>Workstation</h2>
+      <div class="flex flex-wrap justify-left">
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:motherboard" "description" "ASRock BM460M Steel Legend") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:cpu" "description" "Intel i5-10400") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:gpu-card" "description" "MSI RTX 3060") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:memory" "description" "TEAM ELITE 4x8 GB") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:device-ssd" "description" "ADATA SX6000LNP NVMe 512 GB") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:device-hdd" "description" "WDC WD30EXRZ SATA 3.0 3 TB") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:keyboard" "description" "CORSAIR K68") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:mouse" "description" "CORSAIR HARPOON RGB PRO") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:display" "description" "AOC U28P2U 28' IPS 4K 60Hz") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:display" "description" "2 x LG MK420 24' 1080p") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:speaker" "description" "Speaker Logitech Z120") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:headset" "description" "dBE GM500") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:mic" "description" "SOUNDTECH Condenser") }}
+        {{ partial "widgets/icon-badge.html" (dict "icon" "bi:webcam" "description" "S-PRO WS-908FHD") }}
+      </div>
+    </div>
+  </section>
+</main>
+
+{{ partial "widgets/footer.html" . }}
+
+{{ end }}

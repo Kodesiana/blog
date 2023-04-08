@@ -1,0 +1,37 @@
+{{ if eq .Section "post" }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": { "@type": "WebPage" },
+    "headline": {{ .Title }},
+    "image": {{ .Params.featuredImage | absURL }},
+    "datePublished": {{ .PublishDate }},
+    "dateModified": {{ .Lastmod }},
+    "description": {{ .Summary | plainify | safeHTML }},
+    "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}],
+    "author": {
+      "@type": "Person",
+      "name": {{ .Site.Params.author }},
+      "url": "https://github.com/fahminlb33"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": {{ .Site.Params.author }},
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ .Site.Params.og }}
+      }
+    }
+  }
+</script>
+{{ end }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": {{ .Site.Params.description }},
+    "url": {{ .Site.BaseURL }},
+    "sameAs": [{{ range $i, $e := .Site.Menus.link }}{{ if $i }}, {{ end }}{{ $e.URL }}{{ end }}]
+  }
+</script>

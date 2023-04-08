@@ -1,0 +1,4 @@
+{{ $outPath := print (replace (.Get 0) ".ts" ".min.js") }}
+{{ with (resources.Get (.Get 0) | js.Build $outPath) }}
+<script async src="{{ .RelPermalink }}"></script>
+{{ end }}

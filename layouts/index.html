@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+{{ partial "widgets/header.html" . }}
+
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+
+<main>
+  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+    <!-- Headline -->
+    {{ partial "blog/headline.html" (dict "title" "Halo, aku Fahmi." "subtitle" "Selamat datang di Kodesiana.com") }}
+
+    <!-- Latest Video -->
+    {{ with $.Site.Data.latest_video }}
+    <div class="mt-1">
+      <h2 class="text-3xl font-extrabold mb-4">
+        Video terbaru
+        <a href="https://www.youtube.com/channel/{{ $.Site.Params.youtubeChannelId }}" target="_blank"><span class="block text-xl ml-2 font-semibold text-gray-500 dark:text-gray-400">Lihat semua</span></a>
+      </h2>
+
+      <a href="{{ .data.url }}" target="_blank" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <img class="object-cover rounded-t-lg h-48 w-48 hidden md:block" src="{{ .data.thumbnail }}" alt="" />
+        <div class="flex flex-col w-full justify-between p-2 pl-4 leading-normal">
+          <h5 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {{ .data.title }}
+          </h5>
+          <p class="mb-3 font-normal break-words text-gray-700 dark:text-gray-400">{{ .data.description }}</p>
+          <p>Tanggal Rilis: {{ (time .data.publishedAt).Format "2006-01-02" }}</p>
+        </div>
+      </a>
+    </div>
+    {{ end }}
+
+    <!-- Latest Post -->
+    <div class="mt-20">
+      <h2 class="text-3xl font-extrabold mb-4">
+        Artikel terbaru
+        <a href="/post"><span class="block text-xl ml-2 font-semibold text-gray-500 dark:text-gray-400">Lihat semua</span></a>
+      </h2>
+      <ul>
+        {{ range $paginator.Pages }}
+        <li class="mb-12 md:mb-12">
+          {{ partial "blog/list-item.html" . }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="flex flex-start">
+      <div class="mx-auto px-6 sm:px-6 max-w-3xl pt-8 md:pt-4 pb-12 md:pb-20">
+        <a class="btn px-3 md:px-3" href="/post">
+          Lihat Artikel Lain
+          {{ partial "integration/icon.html" (dict "name" "tabler:chevron-right" "class" "w-5 h-5 ml-1") }}
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{ partial "widgets/footer.html" . }}
+
+{{ end }}
