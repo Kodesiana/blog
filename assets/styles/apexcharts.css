@@ -1,0 +1,46 @@
+/* 
+  Adapted from:
+  https://github.com/asantibanez/livewire-charts/issues/3
+*/
+
+/* Dark Mode */
+.dark .apexcharts-text {
+  @apply text-gray-300;
+  fill: theme('colors.gray.300');
+}
+
+.dark .apexcharts-menu-item {
+  @apply text-black;
+  fill: theme('colors.gray.300');
+}
+
+.dark .apexcharts-tooltip {
+  @apply text-black;
+  fill: theme('colors.gray.300');
+}
+
+.dark .apexcharts-legend-text {
+  @apply text-gray-300 !important;
+  fill: theme('colors.gray.300');
+}
+
+/* Light Mode */
+.apexcharts-text {
+  @apply text-black;
+  fill: var('--tw-color-text-page');
+}
+
+.apexcharts-menu-item {
+  @apply text-black;
+  fill: var('--tw-color-text-page');
+}
+
+.apexcharts-tooltip {
+  @apply text-black;
+  fill: var('--tw-color-text-page');
+}
+
+.apexcharts-legend-text {
+  @apply text-black !important;
+  fill: var('--tw-color-text-page');
+}

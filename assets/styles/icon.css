@@ -1,0 +1,7 @@
+[kodesiana-icon].icon-light > * {
+  stroke-width: 1.2;
+}
+
+[kodesiana-icon].icon-bold > * {
+  stroke-width: 2.4;
+}
