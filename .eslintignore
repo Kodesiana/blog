@@ -1,0 +1,10 @@
+dist
+public
+static
+resources
+node_modules
+layouts/**/*.json
+layouts/**/*.xml
+.play
+.github
+.changeset

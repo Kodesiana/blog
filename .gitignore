@@ -1,0 +1,45 @@
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
+hugo_stats.json
+.hugo_build.lock
+
+# Executable may be added to repository
+.bin/
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### Node,npm ###
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.production
+
+# Partytown
+static/~partytown
+
+# Playground
+.play
+
+# Caches
+.cache
+data/latest_video.json
+data/github_repos.json
+
+# PostCSS Generated DEV files
+assets/styles/*.dev.css

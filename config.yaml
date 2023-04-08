@@ -1,0 +1,241 @@
+baseURL: http://www.kodesiana.com/
+
+title: Kodesiana
+timeZone: Asia/Jakarta
+enableGitInfo: false
+
+languageCode: id
+defaultContentLanguage: id
+hasCJKLanguage: false
+
+paginate: 5
+summaryLength: 80
+enableEmoji: true
+enableRobotsTXT: true
+
+permalinks:
+  post: '/:section/:slug/'
+
+taxonomies:
+  category: category
+  tag: tags
+  series: series
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+
+ignoreFiles:
+  - \.bin
+  - \.cache
+  - \.play
+  - \.vscode
+  - node_modules
+  - public
+
+outputFormats:
+  SearchIndex:
+    isPlainText: true
+    notAlternative: true
+    mediaType: application/json
+    baseName: index
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - SearchIndex
+
+params:
+  author: Fahmi Noor Fiqri
+  subTitle: '#NgodingItuMudah'
+  description: A passionate software engineer and machine learning enthusiast.
+
+  disableDarkImage: true
+
+  twitterSite: '@fahminoorfiqri'
+  googleAdsense: '6850104426944295'
+  googleAnalyticsId: G-WCSBJTCX6E
+  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  microsoftClarityId: 54zpth9y8i
+  mailchimpFormUri: c9b6346f906dad1b1a2a309c1/ed7023095897a6d39d7ca5dde.js
+  youtubeChannelId: UCmUBi-QDPy_k0LLmBdsandA
+
+menu:
+  navbar:
+    - identifier: navbar-beranda
+      name: Beranda
+      url: /
+      weight: 1
+    - identifier: navbar-blog
+      name: Blog
+      url: /post
+      weight: 2
+    - identifier: navbar-arsip
+      name: Arsip
+      url: /archives
+      weight: 3
+    - identifier: navbar-pencarian
+      name: Pencarian
+      url: /search
+      weight: 4
+    - identifier: navbar-proyek
+      name: Proyek
+      weight: 5
+    - identifier: navbar-kflearning
+      parent: navbar-proyek
+      name: KFlearning
+      url: /projects/kflearning
+      weight: 1
+    - identifier: navbar-ecommurz
+      parent: navbar-proyek
+      name: Ecommurz Layoff
+      url: /projects/ecommurz-layoff
+      weight: 2
+    - identifier: navbar-tentang
+      name: Tentang
+      url: /about
+      weight: 6
+
+  footer:
+    - identifier: footer-blog
+      name: Blog
+      weight: 1
+    - identifier: footer-artikel
+      parent: footer-blog
+      name: Artikel
+      weight: 1
+      url: /post
+    - identifier: footer-arsip
+      parent: footer-blog
+      name: Arsip
+      weight: 2
+      url: /archives
+    - identifier: footer-pencarian
+      parent: footer-blog
+      name: Pencarian
+      weight: 3
+      url: /search
+    - identifier: footer-tags
+      parent: footer-blog
+      name: Tags
+      weight: 4
+      url: /tags
+    - identifier: footer-kategori
+      parent: footer-blog
+      name: Kategori
+      weight: 5
+      url: /category
+
+    - identifier: footer-proyek
+      name: Proyek
+      weight: 2
+    - identifier: footer-kflearning
+      parent: footer-proyek
+      name: KFlearning
+      weight: 1
+      url: /projects/kflearning
+    - identifier: footer-ecommurz
+      parent: footer-ecommurz
+      name: Ecommurz Layoff
+      weight: 2
+      url: /projects/ecommurz-layoff
+
+    - identifier: footer-halaman
+      name: Halaman
+      weight: 3
+    - identifier: footer-open-source
+      parent: footer-halaman
+      name: Open Source
+      weight: 1
+      url: /open-source
+    - identifier: footer-buku
+      parent: footer-halaman
+      name: Buku, Riset, dan Seminar
+      weight: 2
+      url: /research
+    - identifier: footer-konsultasi
+      parent: footer-halaman
+      name: Konsultasi dan Pelatihan
+      weight: 3
+      url: /training
+    - identifier: footer-bug-hunting
+      parent: footer-halaman
+      weight: 4
+      name: Bug Hunting
+      url: /bug-hunt-program
+
+    - identifier: footer-produk
+      name: Produk
+      weight: 4
+    - identifier: footer-kodesiana-ai
+      parent: footer-produk
+      name: Kodesiana AI
+      weight: 1
+      url: https://ai.kodesiana.com
+
+  footer_secondary:
+    - identifier: footer-secondary-donasi
+      name: Donasi
+      weight: 1
+      url: https://saweria.co/fahminlb33
+    - identifier: footer-secondary-privacy
+      name: Kebijakan Privasi
+      weight: 2
+      url: /privacy-policy
+
+  social_links:
+    - identifier: social-link-email
+      url: mailto:fahmi@kodesiana.com
+      weight: 1
+      params:
+        ariaLabel: Email
+        icon: tabler:mail
+    - identifier: social-link-donasi
+      url: https://saweria.co/fahminlb33
+      weight: 2
+      params:
+        ariaLabel: Donasi
+        icon: tabler:cash-banknote
+    - identifier: social-link-youtube
+      url: https://www.youtube.com/c/FahmiNoorFiqri
+      weight: 3
+      params:
+        ariaLabel: YouTube
+        icon: tabler:brand-youtube
+    - identifier: social-link-github
+      url: https://github.com/fahminlb33
+      weight: 4
+      params:
+        ariaLabel: Github
+        icon: tabler:brand-github
+    - identifier: social-link-linkedin
+      url: https://www.linkedin.com/in/fahmi-noor-fiqri
+      weight: 5
+      params:
+        ariaLabel: LinkedIn
+        icon: tabler:brand-linkedin
+    - identifier: social-link-instagram
+      url: https://instagram.com/fahminoorfiqri
+      weight: 6
+      params:
+        ariaLabel: Instagram
+        icon: tabler:brand-instagram
+    - identifier: social-link-twitter
+      url: https://twitter.com/fahminoorfiqri
+      weight: 7
+      params:
+        ariaLabel: Twitter
+        icon: tabler:brand-twitter
+    - identifier: social-link-rss
+      url: /rss.xml
+      weight: 8
+      params:
+        ariaLabel: RSS
+        icon: tabler:rss
