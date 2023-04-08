@@ -1,0 +1,6 @@
+Contact: mailto:fahmi@kodesiana.com
+Expires: 2022-12-30T17:00:00.000Z
+Encryption: https://www.kodesiana.com/.well-known/pgp.txt
+Acknowledgments: https://www.kodesiana.com/bug-hunt-program
+Policy: https://www.kodesiana.com/bug-hunt-program
+Preferred-Languages: id, en
