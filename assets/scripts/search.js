@@ -4,6 +4,7 @@ import { Document as FlexDocument } from '@akryum/flexsearch-es';
 (async () => {
   // create indexer
   const index = new FlexDocument({
+    tokenize: "forward",
     doc: {
       id: 'id',
       field: ['title', 'category', 'tags', 'content'],
