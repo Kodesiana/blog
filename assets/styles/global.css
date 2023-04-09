@@ -15,6 +15,11 @@
 /* ApexCharts */
 @import 'apexcharts.css';
 
+/* Page Specific CSS */
+@import 'pages/open-source.css';
+
+/* Other */
+
 img {
   content-visibility: auto;
 }

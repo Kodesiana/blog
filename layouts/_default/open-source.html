@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+{{ partial "widgets/header.html" . }}
+
+<section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+  {{ partial "blog/headline.html" (dict "title" "Open Source" "subtitle" "Koleksi proyek open source penulis.") }}
+
+  <!-- Repo List -->
+  <div class="flow-root scrollbar overflow-auto h-96 sm:mt-2">
+    <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+      {{ range $.Site.Data.github_repos.data }}
+      <li class="py-3 mr-4 sm:py-4">
+        <div class="flex items-center space-x-4">
+          <div class="flex-1 min-w-0">
+            <a class="text-sm font-medium text-gray-900 truncate dark:text-white" href="{{ .url }}" target="_blank">
+              {{ .name }}
+            </a>
+            <p class="text-sm text-gray-500 truncate dark:text-gray-400">{{ .description }}</p>
+            <div class="mt-1 flex flex-wrap justify-start">
+              <div class="mr-2 inline-flex items-center text-sm text-gray-500 dark:text-gray-400">
+                {{ partial "integration/icon.html" (dict "name" "tabler:git-fork" "class" "w-3.5 h-3.5 mr-1 inline-block dark:text-gray-400") }}
+                {{ .forkCount }}
+              </div>
+              <div class="mr-2 inline-flex items-center text-sm text-gray-500 dark:text-gray-400">
+                {{ partial "integration/icon.html" (dict "name" "tabler:star" "class" "w-3.5 h-3.5 mr-1 inline-block dark:text-gray-400") }}
+                {{ .stargazerCount }}
+              </div>
+              <div class="mr-2 inline-flex items-center text-sm text-gray-500 dark:text-gray-400">
+                {{ partial "integration/icon.html" (dict "name" "tabler:message-circle-exclamation" "class" "w-3.5 h-3.5 mr-1 inline-block dark:text-gray-400") }}
+                {{ .issuesCount }}
+              </div>
+              <div class="mr-2 inline-flex items-center text-sm text-gray-500 dark:text-gray-400">
+                {{ partial "integration/icon.html" (dict "name" "tabler:clock" "class" "w-3.5 h-3.5 mr-1 inline-block dark:text-gray-400") }}
+                {{ (time .pushedAt).Format "2006-01-02" }}
+              </div>
+              {{ if .isArchived }}
+                <div class="mr-2 inline-flex items-center text-sm text-gray-500 dark:text-gray-400">
+                  {{ partial "integration/icon.html" (dict "name" "tabler:archive" "class" "w-3.5 h-3.5 mr-1 inline-block dark:text-gray-400") }}
+                  Arsip
+                </div>
+                {{ end }}
+            </div>
+          </div>
+          <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+            <a class="mr-3 md:mr-5 font-medium text-blue-600 dark:text-blue-500 hover:underline" href="{{ .url }}" target="_blank">
+              Lihat
+            </a>
+          </div>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+{{ partial "widgets/footer.html" . }}
+
+{{ end }}
