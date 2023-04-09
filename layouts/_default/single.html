@@ -12,7 +12,7 @@
           <p>
             {{ partial "integration/icon.html" (dict "name" "tabler:clock" "class" "w-4 h-4 inline-block -mt-0.5 dark:text-gray-400") }}
             <time datetime="{{ .Date.Format " 2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time> ·
-            <a class="capitalize hover:underline" href="{{ " /categories/" | relURL }}{{ . | urlize }}">{{ .Params.category }}</a> ·
+            <a class="capitalize hover:underline" href="{{ "/category/" | relURL }}{{ .Params.category | urlize }}">{{ .Params.category }}</a> ·
             {{ .ReadingTime }} menit
           </p>
         </div>
