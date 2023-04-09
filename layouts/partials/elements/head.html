@@ -78,8 +78,14 @@
 
 
 <!-- Partytown -->
+<script>
+  partytown = {
+    debug: true,
+    "forward": ["dataLayer.push", "clarity", "clarity.push"]
+  };
+</script>
 {{ with (readFile "./static/~partytown/partytown.js") }}
 <script>
-{{ . }}
+{{ safeJS . }}
 </script>
 {{ end }}
