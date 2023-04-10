@@ -6,7 +6,6 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 {{ hugo.Generator }}
 
-
 <!-- Title -->
 {{ if and (.IsHome) (.Site.Params.subTitle) }}
 <title>{{ .Site.Title }} - {{ .Site.Params.subTitle }}</title>
@@ -15,7 +14,6 @@
 {{ else }}
 <title>{{ .Title }}</title>
 {{ end }}
-
 
 <!-- SEO Meta -->
 {{ if or (.Params.author) (.Site.Params.author) }}
@@ -32,32 +30,25 @@
 <meta name="description" content="{{ .Site.Params.description }}" />
 {{ end }}
 
-
 <!-- RSS -->
 {{ range .AlternativeOutputFormats -}}
 {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-
 <!-- OpenGraph -->
 {{ partial "elements/opengraph.html" . }}
-
 
 <!-- Twitter -->
 {{ partial "elements/opengraph.html" . }}
 
-
 <!-- Rich Data (Schema.org) -->
 {{ partial "elements/rich-data.html" . }}
-
 
 <!-- Google Webmaster -->
 {{ partial "integration/google-webmaster.html" . }}
 
-
 <!-- Favicon -->
 {{ partial "elements/favicon.html" . }}
-
 
 <!-- Global Styles -->
 {{ if .Site.IsServer }}
@@ -70,18 +61,19 @@
 {{ end }}
 {{ end }}
 
-
 <!-- KaTeX -->
 {{ if or .Params.math .Site.Params.math }}
 {{ partial "integration/katex.html" (dict "emit" "styles") }}
 {{ end }}
 
+<!-- Prism -->
+{{ partial "integration/prism.html" (dict "emit" "styles") }}
 
 <!-- Partytown -->
 <script>
   partytown = {
     debug: true,
-    "forward": ["dataLayer.push", "clarity", "clarity.push"]
+    "forward": ["dataLayer.push"]
   };
 </script>
 {{ with (readFile "./static/~partytown/partytown.js") }}

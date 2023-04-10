@@ -27,7 +27,7 @@
 
 {{ partial "widgets/footer.html" . }}
 {{ with resources.Get "scripts/search.js" | js.Build "scripts/search.min.js" }}
-<script async src="{{ .RelPermalink }}"></script>
+<script type="text/partytown" src="{{ .RelPermalink }}"></script>
 {{ end }}
 
 {{ end }}

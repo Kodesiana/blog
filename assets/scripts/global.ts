@@ -1,6 +1,6 @@
 import 'lazysizes';
 import mediumZoom from 'medium-zoom';
-import { Modal } from 'flowbite';
+import * as Flowbite from 'flowbite';
 
 import { defaultTheme, attachEvent, applyTheme, Theme } from './utils';
 
@@ -102,7 +102,7 @@ window.onload = function () {
     const $modalElement = document.querySelector('#defaultModal');
 
     // create a new modal component
-    const modal = new Modal($modalElement as HTMLElement);
+    const modal = new Flowbite.Modal($modalElement as HTMLElement);
 
     // toggle the visibility of the modal when clicking on the button
     if ($buttonElement) {
@@ -112,7 +112,7 @@ window.onload = function () {
   attachFlowbite();
 
   // enable medium zoom behavior
-  mediumZoom(document.querySelectorAll('.data-zoomable'));
+  mediumZoom(document.querySelectorAll('.img-zoomable'));
 };
 
 // on page show functions
