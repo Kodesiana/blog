@@ -4,7 +4,7 @@ import { Document as FlexDocument } from '@akryum/flexsearch-es';
 (async () => {
   // create indexer
   const index = new FlexDocument({
-    tokenize: "forward",
+    tokenize: 'forward',
     doc: {
       id: 'id',
       field: ['title', 'category', 'tags', 'content'],
@@ -69,13 +69,13 @@ import { Document as FlexDocument } from '@akryum/flexsearch-es';
           </p>
           <ul class="text-sm mt-2">
             ${doc.tags
-          .map(
-            (tag) => `
+              .map(
+                (tag) => `
                       <li class="bg-gray-100 dark:bg-slate-700 inline-block mr-2 mb-2 py-0.5 px-2 lowercase font-medium">
                         <a href="/tags/${tag}">${tag}</a>
                       </li>`
-          )
-          .join('')}
+              )
+              .join('')}
           </ul>
         </div>
     `;
