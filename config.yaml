@@ -142,7 +142,7 @@ menu:
       weight: 1
       url: /projects/kflearning
     - identifier: footer-ecommurz
-      parent: footer-ecommurz
+      parent: footer-proyek
       name: Ecommurz Layoff
       weight: 2
       url: /projects/ecommurz-layoff
@@ -169,7 +169,7 @@ menu:
       parent: footer-halaman
       weight: 4
       name: Bug Hunting
-      url: /bug-hunt-program
+      url: /bug-hunt
 
     - identifier: footer-produk
       name: Produk
