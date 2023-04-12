@@ -1,4 +1,4 @@
-# Kodesiana.com Hugo Site
+# Kodesiana.com❤️
 
 Hello guys! I'm very excited to share my blog, built using Hugo and Tailwind with all sorts of NPM package magic built in. This is my answer to today's state of frontend tools like React, Next, Astro, and 11ty which doesn't really fit into static site generation.
 
@@ -36,7 +36,7 @@ This site supports:
 - Sitemap XML
 - Partytown
 - Search index in JSON + fuzzy search (FlexSearch)
-- Syntax highlighter (PrismaJS)
+- Syntax highlighter (PrismJS)
 - Latex math rendering (KaTeX)
 - Image lazy loading
 - Medium zoom
