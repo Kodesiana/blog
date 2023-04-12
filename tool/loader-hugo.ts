@@ -9,7 +9,7 @@ import { fileExists } from './utils/fs-utils';
 
 // github release API and download directory
 const RELEASE_API = 'https://api.github.com/repos/gohugoio/hugo/releases/latest';
-const DOWNLOAD_DIR = path.resolve(fileURLToPath(import.meta.url), '..', '.bin');
+const DOWNLOAD_DIR = path.resolve(fileURLToPath(import.meta.url), '..', '..', '.bin');
 
 (async () => {
   // create download directory if it doesn't exist
