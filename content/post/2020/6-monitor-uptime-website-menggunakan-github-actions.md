@@ -292,7 +292,7 @@ Buat file _index.html_ pada root folder kamu, kemudian salin kode berikut.
       <div class="container">
         <section class="hero">
           <div class="hero-body">
-            <div class="container has-text-centered">
+            <div class="has-text-centered container">
               <h1 class="title is-spaced">DAYS SINCE PLAYCOURT TRICKS</h1>
               <div class="columns">
                 <div class="column is-2 is-offset-2"></div>
@@ -323,7 +323,7 @@ Buat file _index.html_ pada root folder kamu, kemudian salin kode berikut.
           <div class="container">
             <h2 class="title has-text-centered mb-6">Services</h2>
 
-            <table class="table is-fullwidth">
+            <table class="is-fullwidth table">
               <thead>
                 <tr>
                   <th>Service</th>

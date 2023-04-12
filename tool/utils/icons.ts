@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 import axios from 'axios';
 import { uniq } from 'lodash-es';
-import {Semaphore} from 'async-mutex';
+import { Semaphore } from 'async-mutex';
 
 import { fileExists } from './fs-utils';
 import { optimizeSvg } from './svg-tools';
@@ -128,6 +128,6 @@ export async function handleFile(fileName: string, echo: boolean) {
   ].filter((match) => !match.includes('class') && !match.includes('}}') && !match.includes('"'));
 
   // match all icons
-  const tasks = uniq(allMatches).map(icon => semaphore.runExclusive(() => processIcon(icon)));
+  const tasks = uniq(allMatches).map((icon) => semaphore.runExclusive(() => processIcon(icon)));
   await Promise.all(tasks);
 }
