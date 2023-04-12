@@ -11,7 +11,7 @@ import { optimizeSvg } from './svg-tools';
 export const WATCH_GLOBS = ['./content/**/*.md', './layouts/**/*.html', './*.yaml'];
 
 // cache directory
-const CACHE_DIR = path.resolve(process.cwd(), './.cache/icons');
+const CACHE_DIR = path.resolve(process.cwd(), '../../.cache/icons');
 
 // available icon packs
 const ICON_PACKS = {
