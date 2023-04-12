@@ -24,7 +24,7 @@
             {{ .data.title }}
           </h5>
           <p class="mb-3 font-normal break-words text-gray-700 dark:text-gray-400">{{ .data.description }}</p>
-          <p>Tanggal Rilis: {{ (time .data.publishedAt).Format "2006-01-02" }}</p>
+          <p>Tanggal Rilis: {{ time.Format "02 January 2006" (time .data.publishedAt) }}</p>
         </div>
       </a>
     </div>

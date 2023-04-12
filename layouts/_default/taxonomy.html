@@ -5,9 +5,9 @@
 <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
   <!-- Render title -->
   {{ if (eq .Type "category") }}
-  {{ partial "blog/headline.html" (dict "title" "Kategori") }}
+  {{ partial "blog/headline.html" (dict "title" .Title "subtitle" "Kategori") }}
   {{ else }}
-  {{ partial "blog/headline.html" (dict "title" "Tags") }}
+  {{ partial "blog/headline.html" (dict "title" .Title "subtitle" "Tag") }}
   {{ end }}
 
   <!-- Render terms page -->
