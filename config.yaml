@@ -1,4 +1,4 @@
-baseURL: http://www.kodesiana.com/
+baseURL: https://www.kodesiana.com/
 
 title: Kodesiana
 timeZone: Asia/Jakarta
@@ -93,11 +93,11 @@ menu:
       name: KFlearning
       url: /projects/kflearning
       weight: 1
-    - identifier: navbar-ecommurz
-      parent: navbar-proyek
-      name: Ecommurz Layoff
-      url: /projects/ecommurz-layoff
-      weight: 2
+    # - identifier: navbar-ecommurz
+    #   parent: navbar-proyek
+    #   name: Ecommurz Layoff
+    #   url: /projects/ecommurz-layoff
+    #   weight: 2
     - identifier: navbar-tentang
       name: Tentang
       url: /about
@@ -141,11 +141,11 @@ menu:
       name: KFlearning
       weight: 1
       url: /projects/kflearning
-    - identifier: footer-ecommurz
-      parent: footer-proyek
-      name: Ecommurz Layoff
-      weight: 2
-      url: /projects/ecommurz-layoff
+    # - identifier: footer-ecommurz
+    #   parent: footer-proyek
+    #   name: Ecommurz Layoff
+    #   weight: 2
+    #   url: /projects/ecommurz-layoff
 
     - identifier: footer-halaman
       name: Halaman
