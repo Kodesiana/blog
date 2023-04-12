@@ -54,6 +54,16 @@ import { Document as FlexDocument } from '@akryum/flexsearch-es';
       // get the document
       const doc = posts.find((x) => x.id === item);
 
+      // create tags
+      const tagsElement = doc.tags
+        .map(
+          (tag) => `
+                <li class="bg-gray-100 dark:bg-slate-700 inline-block mr-2 mb-2 py-0.5 px-2 lowercase font-medium">
+                  <a href="/tags/${tag.replaceAll(' ', '-').toLowerCase()}">${tag}</a>
+                </li>`
+        )
+        .join('');
+
       // create card
       const resultDiv = document.createElement('div');
       resultDiv.innerHTML = `
@@ -63,19 +73,12 @@ import { Document as FlexDocument } from '@akryum/flexsearch-es';
           </h2>
           <p class="mt-2 text-gray-600">
             ${dateFormatter.format(new Date(doc.date))}&nbsp;·
-            <a class="capitalize hover:underline" href="/category/${doc.category}">
+            <a class="capitalize hover:underline" href="/category/${doc.category.replaceAll(' ', '-').toLowerCase()}">
               ${doc.category}
             </a>
           </p>
           <ul class="text-sm mt-2">
-            ${doc.tags
-              .map(
-                (tag) => `
-                      <li class="bg-gray-100 dark:bg-slate-700 inline-block mr-2 mb-2 py-0.5 px-2 lowercase font-medium">
-                        <a href="/tags/${tag}">${tag}</a>
-                      </li>`
-              )
-              .join('')}
+            ${tagsElement}
           </ul>
         </div>
     `;
