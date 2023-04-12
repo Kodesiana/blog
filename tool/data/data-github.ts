@@ -3,7 +3,7 @@ import path from 'path';
 
 import axios from 'axios';
 
-import { DataContract, IDataProvider } from './types';
+import { DATA_DIR, DataContract, IDataProvider } from './types';
 import { fileExists } from '../utils/fs-utils';
 import { CACHE_DATA_TTL } from '../utils/cache';
 import { RepoSummary, Repository } from './data-github.types';
@@ -16,7 +16,7 @@ export class GithubDataProvider implements IDataProvider {
   public name = 'GitHub repositories';
 
   constructor() {
-    this._dataPath = path.resolve(process.cwd(), './data/github_repos.json');
+    this._dataPath = path.resolve(DATA_DIR, 'github_repos.json');
   }
 
   async shouldFetch(): Promise<boolean> {

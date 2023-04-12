@@ -1,8 +1,11 @@
 import fs from 'fs/promises';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 import glob from 'glob';
 import sharp from 'sharp';
+
+const ROOT_DIR = path.resolve(fileURLToPath(import.meta.url), '..');
 
 (async () => {
   // glob all image files in public folder except *.min.* files
@@ -36,7 +39,7 @@ import sharp from 'sharp';
     const afterStat = await fs.stat(file);
 
     // log optimization result
-    const sourceRelativePath = path.relative(process.cwd(), file);
+    const sourceRelativePath = path.relative(ROOT_DIR, file);
     const beforeSize = beforeStat.size / 1024; // KB
     const afterSize = afterStat.size / 1024; // KB
     const savedSize = (beforeStat.size - afterStat.size) / 1024; // KB

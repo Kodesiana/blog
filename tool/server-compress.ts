@@ -9,11 +9,13 @@ import fsPromises from 'fs/promises';
 
 import { MIME_TYPE } from './data/mime';
 
+const ROOT_DIR = path.resolve(url.fileURLToPath(import.meta.url), '..');
+
 const port = parseInt(process.argv[2] || '9000');
 
 (async () => {
   // check if the serve directory exists
-  const serveDir = path.resolve(process.cwd(), './public');
+  const serveDir = path.resolve(ROOT_DIR, './public');
   await fsPromises.stat(serveDir).catch(() => {
     console.error(`The serve directory ${serveDir} is not a directory`);
     process.exit(1);

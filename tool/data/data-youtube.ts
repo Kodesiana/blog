@@ -5,7 +5,7 @@ import axios from 'axios';
 import { parse } from 'yaml';
 import { XMLParser } from 'fast-xml-parser';
 
-import { DataContract, IDataProvider } from './types';
+import { DATA_DIR, DataContract, IDataProvider } from './types';
 import { fileExists } from '../utils/fs-utils';
 import { CACHE_DATA_TTL } from '../utils/cache';
 
@@ -26,8 +26,8 @@ export class YouTubeDataProvider implements IDataProvider {
   public name = 'Latest YouTube video upload';
 
   constructor() {
-    this._dataPath = path.resolve(process.cwd(), './data/latest_video.json');
-    this._configPath = path.resolve(process.cwd(), './config.yaml');
+    this._dataPath = path.resolve(DATA_DIR, 'latest_video.json');
+    this._configPath = path.resolve(DATA_DIR, '..', 'config.yaml');
   }
 
   async shouldFetch(): Promise<boolean> {

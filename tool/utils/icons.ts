@@ -1,17 +1,23 @@
 import path from 'path';
 import fs from 'fs/promises';
+import { fileURLToPath } from 'url';
 
+import axios from 'axios';
 import { uniq } from 'lodash-es';
-import axios, { AxiosError } from 'axios';
+import {Semaphore} from 'async-mutex';
 
 import { fileExists } from './fs-utils';
 import { optimizeSvg } from './svg-tools';
+
+// concurrency limit
+const semaphore = new Semaphore(5);
 
 // watch glob
 export const WATCH_GLOBS = ['./content/**/*.md', './layouts/**/*.html', './*.yaml'];
 
 // cache directory
-const CACHE_DIR = path.resolve(process.cwd(), '../../.cache/icons');
+const ROOT_DIR = path.resolve(fileURLToPath(import.meta.url), '..', '..', '..');
+const CACHE_DIR = path.resolve(ROOT_DIR, '.cache/icons');
 
 // available icon packs
 const ICON_PACKS = {
@@ -50,7 +56,7 @@ async function download(pack: IconPack, name: string, outputPath: string): Promi
     return true;
   } catch (error) {
     // icon is not found
-    if (error instanceof AxiosError && error.response?.status === 404) {
+    if (error instanceof axios.AxiosError && error.response?.status === 404) {
       console.error(`Icon "${name}" does not exist in pack "${pack}"`);
     }
 
@@ -76,7 +82,7 @@ async function processIcon(name: string) {
 
   // cache not available, download it
   if (!cacheExists) {
-    console.log(`Downloading '${icon}'...`);
+    console.log(`Downloading '${name}'...`);
 
     // download the icon
     const result = await download(pack as IconPack, icon, cachePath);
@@ -122,7 +128,6 @@ export async function handleFile(fileName: string, echo: boolean) {
   ].filter((match) => !match.includes('class') && !match.includes('}}') && !match.includes('"'));
 
   // match all icons
-  for (const icon of uniq(allMatches)) {
-    await processIcon(icon);
-  }
+  const tasks = uniq(allMatches).map(icon => semaphore.runExclusive(() => processIcon(icon)));
+  await Promise.all(tasks);
 }
