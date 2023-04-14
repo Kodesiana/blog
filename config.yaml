@@ -67,6 +67,11 @@ params:
   mailchimpFormUri: c9b6346f906dad1b1a2a309c1/ed7023095897a6d39d7ca5dde.js
   youtubeChannelId: UCmUBi-QDPy_k0LLmBdsandA
 
+  mainSections:
+    - post
+    - category
+    - tags
+
 menu:
   navbar:
     - identifier: navbar-beranda
