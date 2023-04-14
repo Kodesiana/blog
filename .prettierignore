@@ -5,7 +5,6 @@ resources
 node_modules
 layouts/**/*.json
 layouts/**/*.xml
-layouts/**/*.html
 .play
 .github
 .changeset
