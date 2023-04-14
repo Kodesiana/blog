@@ -12,9 +12,13 @@ import IconBadge from '~/components/widgets/IconBadge.astro';
 <div class="w-full md:w-3/5">
 Kodesiana.com dirintis pada tanggal 10 April 2018 oleh seorang penulis yaitu Fahmi Noor Fiqri yang merupakan *software engineer* dan juga penggiat *data science* dengan pengalaman sebagai *developer* hingga lebih dari 7 tahun.
 
-Penulis saat ini bekerja sebagai **backend developer NodeJS/Golang** di [Logee by Telkom Indonesia](https://logee.id/) sejak Oktober 2019 dan diberi kepercayaan sebagai salah satu _maintainer_ dan _lead_ di ekosistem Logee. Selain itu, penulis juga suka menulis umumnya di blog ini maupun dalam bentuk buku dan penelitian/riset ilmiah. Penulis juga sering berkontribusi pada _open source_ melalui akun GitHub penulis.
+Penulis saat ini bekerja sebagai **backend developer NodeJS/Golang** di [Logee by Telkom Indonesia](https://logee.id/)
+sejak Oktober 2019 dan diberi kepercayaan sebagai salah satu _maintainer_ dan _lead_ di ekosistem Logee. Selain itu,
+penulis juga suka menulis umumnya di blog ini maupun dalam bentuk buku dan penelitian/riset ilmiah. Penulis juga sering
+berkontribusi pada _open source_ melalui akun GitHub penulis.
 
-Kamu bisa menghubungi penulis melalui media sosial yang terdapat di bagian bawah blog ini atau melalui email ke fahmi@kodesiana.com.
+Kamu bisa menghubungi penulis melalui media sosial yang terdapat di bagian bawah blog ini atau melalui email ke
+fahmi@kodesiana.com.
 
 Salam kenal semuanya!
 
