@@ -1,8 +1,6 @@
 {{ define "main" }}
   {{ partial "widgets/header.html" . }}
 
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-
 
   <main>
     <section class="mx-auto max-w-4xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
@@ -46,7 +44,7 @@
           >
         </h2>
         <ul>
-          {{ range $paginator.Pages }}
+          {{ range first 5 (where .Site.RegularPages "Type" "post") }}
             <li class="mb-12 md:mb-12">
               {{ partial "blog/list-item.html" . }}
             </li>

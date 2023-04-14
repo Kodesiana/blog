@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ partial "widgets/header.html" . }}
 
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) 50 }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") 50 }}
 
 
   <section class="mx-auto max-w-4xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">

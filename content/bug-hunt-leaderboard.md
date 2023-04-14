@@ -3,6 +3,7 @@ title: Bug Hunt Leaderboard📊
 date: 2022-09-10
 hideToc: true
 hideMeta: true
+slug: bug-hunt/leaderboard
 ---
 
 > Reminder: Kodesiana merupakan blog pribadi. Email yang kamu kirim mungkin tidak akan langsung dibalas oleh admin.

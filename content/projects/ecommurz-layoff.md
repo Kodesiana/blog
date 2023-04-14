@@ -1,10 +1,13 @@
 ---
 title: Ecommurz Layoff
-date: 2021-03-08
+date: 2023-04-14
 draft: true
 hideToc: true
 unlistRss: true
 hideMeta: true
+hidePage: true
+icon: tabler:chart-histogram
+description: Analisis dan visualisasi data form layoff Ecommurz, apa info menarik dari fenomena layoff di Indonesia?
 ---
 
 <div class="container w-full m-auto">

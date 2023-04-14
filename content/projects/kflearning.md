@@ -1,31 +1,29 @@
 ---
-title: 'KFlearning'
+title: KFlearning
 date: 2021-03-08
 hideToc: true
 unlistRss: true
 hideMeta: true
+hidePage: false
+icon: tabler:school
+description: Aplikasi e-learning untuk kegiatan praktikum Laboratorium Komputer Universitas Pakuan
 ---
 
-> **KFlearning v3.0.0 "Київ" / "Kyiv"** dalam status **stabil.** Berikan kritik dan saran
-> melalui asisten praktikum Anda atau form berikut: [Form Bug Report/Feedback KFlearning](https://forms.gle/cVymzViruCcVtm3W6)
+> **KFlearning v3.0.0 "Київ" / "Kyiv"** dalam status **stabil.** Berikan kritik dan saran melalui asisten praktikum Anda
+> atau form berikut: [Form Bug Report/Feedback KFlearning](https://forms.gle/cVymzViruCcVtm3W6)
 
 <p style="text-align: center;"><b>Link download ada di bagian bawah laman ini.</b></p>
 
 ## KFlearning
 
-KFlearning merupakan aplikasi e-learning yang digunakan untuk membantu kegiatan
-praktikum di laboratorium komputer. Aplikasi ini bersifat open-source dan
-dilisensikan oleh [Kodesiana.com](https://kodesiana.com) kepada LABKOM-MAROON di
-bawah lisensi
-[MIT](https://github.com/fahminlb33/KFlearning/blob/master/LICENSE.md). Anda
-dapat melihat source code KFlearning pada repositori [GitHub
-KFlearning](https://github.com/fahminlb33/KFlearning).
+KFlearning merupakan aplikasi e-learning yang digunakan untuk membantu kegiatan praktikum di laboratorium komputer.
+Aplikasi ini bersifat open-source dan dilisensikan oleh [Kodesiana.com](https://kodesiana.com) kepada LABKOM-MAROON di
+bawah lisensi [MIT](https://github.com/fahminlb33/KFlearning/blob/master/LICENSE.md). Anda dapat melihat source code
+KFlearning pada repositori [GitHub KFlearning](https://github.com/fahminlb33/KFlearning).
 
-Aplikasi ini menggunakan **Visual Studio Code** sebagai code editor dan
-bertujuan sebagai pengganti DEV C++, CodeBlocks, Sublime Text, Notepad++, dan
-program editor sejenis. KFlearning sudah diintegrasikan dengan Visual Studio
-Code agar dapat digunakan secara maksimal untuk melakukan segala jenis
-pemrograman.
+Aplikasi ini menggunakan **Visual Studio Code** sebagai code editor dan bertujuan sebagai pengganti DEV C++, CodeBlocks,
+Sublime Text, Notepad++, dan program editor sejenis. KFlearning sudah diintegrasikan dengan Visual Studio Code agar
+dapat digunakan secara maksimal untuk melakukan segala jenis pemrograman.
 
 ### Development Support
 
@@ -40,13 +38,12 @@ pemrograman.
 - .NET 6
 - Disk space 500 MB (+ KF-MinGW)
 
-Catatan: apabila Anda akan menggunakan Flutter, maka kebutuhan sistem Anda
-harus lebih tinggi.
+Catatan: apabila Anda akan menggunakan Flutter, maka kebutuhan sistem Anda harus lebih tinggi.
 
 ## Cara Instalasi
 
-Jika Anda pernah menggunakan KFlearning v1.0, v1.1, atau v1.2, Anda harus
-mengikuti tutorial upgrade di bagian bawah di akhir halaman ini.
+Jika Anda pernah menggunakan KFlearning v1.0, v1.1, atau v1.2, Anda harus mengikuti tutorial upgrade di bagian bawah di
+akhir halaman ini.
 
 | File                   | Versi  | Download                                                                                              |
 | ---------------------- | ------ | ----------------------------------------------------------------------------------------------------- |
@@ -57,18 +54,16 @@ mengikuti tutorial upgrade di bagian bawah di akhir halaman ini.
 | Visual Studio Code     | Latest | [Download](https://code.visualstudio.com/docs/?dv=win)                                                |
 | Changelog              |        | [Lihat](https://github.com/fahminlb33/KFlearning/releases/tag/3.0.0)                                  |
 
-Instalasi KFlearning sedikit lebih rumit dibandingkan dengan aplikasi IDE lain,
-karena KFlearning terdiri atas tiga komponen aplikasi yang saling terpisah. Hal
-ini ditujukan untuk memudahkan maintenance versi aplikasi dan meningkatkan
+Instalasi KFlearning sedikit lebih rumit dibandingkan dengan aplikasi IDE lain, karena KFlearning terdiri atas tiga
+komponen aplikasi yang saling terpisah. Hal ini ditujukan untuk memudahkan maintenance versi aplikasi dan meningkatkan
 efisiensi aplikasi.
 
-1. Download KFlearning, KF-MinGW, dan Visual Studio Code dengan klik tombol di
-   atas.
+1. Download KFlearning, KF-MinGW, dan Visual Studio Code dengan klik tombol di atas.
 2. Install .NET 6 Desktop Runtime.
 3. Install KF-MinGW, ikuti petunjuk instalasi aplikasi yang tertera.
 4. Install KFlearning, ikuti petunjuk instalasi aplikasi yang tertera.
-5. Install Visual Studio Code, ikuti petunjuk instalasi aplikasi yang tertera.
-   Jika sudah punya Visual Studio Code, lewati langah ini.
+5. Install Visual Studio Code, ikuti petunjuk instalasi aplikasi yang tertera. Jika sudah punya Visual Studio Code,
+   lewati langah ini.
 6. Buka Visual Studio Code, kemudian klik tab Extensions.
 7. Cari dan install ekstension berikut.
    - C++
@@ -80,8 +75,8 @@ efisiensi aplikasi.
 
 ### Mata Kuliah Mobile Programming
 
-Apabila Anda mengambil mata kuliah Mobile Programming, Anda juga harus menginstall
-Flutter SDK dan ekstensi Flutter pada Visual Studio Code.
+Apabila Anda mengambil mata kuliah Mobile Programming, Anda juga harus menginstall Flutter SDK dan ekstensi Flutter pada
+Visual Studio Code.
 
 1. Buka KFlearning.
 2. Klik **Install Flutter SDK**.
@@ -94,8 +89,7 @@ Setelah instalasi Flutter SDK selesai, lanjutkan install Android Studio and Andr
 
 ## Laporan Bug dan Feedback
 
-Apabila Anda menemukan bug/error atau masukan dan tanggapan, silakan berikan input
-melalui form berikut ini.
+Apabila Anda menemukan bug/error atau masukan dan tanggapan, silakan berikan input melalui form berikut ini.
 
 [Form Bug Report/Feedback KFlearning](https://forms.gle/cVymzViruCcVtm3W6)
 
