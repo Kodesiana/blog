@@ -1,5 +1,5 @@
-<header class="sticky top-0 z-40 flex-none mx-auto w-full transition-all ease-in duration-100" id="header">
-  <div class="py-3 px-3 md:py-3.5 md:px-4 mx-auto w-full md:flex md:justify-between max-w-7xl">
+<header class="sticky top-0 z-40 mx-auto w-full flex-none transition-all duration-100 ease-in" id="header">
+  <div class="mx-auto w-full max-w-7xl px-3 py-3 md:flex md:justify-between md:px-4 md:py-3.5">
     <div class="flex justify-between">
       <a class="flex items-center" href="{{ .Site.BaseURL }}">{{ partial "common/logo.html" . }}</a>
       <div class="flex items-center md:hidden">
@@ -7,39 +7,43 @@
         {{ partial "common/toggle-menu.html" . }}
       </div>
     </div>
-    <nav class="items-center w-full md:w-auto hidden md:flex dark:text-slate-200 h-[calc(100vh-72px)] md:h-auto overflow-y-auto md:overflow-visible md:mx-5" aria-label="Main navigation">
-      <ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base">
+    <nav
+      class="hidden h-[calc(100vh-72px)] w-full items-center overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:h-auto md:w-auto md:overflow-visible"
+      aria-label="Main navigation">
+      <ul class="flex w-full flex-col pt-8 text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
         {{ range .Site.Menus.navbar }}
-        <li class="{{ if .HasChildren }}dropdown{{ end }}">
-          {{ if .HasChildren }}
-          <button
-            class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out">
-            {{ .Name }}
-            {{ partial "integration/icon.html" (dict "name" "tabler:chevron-down" "class" "w-3.5 h-3.5 ml-0.5 hidden md:inline") }}
-          </button>
-          <ul
-            class="dropdown-menu md:backdrop-blur-md dark:md:bg-dark rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
-            {{ range .Children }}
-            <li>
-              <a class="first:rounded-t last:rounded-b md:hover:bg-gray-200 dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap"
+          <li class="{{ if .HasChildren }}dropdown{{ end }}">
+            {{ if .HasChildren }}
+              <button
+                class="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-gray-900 dark:hover:text-white">
+                {{ .Name }}
+                {{ partial "integration/icon.html" (dict "name" "tabler:chevron-down" "class" "w-3.5 h-3.5 ml-0.5 hidden md:inline") }}
+              </button>
+              <ul
+                class="dropdown-menu dark:md:bg-dark rounded pl-4 font-medium drop-shadow-xl md:absolute md:hidden md:min-w-[200px] md:bg-white/90 md:pl-0 md:backdrop-blur-md">
+                {{ range .Children }}
+                  <li>
+                    <a
+                      class="whitespace-no-wrap block px-5 py-2 first:rounded-t last:rounded-b dark:hover:bg-gray-700 md:hover:bg-gray-200"
+                      href="{{ .URL }}">
+                      {{ .Name }}
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            {{ else }}
+              <a
+                class="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-gray-900 dark:hover:text-white"
                 href="{{ .URL }}">
                 {{ .Name }}
               </a>
-            </li>
             {{ end }}
-          </ul>
-          {{ else }}
-          <a class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="{{ .URL }}">
-            {{ .Name }}
-          </a>
-          {{ end }}
-        </li>
+          </li>
         {{ end }}
       </ul>
     </nav>
 
-    <div class="md:self-center flex items-center md:mb-0">
+    <div class="flex items-center md:mb-0 md:self-center">
       <div class="hidden items-center md:flex">
         {{ partial "common/toggle-theme.html" . }}
       </div>

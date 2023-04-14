@@ -6,74 +6,86 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 {{ hugo.Generator }}
 
+
 <!-- Title -->
 {{ if and (.IsHome) (.Site.Params.subTitle) }}
-<title>{{ .Site.Title }} - {{ .Site.Params.subTitle }}</title>
+  <title>{{ .Site.Title }} - {{ .Site.Params.subTitle }}</title>
 {{ else if .IsHome }}
-<title>{{ .Site.Title }}</title>
+  <title>{{ .Site.Title }}</title>
 {{ else }}
-<title>{{ .Title }}</title>
+  <title>{{ .Title }}</title>
 {{ end }}
+
 
 <!-- SEO Meta -->
 {{ if or (.Params.author) (.Site.Params.author) }}
-<meta name="author" content="{{ .Site.Params.author }}" />
+  <meta name="author" content="{{ .Site.Params.author }}" />
 {{ end }}
 {{ if .Params.tags }}
-<meta name="keywords" content="{{ delimit .Params.tags ", " }}" />
+  <meta name="keywords" content="{{ delimit .Params.tags ", " }}" />
 {{ end }}
 {{ if (.Page.Summary) }}
-<meta name="description" content="{{ .Page.Summary }}" />
+  <meta name="description" content="{{ .Page.Summary }}" />
 {{ else if .Params.description }}
-<meta name="description" content="{{ .Params.description }}" />
+  <meta name="description" content="{{ .Params.description }}" />
 {{ else if .Site.Params.description }}
-<meta name="description" content="{{ .Site.Params.description }}" />
+  <meta name="description" content="{{ .Site.Params.description }}" />
 {{ end }}
+
 
 <!-- RSS -->
 {{ range .AlternativeOutputFormats -}}
-{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
+
 
 <!-- OpenGraph -->
 {{ partial "elements/opengraph.html" . }}
 
+
 <!-- Twitter -->
 {{ partial "elements/opengraph.html" . }}
+
 
 <!-- Rich Data (Schema.org) -->
 {{ partial "elements/rich-data.html" . }}
 
+
 <!-- Google Webmaster -->
 {{ partial "integration/google-webmaster.html" . }}
+
 
 <!-- Favicon -->
 {{ partial "elements/favicon.html" . }}
 
+
 <!-- Global Styles -->
 {{ if .Site.IsServer }}
-{{ with resources.Get "styles/global.dev.css" }}
-<link rel="stylesheet preload" as="style" href="{{ .RelPermalink }}" />
-{{ end }}
+  {{ with resources.Get "styles/global.dev.css" }}
+    <link rel="stylesheet preload" as="style" href="{{ .RelPermalink }}" />
+  {{ end }}
 {{ else }}
-{{ with resources.Get "styles/global.css" | postCSS }}
-<link rel="stylesheet preload" as="style" href="{{ .RelPermalink }}" />
+  {{ with resources.Get "styles/global.css" | postCSS }}
+    <link rel="stylesheet preload" as="style" href="{{ .RelPermalink }}" />
+  {{ end }}
 {{ end }}
-{{ end }}
+
 
 <!-- KaTeX -->
 {{ if or .Params.math .Site.Params.math }}
-{{ partial "integration/katex.html" (dict "emit" "styles") }}
+  {{ partial "integration/katex.html" (dict "emit" "styles") }}
 {{ end }}
+
 
 <!-- Prism -->
 {{ partial "integration/prism.html" (dict "emit" "styles") }}
+
 
 <!-- Partytown -->
 <script>
   partytown = {
     debug: true,
-    "forward": ["dataLayer.push"]
+    forward: ['dataLayer.push'],
   };
 </script>
 {{ with (readFile "./static/~partytown/partytown.js") }}

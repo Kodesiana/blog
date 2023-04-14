@@ -1,4 +1,4 @@
-<article class="max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8">
+<article class="mx-auto grid max-w-md gap-6 md:max-w-none md:gap-8">
   <div class="mt-2">
     <header>
       <div class="mb-1">
@@ -10,18 +10,19 @@
           </a>
         </span>
       </div>
-      <h2 class="text-xl sm:text-2xl font-bold leading-tight mb-2 font-heading dark:text-slate-300">
-        <a class="hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200" href="{{ .Permalink }}">
+      <h2 class="mb-2 font-heading text-xl font-bold leading-tight dark:text-slate-300 sm:text-2xl">
+        <a class="transition duration-200 ease-in hover:text-primary dark:hover:text-blue-700" href="{{ .Permalink }}">
           {{ .Title }}
         </a>
       </h2>
     </header>
 
     {{ if .Params.excerpt }}
-    <p class="flex-grow text-muted dark:text-slate-400 text-lg">{{ .Params.excerpt }}</p>
+      <p class="text-muted flex-grow text-lg dark:text-slate-400">{{ .Params.excerpt }}</p>
     {{ else }}
-    <p class="flex-grow text-muted dark:text-slate-400 text-lg">{{ .Summary }}</p>
+      <p class="text-muted flex-grow text-lg dark:text-slate-400">{{ .Summary }}</p>
     {{ end }}
+
 
     <footer class="mt-5">
       {{ partial "blog/tags.html" . }}
