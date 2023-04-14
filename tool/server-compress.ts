@@ -9,7 +9,7 @@ import fsPromises from 'fs/promises';
 
 import { MIME_TYPE } from './data/mime';
 
-const ROOT_DIR = path.resolve(url.fileURLToPath(import.meta.url), '..');
+const ROOT_DIR = path.resolve(url.fileURLToPath(import.meta.url), '..', '..');
 
 const port = parseInt(process.argv[2] || '9000');
 
