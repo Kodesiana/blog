@@ -42,7 +42,7 @@ export class GithubDataProvider implements IDataProvider {
       {
         query: `
         query {
-          viewer {
+          repositoryOwner(login: "fahminlb33") {
             repositories(
                 first:100
                 isFork: false
@@ -84,7 +84,7 @@ export class GithubDataProvider implements IDataProvider {
 
     // sort repositories by last updated date
     const body: Repository = response.data;
-    const repositories = body.data.viewer.repositories.nodes;
+    const repositories = body.data.repositoryOwner.repositories.nodes;
 
     // construct data contract
     const repos: GitHubDataType = {

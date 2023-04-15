@@ -1,6 +1,6 @@
 export type Repository = {
   data: {
-    viewer: {
+    repositoryOwner: {
       repositories: Repositories;
     };
   };
