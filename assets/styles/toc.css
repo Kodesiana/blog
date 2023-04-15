@@ -1,21 +1,21 @@
-.toc-anchor {
+#TableOfContents {
   @apply no-underline;
 }
 
-.toc-link {
-  @apply no-underline;
-}
-
-.toc-list {
+#TableOfContents ol {
   @apply m-0 lg:mt-0 !important;
   counter-reset: section;
 }
 
-.toc-list-item {
+#TableOfContents ol > li {
   @apply m-0 lg:m-0 !important;
   counter-increment: section;
 }
 
-.toc-list-item::marker {
+#TableOfContents ol > li::marker {
   content: counters(section, '.') '. ';
+}
+
+#TableOfContents ol > li > a {
+  @apply no-underline;
 }
