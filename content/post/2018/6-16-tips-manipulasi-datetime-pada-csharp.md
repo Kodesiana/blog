@@ -6,34 +6,30 @@ date: 2018-05-27
 slug: 16-tips-manipulasi-datetime-pada-csharp
 ---
 
-> Source code: [https://github.com/Kodesiana/Post-Samples/tree/master/DateTime-Formatting](https://github.com/Kodesiana/Post-Samples/tree/master/DateTime-Formatting)
+> Source code:
+> [https://github.com/Kodesiana/Artikel/tree/master/2018/datetime-formatting](https://github.com/Kodesiana/Artikel/tree/master/2018/datetime-formatting)
 
-Manipulasi _DateTime_ merupakan hal yang wajib diketahui oleh programmer,
-khususnya C# dan VB.NET. _DateTime_ ([struktur](<https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx>))
-digunakan untuk menyimpan informasi berupa tanggal dan waktu. Manipulasi
-_DateTime_ sangat penting khususnya dalam aplikasi kasir, sewa, rental, dan
-lain-lain. Struktur DateTime memudahkan programmer untuk mengolah tanggal dan
-waktu, misalnya mencari selisih tanggal, konversi kalender, dan operasi
-penanggalan lainnya.
+Manipulasi *DateTime* merupakan hal yang wajib diketahui oleh programmer, khususnya C# dan VB.NET. *DateTime*
+([struktur](<https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx>)) digunakan untuk menyimpan
+informasi berupa tanggal dan waktu. Manipulasi *DateTime* sangat penting khususnya dalam aplikasi kasir, sewa, rental,
+dan lain-lain. Struktur DateTime memudahkan programmer untuk mengolah tanggal dan waktu, misalnya mencari selisih
+tanggal, konversi kalender, dan operasi penanggalan lainnya.
 
 ## DateTime, TimeSpan, dan CultureInfo
 
-Sebelum memulai membahas manipulasi DateTime, sebaiknya kita bahas terlebih
-dahulu mengenai **DateTime**, **TimeSpan,** dan **CultureInfo**.
+Sebelum memulai membahas manipulasi DateTime, sebaiknya kita bahas terlebih dahulu mengenai **DateTime**, **TimeSpan,**
+dan **CultureInfo**.
 
 - **DateTime,** merupakan struktur yang menampung data  berupa tanggal dan waktu.
 - **TimeSpan**, merupakan struktur yang menampung interval waktu.
 - **CultureInfo**, merupakan kelas yang menyediakan informasi mengenai suatu kultur (formatting, bahasa, dan lain-lain).
 
-Pada aplikasi uji coba kali ini, penulis menggunakan kultur _English US_.
-Untuk mengetahui kultur yang aktif pada komputer Anda, buka **Region &
-language settings** pada Control Panel. Pengatuan kultur ini berpengaruh pada
-aplikasi yang akan dibuat, karena format yang dihasilkan akan mengikuti kultur
-yang aktif pada sistem.
+Pada aplikasi uji coba kali ini, penulis menggunakan kultur *English US*. Untuk mengetahui kultur yang aktif pada
+komputer Anda, buka **Region & language settings** pada Control Panel. Pengatuan kultur ini berpengaruh pada aplikasi
+yang akan dibuat, karena format yang dihasilkan akan mengikuti kultur yang aktif pada sistem.
 
-Selain mengubah pengaturan kultur dari sistem melalui Control Panel,
-pengaturan kultur juga dapat dilakukan dari aplikasi dengan cara mengubah
-kultur internal aplikasi dalam lingkup *thread*.
+Selain mengubah pengaturan kultur dari sistem melalui Control Panel, pengaturan kultur juga dapat dilakukan dari
+aplikasi dengan cara mengubah kultur internal aplikasi dalam lingkup *thread*.
 
 ```csharp
 CultureInfo ci = new CultureInfo("id-ID");
@@ -41,11 +37,10 @@ Thread.CurrentThread.CurrentCulture = ci;
 Thread.CurrentThread.CurrentUICulture = ci;
 ```
 
-Kebanyakan format sudah ada pada bawaan Windows, programmer hanya perlu
-mengatur kultur agar sesuai. Misalnya format tanggal _bulan/tanggal/tahun_
-pada format EN-US dapat dengan mudah diubah menjadi kultur Indonesia yaitu
-_tanggal/bulan/tahun_ menggunakan kode di atas. Biasanya format tanggal dan
-waktu tidak perlu kustom, cukup mengubah kultur saja.
+Kebanyakan format sudah ada pada bawaan Windows, programmer hanya perlu mengatur kultur agar sesuai. Misalnya format
+tanggal *bulan/tanggal/tahun* pada format EN-US dapat dengan mudah diubah menjadi kultur Indonesia yaitu
+*tanggal/bulan/tahun* menggunakan kode di atas. Biasanya format tanggal dan waktu tidak perlu kustom, cukup mengubah
+kultur saja.
 
 ![Demo Manipulasi DateTime](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/6/demo-datetime.png)
 
@@ -64,11 +59,10 @@ waktu tidak perlu kustom, cukup mengubah kultur saja.
 | m      | Tanggal dan bulan              | 26 Mei                      |
 | y      | Bulan dan tahun                | Mei 2018                    |
 
-Format pada tabel di atas digunakan untuk memanggil fungsi `ToString(string
-format)` pada objek **DateTime.** Format di atas digunakan seperti apa adanya,
-tidak ada kustomisasi, hanya satu karakter sebagai parameter pada fungsi
-`ToString(string format)`. Format standar ini sangat cocok untuk menampilkan
-tanggal dan waktu sesuai dengan kultur sistem dengan cepat.
+Format pada tabel di atas digunakan untuk memanggil fungsi `ToString(string format)` pada objek **DateTime.** Format di
+atas digunakan seperti apa adanya, tidak ada kustomisasi, hanya satu karakter sebagai parameter pada fungsi
+`ToString(string format)`. Format standar ini sangat cocok untuk menampilkan tanggal dan waktu sesuai dengan kultur
+sistem dengan cepat.
 
 Kode berikut adalah contoh untuk menggunakan format sesuai tabel di atas.
 
@@ -102,11 +96,20 @@ Console.WriteLine(tanggal.ToString("T"));
 | :      | Pemisah waktu                    | 5:32:16                            |
 | /      | Pemisah tanggal                  | 21/05/2000                         |
 
-Berbagai format di atas dapat dikombinasikan untuk menghasilkan format yang diinginkan. Misalkan: `dddd, dd/MM/yyyy hh:mm:ss tt` akan menghasilkan `Saturday, 26/05/2018 15:56:12 PM` pada saat artikel ini ditulis.
+Berbagai format di atas dapat dikombinasikan untuk menghasilkan format yang diinginkan. Misalkan:
+`dddd, dd/MM/yyyy hh:mm:ss tt` akan menghasilkan `Saturday, 26/05/2018 15:56:12 PM` pada saat artikel ini ditulis.
 
 ## Referensi
 
-1. Microsoft. 2017. Standard Date and Time Format Strings ([_https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings_](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)). Diakses 25 Mei 2018.
-2. Microsoft. 2017. Custom Date and Time Format Strings ([_https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings_](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)). Diakses 25 Mei 2018.
-3. Microsoft. 2018. CultureInfo Class ([_https://docs.microsoft.com/id-id/dotnet/api/system.globalization.cultureinfo_](https://docs.microsoft.com/id-id/dotnet/api/system.globalization.cultureinfo)). Diakses 26 Mei 2018.
-4. Microsoft. 2018. DateTime Struct ([_https://docs.microsoft.com/id-id/dotnet/api/system.datetime_](https://docs.microsoft.com/id-id/dotnet/api/system.datetime)). Diakses 26 Mei 2018.
+1. Microsoft. 2017. Standard Date and Time Format Strings
+   ([*https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings*](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)).
+   Diakses 25 Mei 2018.
+2. Microsoft. 2017. Custom Date and Time Format Strings
+   ([*https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings*](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)).
+   Diakses 25 Mei 2018.
+3. Microsoft. 2018. CultureInfo Class
+   ([*https://docs.microsoft.com/id-id/dotnet/api/system.globalization.cultureinfo*](https://docs.microsoft.com/id-id/dotnet/api/system.globalization.cultureinfo)).
+   Diakses 26 Mei 2018.
+4. Microsoft. 2018. DateTime Struct
+   ([*https://docs.microsoft.com/id-id/dotnet/api/system.datetime*](https://docs.microsoft.com/id-id/dotnet/api/system.datetime)).
+   Diakses 26 Mei 2018.

@@ -7,7 +7,7 @@ hideRss: true
 hideMeta: true
 ---
 
-At Kodesiana, accessible from https://kodesiana.com, one of our main priorities is the privacy of our visitors. This
+At Kodesiana, accessible from <https://kodesiana.com>, one of our main priorities is the privacy of our visitors. This
 Privacy Policy document contains types of information that is collected and recorded by Kodesiana and how we use it.
 
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
@@ -35,7 +35,7 @@ For more general information on cookies, please read the “What Are Cookies” 
 Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site
 visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to
 decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL –
-https://policies.google.com/technologies/ads
+<https://policies.google.com/technologies/ads>
 
 ## Privacy Policies
 

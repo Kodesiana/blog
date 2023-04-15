@@ -6,36 +6,61 @@ date: 2022-01-16
 slug: mamba-conda-on-steroids
 ---
 
-Siapa yang tidak kenal dengan Anaconda Distribution? Anaconda merupakan salah satu distribusi Python lengkap dengan _package manager_, _virtual environment_ dan fitur-fitur lainnya untuk membantu kita mengembangkan aplikasi berbasis Python dan R, khususnya untuk keperluan _data science_.
+Siapa yang tidak kenal dengan Anaconda Distribution? Anaconda merupakan salah satu distribusi Python lengkap dengan
+*package manager*, *virtual environment* dan fitur-fitur lainnya untuk membantu kita mengembangkan aplikasi berbasis
+Python dan R, khususnya untuk keperluan *data science*.
 
-Seperti yang kita tahu, saat kita bekerja dengan sebuah proyek khususnya yang berkaitan dengan _data science_ menggunakan Python, kita sebaiknya memiliki _virtual environment_. Kenapa? Tujuan utamanya adalah membuat ruang kerja yang terisolasi dan dapat direplikasi dan disdistribusikan dengan lebih mudah, misalnya kode kita akan digunakan oleh kolega atau akan di-_deploy_ ke server. Dengan menggunakan _virtual environment_, kita bisa mengisolasi _package_ apa saja yang dibutuhkan oleh proyek kita sehingga kita bisa dengan mudah membuat `requirements.txt` yang hanya mencakup proyek yang kita kerjakan.
+Seperti yang kita tahu, saat kita bekerja dengan sebuah proyek khususnya yang berkaitan dengan *data science*
+menggunakan Python, kita sebaiknya memiliki *virtual environment*. Kenapa? Tujuan utamanya adalah membuat ruang kerja
+yang terisolasi dan dapat direplikasi dan disdistribusikan dengan lebih mudah, misalnya kode kita akan digunakan oleh
+kolega atau akan di-*deploy* ke server. Dengan menggunakan *virtual environment*, kita bisa mengisolasi *package* apa
+saja yang dibutuhkan oleh proyek kita sehingga kita bisa dengan mudah membuat `requirements.txt` yang hanya mencakup
+proyek yang kita kerjakan.
 
-![](https://source.unsplash.com/kgq4BjLHn1Q)
+![Gambar](https://source.unsplash.com/kgq4BjLHn1Q)
 
-Tapi ada satu masalah dengan Anaconda. Teman-teman yang mungkin sudah lama menggunakan Anaconda dan banyak menginstall berbagai _library_ baik dari `pip` dan `conda` akan mengalami masalah waktu install _package_. Sudah menjadi rahasia umum kalau `conda` memang sangat _powerful_, tetapi sayangnya jika kita akan membuat _environment_ yang besar, proses instalasi _package_-nya akan memakan waktu sangat lama, bahkan terkadang ada beberapa _package_ yang tidak kompatibel padahal seharusnya kompatibel.
+Tapi ada satu masalah dengan Anaconda. Teman-teman yang mungkin sudah lama menggunakan Anaconda dan banyak menginstall
+berbagai *library* baik dari `pip` dan `conda` akan mengalami masalah waktu install *package*. Sudah menjadi rahasia
+umum kalau `conda` memang sangat *powerful*, tetapi sayangnya jika kita akan membuat *environment* yang besar, proses
+instalasi *package*-nya akan memakan waktu sangat lama, bahkan terkadang ada beberapa *package* yang tidak kompatibel
+padahal seharusnya kompatibel.
 
-Nah selanjutnya kita akan berkenalan dengan `mamba`, _package manager_ alternatif `conda` dengan banyak fitur untuk melengkapi `conda`!
+Nah selanjutnya kita akan berkenalan dengan `mamba`, *package manager* alternatif `conda` dengan banyak fitur untuk
+melengkapi `conda`!
 
 ## Masalah dengan `conda`
 
-Seperti yang sudah penulis sampaikan pada awal artikel ini, `conda` memiliki banyak sekali fitur yang krusial untuk pengembangan perangkat lunak menggunakan Python, tetapi tidak bisa dipungkiri bahwa `conda` memiliki beberapa masalah yang kadang menghambat proses pengembangan aplikasi, misalnya:
+Seperti yang sudah penulis sampaikan pada awal artikel ini, `conda` memiliki banyak sekali fitur yang krusial untuk
+pengembangan perangkat lunak menggunakan Python, tetapi tidak bisa dipungkiri bahwa `conda` memiliki beberapa masalah
+yang kadang menghambat proses pengembangan aplikasi, misalnya:
 
-1. `conda` tidak dapat menghasilkan _dependency tree_ yang memenuhi semua kebutuhan _package_. Dulu penulis pernah mencoba untuk menginstall `opencv` dan `tensorflow` menggunakan `conda`, tetapi gagal karena ada konflik bahwa kedua _package_ tersebut memiliki _dependency_ yang tidak kompatibel, padahal seharusnya tidak ada masalah karena penulis bisa _build_ manual dan tidak menemukan masalah apapun.
-2. `conda` membutuhkan waktu yang lama untuk menginstall _package_. _Package_ seperti `opencv` dan `tensorflow-gpu` memiliki ukuran yang besar dan banyak _dependency_, karena `conda` hanya dapat mengunduh satu _package_ dalam satu waktu, maka proses install menjadi sangat lama.
+1. `conda` tidak dapat menghasilkan *dependency tree* yang memenuhi semua kebutuhan *package*. Dulu penulis pernah
+   mencoba untuk menginstall `opencv` dan `tensorflow` menggunakan `conda`, tetapi gagal karena ada konflik bahwa kedua
+   *package* tersebut memiliki *dependency* yang tidak kompatibel, padahal seharusnya tidak ada masalah karena penulis
+   bisa *build* manual dan tidak menemukan masalah apapun.
+2. `conda` membutuhkan waktu yang lama untuk menginstall *package*. *Package* seperti `opencv` dan `tensorflow-gpu`
+   memiliki ukuran yang besar dan banyak *dependency*, karena `conda` hanya dapat mengunduh satu *package* dalam satu
+   waktu, maka proses install menjadi sangat lama.
 
-Dua masalah tersebut yang akhirnya menggerakkan penulis untuk mencari solusi, bagaimana cara _improve_ performa `conda`?
+Dua masalah tersebut yang akhirnya menggerakkan penulis untuk mencari solusi, bagaimana cara *improve* performa `conda`?
 
-Secara tidak sengaja, penulis menemukan repositori [https://github.com/mamba-org/mamba](https://github.com/mamba-org/mamba), yang mengklaim sebagai _the fast cross-patform package manager_. Hmm, apa benar tool ini bisa menjadi solusi untuk masalah penulis di atas?
+Secara tidak sengaja, penulis menemukan repositori https://github.com/mamba-org/mamba, yang mengklaim sebagai
+*the fast cross-patform package manager*. Hmm, apa benar tool ini bisa menjadi solusi untuk masalah penulis di atas?
 
 Jawabannya IYA!
 
 ## Berkenalan dengan `mamba`
 
-Mungkin bagi teman-teman yang juga menulis kode program menggunakan NodeJS pasti mengenal `npm`. Selain `npm` terdapat beberapa alternatif _package manager_ seperti `yarn` dan `pnpm`, nah `mamba` ini seperti halnya `yarn` atau `pnpm`. Fungsinya sama-sama _package manager_ dan punya sintaks yang sama seperti `conda`, tetapi secara internal `mamba` menggunakan `libsolv` dan dibuat menggunakan C++ dan mendukung instalasi _package_ secara paralel, sehingga performanya jauh lebih cepat dibandingkan `conda` yang dibuat menggunakan Python (ironi :")
+Mungkin bagi teman-teman yang juga menulis kode program menggunakan NodeJS pasti mengenal `npm`. Selain `npm` terdapat
+beberapa alternatif *package manager* seperti `yarn` dan `pnpm`, nah `mamba` ini seperti halnya `yarn` atau `pnpm`.
+Fungsinya sama-sama *package manager* dan punya sintaks yang sama seperti `conda`, tetapi secara internal `mamba`
+menggunakan `libsolv` dan dibuat menggunakan C++ dan mendukung instalasi *package* secara paralel, sehingga performanya
+jauh lebih cepat dibandingkan `conda` yang dibuat menggunakan Python (ironi :")
 
-> _Compiled code_ C++ memang lebih cepat daripada Python
+> *Compiled code* C++ memang lebih cepat daripada Python
 
-`mamba` memiliki perintah yang sebagian besar sama persis dengan versi `conda`, jadi kita tidak perlu mempelajari lagi perintah-perintah untuk menggunakan `mamba`. Untuk menginstall `mamba`, jalankan perintah berikut pada Anaconda Prompt.
+`mamba` memiliki perintah yang sebagian besar sama persis dengan versi `conda`, jadi kita tidak perlu mempelajari lagi
+perintah-perintah untuk menggunakan `mamba`. Untuk menginstall `mamba`, jalankan perintah berikut pada Anaconda Prompt.
 
 ```bash
 conda install mamba -n base -c conda-forge
@@ -51,7 +76,7 @@ mamba install tensorflow
 
 Pada percobaan ini output yang penulis dapatkan adalah sebagai berikut.
 
-```
+```text
                   __    __    __    __
                  /  \  /  \  /  \  /  \
                 /    \/    \/    \/    \
@@ -208,6 +233,8 @@ Transaction
 Confirm changes: [Y/n]
 ```
 
-Keren ya! Dengan hanya mengganti satu perintah dari `conda` menjadi `mamba`, kita bisa mendapatkan _performance boost_ dan unduhan paralel sehingga proses pemasangan _package_ jadi lebih cepat.
+Keren ya! Dengan hanya mengganti satu perintah dari `conda` menjadi `mamba`, kita bisa mendapatkan *performance boost*
+dan unduhan paralel sehingga proses pemasangan *package* jadi lebih cepat.
 
-Semoga artikel kali ini bermanfaat! Penulis akan lanjut seri mengenai desain sistem dan arsitektur di artikel yang akan datang!
+Semoga artikel kali ini bermanfaat! Penulis akan lanjut seri mengenai desain sistem dan arsitektur di artikel yang akan
+datang!

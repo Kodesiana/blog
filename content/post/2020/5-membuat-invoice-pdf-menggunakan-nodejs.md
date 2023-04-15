@@ -6,80 +6,66 @@ date: 2020-09-22
 slug: membuat-invoice-pdf-menggunakan-nodejs
 ---
 
-Invoice PDF merupakan salah satu hal yang paling sering dihadapi saat membuat
-sebuah sistem informasi seperti aplikasi _point of sale_, peminjaman
-perpustakaan, laporan keuangan, dan lain-lain. Meskipun terlihat sederhana,
-ternyata proses pembuatan PDF ini membutuhkan tenaga ekstra untuk dapat
-diimplementasikan dengan sempurna dengan sistem kita.
+> Source code: <https://github.com/Kodesiana/Artikel/tree/master/2020/nodejs-invoice-pdf>
 
-Ternyata proses pembuatan PDF tidak semudah yang kita bayangkan. Jika kita bisa
-dengan mudah membuat PDF dengan cara mengonversi file Word ke PDF, jika ingin
-dilakukan menggunakan program hal ini bisa jauh lebih sulit dilakukan.
+Invoice PDF merupakan salah satu hal yang paling sering dihadapi saat membuat sebuah sistem informasi seperti aplikasi
+*point of sale*, peminjaman perpustakaan, laporan keuangan, dan lain-lain. Meskipun terlihat sederhana, ternyata proses
+pembuatan PDF ini membutuhkan tenaga ekstra untuk dapat diimplementasikan dengan sempurna dengan sistem kita.
 
-![](https://source.unsplash.com/iJMitgqRaZ8/1200x657)
+Ternyata proses pembuatan PDF tidak semudah yang kita bayangkan. Jika kita bisa dengan mudah membuat PDF dengan cara
+mengonversi file Word ke PDF, jika ingin dilakukan menggunakan program hal ini bisa jauh lebih sulit dilakukan.
 
-Hl ini karena fakta pembuatan PDF yang menurut kita mudah, ternyata prosesnya
-lebih rumit, tidak semudah membangun website menggunakan HTML dan CSS.
+![Gambar](https://source.unsplash.com/iJMitgqRaZ8/1200x657)
 
-Untuk membuat sebuah file PDF, setidaknya ada empat cara yang dapat dilakukan,
-yaitu:
+Hl ini karena fakta pembuatan PDF yang menurut kita mudah, ternyata prosesnya lebih rumit, tidak semudah membangun
+website menggunakan HTML dan CSS.
 
-- Menulis file sesuai spesifikasi PDF/A secara manual, pilihan ini tentunya
-  sangat tidak efisien, karena kita harus mengolah struktur PDF secara manual
-  melalui API tingkat rendahnya.
-- Menggunakan konsep GDI, beberapa _library_ menyediakan kemampuan untuk membuat
-  PDF seperti Anda menggambar pada kanvas, misalnya _library_ PdfSharp.
-- Render web menjadi PDF, metode ini adalah cara yang paling cepat, seperti kita
-  menyimpan sebuah web menjadi PDF pada browser.
-- Menggunakan _library_ berbayar, misalnya menggunakan Adobe Acrobat. Pilihan
-  ini biasanya menjadi pilihan terakhir, karena, berbayar. Kita tidak mau pakai
-  aplikasi bajakan di program kita😁 Support _developer_!
+Untuk membuat sebuah file PDF, setidaknya ada empat cara yang dapat dilakukan, yaitu:
 
-Pada tutorial ini kita akan menggunakan teknik ketiga, yaitu melakukan _render_
-halaman HTML menjadi PDF. Pada dasarnya kita akan membuka file PDF ini pada
-browser kemudian menyimpannya sebagai PDF.
+- Menulis file sesuai spesifikasi PDF/A secara manual, pilihan ini tentunya sangat tidak efisien, karena kita harus
+  mengolah struktur PDF secara manual melalui API tingkat rendahnya.
+- Menggunakan konsep GDI, beberapa *library* menyediakan kemampuan untuk membuat PDF seperti Anda menggambar pada
+  kanvas, misalnya *library* PdfSharp.
+- Render web menjadi PDF, metode ini adalah cara yang paling cepat, seperti kita menyimpan sebuah web menjadi PDF pada
+  browser.
+- Menggunakan *library* berbayar, misalnya menggunakan Adobe Acrobat. Pilihan ini biasanya menjadi pilihan terakhir,
+  karena, berbayar. Kita tidak mau pakai aplikasi bajakan di program kita😁 Support *developer*!
 
-Tetapi daripada membuka sebuah browser lengkap dengan fitur tab dan menunya,
-kita akan menggunakan _headless browser_, yaitu browser yang tidak menampilkan
-jendelanya dan untuk berinteraksi dengan browser tersebut dapat dilakukan
-menggunakan protokol komunikasi yang didukung oleh browser tersebut (misalnya
-WebDriver Protocol).
+Pada tutorial ini kita akan menggunakan teknik ketiga, yaitu melakukan *render* halaman HTML menjadi PDF. Pada dasarnya
+kita akan membuka file PDF ini pada browser kemudian menyimpannya sebagai PDF.
+
+Tetapi daripada membuka sebuah browser lengkap dengan fitur tab dan menunya, kita akan menggunakan *headless browser*,
+yaitu browser yang tidak menampilkan jendelanya dan untuk berinteraksi dengan browser tersebut dapat dilakukan
+menggunakan protokol komunikasi yang didukung oleh browser tersebut (misalnya WebDriver Protocol).
 
 ## Puppeteer
 
-_Puppeteer_ merupakan _library_ JavaScript yang menyediakan API untuk mengontrol
-aplikasi Chromium, bisa dibilang kamu menggunakan Google Chrome tetapi melalui
-kode program.
+*Puppeteer* merupakan *library* JavaScript yang menyediakan API untuk mengontrol aplikasi Chromium, bisa dibilang kamu
+menggunakan Google Chrome tetapi melalui kode program.
 
-![](https://source.unsplash.com/BbOXC95sxlE/1200x657)
+![Gambar](https://source.unsplash.com/BbOXC95sxlE/1200x657)
 
-Dengan menggunakan _library_ ini kamu bisa melakukan hampir semua kegiatan yang
-bisa kamu lakukan pada Chrome, membuat tab baru, pergi ke URL, melakukan
-_scraping_ data, dan tentunya, menyimpan halaman sebagai PDF.
+Dengan menggunakan *library* ini kamu bisa melakukan hampir semua kegiatan yang bisa kamu lakukan pada Chrome, membuat
+tab baru, pergi ke URL, melakukan *scraping* data, dan tentunya, menyimpan halaman sebagai PDF.
 
-**Notes!**
-Selain _puppeteer_, penulis juga biasa menggunakan Selenium WebDriver.
-Chromium adalah versi Chrome yang tidak memiliki integrasi dengan layanan Google
-(proyek sumber dari Chrome).
-Puppeteer akan mengunduh Chromium secara otomatis sebagai _optional dependecies_
-saat kamu melakukan **npm install**.
+**Notes!** Selain *puppeteer*, penulis juga biasa menggunakan Selenium WebDriver. Chromium adalah versi Chrome yang
+tidak memiliki integrasi dengan layanan Google (proyek sumber dari Chrome). Puppeteer akan mengunduh Chromium secara
+otomatis sebagai *optional dependecies* saat kamu melakukan **npm install**.
 
 ### Membuat package.json
 
-Buka terminal (cmd, pwsh, bash, sh, atau apa pun yang kamu suka), kemudian buat
-sebuah folder baru. Misalnya _D:\\coba-pdf_.
+Buka terminal (cmd, pwsh, bash, sh, atau apa pun yang kamu suka), kemudian buat sebuah folder baru. Misalnya
+`D:\coba-pdf`.
 
-Buat package.js dengan cara mengeksekusi _npm init -y_.
+Buat package.js dengan cara mengeksekusi *npm init -y*.
 
-Install _puppeteer_ dan _mustache_ dengan cara mengeksekusi _npm install
-puppeteer mustache_.
+Install *puppeteer* dan *mustache* dengan cara mengeksekusi *npm install puppeteer mustache*.
 
-![](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/5/image.png)
+![Init npm](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/5/image.png)
 
 PowerShell 7 Core di Windows Terminal.
 
-Selanjutnya buka editor kesayangan kamu, di sini penulis akan menggunakan Visual
-Studio Code.
+Selanjutnya buka editor kesayangan kamu, di sini penulis akan menggunakan Visual Studio Code.
 
 ### Membuat template invoice PDF
 
@@ -165,8 +151,8 @@ Buat sebuah file baru, beri nama halaman.html, kemudian ketik kode di bawah ini.
                 </td>
 
                 <td>
-                  Invoice #: { { nomor } }<br />
-                  Tanggal: { { tanggal } }
+                  Invoice #: {{nomor}}<br />
+                  Tanggal: {{tanggal}}
                 </td>
               </tr>
             </table>
@@ -177,7 +163,7 @@ Buat sebuah file baru, beri nama halaman.html, kemudian ketik kode di bawah ini.
           <td colspan="2">
             <table>
               <tr>
-                <td>{ { alamat } }</td>
+                <td>{{alamat}}</td>
               </tr>
             </table>
           </td>
@@ -188,28 +174,28 @@ Buat sebuah file baru, beri nama halaman.html, kemudian ketik kode di bawah ini.
           <td>Jumlah</td>
         </tr>
 
-        { { #pembayaran } }
+        {{#pembayaran}}
         <tr class="item">
-          <td>{ { metode } }</td>
-          <td>{ { jumlah } }</td>
+          <td>{{metode}}</td>
+          <td>{{jumlah}}</td>
         </tr>
-        { { /pembayaran } }
+        {{/pembayaran}}
 
         <tr class="heading">
           <td>Barang</td>
           <td>Harga</td>
         </tr>
 
-        { { #barang } }
+        {{#barang}}
         <tr class="item">
           <td>{{item}}</td>
           <td>{{harga}}</td>
         </tr>
-        { { /barang } }
+        {{/barang}}
 
         <tr class="total">
           <td></td>
-          <td>Total: { { total } }</td>
+          <td>Total: {{total}}</td>
         </tr>
       </table>
     </div>
@@ -217,18 +203,15 @@ Buat sebuah file baru, beri nama halaman.html, kemudian ketik kode di bawah ini.
 </html>
 ```
 
-Kode dikutip dari:
-[https://github.com/sparksuite/simple-html-invoice-template](https://github.com/sparksuite/simple-html-invoice-template).
-Setelah kamu membuat file ini, kamu bisa buka file ini untuk melihat contoh
-invoice yang akan dibuat.
+Kode dikutip dari: https://github.com/sparksuite/simple-html-invoice-template.
+Setelah kamu membuat file ini, kamu bisa buka file ini untuk melihat contoh invoice yang akan dibuat.
 
-Bagian kode yang ditandai merupakan sintak dari _library_
-[mustache](https://www.npmjs.com/package/mustache). Anda bisa mengubah data-data
-yang nantinya akan muncul pada invoice Anda dengan menggunakan _template_ ini.
+Bagian kode yang ditandai merupakan sintak dari *library* [mustache](https://www.npmjs.com/package/mustache). Anda bisa
+mengubah data-data yang nantinya akan muncul pada invoice Anda dengan menggunakan *template* ini.
 
 ### Membuat fungsi pembuatan invoice PDF
 
-Selanjutnya, buat file _index.js_, kemudian ketikan kode berikut.
+Selanjutnya, buat file *index.js*, kemudian ketikan kode berikut.
 
 ```js
 const fs = require('fs');
@@ -265,22 +248,21 @@ Kode di atas pada dasarnya akan melakukan beberapa proses berikut:
 
 1. Membuat jendela Chromium baru.
 2. Membuat tab baru.
-3. Membaca template HTML, kemudian me-_render_ isinya dengan data.
-4. Mengubah _body_ tab yang dibuka dengan HTML yang telah di render.
-5. Menyimpan tab sebagai PDF (_Buffer_).
-6. Menyimpan _buffer_ sebagai file.
+3. Membaca template HTML, kemudian me-*render* isinya dengan data.
+4. Mengubah *body* tab yang dibuka dengan HTML yang telah di render.
+5. Menyimpan tab sebagai PDF (*Buffer*).
+6. Menyimpan *buffer* sebagai file.
 7. Menutup tab dan window.
 
-Anda dapat mengubah template dan juga data yang Anda perlukan pada kode di atas.
-Sebagai contoh akan digunakan data statis.
+Anda dapat mengubah template dan juga data yang Anda perlukan pada kode di atas. Sebagai contoh akan digunakan data
+statis.
 
 ## Container dengan Docker
 
-Jika Anda ingin menggunakan kode ini pada Docker, ada beberapa hal yang perlu
-Anda perhatikan. Karena kita menggunakan teknik _headless browser_, maka kita
-harus memastikan bahwa browser tersebut bisa berjalan di dalam container.
+Jika Anda ingin menggunakan kode ini pada Docker, ada beberapa hal yang perlu Anda perhatikan. Karena kita menggunakan
+teknik *headless browser*, maka kita harus memastikan bahwa browser tersebut bisa berjalan di dalam container.
 
-![](https://source.unsplash.com/l93tk44HErI/1200x657)
+![Gambar](https://source.unsplash.com/l93tk44HErI/1200x657)
 
 Buat file Dockerfile seperti di bawah ini.
 
@@ -305,10 +287,9 @@ COPY . .
 ENTRYPOINT ["node", "index.js"]
 ```
 
-Dockerfile di atas berisi instruksi untuk menginstall _shared library_ yang
-nantinya akan digunakan oleh _headless browser_ di _puppeteer_. Untuk informasi
-lebih lanjut, cek repositori puppeteer [di
-sini](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#running-puppeteer-in-docker).
+Dockerfile di atas berisi instruksi untuk menginstall *shared library* yang nantinya akan digunakan oleh *headless
+browser* di *puppeteer*. Untuk informasi lebih lanjut, cek repositori puppeteer
+[di sini](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#running-puppeteer-in-docker).
 
 Ubah potongan kode pada file index.js menjadi:
 
@@ -318,58 +299,48 @@ const browser = await puppeteer.launch({
 });
 ```
 
-Potongan kode di atas berfungsi untuk menonaktifkan mode _sandbox_ dan
-penggunaan _/dev/shm_. Setelah perubahan ini selesai, Anda bisa mengeksekusi
-perintah berikut pada terminal untuk memulai _container_.
+Potongan kode di atas berfungsi untuk menonaktifkan mode *sandbox* dan penggunaan */dev/shm*. Setelah perubahan ini
+selesai, Anda bisa mengeksekusi perintah berikut pada terminal untuk memulai *container*.
 
 ```bash
 docker build -t coba-pdf:1.0 .
 docker run -it -v D:/coba-pdf/output:/usr/src/app/output coba-pdf:1.0
 ```
 
-> **Perhatian!** Gunakan _docker volume_ atau _absolute path_ saat menjalan kan
-> _container_ agar kamu bisa mengakses file PDF yang dibuat.
+> **Perhatian!** Gunakan *docker volume* atau *absolute path* saat menjalan kan *container* agar kamu bisa mengakses
+> file PDF yang dibuat.
 
 Akan lebih baik kalau proses ini juga menggunakan
-[CI/CD](https://kodesiana.com/post/azure-devops-untuk-otomatisasi-project-kamu/)
-dan [build
-script](https://kodesiana.com/post/cake-build-script-untuk-build-proyek-net/).
+[CI/CD](https://kodesiana.com/post/azure-devops-untuk-otomatisasi-project-kamu/) dan
+[build script](https://kodesiana.com/post/cake-build-script-untuk-build-proyek-net/).
 
-Pastikan Anda memberikan memori yang cukup untuk _container_ ini. Penulis
-menyarankan memori setidaknya 512MB. Akan lebih baik lagi jika Anda menggunakan
-_puppeteer_ dalam mode _remote_ sehingga _container_ tidak perlu menjalankan
+Pastikan Anda memberikan memori yang cukup untuk *container* ini. Penulis menyarankan memori setidaknya 512MB. Akan
+lebih baik lagi jika Anda menggunakan *puppeteer* dalam mode *remote* sehingga *container* tidak perlu menjalankan
 Chromium di dalamnya, tetapi ini akan menjadi bahasan di posting yang lain😁
 
 ## Aplikasi Web Pdtache
 
-Untuk memudahkan kamu membuat invoice PDF, daripada harus membuat kode seperti
-di atas dan menyiapkan kontainer sendiri, kamu bisa pakai aplikasi **Pdtache**.
-Aplikasi ini berupa _web app_ yang dibuat menggunakan TypeScript dan NodeJS 12.
+Untuk memudahkan kamu membuat invoice PDF, daripada harus membuat kode seperti di atas dan menyiapkan kontainer sendiri,
+kamu bisa pakai aplikasi **Pdtache**. Aplikasi ini berupa *web app* yang dibuat menggunakan TypeScript dan NodeJS 12.
 
-Aplikasi ini bisa membuat PDF dari template HTML baik dari URL file template
-atau dari _source_ HTML nya langsung, hasil PDF bisa disimpan ke Minio atau
-langsung diunduh. Pokoknya semua yang kamu butuhkan untuk membuat PDF dengan
-template semuanya bisa dilakukan oleh aplikasi ini.
+Aplikasi ini bisa membuat PDF dari template HTML baik dari URL file template atau dari *source* HTML nya langsung, hasil
+PDF bisa disimpan ke Minio atau langsung diunduh. Pokoknya semua yang kamu butuhkan untuk membuat PDF dengan template
+semuanya bisa dilakukan oleh aplikasi ini.
 
-Aplikasi ini bersifat _open source_ dan kamu bisa lihat _source code_\-nya di
-repositori GitHub penulis.
+Aplikasi ini bersifat *open source* dan kamu bisa lihat *source code*\-nya di repositori GitHub penulis.
 
-Repositori Pdtache:
-[https://github.com/fahminlb33/Pdtache](https://github.com/fahminlb33/Pdtache)
+Repositori Pdtache: https://github.com/fahminlb33/Pdtache
 
-Aplikasi ini selain bisa digunakan melalui _web_, kamu juga bisa membuat PDF
-melalui API yang disediakan oleh Pdtache. Ikuti petunjuk pada dokumentasi API
-yang terdapat di repositori kode untuk informasi lebih lanjut.
+Aplikasi ini selain bisa digunakan melalui *web*, kamu juga bisa membuat PDF melalui API yang disediakan oleh Pdtache.
+Ikuti petunjuk pada dokumentasi API yang terdapat di repositori kode untuk informasi lebih lanjut.
 
 ## Wrapping It Up
 
-Sampai di sini kamu sudah berhasil untuk membuat PDF dengan menggunakan _library
-puppeteer_ dan _mustache_. Contoh ini masih versi sederhana, dengan mengeksekusi
-_node_ atau _docker_ untuk menghasilkan satu file PDF.
+Sampai di sini kamu sudah berhasil untuk membuat PDF dengan menggunakan *library puppeteer* dan *mustache*. Contoh ini
+masih versi sederhana, dengan mengeksekusi *node* atau *docker* untuk menghasilkan satu file PDF.
 
-Kamu dapat menggabungkan kode ini dengan menggunakan _library_ seperti _express_
-dan _restify_ untuk membuat REST API yang dapat diakses untuk menghasilkan file
-PDF. Untuk mempermudah proses pembuatan PDF ini, kamu juga bisa menggunakan
-_Pdtache_ buatan penulis untuk memudahkan proses pembuatan PDF.
+Kamu dapat menggabungkan kode ini dengan menggunakan *library* seperti *express* dan *restify* untuk membuat REST API
+yang dapat diakses untuk menghasilkan file PDF. Untuk mempermudah proses pembuatan PDF ini, kamu juga bisa menggunakan
+*Pdtache* buatan penulis untuk memudahkan proses pembuatan PDF.
 
 Semoga artikel kali ini bermanfaat untuk kamu! **#NgodingItuMudah**

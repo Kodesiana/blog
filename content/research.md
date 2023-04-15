@@ -7,11 +7,11 @@ hideMeta: true
 ---
 
 Selain aktif bekerja sebagai developer, penulis juga aktif melakukan riset/penelitian ilmiah, menulis buku, dan mengisi
-kegiatan seminar/webinar/pelatihan yang bertemakan teknologi seputar _backend, cloud,_ dan _artificial intelligence_.
+kegiatan seminar/webinar/pelatihan yang bertemakan teknologi seputar *backend, cloud,* dan *artificial intelligence*.
 
 ## Buku
 
-- **Machine Learning menggunakan Python** _(coming soon!)_
+- **Machine Learning menggunakan Python** *(coming soon!)*
 
 ## Seminar dan Presentasi
 

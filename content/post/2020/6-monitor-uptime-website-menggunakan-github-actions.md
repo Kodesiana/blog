@@ -6,26 +6,34 @@ date: 2020-10-01
 slug: monitor-uptime-website-menggunakan-github-actions
 ---
 
-Uptime website merupakan salah satu hal yang menjadi elemen penting dalam pengembangan sebuah sistem. Selain itu, uptime juga merupakan salah satu nilai _market_ yang saat krusial untuk bisnis.
+Uptime website merupakan salah satu hal yang menjadi elemen penting dalam pengembangan sebuah sistem. Selain itu, uptime
+juga merupakan salah satu nilai *market* yang saat krusial untuk bisnis.
 
-Khususnya dengan teknologi yang semakin berkembang ini, banyak sekali layanan DevOps seperti layanan CI/CD sudah menjadi bagian yang tidak bisa lepas dari _development pipeline_ suatu aplikasi.
+Khususnya dengan teknologi yang semakin berkembang ini, banyak sekali layanan DevOps seperti layanan CI/CD sudah menjadi
+bagian yang tidak bisa lepas dari *development pipeline* suatu aplikasi.
 
-Salah satu penyedia layanan _source control_ yaitu GitHub juga memiliki layanan CI yang dapat digunakan secara cuma-cuma (GitHub Actions) . Kamu bisa menggunakan CI ini untuk membuat _pipeline_ aplikasi kamu lebih _streamlined_.
+Salah satu penyedia layanan *source control* yaitu GitHub juga memiliki layanan CI yang dapat digunakan secara cuma-cuma
+(GitHub Actions) . Kamu bisa menggunakan CI ini untuk membuat *pipeline* aplikasi kamu lebih *streamlined*.
 
-GitHub Actions yang merupakan layanan CI, biasanya hanya digunakan untuk melakukan _build_ dan _test_ pada sistem aplikasi, tetapi, bagaimana jika GitHub Actions digunakan sebagai layanan untuk memonitor _uptime_ website atau API?
+GitHub Actions yang merupakan layanan CI, biasanya hanya digunakan untuk melakukan *build* dan *test* pada sistem
+aplikasi, tetapi, bagaimana jika GitHub Actions digunakan sebagai layanan untuk memonitor *uptime* website atau API?
 
 ## GitHub Actions... untuk Functions?
 
 ![man sitting on bench](https://source.unsplash.com/C2SRmUGYxYE/1200x657)
 
-Photo by [Simeon Jacobson](https://unsplash.com/@closed) on [Unsplash](https://unsplash.com/?utm_source=kodesiana&utm_medium=referral)
+Photo by [Simeon Jacobson](https://unsplash.com/@closed) on
+[Unsplash](https://unsplash.com/?utm_source=kodesiana&utm_medium=referral)
 
-Mungkin terdengar asing, untuk apa kita menggunakan CI untuk memonitor uptime website? Jawabannya penulis beberapa pekan lalu mengikuti GitHub Actions Hackathon yang diselenggarakan oleh **dev.to**. Platform blogging dev.to mengadakan _hackathon_ untuk membuat inovasi unik dengan menggunakan GitHub Actions dan ini adalah submisi penulis.
+Mungkin terdengar asing, untuk apa kita menggunakan CI untuk memonitor uptime website? Jawabannya penulis beberapa pekan
+lalu mengikuti GitHub Actions Hackathon yang diselenggarakan oleh **dev.to**. Platform blogging dev.to mengadakan
+*hackathon* untuk membuat inovasi unik dengan menggunakan GitHub Actions dan ini adalah submisi penulis.
 
 Kamu bisa cek artikel ini pada **dev.to**
 [https://dev.to/fahminlb33/service-uptime-monitor-using-github-actions-2egp](https://dev.to/fahminlb33/service-uptime-monitor-using-github-actions-2egp)
 
-Kembali ke topik, bagaimana caranya layanan CI bisa digunakan untuk memonitor uptime? Sedangkan untuk monitoring uptime pasti dibutuhkan basis data untuk menyimpan hasil pengecekan uptime, solusinya?
+Kembali ke topik, bagaimana caranya layanan CI bisa digunakan untuk memonitor uptime? Sedangkan untuk monitoring uptime
+pasti dibutuhkan basis data untuk menyimpan hasil pengecekan uptime, solusinya?
 
 Untungnya, GitHub punya semua tool yang dibutuhkan untuk mencapai tujuan ini!
 
@@ -33,22 +41,26 @@ Untungnya, GitHub punya semua tool yang dibutuhkan untuk mencapai tujuan ini!
 - GitHub Actions, untuk mengecek dan menyimpan perubahan uptime.
 - GitHub Pages, untuk menampilkan data uptime.
 
-Mungkin ini pertama kalinya kamu mendapati penggunaan Git sebagai basis data dan CI sebagai CRON job. Yap, ide bisa muncul dari mana saja, yang penting kita bisa selalu kreatif menggunakan sumber daya yang kita miliki.
+Mungkin ini pertama kalinya kamu mendapati penggunaan Git sebagai basis data dan CI sebagai CRON job. Yap, ide bisa
+muncul dari mana saja, yang penting kita bisa selalu kreatif menggunakan sumber daya yang kita miliki.
 
 ### Membuat repo
 
-Pada tutorial ini kita akan menggunakan NodeJS sebagai backend yang nantinya akan mengecek website kita dan akan menyimpan riwayat _uptime_ website kita.
+Pada tutorial ini kita akan menggunakan NodeJS sebagai backend yang nantinya akan mengecek website kita dan akan
+menyimpan riwayat *uptime* website kita.
 
-Kita akan menggunakan _library axios_ pada backed untuk melakukan _request_ ke server yang akan kita monitor dan _Vue.js_ sebagai framework untuk UI nya.
+Kita akan menggunakan *library axios* pada backed untuk melakukan *request* ke server yang akan kita monitor dan
+*Vue.js* sebagai framework untuk UI nya.
 
 Anda bisa mengakses kode project ini pada repositori berikut.
 [https://github.com/fahminlb33/playcourt-tricks](https://github.com/fahminlb33/playcourt-tricks)
 
 ### Membuat backend
 
-Buat sebuah folder baru dan inisialisasi foldernya dengan package.json (seperti pada artikel [sebelumnya](https://kodesiana.com/post/membuat-invoice-pdf-menggunakan-nodejs/)). Kemudian install _library_ _axios_.
+Buat sebuah folder baru dan inisialisasi foldernya dengan package.json (seperti pada artikel
+[sebelumnya](https://kodesiana.com/post/membuat-invoice-pdf-menggunakan-nodejs/)). Kemudian install *library* *axios*.
 
-Pastikan file _package.json_ kamu terlihat seperti ini!
+Pastikan file *package.json* kamu terlihat seperti ini!
 
 ```json
 {
@@ -68,7 +80,7 @@ Pastikan file _package.json_ kamu terlihat seperti ini!
 }
 ```
 
-Buat folder app, kemudian buat file _index.js_.
+Buat folder app, kemudian buat file *index.js*.
 
 ```js
 const fs = require('fs');
@@ -212,11 +224,12 @@ main().catch(error => console.error(error));
 
 Kode di atas akan melakukan beberapa proses berikut:
 
-1. Membaca data website apa saja yang akan dimonitor pada file _monitored.json_.
-2. Melakukan _HTTP request_ ke URI yang dibaca dari file JSON.
-3. Menyimpan hasil pengecekan ke file _last_incident.json_.
+1. Membaca data website apa saja yang akan dimonitor pada file *monitored.json*.
+2. Melakukan *HTTP request* ke URI yang dibaca dari file JSON.
+3. Menyimpan hasil pengecekan ke file *last_incident.json*.
 
-Selanjutnya kamu harus mendefinisikan URI mana yang akan dimonitor oleh sistem ini. Buat folder _data_, kemudian buat file _monitored.json_.
+Selanjutnya kamu harus mendefinisikan URI mana yang akan dimonitor oleh sistem ini. Buat folder *data*, kemudian buat
+file *monitored.json*.
 
 ```json
 [
@@ -228,11 +241,13 @@ Selanjutnya kamu harus mendefinisikan URI mana yang akan dimonitor oleh sistem i
 ]
 ```
 
-Nah file ini nantinya akan menyimpan URI mana saja yang akan dicek dan dimonitor. Tambahkan semua URI yang ingin kamu cek di sini.
+Nah file ini nantinya akan menyimpan URI mana saja yang akan dicek dan dimonitor. Tambahkan semua URI yang ingin kamu
+cek di sini.
 
-Untuk backend hanya sampai di sini. Selanjutnya kamu akan setting GitHub Actions agar mengeksekusi kode ini setiap lima menit. Waktu ini merupakan batas minimum untuk jadwal eksekusi kode pada CI.
+Untuk backend hanya sampai di sini. Selanjutnya kamu akan setting GitHub Actions agar mengeksekusi kode ini setiap lima
+menit. Waktu ini merupakan batas minimum untuk jadwal eksekusi kode pada CI.
 
-Buat folder _.github/workflows_, kemudian buat file _node.js.yml_.
+Buat folder *.github/workflows*, kemudian buat file *node.js.yml*.
 
 ```yaml
 name: Node.js CI
@@ -263,13 +278,15 @@ jobs:
           git push
 ```
 
-Workflow di atas akan mengeksekusi _npm install_ dan _npm start_, setelah itu workflow ini akan mengeksekusi kode untuk melakukan _commit_ perubahan yang baru disimpan ke dalam git.
+Workflow di atas akan mengeksekusi *npm install* dan *npm start*, setelah itu workflow ini akan mengeksekusi kode untuk
+melakukan *commit* perubahan yang baru disimpan ke dalam git.
 
 ### Membuat frontend
 
-Seperti yang sudah disebutkan sebelumnya, bahwa pada frontend kita akan menggunakan Vue.js dan juga Bulma CSS untuk mempercantik tampilan webnya.
+Seperti yang sudah disebutkan sebelumnya, bahwa pada frontend kita akan menggunakan Vue.js dan juga Bulma CSS untuk
+mempercantik tampilan webnya.
 
-Buat file _index.html_ pada root folder kamu, kemudian salin kode berikut.
+Buat file *index.html* pada root folder kamu, kemudian salin kode berikut.
 
 ```html
 <!DOCTYPE html>
@@ -374,7 +391,7 @@ Buat file _index.html_ pada root folder kamu, kemudian salin kode berikut.
 
 Kode di atas merupakan frontend web yang nantinya akan menampilkan waktu uptime/downtime terakhir web yang dimonitor.
 
-Selanjutnya buat file _static/app.js_.
+Selanjutnya buat file *static/app.js*.
 
 ```js
 const second = 1000;
@@ -442,27 +459,38 @@ function prettyClock(distance) {
 }
 ```
 
-Kode di atas merupakan kode untuk membaca data dari file _last_incident.json_ yang terdapat pada repositori yang nantinya akan menyimpan program ini.
+Kode di atas merupakan kode untuk membaca data dari file *last_incident.json* yang terdapat pada repositori yang
+nantinya akan menyimpan program ini.
 
 ### Push sistem ke GitHub
 
-Setelah kamu memiliki semua file yang dibutuhkan, jangan lupa untuk commit semua kode Anda dan push ke repositori GitHub kamu. Untuk memastikan apakah Actions yang sudah dibuat terdeteksi oleh GitHub Actions, klik tab Actions pada menu repositori.
+Setelah kamu memiliki semua file yang dibutuhkan, jangan lupa untuk commit semua kode Anda dan push ke repositori GitHub
+kamu. Untuk memastikan apakah Actions yang sudah dibuat terdeteksi oleh GitHub Actions, klik tab Actions pada menu
+repositori.
 
-Jika menu ini sudah tampil, artinya sistem kamu sudah terdaftar pada GitHub Actions dan akan segera dieksekusi. Tunggu 10-15 menit untuk peluncuran pertama kali. Jika _pipeline_ tidak kunjung aktif, klik _Run workflow > Run workflow_ untuk menjalankan _workflow_ secara manual.
+Jika menu ini sudah tampil, artinya sistem kamu sudah terdaftar pada GitHub Actions dan akan segera dieksekusi. Tunggu
+10-15 menit untuk peluncuran pertama kali. Jika *pipeline* tidak kunjung aktif, klik *Run workflow > Run workflow* untuk
+menjalankan *workflow* secara manual.
 
-Siip! Sekarang kamu sudah memiliki web yang dapat memonitor _uptime_ website atau API kamu setiap lima menit sekali, bahkan tanpa perlu menyewa hosting dan layanan cloud berbayar!
+Siip! Sekarang kamu sudah memiliki web yang dapat memonitor *uptime* website atau API kamu setiap lima menit sekali,
+bahkan tanpa perlu menyewa hosting dan layanan cloud berbayar!
 
 ## Rekomendasi: UptimeRobot
 
-Tutorial yang dijelaskan di atas hanya merupakan _hack_ atau lebih tepatnya proyek iseng untuk memanfaatkan sistem yang ada untuk kebutuhan lain. Jika dilihat dari sisi bisnis, kamu pasti butuh laporan yang lebih mendalam mengenai _downtime_ yang terjadi di aplikasi kamu, tidak hanya sekadar waktu kapan terjadinya _downtime_.
+Tutorial yang dijelaskan di atas hanya merupakan *hack* atau lebih tepatnya proyek iseng untuk memanfaatkan sistem yang
+ada untuk kebutuhan lain. Jika dilihat dari sisi bisnis, kamu pasti butuh laporan yang lebih mendalam mengenai
+*downtime* yang terjadi di aplikasi kamu, tidak hanya sekadar waktu kapan terjadinya *downtime*.
 
-Maka dari itu penulis sangat menyarankan layanan dari UptimeRobot. Layanan ini merupakan penyedia monitoring _uptime_ website atau API yang sudah penulis gunakan sangat lama. Layanan ini juga memiliki versi gratis yang bisa langsung kamu pakai dengan hanya mendaftar di website-nya.
+Maka dari itu penulis sangat menyarankan layanan dari UptimeRobot. Layanan ini merupakan penyedia monitoring *uptime*
+website atau API yang sudah penulis gunakan sangat lama. Layanan ini juga memiliki versi gratis yang bisa langsung kamu
+pakai dengan hanya mendaftar di website-nya.
 
-![](https://imgur.com/a/ERblQPB)
+![Gambar](https://imgur.com/a/ERblQPB)
 
 Dasbor UptimeRobot.
 
-Dengan UptimeRobot kamu bisa melihat riwayat _downtime_ dan juga laporan _time series_ kapan terjadi _downtime_, waktu respons server, dan bisa memonitor lebih dari satu URI.
+Dengan UptimeRobot kamu bisa melihat riwayat *downtime* dan juga laporan *time series* kapan terjadi *downtime*, waktu
+respons server, dan bisa memonitor lebih dari satu URI.
 
 Overall, layanan yang sangat bagus dengan fitur dasar yang sesuai dengan kebutuhan. Give it a try!
 
