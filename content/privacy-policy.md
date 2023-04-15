@@ -3,6 +3,7 @@ title: Kebijakan Privasi
 lang: en
 date: 2020-04-11T19:15:32+08:00
 hideToc: true
+hideRss: true
 hideMeta: true
 ---
 

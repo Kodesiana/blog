@@ -1,7 +1,8 @@
 ---
-title: 'Buku, Riset, dan Seminar'
+title: Buku, Riset, dan Seminar
 date: 2022-05-10
 hideToc: true
+hideRss: true
 hideMeta: true
 ---
 

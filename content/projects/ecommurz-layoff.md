@@ -3,7 +3,7 @@ title: Ecommurz Layoff
 date: 2023-04-14
 draft: true
 hideToc: true
-unlistRss: true
+hideRss: true
 hideMeta: true
 hidePage: true
 icon: tabler:chart-histogram

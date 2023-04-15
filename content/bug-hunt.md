@@ -2,6 +2,7 @@
 title: Bug Hunt Program
 date: 2022-09-10
 hideToc: true
+hideRss: true
 hideMeta: true
 ---
 

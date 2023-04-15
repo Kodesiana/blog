@@ -1,6 +1,6 @@
 ---
 title: Open Source
-description: ''
+description:
 ---
 
 Ganti isi halaman ini dari folder layout.

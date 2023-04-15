@@ -2,7 +2,7 @@
 title: KFlearning
 date: 2021-03-08
 hideToc: true
-unlistRss: true
+hideRss: true
 hideMeta: true
 hidePage: false
 icon: tabler:school
@@ -83,7 +83,7 @@ Visual Studio Code.
 3. Klik **Install Flutter**.
 4. Tunggu hingga proses selesai.
 5. Buka Visual Studio Code.
-6. Klik tab _Extensions_, kemudian install **Flutter**.
+6. Klik tab *Extensions*, kemudian install **Flutter**.
 
 Setelah instalasi Flutter SDK selesai, lanjutkan install Android Studio and Android SDK sesuai arahan asisten praktikum.
 

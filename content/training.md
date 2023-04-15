@@ -1,8 +1,9 @@
 ---
-layout: ../layouts/MarkdownLayout.astro
-title: 'Konsultasi dan Pelatihan'
+title: Konsultasi dan Pelatihan
 date: 2022-05-10
 hideToc: true
+hideRss: true
+hideMeta: true
 ---
 
 Untuk booking konsultasi atau pelatihan, hubungi penulis melalui email fahmi@kodesiana.com.

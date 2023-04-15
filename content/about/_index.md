@@ -1,6 +1,6 @@
 ---
 title: Tentang Penulis
-description: ''
+description:
 ---
 
 Ganti isi halaman ini dari folder layout.
