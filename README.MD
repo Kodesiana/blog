@@ -34,7 +34,7 @@ This site supports:
 - OpenGraph
 - Schema.org rich data
 - Sitemap XML
-- Partytown
+- Partytown (temporarily removed)
 - Search index in JSON + fuzzy search (FlexSearch)
 - Syntax highlighter (PrismJS)
 - Latex math rendering (KaTeX)
