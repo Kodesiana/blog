@@ -80,16 +80,3 @@
 <!-- Prism -->
 {{ partial "integration/prism.html" (dict "emit" "styles") }}
 
-
-<!-- Partytown -->
-<script>
-  partytown = {
-    debug: false,
-    forward: ['dataLayer.push'],
-  };
-</script>
-{{ with (readFile "./static/~partytown/partytown.js") }}
-<script>
-{{ safeJS . }}
-</script>
-{{ end }}
