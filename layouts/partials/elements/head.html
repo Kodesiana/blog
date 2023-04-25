@@ -80,3 +80,9 @@
 <!-- Prism -->
 {{ partial "integration/prism.html" (dict "emit" "styles") }}
 
+
+<!-- giscus -->
+{{ if and (eq .Type "post") .IsPage }}
+  {{ partial "integration/giscus.html" }}
+{{ end }}
+
