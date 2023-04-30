@@ -1,4 +1,4 @@
 {{ $outPath := print (replace (.Get "src") (.Get "src" | path.Ext) ".min.js") }}
-{{ with (resources.Get (.Get "src") | js.Build $outPath) }}
-  <script async src="{{ .RelPermalink }}"></script>
+{{ with resources.Get (.Get "src") | js.Build $outPath | resources.Fingerprint "sha256" }}
+  <script async src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
 {{ end }}

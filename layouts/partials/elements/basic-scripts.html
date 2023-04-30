@@ -1,6 +1,6 @@
 <!-- Global Script -->
-{{ with resources.Get "scripts/global.ts" | js.Build "scripts/global.min.js" }}
-  <script async src="{{ .RelPermalink }}"></script>
+{{ with resources.Get "scripts/global.ts" | js.Build "scripts/global.min.js" | resources.Fingerprint "sha256" }}
+  <script async src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
 {{ end }}
 
 

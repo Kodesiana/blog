@@ -33,8 +33,8 @@
   </section>
 
   {{ partial "widgets/footer.html" . }}
-  {{ with resources.Get "scripts/search.js" | js.Build "scripts/search.min.js" }}
-    <script src="{{ .RelPermalink }}"></script>
+  {{ with resources.Get "scripts/search.js" | js.Build "scripts/search.min.js" | resources.Fingerprint "sha256" }}
+    <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
   {{ end }}
 
 {{ end }}
