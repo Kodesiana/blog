@@ -1,12 +1,6 @@
 {{ with .Site.Params.microsoftClarity }}
+<script async src="https://www.clarity.ms/tag/{{ . }}"></script>
 <script>
-  (function (c, l, a, r, i, t, y) {
-    c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
-    t = l.createElement(r);
-    t.async = 1;
-    t.src = 'https://www.clarity.ms/tag/' + i;
-    y = l.getElementsByTagName(r)[0];
-    y.parentNode.insertBefore(t, y);
-  })(window, document, 'clarity', 'script', '{{ . }}');
+  window["clarity"] = window["clarity"] || function () { (window["clarity"].q = window["clarity"].q || []).push(arguments) };
 </script>
 {{ end }}
