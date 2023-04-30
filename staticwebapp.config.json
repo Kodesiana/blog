@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/img/*",
+      "headers": {
+        "Cache-Control": "public, max-age=15552000"
+      }
+    },
+    {
+      "route": "/scripts/*",
+      "headers": {
+        "Cache-Control": "public, max-age=15552000"
+      }
+    }
+  ]
+}
