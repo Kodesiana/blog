@@ -49,7 +49,6 @@ This site supports:
 - Google Analytics
 - Google AdSense
 - Microsoft Clarity
-- Mailchimp Form
 
 ### Frontmatter
 
