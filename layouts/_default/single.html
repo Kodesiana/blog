@@ -46,6 +46,17 @@
         <!-- Post/Page Content -->
         <div
           class="prose-md prose-headings:leading-tighter prose prose-lg mx-auto mt-8 max-w-3xl px-6 dark:prose-invert lg:prose-xl prose-headings:font-heading prose-headings:font-bold prose-headings:tracking-tighter prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg dark:prose-headings:text-slate-300 dark:prose-a:text-blue-400 sm:px-6">
+          <!-- Series -->
+          {{- if .Params.series -}}
+            {{- with index (.GetTerms "series") 0 -}}
+            <div class="flex mb-4 p-4 border-t-4 border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-600" role="alert">
+              <div class="ml-3 text-sm font-medium text-gray-800 dark:text-gray-300">
+                Artikel ini merupakan bagian dari seri: <a href="{{ .Permalink }}" class="font-semibold underline hover:text-gray-800 hover:no-underline">{{ .LinkTitle }}</a>
+              </div>
+            </div>
+            {{- end -}}
+          {{- end -}}
+
           <!-- Table of Contents -->
           {{ if (not .Params.hideToc) }}
             <details>
@@ -57,6 +68,26 @@
 
           <!-- Real Content -->
           {{ .Content }}
+
+          <!-- Series -->
+          {{ if .Params.series }}
+          <div class="flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+            <svg aria-hidden="true" class="flex-shrink-0 inline w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+            <span class="sr-only">Info</span>
+            <div>
+              <span class="font-medium">Koleksi pada seri ini:</span>
+                <ul class="mt-1.5 ml-4 list-disc list-inside">
+                  {{ range where .Site.RegularPages ".Params.series" "eq" .Params.series }}
+                    {{ if eq .File.UniqueID $.File.UniqueID }}
+                        <li><b>{{ .Title }}</b></li>
+                    {{ else }}
+                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                  {{ end }}
+                </ul>
+            </div>
+          </div>
+          {{ end }}
         </div>
 
         <!-- Post/Page Tags and Share -->

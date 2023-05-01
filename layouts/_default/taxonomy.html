@@ -6,8 +6,10 @@
     <!-- Render title -->
     {{ if (eq .Type "category") }}
       {{ partial "blog/headline.html" (dict "title" .Title "subtitle" "Kategori") }}
-    {{ else }}
+    {{ else if (eq .Type "tags") }}
       {{ partial "blog/headline.html" (dict "title" .Title "subtitle" "Tag") }}
+    {{ else if (eq .Type "series") }}
+      {{ partial "blog/headline.html" (dict "title" .Title "subtitle" "Series") }}
     {{ end }}
 
 
