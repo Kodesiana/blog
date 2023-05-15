@@ -9,6 +9,10 @@ math: true
 mermaid: true
 ---
 
+<div class="flex justify-center">
+{{< button content="Akses Jupyter Notebook" icon="logos:jupyter" href="https://github.com/Kodesiana/Artikel/blob/master/2023/indihome-suck/analisis_indihome.ipynb" >}}
+</div>
+
 Indihome, salah satu ISP yang memiliki *coverage* paling luas di Indonesia dari Telkom Indonesia dan juga tempat kerja penulis saat ini😃. Ceritanya, penulis sudah menggunakan layanan Indihome sejak 2020. Indihome juga merupakan ISP pertama yang tersedia di daerah rumah penulis karena lokasi rumah penulis yang berada di gunung sehingga sulit akses internet baik melalui layanan GSM maupun *broadband*.
 
 Pada tahun awal penggunaan Indihome, penulis sangat puas dengan layanan Indihome. Koneksi selalu bagus, *ping* rendah, dan tidak pernah ada gangguan.
