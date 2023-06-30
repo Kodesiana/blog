@@ -1,6 +1,6 @@
 ---
 title: Efisiensi Algoritma, Struktur Data, dan Optimisasi Compiler💥
-category: Programming
+categories: Programming
 tags: [tips, nodejs]
 date: 2021-05-17
 draft: true

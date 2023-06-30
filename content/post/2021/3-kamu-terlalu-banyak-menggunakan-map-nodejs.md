@@ -1,9 +1,9 @@
 ---
 title: Kamu Terlalu Banyak menggunakan map(🌏) di NodeJS
-category: Programming
+categories: Programming
 tags: [programming, tips, nodejs]
 date: 2021-06-22
-math: true
+katex: true
 slug: kamu-terlalu-banyak-menggunakan-map-nodejs
 ---
 

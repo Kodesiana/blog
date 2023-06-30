@@ -1,6 +1,6 @@
 ---
 title: 'Opini: HTTP 404 atau 200 pada Kondisi Data Tidak Ditemukan💡'
-category: Programming
+categories: Programming
 tags: [programming]
 date: 2022-02-01
 slug: opini-http-code-pada-kondisi-data-tidak-ditemukan

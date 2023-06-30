@@ -1,6 +1,6 @@
 ---
 title: Pengalaman Sertifikasi Microsoft Technology Associate (MTA)📚
-category: Tips
+categories: Tips
 tags: [pengalaman, tips, programming, kuliah]
 date: 2019-07-13
 slug: pengalaman-sertifikasi-mta-microsoft-technology-associate

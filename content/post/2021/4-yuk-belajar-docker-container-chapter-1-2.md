@@ -1,6 +1,6 @@
 ---
 title: Yuk Belajar Docker Container!🐳 Chapter 1 & 2
-category: Programming
+categories: Programming
 tags: [cloud, tips, programming, tutorial]
 date: 2021-09-02
 slug: yuk-belajar-docker-container-chapter-1-2

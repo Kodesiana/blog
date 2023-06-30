@@ -1,6 +1,6 @@
 ---
 title: 'Pair Programming dengan AI, GitHub Copilot🤩'
-category: Programming
+categories: Programming
 tags: [programming, tips]
 date: 2022-09-20
 slug: pair-programming-dengan-ai-github-copilot

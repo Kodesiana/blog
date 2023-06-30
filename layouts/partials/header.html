@@ -1,0 +1,79 @@
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            {{- $label_text := (site.Params.logo.text | default site.Title) }}
+            {{- if site.Title }}
+            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
+                {{- if site.Params.logo.icon }}
+                {{- $img := resources.Get site.Params.logo.icon }}
+                {{- if $img }}
+                    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+                    {{- if hugo.IsExtended -}}
+                        {{- $processableFormats = $processableFormats | append "webp" -}}
+                    {{- end -}}
+                    {{- if (in $processableFormats $img.MediaType.SubType) }}
+                        {{- if site.Params.logo.iconHeight }}
+                            {{- $img = $img.Resize (printf "x%d" site.Params.logo.iconHeight) }}
+                        {{ else }}
+                            {{- $img = $img.Resize "x30" }}
+                        {{- end }}
+                    {{- end }}
+                    <img src="{{ $img.Permalink }}" alt="" aria-label="logo"
+                        height="{{- site.Params.logo.iconHeight | default "30" -}}" width="{{- site.Params.logo.iconHeight | default "30" -}}">
+                {{- else }}
+                <img src="{{- site.Params.logo.icon | absURL -}}" alt="" aria-label="logo"
+                    height="{{- site.Params.logo.iconHeight | default "30" -}}" width="{{- site.Params.logo.iconHeight | default "30" -}}">
+                {{- end -}}
+                {{- else if hasPrefix site.Params.logo.iconSVG "<svg" }}
+                    {{ site.Params.logo.iconSVG | safeHTML }}
+                {{- end -}}
+                {{- $label_text -}}
+            </a>
+            {{- end }}
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <div id="moon" class="icon-24">
+                        {{ partial "svg.html" (dict "name" "tabler:moon") }}
+                    </div>
+                    <div id="sun" class="icon-24">
+                        {{ partial "svg.html" (dict "name" "tabler:sun") }}
+                    </div>
+                </button>
+            </div>
+        </div>
+        {{- $currentPage := . }}
+        <ul id="menu">
+            {{- range site.Menus.main }}
+            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+            {{- $page_url:= $currentPage.Permalink | absLangURL }}
+            {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
+            <li>
+                <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
+                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
+                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+                        {{- .Pre }}
+                        {{- .Name -}}
+                        {{ .Post -}}
+                    </span>
+                    {{- if (findRE "://" .URL) }}&nbsp;
+                    <div class="icon-24">
+                        {{ partial "svg.html" (dict "name" "tabler:external-link") }}
+                    </div>
+                    {{- end }}
+                </a>
+            </li>
+            {{- end }}
+        </ul>
+    </nav>
+</header>

@@ -1,6 +1,6 @@
 ---
 title: Membuat Invoice PDF menggunakan NodeJS📄
-category: Programming
+categories: Programming
 tags: [nodejs, tutorial, tips]
 date: 2020-09-22
 slug: membuat-invoice-pdf-menggunakan-nodejs

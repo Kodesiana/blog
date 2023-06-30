@@ -1,6 +1,6 @@
 ---
 title: Mengecilkan Ukuran Video menggunakan Handbrake🍹
-category: Tips
+categories: Tips
 tags: [multimedia, tutorial, tips]
 date: 2018-05-28
 slug: mengecilkan-ukuran-video-menggunakan-handbrake

@@ -1,6 +1,6 @@
 ---
 title: Mengatasi Proxy Windows 10 Tidak Mau Mati🛑
-category: Tips
+categories: Tips
 tags: [windows, tutorial]
 date: 2018-11-15
 slug: mengatasi-proxy-windows-10-tidak-mau-mati

@@ -1,6 +1,6 @@
 ---
 title: Mager is Okay. Kamu Harus Lebih Menghargai Usahamu!😉
-category: Lainnya
+categories: Lainnya
 tags: [pengalaman]
 date: 2020-08-29
 slug: mager-is-okay-kamu-harus-lebih-menghargai-usahamu

@@ -1,6 +1,6 @@
 ---
 title: 'Pemodelan Daerah Potensial Pertanian di Indonesia🍚'
-category: Data Science
+categories: Data Science
 tags: [data mining, data science, machine learning, orange data mining, tutorial]
 date: 2022-06-25
 summary:
@@ -31,7 +31,7 @@ menjadi salah satu rempah yang menjadi bahan pokok di masakan lokal Indonesia, d
 oleh penulis. Setelah memilih apa komoditas yang akan dijadikan dasar pemodelan, tahap selanjutnya adalah
 mengidentifikasi apa saja variabel yang berkontribusi terhadap pertumbuhan bawang putih.
 
-```mermaid
+{{< mermaid >}}
 graph LR
     A[Bawang Putih] --> B[Variabel yang Berkontribusi]
     B -->C[Iklim, kering]
@@ -39,7 +39,7 @@ graph LR
     B -->E[Curah Hujan, 110-200mm/bulan]
     B -->F[Ketinggian, 700-1000 mdpl]
     B -->G[pH Tanah, 6-7.5]
-```
+{{< /mermaid >}}
 
 Berdasarkan variabel-variabel di atas, penulis mulai mencari sumber data dari beberapa sumber seperti BMKG dan sumber
 data terbuka di GitHub, Kaggle, dan Our World in Data. Pada akhirnya penulis berhasil mengumpulkan beberapa data yang

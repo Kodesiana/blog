@@ -1,6 +1,6 @@
 ---
 title: Code Notes, Aplikasi Catatan untuk Developer📒
-category: Tips
+categories: Tips
 tags: ['tips']
 date: 2019-02-11
 slug: code-notes-aplikasi-catatan-untuk-developer

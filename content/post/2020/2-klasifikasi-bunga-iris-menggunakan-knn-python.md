@@ -1,11 +1,11 @@
 ---
 title: Klasifikasi Bunga Iris menggunakan KNN Python🌺
 subtitle: Belajar proses membuat model machine learning sederhana
-category: Data Science
+categories: Data Science
 tags: [kuliah, programming, python, tutorial]
 date: 2020-07-28
 updatedDate: 2020-07-28
-math: true
+katex: true
 slug: klasifikasi-bunga-iris-menggunakan-knn-python
 ---
 

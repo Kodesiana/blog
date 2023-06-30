@@ -1,6 +1,6 @@
 ---
 title: Cara Akses localhost dari WSL 2🔛
-category: Tips
+categories: Tips
 tags: [programming, tips, golang, pengalaman, tutorial, windows]
 date: 2021-11-12
 math: false

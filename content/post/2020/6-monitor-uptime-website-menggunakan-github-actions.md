@@ -1,6 +1,6 @@
 ---
 title: Monitor Uptime Website menggunakan GitHub Actions🆗
-category: Programming
+categories: Programming
 tags: [nodejs, programming, tutorial, devops]
 date: 2020-10-01
 slug: monitor-uptime-website-menggunakan-github-actions

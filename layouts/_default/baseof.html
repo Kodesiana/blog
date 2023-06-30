@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}" class="2xl:text-[20px]">
-  <head>
-    {{ partial "elements/head.html" . }}
-  </head>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 
-  <body class="text-page bg-light dark:bg-dark tracking-tight antialiased dark:text-slate-300">
-    {{ block "main" . }}{{ end }}
-    {{ partial "elements/basic-scripts.html" . }}
-  </body>
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+" id="top">
+    {{- partialCached "header.html" . .Page -}}
+    <main class="main">
+        {{- block "main" . }}{{ end }}
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind -}}
+</body>
+
 </html>

@@ -1,7 +1,7 @@
 ---
 title: Membuat Blog Jamstack di Azure Static Web Apps🚀
 date: 2021-04-18
-category: Internet
+categories: Internet
 tags: [tutorial, tips, internet, cloud]
 draft: true
 slug: membuat-blog-jamstack-di-azure

@@ -1,6 +1,6 @@
 ---
 title: Distributed Tracing dan Logging pada Microservice📳
-category: Architecture
+categories: Architecture
 tags: [architecture, design pattern, microservice, tips, nodejs, programming]
 date: 2022-01-08
 slug: distributed-tracing-logging-pada-microservice

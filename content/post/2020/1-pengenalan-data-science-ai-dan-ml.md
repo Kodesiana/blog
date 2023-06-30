@@ -1,6 +1,6 @@
 ---
 title: Pengenalan Data Science, AI, dan ML🛸
-category: Data Science
+categories: Data Science
 tags: ['machine learning', tutorial, tips]
 date: 2020-02-12
 slug: pengenalan-data-science-ai-dan-ml

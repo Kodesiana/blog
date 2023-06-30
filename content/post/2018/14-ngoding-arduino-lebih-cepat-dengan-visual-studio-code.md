@@ -1,6 +1,6 @@
 ---
 title: Ngoding Arduino Lebih Cepat dengan Visual Studio Code🔰
-category: Tips
+categories: Tips
 tags: ['arduino', 'programming']
 date: 2018-12-30
 slug: ngoding-arduino-lebih-cepat-dengan-visual-studio-code

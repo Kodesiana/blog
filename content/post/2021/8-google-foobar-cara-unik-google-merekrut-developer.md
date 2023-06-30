@@ -1,6 +1,6 @@
 ---
 title: Google Foobar🍫 Cara Unik Google Merekrut Developer
-category: Lainnya
+categories: Lainnya
 tags: [pengalaman, programming, karier]
 date: 2021-12-30
 slug: google-foobar-cara-unik-google-merekrut-developer

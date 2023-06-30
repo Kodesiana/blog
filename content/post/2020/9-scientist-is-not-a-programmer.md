@@ -1,6 +1,6 @@
 ---
 title: Scientist is Not A Programmer 👨‍💻
-category: Lainnya
+categories: Lainnya
 tags: [pengalaman, kuliah]
 date: 2020-10-16
 slug: scientist-is-not-a-programmer

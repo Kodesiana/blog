@@ -1,6 +1,6 @@
 ---
 title: Pengalaman Mengikuti Program Mahasiswa Berprestasi Nasional👨‍🎓
-category: Lainnya
+categories: Lainnya
 tags: [pengalaman, tips, kuliah]
 date: 2020-10-08
 slug: pengalaman-mengikuti-program-mahasiswa-berprestasi-nasional

@@ -1,6 +1,6 @@
 ---
 title: Kelebihan Punya Sertifikasi pada Bidang IT👨‍🎓
-category: Lainnya
+categories: Lainnya
 tags: [tips, pengalaman, kuliah, karier]
 date: 2021-04-10
 slug: kelebihan-punya-sertifikasi-pada-bidang-it

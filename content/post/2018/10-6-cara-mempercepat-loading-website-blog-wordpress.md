@@ -1,6 +1,6 @@
 ---
 title: 6 Cara Mempercepat Loading Website/Blog WordPress🚀
-category: Tips
+categories: Tips
 tags: [tips, tutorial, internet]
 date: 2018-06-18
 slug: 6-cara-mempercepat-loading-website-blog-wordpress

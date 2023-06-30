@@ -1,6 +1,6 @@
 ---
 title: Membuat Countdown Timer Dua Monitor C#⏳
-category: Programming
+categories: Programming
 tags: [programming, tutorial, tips]
 date: 2018-05-24
 slug: membuat-countdown-timer-dua-monitor-winforms-csharp

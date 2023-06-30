@@ -1,12 +1,8 @@
 ---
 title: KFlearning
-date: 2021-03-08
-hideToc: true
-hideRss: true
-hideMeta: true
-hidePage: false
-icon: tabler:school
 description: Aplikasi e-learning untuk kegiatan praktikum Laboratorium Komputer Universitas Pakuan
+date: 2021-03-08
+comments: false
 ---
 
 > **KFlearning v3.0.0 "Київ" / "Kyiv"** dalam status **stabil.** Berikan kritik dan saran melalui asisten praktikum Anda

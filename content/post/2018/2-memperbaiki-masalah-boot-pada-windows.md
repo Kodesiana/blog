@@ -1,6 +1,6 @@
 ---
 title: Memperbaiki Masalah Boot pada Windows 8, 8.1, dan 10💻
-category: Tips
+categories: Tips
 tags: [windows, tutorial, tips]
 date: 2018-04-23
 slug: memperbaiki-masalah-boot-pada-windows

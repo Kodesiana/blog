@@ -1,6 +1,6 @@
 ---
 title: Cake Build, Script untuk Build Proyek .NET🍰
-category: Programming
+categories: Programming
 tags: [programming, devops, csharp, tips]
 date: 2019-02-15
 slug: cake-build-script-untuk-build-proyek-net

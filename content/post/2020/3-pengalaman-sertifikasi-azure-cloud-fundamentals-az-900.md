@@ -1,6 +1,6 @@
 ---
 title: Pengalaman Sertifikasi Azure Cloud Fundamentals (AZ-900)☁
-category: Tips
+categories: Tips
 tags: [pengalaman, tips, programming]
 date: 2020-08-25
 slug: pengalaman-sertifikasi-azure-cloud-fundamentals-az-900

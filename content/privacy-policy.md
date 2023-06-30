@@ -2,9 +2,7 @@
 title: Kebijakan Privasi
 lang: en
 date: 2020-04-11T19:15:32+08:00
-hideToc: true
-hideRss: true
-hideMeta: true
+comments: false
 ---
 
 At Kodesiana, accessible from <https://kodesiana.com>, one of our main priorities is the privacy of our visitors. This

@@ -1,6 +1,6 @@
 ---
 title: Maraton 4 Lomba Data Science! I'm Top 5 IEEE CS GSC 2021😋
-category: Lainnya
+categories: Lainnya
 tags: [tips, programming, kuliah, pengalaman, data science]
 date: 2021-10-22
 slug: maraton-lomba-data-science-top-5-ieee-cs-gsc

@@ -1,67 +1,62 @@
-{{ define "main" }}
-  {{ partial "widgets/header.html" . }}
+{{- define "main" }}
 
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") 50 }}
-
-
-  <section class="mx-auto max-w-4xl px-6 py-12 sm:px-6 sm:py-16 lg:py-20">
-    {{ partial "blog/headline.html" (dict "title" "Arsip") }}
-
-
-    <!-- Post List -->
-    <ul>
-      {{ range $paginator.Pages }}
-        <li class="mb-6">
-          <h2 class="mb-2 font-heading text-xl font-bold leading-tight dark:text-slate-300 sm:text-2xl">
-            <a
-              class="transition duration-200 ease-in hover:text-primary dark:hover:text-blue-700"
-              href="{{ .Permalink }}">
-              {{ .Title }}
-            </a>
-          </h2>
-          <p class="mb-1 text-sm">
-            {{ partial "integration/icon.html" (dict "name" "tabler:clock" "class" "w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400") }}
-            <time datetime="{{ .Date.Format " 2006-01-02" }}">{{ time.Format "02 January 2006" .Date }}</time> ·
-            <a class="capitalize hover:underline" href="{{ "/category/" | relURL }}{{ urlize .Params.category }}">
-              {{ .Params.category }}
-            </a>
-          </p>
-          {{ partial "blog/tags.html" . }}
-        </li>
-      {{ end }}
-    </ul>
-
-    <!-- Pagination -->
-    {{ if gt $paginator.TotalPages 1 }}
-      <div class="container flex">
-        <div class="container mx-auto flex flex-row justify-between">
-          <a
-            href="{{ if $paginator.HasPrev }}{{ $paginator.Prev.URL }}{{ end }}"
-            class="btn btn-ghost {{ if $paginator.HasPrev }}
-            {{ else }}
-              invisible
-            {{ end }} mr-2 px-3 md:px-3">
-            <div class="flex flex-row align-middle">
-              {{ partial "integration/icon.html" (dict "name" "tabler:chevron-left" "class" "w-6 h-6") }}
-              <p class="ml-2">Artikel Lama</p>
-            </div>
-          </a>
-          <a
-            href="{{ if $paginator.HasNext }}{{ $paginator.Next.URL }}{{ end }}"
-            class="btn btn-ghost {{ if $paginator.HasNext }}
-            {{ else }}
-              invisible
-            {{ end }} px-3 md:px-3">
-            <div class="flex flex-row align-middle">
-              <span class="mr-2">Artikel Baru</span>
-              {{ partial "integration/icon.html" (dict "name" "tabler:chevron-right" "class" "w-6 h-6") }}
-            </div>
-          </a>
-        </div>
+<header class="page-header">
+  <h1>
+    {{ .Title }}
+    {{- $rss := (.OutputFormats.Get "rss") }}
+    {{- if (eq .Kind `page`) }}
+      {{- $rss = (.Parent.OutputFormats.Get "rss") }}
+    {{- end }}
+    {{- with $rss }}
+    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+      <div class="icon-24">
+        {{ partial "svg.html" (dict "name" "tabler:rss") }}
       </div>
-    {{ end }}
-  </section>
+    </a>
+    {{- end }}
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
 
-  {{ partial "widgets/footer.html" . }}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 
-{{ end }}
+{{- if site.Params.ShowAllPagesInArchive }}
+{{- $pages = site.RegularPages }}
+{{- end }}
+
+{{- range $pages.GroupByPublishDate "2006" }}
+{{- if ne .Key "0001" }}
+<div class="archive-year">
+  <h2 class="archive-year-header">
+    {{- replace .Key "0001" "" }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>
+  </h2>
+  {{- range .Pages.GroupByDate "January" }}
+  <div class="archive-month">
+    <h3 class="archive-month-header">{{- .Key }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup></h3>
+    <div class="archive-posts">
+      {{- range .Pages }}
+      {{- if eq .Kind "page" }}
+      <div class="archive-entry">
+        <h3 class="archive-entry-title">
+          {{- .Title | markdownify }}
+          {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+        </h3>
+        <div class="archive-meta">
+          {{- partial "post_meta.html" . -}}
+        </div>
+        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+      </div>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}
+
+{{- end }}{{/* end main */}}

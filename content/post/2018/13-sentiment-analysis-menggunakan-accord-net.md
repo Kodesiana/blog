@@ -1,6 +1,6 @@
 ---
 title: Sentiment Analysis Menggunakan Accord.NET😁
-category: Data Science
+categories: Data Science
 tags: [csharp, machine learning]
 date: 2018-12-26
 slug: sentiment-analysis-menggunakan-accord-net

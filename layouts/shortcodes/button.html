@@ -1,8 +1,8 @@
-<a
-  href="{{ .Get "href" }}"
-  class="mb-2 mr-2 inline-flex items-center rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-900 no-underline hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-  {{ if .Get "icon" }}
-    {{ partial "integration/icon.html" (dict "name" (.Get "icon") "class" "w-6 h-5 mr-2 -ml-1") }}
-  {{ end }}
-  {{ .Get "content" }}
-</a>
+<div class="custom-button">
+  <a href="{{ .Get "href" }}">
+    {{ if .Get "icon" }}
+    {{ partial "svg.html" (dict "name" (.Get "icon")) }}
+    {{ end }}
+    <span>{{ .Get "content" }}</span>
+  </a>
+</div>

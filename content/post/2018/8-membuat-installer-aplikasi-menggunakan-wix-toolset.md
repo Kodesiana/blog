@@ -1,6 +1,6 @@
 ---
 title: Membuat Installer Aplikasi menggunakan WiX Toolset📦
-category: Tips
+categories: Tips
 tags: [programming, tutorial, tips, windows]
 date: 2018-05-29
 slug: membuat-installer-aplikasi-menggunakan-wix-toolset

@@ -1,6 +1,6 @@
 ---
 title: Teknik Pagination dan Styling untuk DataGridView📑
-category: Programming
+categories: Programming
 tags: ['csharp', 'tutorial']
 date: 2018-06-09
 slug: teknik-pagination-dan-styling-untuk-datagridview

@@ -1,6 +1,6 @@
 ---
 title: Mengenal Jamstack dan Serverless🥧
-category: Tips
+categories: Tips
 tags: [tips, internet, cloud]
 date: 2021-06-03
 slug: mengenal-jamstack-dan-serverless

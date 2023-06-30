@@ -1,6 +1,6 @@
 ---
 title: Arduino sebagai USB Serial Progammer🔌
-category: Tips
+categories: Tips
 tags: ['arduino', 'programming', 'tips']
 date: 2018-12-31
 slug: arduino-sebagai-usb-serial-programmer

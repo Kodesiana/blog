@@ -1,6 +1,6 @@
 ---
 title: Edukasi Universitas di CAMPUS EXPO 2019🎓
-category: Tips
+categories: Tips
 tags: [kuliah, pengalaman]
 date: 2019-01-11
 slug: edukasi-universitas-di-campus-expo-2019

@@ -1,0 +1,24 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" site.Params.socialIcons }}
+        <div class="home-taxonomies">
+            <a href="{{ "series" | absURL }}">
+                Series
+            </a>
+            <a href="{{ "categories" | absURL }}">
+                Kategori
+            </a>
+            <a href="{{ "tags" | absURL }}">
+                Tags
+            </a>
+        </div>
+    </footer>
+</article>
+{{- end -}}

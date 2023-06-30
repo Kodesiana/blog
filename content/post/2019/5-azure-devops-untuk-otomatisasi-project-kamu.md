@@ -1,6 +1,6 @@
 ---
 title: Azure DevOps untuk Otomatisasi Project Kamu!🪐
-category: Tips
+categories: Tips
 tags: [devops, azure, csharp, programming]
 date: 2019-07-13
 slug: azure-devops-untuk-otomatisasi-project-kamu

@@ -1,6 +1,6 @@
 ---
 title: 16+ Tips Manipulasi DateTime pada C#🕔
-category: Tips
+categories: Tips
 tags: [programming, tutorial, tips]
 date: 2018-05-27
 slug: 16-tips-manipulasi-datetime-pada-csharp

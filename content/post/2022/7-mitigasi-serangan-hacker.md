@@ -1,6 +1,6 @@
 ---
 title: 'Mitigasi Serangan Hacker 101🐤'
-category: Security
+categories: Security
 tags: [security, azure, cloud, internet]
 date: 2022-10-18
 slug: mitigasi-serangan-hacker

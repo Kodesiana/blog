@@ -1,6 +1,6 @@
 ---
 title: Mengatasi Lag DataGridView C#⌚
-category: Programming
+categories: Programming
 tags: [programming, tutorial, tips]
 date: 2018-05-15
 slug: mengatasi-lag-datagridview-csharp

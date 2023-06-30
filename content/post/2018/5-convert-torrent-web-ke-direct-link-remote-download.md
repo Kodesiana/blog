@@ -1,6 +1,6 @@
 ---
 title: Convert Torrent/Web ke Direct Link (Remote Download)🔗
-category: Internet
+categories: Internet
 tags: [internet, tutorial, tips]
 date: 2018-05-26
 slug: convert-torrent-web-ke-direct-link-remote-download

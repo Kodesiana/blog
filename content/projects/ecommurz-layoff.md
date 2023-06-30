@@ -1,13 +1,9 @@
 ---
 title: Ecommurz Layoff
+description: Analisis dan visualisasi data form layoff Ecommurz, apa info menarik dari fenomena layoff di Indonesia?
 date: 2023-04-14
 draft: true
-hideToc: true
-hideRss: true
-hideMeta: true
-hidePage: true
-icon: tabler:chart-histogram
-description: Analisis dan visualisasi data form layoff Ecommurz, apa info menarik dari fenomena layoff di Indonesia?
+comments: false
 ---
 
 <div class="container w-full m-auto">
@@ -33,4 +29,3 @@ description: Analisis dan visualisasi data form layoff Ecommurz, apa info menari
 </div>
 </div>
 
-{{< include-script src="scripts/content/ecommurz-layoff.ts" >}}

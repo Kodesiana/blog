@@ -1,6 +1,6 @@
 ---
 title: Menampilkan Data dari PBX menggunakan C#📞
-category: Programming
+categories: Programming
 tags: [programming, tutorial, tips]
 date: 2018-04-11
 slug: menampilkan-data-dari-pbx-menggunakan-csharp

@@ -1,6 +1,6 @@
 ---
 title: Mamba! Conda on Steroids🐍
-category: Programming
+categories: Programming
 tags: [tips, python, programming]
 date: 2022-01-16
 slug: mamba-conda-on-steroids

@@ -1,11 +1,11 @@
 ---
 title: 'Indihome Suck🙁 Kualitas Internet Semakin Rendah'
-category: Internet
+categories: Internet
 tags: [internet, data mining]
-series: Ritsu-Pi Home Server
+series: [Ritsu-Pi Home Server]
 date: 2023-05-15
 slug: indihome-suck-kualitas-internet-semakin-rendah
-math: true
+katex: true
 mermaid: true
 ---
 
@@ -44,12 +44,12 @@ Berdasarkan rumusan masalah, dapat diambil hipotesis nol (H0) bahwa tidak ada pe
 
 Untuk menjawab hipotesis penelitian, kita perlu mengumpulkan data. Nah kebetulan sejak awal bulan Mei ini, penulis sedang membangun *home server* dengan nama **Ritsu-Pi** dan untuk melakukan akuisisi data ini, penulis akan menggunakan Prometheus untuk melakukan *speed test* setiap jam per harinya. Konsep sistem yang penulis gunakan adalah sebagai berikut.
 
-```mermaid
+{{< mermaid >}}
 graph LR
     A[Mikrotik MKTXP Exporter] --> C[Prometheus]
     B[Speedtest.net Exporter] --> C[Prometheus]
     C -->D[Grafana]
-```
+{{< /mermaid >}}
 
 Melalui sistem yang sudah dibuat penulis, kita bisa mengumpulkan data kecepatan internet per jam per hari yang berarti 24 observasi per hari. Pada penelitian ini penulis mengumpulkan data sejak 01 Mei 2023 s.d. 14 Mei 2023 atau selama dua pekan.
 
@@ -239,14 +239,15 @@ Sebelum menghitung nilai *t-statistic*, kita perlu tahu rata-rata sampel \\(\bar
 ```python
 df_pivot.describe()
 ```
+
 Tabel statistik deskriptif.
 
 | name  | download_mbps | upload_mbps
 |-------|---------------|------------|
-| count	|     14.00     | 14.00      |
+| count |     14.00     | 14.00      |
 | mean  |     21.50     | 10.37      |
-| std	  |     2.95      | 0.08       |
-| min	  |     14.48     | 10.15      |
+| std   |     2.95      | 0.08       |
+| min   |     14.48     | 10.15      |
 | 25%   |     20.74     | 10.35      |
 | 50%   |     22.81     | 10.39      |
 | 75%   |     23.45     | 10.41      |
@@ -255,12 +256,12 @@ Tabel statistik deskriptif.
 Berdasarkan data pada tabel di atas, dapat dihitung nilai *t-statistic* sebagai berikut.
 
 $$
-\begin{aligned}
+\begin{align*}
 \nonumber
 t &= \frac{\bar{x}-\mu}{s/\sqrt{n}} \\
   &= \frac{21,50517-30}{2,954165/\sqrt{14}} \\
   &= -10,7593
-\end{aligned}
+\end{align*}
 $$
 
 Kita juga bisa menggunakan fungsi dari *library* `scipy` untuk menghitung nilai *t-statistic* sebagai berikut.

@@ -1,6 +1,6 @@
 ---
 title: 'Full Report: Aplikasi Kodesiana Diserang Hacker🙀'
-category: Security
+categories: Security
 tags: [security, azure, cloud, internet]
 date: 2022-10-11
 slug: full-report-aplikasi-kodesiana-diserang-hacker

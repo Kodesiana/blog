@@ -1,6 +1,6 @@
 ---
 title: 'KFlearning: E-Learning Laboratorium Komputer Universitas Pakuan📖'
-category: Programming
+categories: Programming
 tags: [kuliah, programming, tips]
 date: 2019-09-02
 slug: kflearning-e-learning-laboratorium-universitas-pakuan

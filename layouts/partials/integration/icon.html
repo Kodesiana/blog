@@ -1,7 +1,0 @@
-<!-- https://bitbanged.com/posts/how-to-use-inline-svgs-with-hugo/ -->
-
-{{ $pack := index (split .name ":" | first 1) 0 }}
-{{ $name := index (split .name ":" | last 1) 0 }}
-{{ $svgContents := readFile (printf "./.cache/icons/%s/%s.svg" $pack $name) }}
-{{ $svgFinal := replace $svgContents "kodesiana-icon" (print "kodesiana-icons " .class) }}
-{{ return ($svgFinal | safeHTML) }}
