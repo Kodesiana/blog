@@ -70,15 +70,6 @@
 .entry-footer {
     color: var(--secondary);
     font-size: 13px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-    .entry-footer {
-        display: block;
-    }
 }
 
 .entry-link {
