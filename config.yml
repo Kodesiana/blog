@@ -87,14 +87,14 @@ params:
   title: Kodesiana
   author: Fahmi Noor Fiqri
   description: "#NgodingItuMudah"
-  keywords: 
+  keywords:
     - kodesiana
     - programming
     - C#
     - devops
     - machine learning
     - artificial intelligence
-  images: 
+  images:
     - /img/logo.png
 
   logo:
@@ -111,7 +111,7 @@ params:
     hiddenInList: true
     hiddenInSingle: true
 
-  tocOpen: true
+  tocOpen: false
   comments: true
   dateFormat: "2 January 2006"
 
