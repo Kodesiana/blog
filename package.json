@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "prepare": "node ./tool/install.mjs",
-    "dev": "./.bin/hugo server --buildDrafts --printMemoryUsage --disableFastRender",
+    "dev": "./.bin/hugo server --buildDrafts --buildFuture --printMemoryUsage --disableFastRender",
     "build": "npm run build:icons && npm run build:site",
     "build:icons": "node ./tool/build-icons.mjs",
     "build:site": "./.bin/hugo --minify",
