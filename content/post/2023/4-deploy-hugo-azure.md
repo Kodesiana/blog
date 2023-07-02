@@ -1,10 +1,9 @@
 ---
 title: Membuat Blog Jamstack di Azure Static Web Apps🚀
-date: 2021-04-18
 categories: Internet
 tags: [tutorial, tips, internet, cloud]
+date: 2023-08-01
 draft: true
-slug: membuat-blog-jamstack-di-azure
 ---
 
 Sekarang ini ada banyak platform untuk *blogging* mulai dari pemain lama seperti Blogger dan WordPress, hingga pendatang
