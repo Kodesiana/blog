@@ -2,7 +2,7 @@ baseURL: https://www.kodesiana.com/
 
 title: Kodesiana
 timeZone: Asia/Jakarta
-enableGitInfo: false
+enableGitInfo: true
 
 languageCode: id
 defaultContentLanguage: id

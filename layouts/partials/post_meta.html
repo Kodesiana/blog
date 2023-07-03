@@ -1,8 +1,19 @@
 {{- $scratch := newScratch }}
 
 {{- if not .Date.IsZero -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.dateFormat)))) }}
+{{ $date := .Date | time.Format (default "2 January 2006" site.Params.dateFormat) }}
+{{ $lastmod := .Lastmod | time.Format (default "2 January 2006" site.Params.dateFormat) }}
+
+{{- if ne $lastmod $date }}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s (diperbarui %s)</span>" (.Date) ($date) ($lastmod) )) }}
+{{- else }}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Lastmod) ($lastmod) )) }}
 {{- end }}
+{{- end }}
+
+{{ range (.GetTerms "categories") }}
+{{- $scratch.Add "meta" (slice (printf "<a href='%s'>%s</a>" (.Permalink) (.LinkTitle) )) }}
+{{ end }}
 
 {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d menit" .ReadingTime))) }}
 {{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d kata" .WordCount))) }}
