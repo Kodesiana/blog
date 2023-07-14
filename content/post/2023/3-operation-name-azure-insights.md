@@ -3,7 +3,6 @@ title: 'Operation Name tidak Muncul di Azure AppInsight?🤔'
 categories: Programming
 tags: [backend, azure, appinsights, fastapi, python]
 date: 2023-07-14
-draft: true
 ---
 
 Azure AppInsight merupakan salah satu layanan Azure yang sangat membantu developer untuk melakukan *distributed tracing* aplikasi *backend* dan *frontend*[1]. Penulis sangat sering menggunakan layanan di beberapa proyek karena layanan ini *gratis* (selama penggunaannya di bawah 50 GB per bulan) dan juga mudah untuk diintegrasikan ke aplikasi ASP.NET Core dan Python FastAPI. Selain itu, karena AppInsight merupakan layanan Azure, penulis tidak perlu langganan ke aplikasi *3rd party* lain untuk melakukan *tracing* seperti DataDog atau Sentry = lebih mudah untuk di-*manage*. Tapi sayangnya, ketika penulis mengintegrasikan AppInsight ke aplikasi berbasis Python FastAPI, *operation name* yang seharusnya berisi *path* API yang di-*hit* malah tidak muncul🧐
