@@ -3,7 +3,7 @@ title: Membangun Home Server📺 menggunakan Raspberry Pi dan Ansible⛵ - Bagia
 categories: Internet
 tags: [tutorial, tips, internet, cloud]
 series: [Ritsu-Pi Home Server]
-date: 2023-11-25
+date: 2023-11-26
 ---
 
 Netflix, Youtube, Google Drive, dan berbagai layanan *cloud* sudah menjadi bagian tak terpisahkan dari kehidupan kita di dunia digital. Penulis sendiri sangat bergantung dengan layanan *cloud* seperti Notion untuk menyimpan catatan penting dan Office 365 untuk keperluan kerja. Tapi pernahkah kita membayangkan apa jadinya kalau kita kehilangan akses ke layanan *cloud* tersebut? Apakah data yang kita simpan aman? Berapa besar biaya yang kita keluarkan untuk langganan?
