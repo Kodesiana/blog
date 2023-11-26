@@ -104,7 +104,7 @@ params:
 
   homeInfoParams:
     Title: "Hai, aku Fahmi\U0001F44B"
-    Content: "**#NgodingItuMudah** Yuk kita belajar belajar pemrograman, DevOps, dan *machine learning*"
+    Content: "**#NgodingItuMudah** Belajar bareng koding, DevOps, dan *machine learning*."
 
   cover:
     hidden: true
