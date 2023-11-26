@@ -44,7 +44,7 @@ Untuk mencapai tujuan penulis agar bisa lebih *terbebas* dari layanan *cloud*, p
 
 Secara umum, aplikasi yang terdapat dalam sistem **Ritsu-Pi** (ini adalah nama server penulis) dapat digambarkan sebagai berikut.
 
-![Arsitektur Ritsu-Pi](./ritsupi-stack_comp.png)
+![Arsitektur Ritsu-Pi](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/ritsu-pi/ritsupi-stack_comp.png)
 
 Semua aplikasi mulai akan dijalankan menggunakan Docker Container untuk memudahkan proses instalasi dan *maintenance* semua aplikasi pada server. Lalu, apa saja aplikasi yang terdapat dalam Ritsu-Pi?
 
