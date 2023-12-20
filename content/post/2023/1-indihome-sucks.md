@@ -5,7 +5,7 @@ tags: [internet, data mining]
 series: [Ritsu-Pi Home Server]
 date: 2023-05-15
 slug: indihome-suck-kualitas-internet-semakin-rendah
-katex: true
+mathjax: true
 mermaid: true
 ---
 

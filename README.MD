@@ -33,7 +33,7 @@ This site supports:
 - Partytown (temporarily removed)
 - Search index in JSON + fuzzy search (FlexSearch)
 - Syntax highlighter (PrismJS)
-- Latex math rendering (KaTeX)
+- Latex math rendering (MathJax)
 - Image lazy loading
 - Medium zoom
 - SVG icon pack (tabler, etc.) with auto reload

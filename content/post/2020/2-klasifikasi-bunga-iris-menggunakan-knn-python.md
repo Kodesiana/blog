@@ -5,7 +5,7 @@ categories: Data Science
 tags: [kuliah, programming, python, tutorial]
 date: 2020-07-28
 updatedDate: 2020-07-28
-katex: true
+mathjax: true
 slug: klasifikasi-bunga-iris-menggunakan-knn-python
 ---
 

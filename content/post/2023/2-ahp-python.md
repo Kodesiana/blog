@@ -4,7 +4,7 @@ categories: Data Science
 tags: [kuliah, data mining]
 date: 2023-07-01
 slug: analytic-hierarchy-process-ahp-menggunakan-python
-katex: true
+mathjax: true
 mermaid: true
 ---
 
