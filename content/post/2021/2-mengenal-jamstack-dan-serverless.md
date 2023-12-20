@@ -91,7 +91,7 @@ awal Maret 2021 penulis mengubah website Kodesiana.com menggunakan model Jamstac
 Meskipun penulis bukan *frontend developer*, menggunakan Hugo bukanlah suatu proses yang membutuhkan waktu banyak untuk
 belajar, cukup ikuti tutorial dan template dan cling... web kamu bisa langsung jadi dalam lima menit.
 
-![Gambar](https://source.unsplash.com/iPrjQEDnNEY)
+![Gambar](https://source.unsplash.com/a-view-of-a-lake-surrounded-by-trees-and-snow-tS9s-qSzEgU)
 
 ## Apa itu Serverless?
 
