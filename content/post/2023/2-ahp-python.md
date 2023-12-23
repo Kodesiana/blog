@@ -9,7 +9,7 @@ mermaid: true
 ---
 
 <div class="flex justify-center">
-{{< button content="Akses Jupyter Notebook" icon="logos:jupyter" href="https://github.com/Kodesiana/Artikel/blob/master/2023/ahp/ahp.ipynb" >}}
+{{< button content="Akses Jupyter Notebook" icon="logos:jupyter" href="https://l.kodesiana.com/ahp-jupyter" >}}
 </div>
 
 Analytic Hierarchy Process (AHP) merupakan salah satu metode yang umum digunakan pada sistem penunjang keputusan (SPK) untuk membantu memilih alternatif dari beberapa kriteria. Metode ini tergolong sederhana dan masih sering diperkenalkan pada mahasiswa dan digunakan untuk skripsi atau penelitian.

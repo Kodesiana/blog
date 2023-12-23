@@ -7,7 +7,7 @@ mathjax: true
 ---
 
 <div class="flex justify-center">
-{{< button content="Buka Google Colab" icon="logos:jupyter" href="https://colab.research.google.com/drive/1EeZyA-69KOtdpvbOzw7844cIdfD26iKz?usp=sharing" >}}
+{{< button content="Buka Google Colab" icon="logos:jupyter" href="https://l.kodesiana.com/intro-pinn-jupyter" >}}
 </div>
 
 *Artificial intelligence (AI)* saat ini sudah menjadi bagian dari kehidupan kita. Siapa yang tidak kenal ChatGPT? *Artificial intelligence* terobosan OpenAI ini mengubah kebiasaan kita dan meningkatkan produktivitas kita melalui otomasi dan pencarian informasi sangat mudah, ditambah dengan antarmuka berupa *chatting*, membuat interaksi kita lebih natural dan bisa memberikan kita berbagai informasi yang dibutuhkan dalam sekejap mata.

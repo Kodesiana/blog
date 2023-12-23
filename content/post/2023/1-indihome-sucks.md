@@ -10,7 +10,7 @@ mermaid: true
 ---
 
 <div class="flex justify-center">
-{{< button content="Akses Jupyter Notebook" icon="logos:jupyter" href="https://github.com/Kodesiana/Artikel/blob/master/2023/indihome-suck/analisis_indihome.ipynb" >}}
+{{< button content="Akses Jupyter Notebook" icon="logos:jupyter" href="https://l.kodesiana.com/indihome-suck-jupyter" >}}
 </div>
 
 Indihome, salah satu ISP yang memiliki *coverage* paling luas di Indonesia dari Telkom Indonesia dan juga tempat kerja penulis saat ini😃. Ceritanya, penulis sudah menggunakan layanan Indihome sejak 2020. Indihome juga merupakan ISP pertama yang tersedia di daerah rumah penulis karena lokasi rumah penulis yang berada di gunung sehingga sulit akses internet baik melalui layanan GSM maupun *broadband*.
@@ -109,7 +109,7 @@ Tabel sampel data Prometheus.
 | 2023-05-01 08:40:46.321000192+00:00 | 23379304.0 | speedtest_download_bits_per_second |
 
 <div class="flex justify-center">
-{{< button content="Download Dataset RAW" icon="tabler:download" href="https://blob.kodesiana.com/kodesiana-public-assets/datasets/2023-1-indihome_raw.csv" >}}
+{{< button content="Download Dataset RAW" icon="tabler:download" href="https://l.kodesiana.com/2023-1-indihome_raw.csv" >}}
 </div>
 
 Tahap selanjutnya adalah kita perlu melakukan *preprocessing* untuk memperbaiki tipe data dan struktur data.
@@ -205,7 +205,7 @@ Tabel kecepatan internet Indihome per hari.
 | 2023-05-05 | 24.12         | 10.51       |
 
 <div class="flex justify-center">
-{{< button content="Download Dataset Harian" icon="tabler:download" href="https://blob.kodesiana.com/kodesiana-public-assets/datasets/2023-1-indihome_daily.csv" >}}
+{{< button content="Download Dataset Harian" icon="tabler:download" href="https://l.kodesiana.com/2023-1-indihome_daily.csv" >}}
 </div>
 
 Setelah kita memiliki data kecepatan internet harian, kita bisa melakukan visualisasi data kembali.

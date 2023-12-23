@@ -16,7 +16,7 @@ slug: pemodelan-daerah-potensial-pertanian-di-indonesia-orange-data-mining
 > [Pemodelan Daerah Potensial Pertanian di Indonesia sebagai Usaha Restorasi Ekonomi pada Masa Pandemi COVID-19 menggunakan Metode Hierarchical Clustering](https://www.researchgate.net/publication/351079613_Pemodelan_Daerah_Potensial_Pertanian_di_Indonesia_sebagai_Usaha_Restorasi_Ekonomi_pada_Masa_Pandemi_COVID-19_menggunakan_Metode_Hierarchical_Clustering)
 
 <div class="flex justify-center">
-{{< button content="Playlist: Tutorial Orange Data Mining" icon="logos:youtube-icon" href="https://www.youtube.com/watch?v=JLjqQLktTqc&list=PLMVLkFFusfMA69hS3ciMN7LVPNa_sXtSj" >}}
+{{< button content="Playlist: Tutorial Orange Data Mining" icon="logos:youtube-icon" href="https://l.kodesiana.com/orange-playlist" >}}
 </div>
 
 Pada artikel kali ini penulis akan menjabarkan proses *data mining* dari salah satu paper yang penulis buat menggunakan
@@ -48,7 +48,7 @@ memiliki relasi kuat dengan faktor-faktor yang sebelumnya sudah ditentukan.
 Kamu bisa unduh dataset yang sudah penulis kurasi dari berbagai sumber pada tautan di bawah ini.
 
 <div class="flex justify-center">
-{{< button content="Download Dataset" icon="tabler:download" href="https://blob.kodesiana.com/kodesiana-public-assets/datasets/017-pemodelan-daerah-potensial-pertanian.csv" >}}
+{{< button content="Download Dataset" icon="tabler:download" href="https://l.kodesiana.com/017-pemodelan-daerah-potensial-pertanian.csv" >}}
 </div>
 
 | Atribut             | Tipe Data | Keterangan                                                  |
@@ -207,7 +207,7 @@ teman-teman yang lebih suka versi video, teman-teman bisa cek *playlist* YouTube
 beberapa studi kasus lain menggunakan aplikasi *Orange Data Mining*!
 
 <div class="flex justify-center">
-{{< button content="Playlist: Tutorial Orange Data Mining" icon="logos:youtube-icon" href="https://www.youtube.com/watch?v=JLjqQLktTqc&list=PLMVLkFFusfMA69hS3ciMN7LVPNa_sXtSj" >}}
+{{< button content="Playlist: Tutorial Orange Data Mining" icon="logos:youtube-icon" href="https://l.kodesiana.com/orange-playlist" >}}
 </div>
 
 Terima kasih sudah membaca artikel kali ini, sampai jumpa nanti!
