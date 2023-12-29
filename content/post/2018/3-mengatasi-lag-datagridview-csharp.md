@@ -6,6 +6,10 @@ date: 2018-05-15
 slug: mengatasi-lag-datagridview-csharp
 ---
 
+<div class="flex justify-center">
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legecy-fast-datagridview" >}}
+</div>
+
 DataGridView merupakan kontrol yang sangat umum digunakan untuk menampilkan data dari *database*. Tetapi, saat
 menggunakan DataGridView dengan banyak *style* dan data, aplikasi akan menjadi *lag* atau *flickering*. Lag DataGridView
 ini bisa diatasi dengan beberapa cara, salah satunya adalah menggunakan **Double Buffering**.
@@ -66,9 +70,6 @@ seperti *styling* DataGridView agar tampilannya lebih menarik.
 
 Baca artikel lengkapnya pada artikel
 [Teknik Pagination dan Styling DataGridView C#/VB.NET](https://kodesiana.com/post/teknik-pagination-dan-styling-untuk-datagridview/).
-
-Source code:
-[https://github.com/Kodesiana/Artikel/tree/master/2018/fast-datagridview](https://github.com/Kodesiana/Artikel/tree/master/2018/fast-datagridview)
 
 ## Referensi
 

@@ -6,6 +6,10 @@ date: 2018-12-26
 slug: sentiment-analysis-menggunakan-accord-net
 ---
 
+<div class="flex justify-center">
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-emotex" >}}
+</div>
+
 Sentiment analysis itu apa? Kenapa tiba-tiba admin menulis artikel tentang sentiment analysis? Singkat kata admin sedang
 mengikuti lomba **Piala MIPA 2018** yang diadakan oleh **Fakultas Ilmu Pengetahuan Alam Universitas Pakuan**.
 
@@ -52,9 +56,6 @@ serupa. Untuk informasi lebih lanjut, Anda dapat membaca paper dan mengunduh kod
 
 Anda dapat mengunduh paper ini melalui tautan berikut.
 [**Emotex: Implementasi Sentiment Analysis menggunakan Accord.NET dan Naive Bayes Classifier**](https://www.researchgate.net/publication/347485448_Emotex_Implementasi_Sentiment_Analysis_menggunakan_AccordNET_dan_Naive_Bayes_Classifier)
-
-Untuk mengunduh source code aplikasi Emotex, kunjungi laman GitHub pribadi penulis.
-[https://github.com/fahminlb33/Emotex](https://github.com/fahminlb33/Emotex)
 
 ## Referensi
 

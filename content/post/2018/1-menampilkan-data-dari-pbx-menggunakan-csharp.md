@@ -6,8 +6,9 @@ date: 2018-04-11
 slug: menampilkan-data-dari-pbx-menggunakan-csharp
 ---
 
-> Source code:
-> [https://github.com/Kodesiana/Artikel/tree/master/2018/pbx-listener](https://github.com/Kodesiana/Artikel/tree/master/2018/pbx-listener)
+<div class="flex justify-center">
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legecy-pbx-listener" >}}
+</div>
 
 PBX merupakan salah satu alat yang lazim digunakan untuk mengatur panggilan dalam suatu jaringan telefon. PBX dapat
 digunakan untuk merekam aktivitas telefon. Selain itu, PBX dapat melakukan logging data melalui antarmuka serial

@@ -30,7 +30,7 @@ Spesifikasi server penulis:
 
 Perlu diingat kalau kita tidak terbatas untuk menggunakan Raspberry Pi saja sebagai server, tapi kita juga bisa menggunakan mini PC lain seperti Intel NUC, OrangePi, HP MicroServer, dan lainnya apalagi jika server ini nantinya ingin digunakan untuk *streaming* atau *game server*.
 
-![Ritsu-Pi server rack](https://kodesianastorage.blob.core.windows.net/kodesiana-public-assets/posts/2023/ritsu-pi/server-rack_comp.jpg)
+![Ritsu-Pi server rack](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/ritsu-pi/server-rack_comp.jpg)
 
 ### Topologi Jaringan🔗
 
@@ -54,7 +54,9 @@ Teman-teman bisa langsung menghubungkan Raspberry Pi dengan *router* dari ISP, m
 
 Akhirnya setelah server kita sudah menyala, kita akan mulai untuk melakukan *provisioning* server. Beberapa tahapan yang akan kita lakukan adalah sebagai berikut.
 
-> Tutorial selengkapnya dapat dilihat di [GitHub](https://github.com/fahminlb33/ritsu-pi/blob/master/INSTALL.MD)
+<div class="flex justify-center">
+{{< button content="Soure Code dan Tutorial" icon="logos:github-icon" href="https://github.com/fahminlb33/ritsu-pi/blob/master/INSTALL.MD" >}}
+</div>
 
 ### 1️⃣ Instalasi Raspbian OS
 

@@ -6,6 +6,10 @@ date: 2022-01-08
 slug: distributed-tracing-logging-pada-microservice
 ---
 
+<div class="flex justify-center">
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-distributed-logging-tracing" >}}
+</div>
+
 *Distributed tracing* dan *logging* menjadi salah satu kewajiban saat kita membuat aplikasi khususnya *backend* yang
 menggunakan arsitektur *microservice*. Kenapa kita perlu *distributed tracind/logging*? Apa manfaatnya, dan bagaimana
 cara kita mengintegrasikan layanan *distributed tracing/logging?*
@@ -75,15 +79,13 @@ yang bisa digunakan untuk *distributed tracing/logging*.
 Untuk memudahkan proses uji coba, kita akan menggunakan studi kasus di atas yang sudah kita bahas dan penulis akan
 menggunakan NodeJS untuk membuat service-nya. Selain itu, penulis akan menggunakan Docker Compose untuk mempermudah
 proses *deployment* service backend dan Elastic Stack-nya. Ditambah, penulis juga akan menggunakan RabbitMQ sebagai
-*message broker*. Kamu bisa lihat kodenya pada
-[repositori ini](https://github.com/Kodesiana/Artikel/tree/master/2022/distributed-logging-tracing).
+*message broker*.
 
 > Kalau kamu tidak tahu apa itu Docker Compose, cek artikel
 > [Yuk Belajar Docker Container!🐳 Chapter 5](https://www.kodesiana.com/post/yuk-belajar-docker-container-chapter-3-4-5/#chapter-5---docker-compose)
 
-Clone [repositori ini](https://github.com/Kodesiana/Artikel) kemudian masuk ke direktori
-`2022/distributed-logging-tracing`. Selanjutnya ketikkan `docker-compose up --build`. Tunggu beberapa saat hingga semua
-status container dalam kondisi *running*.
+Clone repositori kemudian masuk ke direktori `2022/distributed-logging-tracing`. Selanjutnya ketikkan
+`docker-compose up --build`. Tunggu beberapa saat hingga semua status container dalam kondisi *running*.
 
 Nah sekarang kamu sudah punya satu ekosistem *microservice* yang dapat berkomunikasi melalui REST API dan juga *message
 broker*. Sebelum lanjut, kita perlu kenali dulu *sequence diagram* dari sistem kita.
@@ -222,8 +224,7 @@ Untuk merekam dan mengaktifkan *log correlations* antar service melalui *event b
 transaction*. Intinya adalah kita perlu mengirimkan *transaction ID* dari induk *request* ke semua turunan *request*
 yang ikut terlibat.
 
-Contoh pada
-[order-app.js](https://github.com/Kodesiana/Artikel/blob/master/2022/distributed-logging-tracing/backend-service/order-app.js)
+Contoh pada `order-app.js`
 
 ```js
 channel.publish('order-confirmed', '', message, {
@@ -235,8 +236,7 @@ Pada contoh di atas penulis menggunakan fitur *headers* pada RabbitMQ untuk meng
 informasi *trace* dari *request* induk. Selanjutnya, bagian *consumer* harus ikut menyertakan *trace parent* ini agar
 proses pada *consumer* dapat terdeteksi sebagai satu-kesatuan.
 
-Contoh pada
-[notification-app.js](https://github.com/Kodesiana/Artikel/blob/master/2022/distributed-logging-tracing/backend-service/notification-app.js)
+Contoh pada `notification-app.js`
 
 ```js
 await channel.consume(queue.queue, (msg) => {

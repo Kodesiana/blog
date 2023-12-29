@@ -7,6 +7,10 @@ mathjax: true
 slug: kamu-terlalu-banyak-menggunakan-map-nodejs
 ---
 
+<div class="flex justify-center">
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-node-gcc-bench" >}}
+</div>
+
 Fungsi `map` merupakan salah satu fungsi yang terdapat pada ECMAScript 6 yang telah ada sejak 2015 lalu. Fungsi ini
 sangat digemari karena sifatnya yang sangat *versatile* dan dapat digunakan hampir untuk semua kasus. Tetapi, tahu kah
 kamu selain `map`, ada juga fungsi manipulasi array seperti `filter`, `reduce`, `for`, dan `foreach`?
@@ -20,8 +24,7 @@ Untuk membandingkan performa beberapa fungsi array tersebut, penulis akan melaku
 T-test*, tepatnya uji *t-Test: Paired Two Sample for Means* untuk mengukur apakah terdapat perbedaan rata-rata waktu
 eksekusi yang signifikan antara fungsi array tersebut, khususnya antara `filter` dan `map`.
 
-Kode yang digunakan untuk melakukan tes ini dapat diakses pada repositori GitHub
-[node-gcc-dumb-benchmark](https://github.com/fahminlb33/node-gcc-dumb-benchmark) yang merupakan adaptasi dari versi
+Kode yang digunakan untuk melakukan tes ini dapat diakses pada repositori GitHub yang merupakan adaptasi dari versi
 pengukuran yang telah dibuat sebelumnya (Indonesia: 2019). Tes ini dilakukan pada komputer dengan spesifikasi CPU Intel
 Core i5-10400 @ 2.90GHz dan RAM 24 GB 2666 MHz.
 

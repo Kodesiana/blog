@@ -6,6 +6,10 @@ date: 2018-05-24
 slug: membuat-countdown-timer-dua-monitor-winforms-csharp
 ---
 
+<div class="flex justify-center">
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legecy-countdown-timer" >}}
+</div>
+
 *Countdown timer* lazim dijumpai di berbagai tempat misalnya di rumah sakit, bank, kantor servis, dan tempat lain yang
 menggunakan sistem antrean. Program ini biasanya menunjukkan berapa lama waktu sebelum antrean berikutnya dipanggil.
 Timer ini biasanya ditampilkan menggunakan dua monitor yaitu satu monitor untuk mengontrol timer dan satu monitor untuk
@@ -116,8 +120,3 @@ Masukkan berapa lama timer dan pilihan monitor, kemudian klik **Mulai**. Countd
 Klik **Berhenti** untuk menutup form countdown.
 
 ![Tampilan Aplikasi Timer](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/4/pilihan-display.png)
-
-## Download
-
-Source code:
-[https://github.com/Kodesiana/Artikel/tree/master/2018/countdown-timer](https://github.com/Kodesiana/Artikel/tree/master/2018/countdown-timer)

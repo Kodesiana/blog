@@ -6,6 +6,10 @@ date: 2018-06-09
 slug: teknik-pagination-dan-styling-untuk-datagridview
 ---
 
+<div class="flex justify-center">
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legecy-fast-datagridview" >}}
+</div>
+
 **Pagination** dan **styling** merupakan dua hal yang umum dilakukan untuk meningkatkan *user experience* pada aplikasi.
 Pagination digunakan untuk memisahkan beberapa baris data kedalam halaman (*page*), tujuannya untuk memudahkan user
 melihat data dengan hanya menampilkan beberapa data per halaman.
@@ -52,9 +56,6 @@ bereksperimen dengan kombinasi warna dengan melihat referensi palet warna sepert
 [Material Color System](https://material.io/design/color/the-color-system.html).
 
 ## Demo Aplikasi
-
-Source code:
-[https://github.com/Kodesiana/Artikel/tree/master/2018/fast-datagridview](https://github.com/Kodesiana/Artikel/tree/master/2018/fast-datagridview)
 
 Clone repositori source code, kemudian buka **KF.DataGridEnhanced.sln**. Buat database baru dan buat tabel baru beserta
 isinya. Pada contoh ini, penulis menggunakan tabel *Product* dengan kolom sebagai berikut.
