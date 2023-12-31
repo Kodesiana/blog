@@ -7,7 +7,7 @@ slug: 16-tips-manipulasi-datetime-pada-csharp
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legecy-datetime-format" >}}
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-datetime-format" >}}
 </div>
 
 Manipulasi *DateTime* merupakan hal yang wajib diketahui oleh programmer, khususnya C# dan VB.NET. *DateTime*

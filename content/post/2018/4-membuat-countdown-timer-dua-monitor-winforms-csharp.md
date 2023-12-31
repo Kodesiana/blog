@@ -7,7 +7,7 @@ slug: membuat-countdown-timer-dua-monitor-winforms-csharp
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legecy-countdown-timer" >}}
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-countdown-timer" >}}
 </div>
 
 *Countdown timer* lazim dijumpai di berbagai tempat misalnya di rumah sakit, bank, kantor servis, dan tempat lain yang

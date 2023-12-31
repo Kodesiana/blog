@@ -7,7 +7,7 @@ slug: mengatasi-lag-datagridview-csharp
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legecy-fast-datagridview" >}}
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-fast-datagridview" >}}
 </div>
 
 DataGridView merupakan kontrol yang sangat umum digunakan untuk menampilkan data dari *database*. Tetapi, saat

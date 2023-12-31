@@ -7,7 +7,7 @@ slug: teknik-pagination-dan-styling-untuk-datagridview
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legecy-fast-datagridview" >}}
+{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-fast-datagridview" >}}
 </div>
 
 **Pagination** dan **styling** merupakan dua hal yang umum dilakukan untuk meningkatkan *user experience* pada aplikasi.
