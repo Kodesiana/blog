@@ -3,7 +3,6 @@ title: 'Membuat Link Shortener di CloudFlare Workers⛅'
 categories: Tutorial
 tags: [cloud, backend, javascript, typescript, cloudflare]
 date: 2024-01-01
-draft: true
 ---
 
 <div class="flex justify-center">
