@@ -2,6 +2,7 @@
 title: Tutorial Data Mining menggunakan Orange🍊
 categories: Data Science
 tags: [orange data mining, machine learning, tutorial, tips]
+series: [Machine Learning 101]
 date: 2020-10-13
 slug: tutorial-data-mining-menggunakan-orange
 ---

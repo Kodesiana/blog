@@ -2,6 +2,7 @@
 title: 'Masalah Optimasi🏎️ pada Ilmu Komputer'
 categories: Computer Science
 tags: [machine learning]
+series: [Machine Learning 101]
 date: 2023-12-20
 slug: masalah-optimasi-pada-ilmu-komputer
 mathjax: true

@@ -2,6 +2,7 @@
 title: 'Hands-on Physics-Informed Neural Network🧠 dengan PyTorch🔥'
 categories: Computer Science
 tags: [machine learning, artificial intelligence, data science]
+series: [Machine Learning 101]
 date: 2023-12-23
 mathjax: true
 ---
