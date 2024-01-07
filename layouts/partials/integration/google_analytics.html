@@ -16,8 +16,8 @@
 
     for (const item of items) {
       gtag('event', "page_taxonomy", {
-        type: taxonomy,
-        content: item,
+        taxonomy_type: taxonomy,
+        taxonomy_content: item,
       });
     }
   }
