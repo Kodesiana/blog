@@ -15,8 +15,7 @@
     if (items.length === 0) continue;
 
     for (const item of items) {
-      gtag('event', "page_taxonomy", {
-        taxonomy_type: taxonomy,
+      gtag('event', `page_${taxonomy}`, {
         taxonomy_content: item,
       });
     }
