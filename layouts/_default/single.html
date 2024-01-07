@@ -20,6 +20,7 @@
   </header>
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
+  {{- partial "series_meta.html" . }}
   {{- partial "toc.html" . }}
 
   {{- if .Content }}
@@ -34,7 +35,7 @@
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
       {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      <li><a href="{{ .Permalink }}" data-track-type='tags' data-track-value='{{ .LinkTitle }}'>{{ .LinkTitle }}</a></li>
       {{- end }}
     </ul>
     {{- partial "post_nav_links.html" . }}

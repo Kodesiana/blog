@@ -6,7 +6,20 @@
   function gtag() {
     window.dataLayer.push(arguments);
   }
+
   gtag('js', new Date());
   gtag('config', '{{ . }}');
+
+  for (const taxonomy of ["tags", "series", "categories"]) {
+    const items = Array.from(document.querySelectorAll(`[data-track-type="${taxonomy}"]`)).map((el) => el.getAttribute('data-track-value'));
+    if (items.length === 0) continue;
+
+    for (const item of items) {
+      gtag('event', "page_taxonomy", {
+        type: taxonomy,
+        content: item,
+      });
+    }
+  }
 </script>
 {{ end }}

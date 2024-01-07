@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "prepare": "node ./tool/install.mjs",
-    "dev": "./.bin/hugo server --buildDrafts --buildFuture --printMemoryUsage",
+    "dev": "./.bin/hugo server --buildDrafts --buildFuture",
+    "dev:slow": "./.bin/hugo server --buildDrafts --buildFuture --disableFastRender --printMemoryUsage",
     "build": "npm run build:icons && npm run build:site",
     "build:icons": "node ./tool/build-icons.mjs",
     "build:site": "./.bin/hugo --minify",
@@ -16,15 +17,15 @@
   "license": "ISC",
   "dependencies": {
     "@orama/orama": "^1.2.11",
-    "axios": "^1.6.2",
+    "axios": "^1.6.5",
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "async-mutex": "^0.4.0",
     "decompress": "^4.2.1",
     "dotenv": "^16.3.1",
-    "esbuild": "^0.19.9",
+    "esbuild": "^0.19.11",
     "glob": "^10.3.10",
-    "linkinator": "^6.0.2"
+    "linkinator": "^6.0.3"
   }
 }

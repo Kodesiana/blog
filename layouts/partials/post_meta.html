@@ -12,7 +12,7 @@
 {{- end }}
 
 {{ range (.GetTerms "categories") }}
-{{- $scratch.Add "meta" (slice (printf "<a href='%s'>%s</a>" (.Permalink) (.LinkTitle) )) }}
+{{- $scratch.Add "meta" (slice (printf "<a href='%[1]s' data-track-type='categories' data-track-value='%[2]s'>%[2]s</a>" (.Permalink) (.LinkTitle) )) }}
 {{ end }}
 
 {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d menit" .ReadingTime))) }}
