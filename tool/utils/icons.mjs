@@ -23,7 +23,7 @@ export const WATCH_GLOBS = ['./content/**/*.md', './layouts/**/*.html', './*.yml
 const ICON_PACKS = {
   'bi': 'https://raw.githubusercontent.com/twbs/icons/main/icons',
   'logos': 'https://raw.githubusercontent.com/gilbarbara/logos/main/logos',
-  'tabler': 'https://raw.githubusercontent.com/tabler/tabler-icons/master/icons',
+  'tabler': 'https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/outline',
   'skill-icons': 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons',
   'simple-icons': 'https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons',
 };
