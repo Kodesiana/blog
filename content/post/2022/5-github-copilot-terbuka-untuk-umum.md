@@ -1,6 +1,6 @@
 ---
 title: 'Pair Programming dengan AI, GitHub Copilot🤩'
-categories: Programming
+categories: [Software Engineering]
 tags: [programming, tips]
 date: 2022-09-20
 slug: pair-programming-dengan-ai-github-copilot
@@ -72,4 +72,4 @@ Sesuai tagline blog ini, **#NgodingItuMudah** 😃
 
 ## Referensi
 
-1. <https://github.blog/2022-06-21-github-copilot-is-generally-available-to-all-developers/>
+1. Dohmke, Thomas. 2022. [GitHub Copilot is generally available to all developers](https://github.blog/2022-06-21-github-copilot-is-generally-available-to-all-developers/). Diakses 20 September 2022

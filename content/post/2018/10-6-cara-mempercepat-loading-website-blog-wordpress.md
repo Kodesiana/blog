@@ -1,6 +1,6 @@
 ---
 title: 6 Cara Mempercepat Loading Website/Blog WordPress🚀
-categories: Tips
+categories: [Hacks]
 tags: [tips, tutorial, internet]
 date: 2018-06-18
 slug: 6-cara-mempercepat-loading-website-blog-wordpress
@@ -195,8 +195,8 @@ Apabila Anda mengalami kesulitan, jangan malu bertanya lewat komentar!
 
 ## Referensi
 
-1. Duran, Marcel. 2018. YSlow (http://yslow.org). Diakses 18 Juni 2018.
-2. Google. 2018. About PageSpeed Insight (https://developers.google.com/speed/docs/insights/about).
+1. Duran, Marcel. 2018. [YSlow](http://yslow.org). Diakses 18 Juni 2018.
+2. Google. 2018. [About PageSpeed Insight](https://developers.google.com/speed/docs/insights/about).
    Diakses 18 Juni 2018.
-3. Wikipedia. 2018. Content Delivery Network (https://en.wikipedia.org/wiki/Content_delivery_network).
+3. Wikipedia. 2018. [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network).
    Diakses 18 Juni 2018.

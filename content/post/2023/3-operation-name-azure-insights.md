@@ -1,6 +1,6 @@
 ---
 title: 'Operation Name tidak Muncul di Azure AppInsight?🤔'
-categories: Programming
+categories: [Software Engineering]
 tags: [backend, azure, appinsights, fastapi, python]
 date: 2023-07-14
 ---

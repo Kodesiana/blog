@@ -32,7 +32,7 @@ kumpulan data yang sangat banyak, tetapi sebagian besar data tersebut tidak dapa
 data*). Diperlukan suatu cara baru untuk dapat mengolah data dalam jumlah besar, khususnya untuk mencari informasi dari
 kumpulan data yang banyak.
 
-![Gambar](https://source.unsplash.com/npxXWgQ33ZQ/1200x657)
+{{< unsplash "photo-1551288049-bebda4e38f71" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0NjE1fA" "Photo by Luke Chesser on Unsplash" "graphs of performance analytics on a laptop screen" >}}
 
 Salah satu hal yang menjadi alasan *data mining* menjadi populer selain karena terdapat banyak data yang perlu diolah,
 juga karena kemajuan dari *machine learning*. *Machine learning* merupakan kemampuan mesin untuk dapat belajar tanpa
@@ -57,7 +57,7 @@ Unduh Orange Data Mining [di sini](https://orange.biolab.si/).
 Pada Orange, untuk melakukan *data mining* kita akan menggunakan sistem *widget*. Setiap *widget* punya fungsinya
 masing-masing dan dapat menerima input atau mengeluarkan output.
 
-![Gambar](https://source.unsplash.com/yi1YB_FubH8/1200x657)
+{{< unsplash "photo-1681038245094-7f28c6a72ca3" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0NTk4fA" "Photo by Alex Kulikov on Unsplash" "an orange hanging from a tree with leaves" >}}
 
 Misalnya kita ingin membaca data dari sebuah file, kita bisa menggunakan *widget* *File* untuk membaca data dari file
 tersebut dan menggunakan *widget* *Data Table* untuk menampilkan isi data yang sudah dibaca.

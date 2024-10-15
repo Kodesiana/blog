@@ -1,6 +1,6 @@
 ---
 title: Membangun Home Server📺 menggunakan Raspberry Pi dan Ansible⛵ - Bagian 1
-categories: Internet
+categories: [Networking]
 tags: [tutorial, tips, internet, cloud]
 series: [Ritsu-Pi Home Server]
 date: 2023-11-26
@@ -22,7 +22,7 @@ Meskpun kebayakan layanan tersebut ditawarkan tanpa biaya, saya selalu ingat ung
 
 Kita tidak menggunakan layanan tersebut secara *gratis*, tapi kita juga membagikan data kita dengan *provider*, baik itu berupa riwayat penggunaan maupun sebagai target *A/B testing* untuk mengingkatkan performa aplikasi. Lebih bahayanya lagi, jika data yang kita punya dapat tersebar luas dan digunakan untuk kejahatan (*overthinking?* 😭).
 
-[![woman biting pencil while sitting on chair in front of computer during daytime](https://source.unsplash.com/woman-biting-pencil-while-sitting-on-chair-in-front-of-computer-during-daytime--2vD8lIhdnw/1200x657)](https://unsplash.com/photos/woman-biting-pencil-while-sitting-on-chair-in-front-of-computer-during-daytime--2vD8lIhdnw)
+{{< unsplash "photo-1516534775068-ba3e7458af70" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYxOTE5fA" "Unsplash" "woman biting pencil while sitting on chair in front of computer during daytime " >}}
 
 Selain masalah *vendor lock-in* dan privasi, ada kelebihan lain juga yang bisa kita dapatkan jika kita punya server pribadi.
 
@@ -44,7 +44,7 @@ Untuk mencapai tujuan penulis agar bisa lebih *terbebas* dari layanan *cloud*, p
 
 Secara umum, aplikasi yang terdapat dalam sistem **Ritsu-Pi** (ini adalah nama server penulis) dapat digambarkan sebagai berikut.
 
-![Arsitektur Ritsu-Pi](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/ritsu-pi/ritsupi-stack_comp.png)
+![Arsitektur Ritsu-Pi](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/ritsu-pi/ritsupi-stack_comp.png "Arsitektur Ritsu-Pi")
 
 Semua aplikasi mulai akan dijalankan menggunakan Docker Container untuk memudahkan proses instalasi dan *maintenance* semua aplikasi pada server. Lalu, apa saja aplikasi yang terdapat dalam Ritsu-Pi?
 
@@ -52,7 +52,7 @@ Lihat juga: [Yuk Belajar Docker Container!🐳](https://www.kodesiana.com/post/y
 
 ### Media Server
 
-[![Flat screen TV](https://source.unsplash.com/flat-screen-tv-ngMtsE5r9eI/1200x657)](https://unsplash.com/photos/flat-screen-tv-ngMtsE5r9eI)
+{{< unsplash "photo-1461151304267-38535e780c79" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYzNDExfA" "Photo by Jens Kreuter on Unsplash" "flat screen tv" >}}
 
 Kategori aplikasi pertama yang terdapat dalam Ritsu-Pi adalah ***media server***. Penulis ingin membuat sistem *home entertainment* seperti Netflix dan dapat ditonton di komputer, *smart TV*, maupun *smartphone*. Selain itu, penulis juga ingin dapat berbagi file ke semua perangkat yang terhubung dengan jaringan Wi-Fi di rumah, sehingga penulis bisa mengirimkan file dari komputer, HP, laptop, dan lainnya dengan mudah.
 
@@ -84,7 +84,7 @@ Dengan mengintegrasikan Pi-hole dan DNSCrypt, kita bisa mendapatkan keamanan dan
 
 ### Downloader
 
-[![a computer generated image of a cloud with a blue arrow pointing up](https://source.unsplash.com/a-computer-generated-image-of-a-cloud-with-a-blue-arrow-pointing-up-EHko-zSjnoI/1200x657)](https://unsplash.com/photos/a-computer-generated-image-of-a-cloud-with-a-blue-arrow-pointing-up-EHko-zSjnoI)
+{{< unsplash "photo-1499914485622-a88fac536970" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTU5OTg2fA" "Photo by Christin Hume on Unsplash" "person using macbook" >}}
 
 *Downloader* merupakan kategori aplikasi untuk mengunduh/*download* file dari internet. Seperti yang sudah dibahas sebelumnya pada bagian *media server*, semua file media harus berada pada penyimpanan server yang artinya, film, serial TV, dan musik harus diunduh ke server. Tentunya kita tidak mau harus menunggu proses unduhan selesai satu per satu kemudian memindahkannya ke server, maka dari itu kita bisa menggunakan dua aplikasi *download manager*,
 

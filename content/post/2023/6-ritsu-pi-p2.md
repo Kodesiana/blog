@@ -1,10 +1,9 @@
 ---
 title: Membangun Home Server📺 menggunakan Raspberry Pi dan Ansible⛵ - Bagian 2
-categories: Internet
+categories: [Networking]
 tags: [tutorial, tips, internet, cloud]
 series: [Ritsu-Pi Home Server]
 date: 2023-12-17
-mermaid: true
 ---
 
 Pada artikel sebelumnya kita sudah merencanakan apa saja fitur yang akan kita pasang pada server. Pada artikel lanjutan ini, kita akan membangun server tersebut mulai dari *hardware* dan instalasi *software*.
@@ -55,7 +54,7 @@ Teman-teman bisa langsung menghubungkan Raspberry Pi dengan *router* dari ISP, m
 Akhirnya setelah server kita sudah menyala, kita akan mulai untuk melakukan *provisioning* server. Beberapa tahapan yang akan kita lakukan adalah sebagai berikut.
 
 <div class="flex justify-center">
-{{< button content="Soure Code dan Tutorial" icon="logos:github-icon" href="https://github.com/fahminlb33/ritsu-pi/blob/master/INSTALL.MD" >}}
+{{< button content="Soure Code dan Tutorial" icon="brand-github" href="https://github.com/fahminlb33/ritsu-pi/blob/master/INSTALL.MD" >}}
 </div>
 
 ### 1️⃣ Instalasi Raspbian OS

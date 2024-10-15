@@ -62,9 +62,7 @@ ya!
 
 Kembali lagi ini hanya saran untuk memulai belajar data science, agar prosesnya lebih mudah.
 
-![Photo by Jordan Wozniak](https://source.unsplash.com/xP_AGmeEa6s/1200x675)
-
-Photo by Jordan Wozniak
+{{< unsplash "photo-1542744173-05336fcc7ad4" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYxNzY0fA" "Photo by Campaign Creators on Unsplash" "person using macbook pro" >}}
 
 ### Ngetren📈 dan Prospeknya Cerah🌞
 
@@ -109,10 +107,6 @@ manusia.
 **Machine learning** merupakan bagian dari *artificial intelligence* yang bertujuan untuk menciptakan mesin yang dapat
 belajar sendiri tanpa perlu diprogram secara eksplisit.
 
-![Photo by Franck V.](https://source.unsplash.com/U3sOwViXhkY/1200x647)
-
-Photo by Franck V.
-
 Persamaan keduanya yaitu keduanya sama-sama diprogram agar dapat belajar sendiri dan menjadi "cerdas" untuk
 menyelesaikan masalah tertentu. Perbedaannya AI lebih umum dan mencakup topik yang lebih luas daripada machine learning.
 
@@ -146,14 +140,6 @@ Sampai ketemu di artikel selanjutnya! Jangan lupa subscribe ke mailing list Kode
 
 ## Referensi
 
-1. Dhar, V.
-   2013. [Data science and prediction](http://cacm.acm.org/magazines/2013/12/169933-data-science-and-prediction/fulltext). *Communications
-   of the ACM*. **56** (12):
-   64. [doi](https://id.wikipedia.org/wiki/Digital_object_identifier):[10.1145/2500499](https://doi.org/10.1145%2F2500499).
-   Diakses 12 Februari 2020.
-2. University of Wisconsin. 2020.
-   [How Much is a Data Scientist's Salary?](https://datasciencedegree.wisconsin.edu/data-science/data-scientist-salary/).
-   Diakses 12 Februari 2020.
-3. Sheldon, Amyra. 2019.
-   [Artificial Intelligence Vs Machine Learning: What's the difference?](https://hackernoon.com/artificial-intelligence-vs-machine-learning-whats-the-difference-9e35u30a0).
-   Diakses 12 Februari 2020.
+1. Dhar, V. 2013. [Data science and prediction](http://cacm.acm.org/magazines/2013/12/169933-data-science-and-prediction/fulltext). *Communications of the ACM*. **56** (12): 64. doi:[10.1145/2500499](https://doi.org/10.1145%2F2500499). Diakses 12 Februari 2020.
+2. University of Wisconsin. 2020. [How Much is a Data Scientist's Salary?](https://datasciencedegree.wisconsin.edu/data-science/data-scientist-salary/). Diakses 12 Februari 2020.
+3. Sheldon, Amyra. 2019. [Artificial Intelligence Vs Machine Learning: What's the difference?](https://hackernoon.com/artificial-intelligence-vs-machine-learning-whats-the-difference-9e35u30a0). Diakses 12 Februari 2020.

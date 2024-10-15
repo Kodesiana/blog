@@ -1,20 +1,17 @@
 ---
 title: 'Masalah Optimasi🏎️ pada Ilmu Komputer'
-categories: Computer Science
+categories: Math and Statistics
 tags: [machine learning]
 series: [Machine Learning 101]
 date: 2023-12-20
 slug: masalah-optimasi-pada-ilmu-komputer
-mathjax: true
 ---
 
 Optimasi merupakan salah satu kelompok masalah yang menjadi fokus penerapan ilmu komputer dalam kehidupan sehari-hari. Menemukan rute terpendek pada peta, menjadwalkan penerbangan, mengatur rute pengiriman paket jasa ekspedisi, menentukan persediaan barang di gudang untuk antisipasi kebahbisan stok, merupakan beberapa contoh masalah optimasi yang sering kita jumpai.
 
 Karena aplikasi dari konsep optimasi ini sangat vital terhadap efisiensi dan keberlanjutan proses bisnis dan riset, maka kita khususnya mahasiswa dan peneliti ilmu komputer wajib mengetahui bagaimana konsep optimasi ini dapat kita manfaatkan untuk menyelesaikan berbagai masalah di dunia nyata.
 
-![robot standing near luggage bags](https://source.unsplash.com/robot-standing-near-luggage-bags-hND1OG3q67k/1200x657)
-
-> Foto oleh: Fabrizio Conti dari [Unsplash](https://unsplash.com/photos/robot-standing-near-luggage-bags-hND1OG3q67k)
+{{< unsplash "photo-1525338078858-d762b5e32f2c" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTU0NDA2fA" "Photo by Lukas on Unsplash" "robot standing near luggage bags" >}}
 
 Optimasi sendiri merupakan salah satu cabang dari matematika dan pastinya akan menggunakan **kalkulus**. Nah teman-teman yang mungkin sudah lupa tentang limit, turunan, dan integral akan perlu mengingat kembali konsep-konsep tersebut karena akan sangat digunakan pada proses optimasi.
 
@@ -280,9 +277,7 @@ Metode numerik juga menjadi alternatif yang diminati karena proses iterasi dapat
 
 Ide utama dari metode *gradient descent* adalah mengikuti arah kecuraman (naik/turun) paling tinggi.
 
-![aerial photography of mountain](https://source.unsplash.com/aerial-photography-of-mountain-cvOidhGZW7A/1200x657)
-
-> Foto oleh: Fabrizio Conti dari [Unsplash](https://unsplash.com/photos/aerial-photography-of-mountain-cvOidhGZW7A)
+{{< unsplash "photo-1548853879-e3135725174c" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYyODQ1fA" "Photo by Fabrizio Conti on Unsplash" "aerial photography of mountain" >}}
 
 Bayangkan teman-teman sedang berada di puncak gunung dan ingin turun kembali ke jalan utama. Saat itu sudah sore hari dan kondisi berkabut sehingga teman-teman tidak bisa melihat arah mana yang akan menuju titik terendah, bagaimana cara kita untuk bisa turun dengan cepat dari gunung tersebut?
 

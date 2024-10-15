@@ -1,6 +1,6 @@
 ---
 title: Mengenal Jamstack dan Serverless🥧
-categories: Tips
+categories: [Hacks]
 tags: [tips, internet, cloud]
 date: 2021-06-03
 slug: mengenal-jamstack-dan-serverless
@@ -29,8 +29,6 @@ Konsep ini sekarang sudah banyak diimplementasikan untuk meningkatkan pengalaman
 khususnya untuk menyediakan web yang tidak membutuhkan waktu lama untuk dimuat oleh user dan dapat interaktif tanpa
 perlu menunggu *backend* memberikan respons, dan bahkan bisa membuat *web apps* yang bisa diakses ketika komputer dalam
 kondisi *offline*.
-
-![Gambar](https://source.unsplash.com/v9FQR4tbIq8)
 
 Selain itu, sekarang ini banyak pula *framework* dan *tools* untuk membuat *static site* atau laman/web statis.
 Berkembangnya tren website statis merupakan hasil dari perkembangan teknologi di atas dan usaha untuk meningkatkan
@@ -91,7 +89,7 @@ awal Maret 2021 penulis mengubah website Kodesiana.com menggunakan model Jamstac
 Meskipun penulis bukan *frontend developer*, menggunakan Hugo bukanlah suatu proses yang membutuhkan waktu banyak untuk
 belajar, cukup ikuti tutorial dan template dan cling... web kamu bisa langsung jadi dalam lima menit.
 
-![Gambar](https://source.unsplash.com/a-view-of-a-lake-surrounded-by-trees-and-snow-tS9s-qSzEgU)
+{{< unsplash "photo-1688053793446-197dbc86e237" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYzNjQxfA" "Photo by Leo_Visions on Unsplash" "a view of a lake surrounded by trees and snow tS9s" >}}
 
 ## Apa itu Serverless?
 
@@ -182,5 +180,5 @@ Stay tuned ya teman-teman!
 
 ## Referensi
 
-1. Netlify. 2021. Jamstack (https://jamstack.org). Diakses 18 April 2021.
-2. Duarte, Pedro. 2019. Jamstack (https://jamstack.wtf). Diakses 18 April 2021.
+1. Netlify. 2021. [Jamstack](https://jamstack.org). Diakses 18 April 2021.
+2. Duarte, Pedro. 2019. [Jamstack](https://jamstack.wtf). Diakses 18 April 2021.

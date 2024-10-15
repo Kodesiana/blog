@@ -23,8 +23,6 @@ user dengan mudah melalui mesin pencari.
 Sistem mesin pencari inilah yang membuat sistem kita akan terekspos dan kita sering kali tidak bisa menghapus web kita
 dari internet, karena setiap mesin pencari pasti memiliki indeks internalnya masing-masing.
 
-![Gambar](https://source.unsplash.com/Prc64NXW5JQ)
-
 Pada kasus serangan ke subsistem Kodesiana yang penulis bahas pada artikel sebelumnya, sistem tersebut dibuat publik,
 tapi penulis menggunakan aturan `robots.txt` dan *blocker* untuk *user agent* bot, sehingga penulis **cukup yakin**
 sistem ini tidak akan bisa di indeks oleh mesin pencari.
@@ -102,8 +100,6 @@ dilindungi oleh **Azure Defender** dan ditambah dengan integrasi dengan **CloudF
 memberikan pengalaman membaca yang lebih menyenangkan bagi pembaca blog Kodesiana.com. Dengan jaringan CDN dari
 CloudFlare, teman-teman bisa menikmati artikel di blog Kodesiana.com ini dengan lebih cepat!
 
-![Gambar](https://source.unsplash.com/MziCjx-fVzs)
-
 ### Web Application Firewall (WAF)
 
 *Firewall* merupakan salah satu komponen pertahanan pada jaringan untuk memblokir akses yang tidak sah ke dalam suatu
@@ -178,8 +174,6 @@ Perlu diingat bahwa arahan ini bukan berasal dari *cybersecurity expert*, tapi d
 baca. Jika teman-teman benar-benar serius dengan keamanan sistem, teman-teman harus punya tim *cybersecurity* untuk
 menangani aspek keamanan sistem.
 
-![Gambar](https://source.unsplash.com/mVhd5QVlDWw)
-
 ### Respons Cepat
 
 Respons yang cepat dapat menjadi penentu apakah serangan akan berdampak kecil atau masif. Semakin cepat titik serangan
@@ -222,8 +216,6 @@ Oke, kita sudah bahas mengenai cara mengamankan sistem sebelum terjadi serangan 
 serangan ke sistem sudah selesai dan pengguna ingin mengakses sistem kembali.
 
 Apa yang perlu kita dilakukan?
-
-![Gambar](https://source.unsplash.com/Bkci_8qcdvQ)
 
 ### Site Recovery
 

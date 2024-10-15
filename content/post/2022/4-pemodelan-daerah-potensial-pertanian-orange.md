@@ -7,7 +7,6 @@ summary:
   Pada artikel kali ini penulis akan menjabarkan proses *data mining* dari salah satu paper yang penulis buat
   menggunakan Orange Data Mining. Paper ini merupakan submisi penulis pada lomba GEMASTIK XIII dan sayangnya tidak lolos
   dan diikutsertakan kembali pada lomba CODIG Mercubuana 3.0 dan berhasil masuk sebagai finalis.
-mermaid: true
 slug: pemodelan-daerah-potensial-pertanian-di-indonesia-orange-data-mining
 ---
 
@@ -16,7 +15,7 @@ slug: pemodelan-daerah-potensial-pertanian-di-indonesia-orange-data-mining
 > [Pemodelan Daerah Potensial Pertanian di Indonesia sebagai Usaha Restorasi Ekonomi pada Masa Pandemi COVID-19 menggunakan Metode Hierarchical Clustering](https://www.researchgate.net/publication/351079613_Pemodelan_Daerah_Potensial_Pertanian_di_Indonesia_sebagai_Usaha_Restorasi_Ekonomi_pada_Masa_Pandemi_COVID-19_menggunakan_Metode_Hierarchical_Clustering)
 
 <div class="flex justify-center">
-{{< button content="Playlist: Tutorial Orange Data Mining" icon="logos:youtube-icon" href="https://l.kodesiana.com/orange-playlist" >}}
+{{< button content="Playlist: Tutorial Orange Data Mining" icon="brand-youtube" href="https://l.kodesiana.com/orange-playlist" >}}
 </div>
 
 Pada artikel kali ini penulis akan menjabarkan proses *data mining* dari salah satu paper yang penulis buat menggunakan
@@ -39,7 +38,7 @@ graph LR
     B -->E[Curah Hujan, 110-200mm/bulan]
     B -->F[Ketinggian, 700-1000 mdpl]
     B -->G[pH Tanah, 6-7.5]
-{{< /mermaid >}}
+{{</ mermaid >}}
 
 Berdasarkan variabel-variabel di atas, penulis mulai mencari sumber data dari beberapa sumber seperti BMKG dan sumber
 data terbuka di GitHub, Kaggle, dan Our World in Data. Pada akhirnya penulis berhasil mengumpulkan beberapa data yang
@@ -48,7 +47,7 @@ memiliki relasi kuat dengan faktor-faktor yang sebelumnya sudah ditentukan.
 Kamu bisa unduh dataset yang sudah penulis kurasi dari berbagai sumber pada tautan di bawah ini.
 
 <div class="flex justify-center">
-{{< button content="Download Dataset" icon="tabler:download" href="https://l.kodesiana.com/017-pemodelan-daerah-potensial-pertanian.csv" >}}
+{{< button content="Download Dataset" icon="download" href="https://l.kodesiana.com/017-pemodelan-daerah-potensial-pertanian.csv" >}}
 </div>
 
 | Atribut             | Tipe Data | Keterangan                                                  |
@@ -207,7 +206,7 @@ teman-teman yang lebih suka versi video, teman-teman bisa cek *playlist* YouTube
 beberapa studi kasus lain menggunakan aplikasi *Orange Data Mining*!
 
 <div class="flex justify-center">
-{{< button content="Playlist: Tutorial Orange Data Mining" icon="logos:youtube-icon" href="https://l.kodesiana.com/orange-playlist" >}}
+{{< button content="Playlist: Tutorial Orange Data Mining" icon="brand-youtube" href="https://l.kodesiana.com/orange-playlist" >}}
 </div>
 
 Terima kasih sudah membaca artikel kali ini, sampai jumpa nanti!

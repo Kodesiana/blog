@@ -1,13 +1,13 @@
 ---
 title: 16+ Tips Manipulasi DateTime pada C#🕔
-categories: Tips
+categories: [Hacks, Software Engineering]
 tags: [programming, tutorial, tips]
 date: 2018-05-27
 slug: 16-tips-manipulasi-datetime-pada-csharp
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-datetime-format" >}}
+{{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-datetime-format" >}}
 </div>
 
 Manipulasi *DateTime* merupakan hal yang wajib diketahui oleh programmer, khususnya C# dan VB.NET. *DateTime*
@@ -102,15 +102,7 @@ Berbagai format di atas dapat dikombinasikan untuk menghasilkan format yang diin
 
 ## Referensi
 
-1. Microsoft. 2017. Standard Date and Time Format Strings
-   ([*https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings*](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings)).
-   Diakses 25 Mei 2018.
-2. Microsoft. 2017. Custom Date and Time Format Strings
-   ([*https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings*](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings)).
-   Diakses 25 Mei 2018.
-3. Microsoft. 2018. CultureInfo Class
-   ([*https://docs.microsoft.com/id-id/dotnet/api/system.globalization.cultureinfo*](https://docs.microsoft.com/id-id/dotnet/api/system.globalization.cultureinfo)).
-   Diakses 26 Mei 2018.
-4. Microsoft. 2018. DateTime Struct
-   ([*https://docs.microsoft.com/id-id/dotnet/api/system.datetime*](https://docs.microsoft.com/id-id/dotnet/api/system.datetime)).
-   Diakses 26 Mei 2018.
+1. Microsoft. 2017. [Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings). Diakses 25 Mei 2018.
+2. Microsoft. 2017. [Custom Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings). Diakses 25 Mei 2018.
+3. Microsoft. 2018. [CultureInfo Class](https://docs.microsoft.com/id-id/dotnet/api/system.globalization.cultureinfo). Diakses 26 Mei 2018.
+4. Microsoft. 2018. [DateTime Struct](https://docs.microsoft.com/id-id/dotnet/api/system.datetime). Diakses 26 Mei 2018.

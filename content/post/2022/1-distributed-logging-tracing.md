@@ -1,13 +1,13 @@
 ---
 title: Distributed Tracing dan Logging pada Microservice📳
-categories: Architecture
+categories: [Software Engineering]
 tags: [architecture, design pattern, microservice, tips, nodejs, programming]
 date: 2022-01-08
 slug: distributed-tracing-logging-pada-microservice
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-distributed-logging-tracing" >}}
+{{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-distributed-logging-tracing" >}}
 </div>
 
 *Distributed tracing* dan *logging* menjadi salah satu kewajiban saat kita membuat aplikasi khususnya *backend* yang
@@ -283,11 +283,7 @@ Terima kasih!
 
 ## Referensi
 
-1. Richardson, Chris. 2021. Pattern: Distributed tracing
-   (<https://microservices.io/patterns/observability/distributed-tracing.html>). Diakses 02 Januari 2022.
-2. Elastic. 2022. Distributed tracing
-   (<https://www.elastic.co/guide/en/apm/get-started/current/distributed-tracing.html>). Diakses 02 Januari 2022.
-3. Hoppe, Thomas. 2021. winston-elasticsearch (<https://www.npmjs.com/package/winston-elasticsearch>). Diakses 02
-   Januari 2022.
-4. RabbitMQ. 2022. Publish/Subscribe (<https://www.rabbitmq.com/tutorials/tutorial-three-javascript.html>). Diakses 02
-   Januari 2022.
+1. Richardson, Chris. 2021. [Pattern: Distributed tracing](https://microservices.io/patterns/observability/distributed-tracing.html). Diakses 02 Januari 2022.
+2. Elastic. 2022. [Distributed tracing](https://www.elastic.co/guide/en/apm/get-started/current/distributed-tracing.html). Diakses 02 Januari 2022.
+3. Hoppe, Thomas. 2021. [winston-elasticsearch](https://www.npmjs.com/package/winston-elasticsearch). Diakses 02 Januari 2022.
+4. RabbitMQ. 2022. [Publish/Subscribe](https://www.rabbitmq.com/tutorials/tutorial-three-javascript.html). Diakses 02 Januari 2022.

@@ -1,6 +1,6 @@
 ---
 title: 'KFlearning: E-Learning Laboratorium Komputer Universitas Pakuan📖'
-categories: Programming
+categories: [Software Engineering]
 tags: [kuliah, programming, tips]
 date: 2019-09-02
 slug: kflearning-e-learning-laboratorium-universitas-pakuan
@@ -11,8 +11,6 @@ e-learning ***all-in-one*** untuk semua kalangan khususnya mahasiswa.
 
 Kodesiana.com sebagai kontributor teknologi lokal dari Indonesia sangat ingin ikut serta memajukan taraf penggunaan
 teknologi di Indonesia, khususnya pada bidang pendidikan.
-
-![Gambar](https://source.unsplash.com/9uEHFjGXnCE/1200x657)
 
 Admin Kodesiana.com yang telah berpengalaman dalam industri teknologi informasi dan saat ini sedang berkuliah strata 1
 mendapati bahwa penggunaan teknologi yang tidak *up-to-date* dalam kegiatan pembelajaran merupakan salah satu *step back* dalam pembelajaran teknologi mutakhir saat ini.
@@ -25,9 +23,6 @@ khususnya pemrograman, yaitu **KFlearning**.
 Tujuan aplikasi ini yaitu sebagai **manajemen proyek** dan **direktori artikel dan tutorial**.
 
 Dengan KFlearning, user dapat membuat project dan membaca artikel dan tutorial langsung dalam satu aplikasi.
-
-KFlearning juga merupakan anggota baru dari keluarga [Kodesiana Platform](https://kodesiana.com/repositori/)! Suksesor
-dari proyek pendahulunya, yaitu TurboTugas.
 
 ## Bisa Buat Apa Aja
 
@@ -64,7 +59,7 @@ Khusus untuk Python, Admin menyarankan untuk menggunakan [Anaconda](https://www.
 KFlearning merupakan e-learning yang bersifat *open source*, dilisensikan di bawah MIT License. Anda juga bisa ikut
 berkontribusi di GitHub untuk kemajuan program ini!
 
-Unduh dari laman berikut. [https://kodesiana.com/kflearning/](https://kodesiana.com/kflearning/)
+Unduh dari laman berikut. [https://kodesiana.com/projects/kflearning/](https://kodesiana.com/projects/kflearning/)
 
 Ikuti petunjuk instalasi pada laman di atas.
 

@@ -1,6 +1,6 @@
 ---
 title: Mengecilkan Ukuran Video menggunakan Handbrake🍹
-categories: Tips
+categories: [Hacks, Tutorial]
 tags: [multimedia, tutorial, tips]
 date: 2018-05-28
 slug: mengecilkan-ukuran-video-menggunakan-handbrake
@@ -46,6 +46,4 @@ yang nampak pada video hasil *encode*.
 
 ## Referensi
 
-1. Wikipedia. 2018. High Efficiency Video Coding
-   ([*https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding*](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding)).
-   Diakses 28 Mei 2018.
+1. Wikipedia. 2018. [High Efficiency Video Coding](https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding). Diakses 28 Mei 2018.

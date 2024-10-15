@@ -1,6 +1,6 @@
 ---
 title: Monitor Uptime Website menggunakan GitHub Actions🆗
-categories: Programming
+categories: [Software Engineering]
 tags: [nodejs, programming, tutorial, devops]
 date: 2020-10-01
 slug: monitor-uptime-website-menggunakan-github-actions
@@ -19,11 +19,6 @@ GitHub Actions yang merupakan layanan CI, biasanya hanya digunakan untuk melakuk
 aplikasi, tetapi, bagaimana jika GitHub Actions digunakan sebagai layanan untuk memonitor *uptime* website atau API?
 
 ## GitHub Actions... untuk Functions?
-
-![man sitting on bench](https://source.unsplash.com/C2SRmUGYxYE/1200x657)
-
-Photo by [Simeon Jacobson](https://unsplash.com/@closed) on
-[Unsplash](https://unsplash.com/?utm_source=kodesiana&utm_medium=referral)
 
 Mungkin terdengar asing, untuk apa kita menggunakan CI untuk memonitor uptime website? Jawabannya penulis beberapa pekan
 lalu mengikuti GitHub Actions Hackathon yang diselenggarakan oleh **dev.to**. Platform blogging dev.to mengadakan

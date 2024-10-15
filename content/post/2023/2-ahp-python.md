@@ -4,13 +4,9 @@ categories: Data Science
 tags: [kuliah, data mining]
 date: 2023-07-01
 slug: analytic-hierarchy-process-ahp-menggunakan-python
-mathjax: true
-mermaid: true
 ---
 
-<div class="flex justify-center">
-{{< button content="Akses Jupyter Notebook" icon="logos:jupyter" href="https://l.kodesiana.com/ahp-jupyter" >}}
-</div>
+{{< button content="Akses Jupyter Notebook" icon="gilbarbara-logos-jupyter" href="https://l.kodesiana.com/ahp-jupyter" >}}
 
 Analytic Hierarchy Process (AHP) merupakan salah satu metode yang umum digunakan pada sistem penunjang keputusan (SPK) untuk membantu memilih alternatif dari beberapa kriteria. Metode ini tergolong sederhana dan masih sering diperkenalkan pada mahasiswa dan digunakan untuk skripsi atau penelitian.
 
@@ -24,7 +20,7 @@ Yuk kita belajar bagaimana cara melakukan perhitungan menggunakan metode AHP dan
 
 Seperti yang sudah dijelaskan sebelumnya, AHP merupakan salah satu metode yang digunakan pada sistem penunjang keputusan. Pada konteks ini, keputusan yang ingin diambil diformulasikan sebagai **proses untuk memilih alternatif terbaik dari beberapa alternatif yang tersedia berdasarkan perbandingan dua atau lebih kriteria pada setiap alternatif**.
 
-![Foto oleh Jason Goodman](https://source.unsplash.com/vbxyFxlgpjM/1200x657)
+{{< unsplash "photo-1552664730-d307ca884978" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYzNjE0fA" "Photo by Jason Goodman on Unsplash" "woman placing sticky notes on wall" >}}
 
 ### Studi Kasus
 
@@ -50,7 +46,7 @@ import numpy as np
 
 Berdasarkan studi kasus di atas, dapat kita formulasikan studi kasus tersebut menjadi diagram berikut.
 
-{{<mermaid>}}
+{{< mermaid>}}
 flowchart TD
     A[Kosan] --> A01 & A02 & A03
     A01 & A02 & A03 --> C01 & C02 & C03 & C04 & C05
@@ -58,7 +54,7 @@ flowchart TD
     linkStyle 0,1,2 stroke:#ccd5ae
     linkStyle 3,4,5,6,7 stroke:#d4a373
     linkStyle 8,9,10,11,12 stroke:#219ebc
-{{</mermaid>}}
+{{</ mermaid >}}
 
 Setelah kita tau kasus yang akan kita selesaikan, tahap untuk mengerjakan studi kasus tersebut menggunakan metode AHP adalah sebagai berikut.
 

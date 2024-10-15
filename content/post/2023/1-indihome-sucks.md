@@ -1,16 +1,14 @@
 ---
 title: 'Indihome Suck🙁 Kualitas Internet Semakin Rendah'
-categories: Internet
+categories: [Networking]
 tags: [internet, data mining]
 series: [Ritsu-Pi Home Server]
 date: 2023-05-15
 slug: indihome-suck-kualitas-internet-semakin-rendah
-mathjax: true
-mermaid: true
 ---
 
 <div class="flex justify-center">
-{{< button content="Akses Jupyter Notebook" icon="logos:jupyter" href="https://l.kodesiana.com/indihome-suck-jupyter" >}}
+{{< button content="Akses Jupyter Notebook" icon="gilbarbara-logos-jupyter" href="https://l.kodesiana.com/indihome-suck-jupyter" >}}
 </div>
 
 Indihome, salah satu ISP yang memiliki *coverage* paling luas di Indonesia dari Telkom Indonesia dan juga tempat kerja penulis saat ini😃. Ceritanya, penulis sudah menggunakan layanan Indihome sejak 2020. Indihome juga merupakan ISP pertama yang tersedia di daerah rumah penulis karena lokasi rumah penulis yang berada di gunung sehingga sulit akses internet baik melalui layanan GSM maupun *broadband*.
@@ -49,7 +47,7 @@ graph LR
     A[Mikrotik MKTXP Exporter] --> C[Prometheus]
     B[Speedtest.net Exporter] --> C[Prometheus]
     C -->D[Grafana]
-{{< /mermaid >}}
+{{</ mermaid >}}
 
 Melalui sistem yang sudah dibuat penulis, kita bisa mengumpulkan data kecepatan internet per jam per hari yang berarti 24 observasi per hari. Pada penelitian ini penulis mengumpulkan data sejak 01 Mei 2023 s.d. 14 Mei 2023 atau selama dua pekan.
 
@@ -109,7 +107,7 @@ Tabel sampel data Prometheus.
 | 2023-05-01 08:40:46.321000192+00:00 | 23379304.0 | speedtest_download_bits_per_second |
 
 <div class="flex justify-center">
-{{< button content="Download Dataset RAW" icon="tabler:download" href="https://l.kodesiana.com/2023-1-indihome_raw.csv" >}}
+{{< button content="Download Dataset RAW" icon="download" href="https://l.kodesiana.com/2023-1-indihome_raw.csv" >}}
 </div>
 
 Tahap selanjutnya adalah kita perlu melakukan *preprocessing* untuk memperbaiki tipe data dan struktur data.
@@ -205,7 +203,7 @@ Tabel kecepatan internet Indihome per hari.
 | 2023-05-05 | 24.12         | 10.51       |
 
 <div class="flex justify-center">
-{{< button content="Download Dataset Harian" icon="tabler:download" href="https://l.kodesiana.com/2023-1-indihome_daily.csv" >}}
+{{< button content="Download Dataset Harian" icon="download" href="https://l.kodesiana.com/2023-1-indihome_daily.csv" >}}
 </div>
 
 Setelah kita memiliki data kecepatan internet harian, kita bisa melakukan visualisasi data kembali.
@@ -445,5 +443,5 @@ Terima kasih semuanya! Sampai jumpa di artikel lainnya.
 
 ## Referensi
 
-1. Gerstman, B. Burt. 2003. StatPrimer t Table (https://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf). Diakses 15 Mei 2023.
-2. JMP Statistical Discovery. 2023. The One-Sample t-Test (https://www.jmp.com/en_sg/statistics-knowledge-portal/t-test/one-sample-t-test.html). Diakses 15 Mei 2023.
+1. Gerstman, B. Burt. 2003. [StatPrimer t Table](https://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf). Diakses 15 Mei 2023.
+2. JMP Statistical Discovery. 2023. [The One-Sample t-Test](https://www.jmp.com/en_sg/statistics-knowledge-portal/t-test/one-sample-t-test.html). Diakses 15 Mei 2023.

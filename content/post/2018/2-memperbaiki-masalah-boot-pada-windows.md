@@ -1,6 +1,6 @@
 ---
 title: Memperbaiki Masalah Boot pada Windows 8, 8.1, dan 10💻
-categories: Tips
+categories: [Hacks]
 tags: [windows, tutorial, tips]
 date: 2018-04-23
 slug: memperbaiki-masalah-boot-pada-windows
@@ -104,7 +104,4 @@ karena kesalahan tertentu.
 
 ## Referensi
 
-1. Microsoft. 2017. Error message when you start Windows 7: "The Windows Boot Configuration Data file is missing
-   required information"
-   ([https://support.microsoft.com/en-us/help/2004518/error-message-when-you-start-windows-7-the-windows-boot-configuration](https://support.microsoft.com/en-us/help/2004518/error-message-when-you-start-windows-7-the-windows-boot-configuration)).
-   Diakses 23 April 2018.
+1. Microsoft. 2017. [Error message when you start Windows 7: "The Windows Boot Configuration Data file is missing required information"](https://support.microsoft.com/en-us/help/2004518/error-message-when-you-start-windows-7-the-windows-boot-configuration). Diakses 23 April 2018.

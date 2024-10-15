@@ -1,13 +1,13 @@
 ---
 title: Mengatasi Lag DataGridView C#⌚
-categories: Programming
+categories: [Software Engineering, Hacks]
 tags: [programming, tutorial, tips]
 date: 2018-05-15
 slug: mengatasi-lag-datagridview-csharp
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-fast-datagridview" >}}
+{{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-fast-datagridview" >}}
 </div>
 
 DataGridView merupakan kontrol yang sangat umum digunakan untuk menampilkan data dari *database*. Tetapi, saat
@@ -73,9 +73,5 @@ Baca artikel lengkapnya pada artikel
 
 ## Referensi
 
-1. Indonesia. 2016. How To Double buffer .NET controls on a form
-   ([*https://stackoverflow.com/questions/76993/how-to-double-buffer-net-controls-on-a-form*](https://stackoverflow.com/questions/76993/how-to-double-buffer-net-controls-on-a-form)).
-   Diakses 15 Mei 2018.
-2. Microsoft. 2017. Double Buffered Graphics
-   ([*https://docs.microsoft.com/en-us/dotnet/framework/winforms/advanced/double-buffered-graphics*](https://docs.microsoft.com/en-us/dotnet/framework/winforms/advanced/double-buffered-graphics)).
-   Diakses 15 Mei 2018.
+1. Indonesia. 2016. [How To Double buffer .NET controls on a form](https://stackoverflow.com/questions/76993/how-to-double-buffer-net-controls-on-a-form). Diakses 15 Mei 2018.
+2. Microsoft. 2017. [Double Buffered Graphics](https://docs.microsoft.com/en-us/dotnet/framework/winforms/advanced/double-buffered-graphics). Diakses 15 Mei 2018.

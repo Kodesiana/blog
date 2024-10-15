@@ -1,13 +1,13 @@
 ---
 title: Menampilkan Data dari PBX menggunakan C#📞
-categories: Programming
+categories: [Software Engineering]
 tags: [programming, tutorial, tips]
 date: 2018-04-11
 slug: menampilkan-data-dari-pbx-menggunakan-csharp
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-pbx-listener" >}}
+{{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-pbx-listener" >}}
 </div>
 
 PBX merupakan salah satu alat yang lazim digunakan untuk mengatur panggilan dalam suatu jaringan telefon. PBX dapat
@@ -266,19 +266,9 @@ dan pastikan PBX dikenali oleh komputer. Tekan **Enter** untuk memulai perekaman
 
 ## Referensi
 
-1. Wikipedia. 2018. Pbx ([https://id.wikipedia.org/wiki/Pbx](https://id.wikipedia.org/wiki/Pbx)). Diakses 15 Maret 2018.
-2. Wikipedia. 2018. Serial Communication
-   ([https://en.wikipedia.org/wiki/Serial_communication](https://en.wikipedia.org/wiki/Serial_communication)). Diakses
-   15 Maret 2018.
-3. Sparkfun. 2018. Serial Communication
-   ([https://learn.sparkfun.com/tutorials/serial-communication](https://learn.sparkfun.com/tutorials/serial-communication)).
-   Diakses 15 Maret 2018.
-4. Microsoft. 2018. SerialPort Class
-   ([https://msdn.microsoft.com/en-us/library/system.io.ports.serialport(v=vs.110).aspx](<https://msdn.microsoft.com/en-us/library/system.io.ports.serialport(v=vs.110).aspx>)).
-   Diakses 15 Maret 2018.
-5. Patton, Glenn. 2013. Serial Comms in C# for Beginners
-   ([https://www.codeproject.com/Articles/678025/Serial-Comms-in-Csharp-for-Beginners](https://www.codeproject.com/Articles/678025/Serial-Comms-in-Csharp-for-Beginners)).
-   Diakses 15 Maret 2018.
-6. Wikipedia. 2018. Regular expression
-   ([https://en.wikipedia.org/wiki/Regular_expression](https://en.wikipedia.org/wiki/Regular_expression)). Diakses 15
-   Maret 2018.
+1. Wikipedia. 2018. [Pbx](https://id.wikipedia.org/wiki/Pbx). Diakses 15 Maret 2018.
+2. Wikipedia. 2018. [Serial Communication](https://en.wikipedia.org/wiki/Serial_communication). Diakses 15 Maret 2018.
+3. Sparkfun. 2018. [Serial Communication](https://learn.sparkfun.com/tutorials/serial-communication). Diakses 15 Maret 2018.
+4. Microsoft. 2018. [SerialPort Class](https://learn.microsoft.com/en-us/dotnet/api/system.io.ports.serialport?view=net-8.0). Diakses 15 Maret 2018.
+5. Patton, Glenn. 2013. [Serial Comms in C# for Beginners](https://www.codeproject.com/Articles/678025/Serial-Comms-in-Csharp-for-Beginners). Diakses 15 Maret 2018.
+6. Wikipedia. 2018. [Regular expression](https://en.wikipedia.org/wiki/Regular_expression). Diakses 15 Maret 2018.

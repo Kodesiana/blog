@@ -19,7 +19,7 @@ Apa dampaknya bagi pengguna dan tim Kodesiana.com?
 Pada artikel kali ini, penulis akan coba untuk menjelaskan kronologi mulai dari awal pendeteksian, tindakan yang
 dilakukan oleh tim, dan melakukan asesmen apa saja kerusakan yang ditimbulkan oleh serangan tersebut.
 
-![a business woman who is stressed and frustrated](https://source.unsplash.com/bmJAXAz6ads)
+{{< unsplash "photo-1448932223592-d1fc686e76ea" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0OTE5fA" "Photo by Bench Accounting on Unsplash" "man operating laptop on top of table" >}}
 
 ## 📅 Kronologi Serangan
 
@@ -114,14 +114,14 @@ sama mulai terlihat kembali. Penulis tidak yakin *tools* apa yang digunakan kali
 penulis masih yakin kalau penyerang masih menggunakan *tools* yang sama karena target serangan yang tercatat di sistem
 menunjukkan data file-file WordPress.
 
-![App insights failure - serangan kedua](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/6/appinsights-failures-2.png)
+![App insights failure - serangan kedua](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/6/appinsights-failures-2.png "App insights failure - serangan kedua")
 
 Sama seperti analisis sebelumnya, pola serangan kedua ini tidak jauh berbeda dan sekali lagi tidak ada kebocoran data
 maupun akses tidak wajar pada API Kodesiana.
 
 ## 💡 Lesson Learned
 
-![Laptop and notepad](https://source.unsplash.com/FHnnjk1Yj7Y)
+{{< unsplash "photo-1503945438517-f65904a52ce6" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYxOTIzfA" "Photo by Thought Catalog on Unsplash" "woman sitting beside table using laptop" >}}
 
 Dari serangan ini, penulis bisa mengambil beberapa hal yang bisa teman-teman jadikan referensi juga untuk mengamankan
 sistem yang teman-teman buat.
@@ -147,9 +147,6 @@ Sementara ini, masih ada beberapa pertanyaan yang belum terjawab,
 - Dari mana asal sumber serangan?
 - Siapa?
 - Dan apa motifnya?
-
-> Daripada kamu iseng-iseng nge-*hack* sistem Kodesiana, mendingan ikut program [Bug Hunt](/bug-hunt-program) yang resmi
-> diselenggarakan oleh Kodesiana untuk kamu pentester yang suka bereksperimen dengan sistem keamanan🐣
 
 Sekian cerita yang bisa penulis berikan, semoga bisa menjadi cerita yang menarik dan menjadi pelajaran bagi penulis dan
 kamu sebagai pembaca.

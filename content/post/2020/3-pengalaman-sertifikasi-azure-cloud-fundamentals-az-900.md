@@ -1,6 +1,6 @@
 ---
 title: Pengalaman Sertifikasi Azure Cloud Fundamentals (AZ-900)☁
-categories: Tips
+categories: [Hacks]
 tags: [pengalaman, tips, programming]
 date: 2020-08-25
 slug: pengalaman-sertifikasi-azure-cloud-fundamentals-az-900
@@ -14,10 +14,6 @@ Layanan *cloud* saat ini menjadi idola bagi *startup* dan perusahaan berbasis IT
 lebih mudah dikembangkan, *scalable*, *affordable*, dan mengadopsi teknologi yang lebih modern. Tidak hanya itu, layanan
 *cloud* juga menyediakan berbagai layanan mutakhir untuk memenuhi kebutuhan bisnis dan sistem dengan mudah, tanpa perlu
 membuat sistem dari awal.
-
-![Gambar](https://source.unsplash.com/aJnHSrgSWkk)
-
-Foto oleh [XPS](https://unsplash.com/photos/aJnHSrgSWkk).
 
 Posisi sebagai *cloud engineer* pun sekarang ini sedang banyak dicari, karena manajemen layanan *cloud* itu sendiri
 membutuhkan keahlian yang bisa dibilang setara dengan Sysadmin pada sistem *on-premise*.
@@ -69,10 +65,6 @@ Azure dan dikirim dalam format video ke akun OneDrive.
 Penulis waktu itu membuat rancangan sistem perpustakaan menggunakan arsitektur *microservice* menggunakan App Service
 dan Cosmos DB. Perlu diingat bahwa kamu hanya perlu membuat rancangan saja, tidak perlu membuat sistemnya hingga jadi.
 
-![Gambar](https://source.unsplash.com/yx-iJFybOBQ)
-
-Foto oleh [Chris Benson](https://unsplash.com/photos/yx-iJFybOBQ).
-
 ## Micosoft Learn sebagai Pelengkap🎃
 
 Selain Dicoding, penulis juga mengikuti program pembelajaran yang disediakan oleh
@@ -91,10 +83,6 @@ satu anak perusahaan Telkom Indonesia.
 
 Dengan adanya sertifikat ini, penulis menjadi lebih percaya diri untuk dapat bergabung dan berkontribusi sebagai
 developer di sebuah perusahaan besar di Indonesia.
-
-![Gambar](https://source.unsplash.com/q9URsedw330)
-
-Foto oleh [Csaba Balazs](https://unsplash.com/photos/q9URsedw330).
 
 Ayo, sembari kuliah/bekerja, sembari belajar hal-hal lain untuk mengembangkan kemampuan kamu yang nantinya mungkin akan
 berguna di masa depan. Jangan lama-lama menunggu karena banyak pekerjaan, karena belajar bisa dilakukan kapan saja.

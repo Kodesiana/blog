@@ -8,7 +8,7 @@ slug: web-scraping-dengan-scrapy
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://github.com/fahminlb33/bogor-house-price" >}}
+{{< button content="Soure Code" icon="brand-github" href="https://github.com/fahminlb33/bogor-house-price" >}}
 </div>
 
 *Web scraping* merupakan salah satu metode untuk melakukan akuisisi data dari *website* publik. Pada [artikel sebelumnya](kodesiana.com) penulis pernah menyinggung mengenai *web scraping* dan pada artikel ini penulis akan membahas secara komprehensif bagaimana cara membuat sebuah *web scraper* untuk mendapatkan data dari sebuah *website*.
@@ -26,9 +26,7 @@ Terdapat dua kata kunci yang perlu kita pahami, *website* dan *scraping*.
 
 Selain *scraping* ada istilah lain yang perlu kita tahu yaitu *crawling*. *Crawling* merupakan proses menjelajahi tautan atau *link* pada suatu halaman *website*. Teman-teman tentunya perlu klik pada tautan ke artikel ini baik dari halaman beranda maupun dari langganan email, bukan? Tidak mungkin teman-teman mengingat URL artikel ini dan mengetiknya manual di peramban/*browser*. Tautan-tautan atau *link* ini disebut sebagai *hyperlink*.
 
-![person-holding-red-and-black-berries](https://source.unsplash.com/person-holding-red-and-black-berries-2t3qRfVNL40/1200x657)
-
-> Sumber: Mario Mendez dari [Unsplash](https://unsplash.com/photos/person-holding-red-and-black-berries-2t3qRfVNL40)
+{{< unsplash "photo-1595872506700-a69023116568" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYyMjA0fA" "Photo by Mario Mendez on Unsplash" "CAPTION HERE" >}}
 
 Nah sekarang kita tahu bahwa *web scraping* merupakan proses ekstraksi data dari *website* secara otomatis dengan cara menjelajahi tautan atau *link* pada laman *website*, pertanyaan selanjutnya adalah **bagaimana proses ekstraksi tersebut terjadi?**
 
@@ -819,9 +817,7 @@ Kenapa hal ini perlu kita ketahui ketika membuat sebuah *web scraper*?
 
 Karena sebagai pemilik *website*, kita tentunya tidak mau ada yang melakukan *abuse* pada sistem misalnya melakukan *spamming* dengan mengirim banyak komentar terus-menerus atau memberikan *rating* yang banyak untuk meningkatkan visibilitas suatu barang di *marketplace*.
 
-![a person pointing at a large display of pictures](https://source.unsplash.com/a-person-pointing-at-a-large-display-of-pictures-9D6UlCW38Ss/1200x657)
-
-> Sumber: Karen Grigorean dari [Unsplash](https://unsplash.com/photos/a-person-pointing-at-a-large-display-of-pictures-9D6UlCW38Ss)
+{{< unsplash "photo-1684862030284-6b24307ebd4a" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYyMDM0fA" "Photo by Karen Grigorean on Unsplash" "a person pointing at a large display of pictures" >}}
 
 Hubungan CAPTCHA dengan *web scraping* adalah proses *web scraping* merupakan aktivitas *bot* yang berarti kemungkinan besar *scraper* yang sudah kita buat tadi akan diblokir oleh *website* melalui fungsi *firewall*. Biasanya aktivitas *scraping* sangat mudah dideteksi dan ditanggulangi bagi pemilik *website*, cukup dengan mengintegrasikan layanan seperti CloudFlare maka *website* tersebut akan terlindungi dari *bot* dan *scraper* yang secara umum bisa mengakses ratusan halaman dalam hitungan menit.
 

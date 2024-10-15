@@ -1,14 +1,12 @@
 ---
 title: Teknik Pagination dan Styling untuk DataGridView📑
-categories: Programming
+categories: [Hacks, Software Engineering]
 tags: ['csharp', 'tutorial']
 date: 2018-06-09
 slug: teknik-pagination-dan-styling-untuk-datagridview
 ---
 
-<div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-fast-datagridview" >}}
-</div>
+{{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-fast-datagridview"  >}}
 
 **Pagination** dan **styling** merupakan dua hal yang umum dilakukan untuk meningkatkan *user experience* pada aplikasi.
 Pagination digunakan untuk memisahkan beberapa baris data kedalam halaman (*page*), tujuannya untuk memudahkan user
@@ -24,10 +22,19 @@ Telerik dan DevExpress, Anda dapat membuat tampilan DataGridView yang menarik de
 ## Pagination
 
 Untuk melakukan pagination, penulis menggunakan kueri SQL berikut (kueri merupakan hasil implementasi dari Aram
-Koukia\[1\]).
+Koukia[1]).
 
 ```sql
-SELECT ROW_NUMBER() OVER(ORDER BY ProductId), * FROM [Product] ORDER BY [ProductId] OFFSET 10 ROWS FETCH NEXT 50 ROWS ONLY;
+SELECT
+   ROW_NUMBER() OVER(ORDER BY ProductId), * 
+FROM 
+   [Product] 
+ORDER BY 
+   [ProductId] 
+OFFSET 
+   10 ROWS 
+FETCH 
+   NEXT 50 ROWS ONLY;
 ```
 
 Kueri di atas dapat dirombak menjadi beberapa bagian, yaitu:
@@ -100,12 +107,6 @@ End Sub
 
 ## Referensi
 
-1. Koukia, Aram. 2016. Let SQL Server Query Do the Pagination for You
-   (https://koukia.ca/let-sql-server-query-do-the-pagination-for-you-offset-fetch-clause-in-sql-2012-a52ca6e5beb2).
-   Diakses 9 Juni 2018.
-2. Microsoft. 2007. Tutorial 25: Efficiently Paging Through Large Amounts of Data
-   (https://msdn.microsoft.com/en-us/library/bb445504.aspx).
-   Diakses 9 Juni 2018.
-3. Phan, Chesiung. 2014. Kosmetik DataGridView
-   (https://www.facebook.com/groups/programervbnetindonesia/permalink/10152465359328621/).
-   Diakses 10 Juni 2018.
+1. Koukia, Aram. 2016. [Let SQL Server Query Do the Pagination for You](https://koukia.ca/let-sql-server-query-do-the-pagination-for-you-offset-fetch-clause-in-sql-2012-a52ca6e5beb2). Diakses 9 Juni 2018.
+2. Microsoft. 2007. Tutorial 25: [Efficiently Paging Through Large Amounts of Data](https://msdn.microsoft.com/en-us/library/bb445504.aspx). Diakses 9 Juni 2018.
+3. Phan, Chesiung. 2014. [Kosmetik DataGridView](https://www.facebook.com/groups/programervbnetindonesia/permalink/10152465359328621/). Diakses 10 Juni 2018.

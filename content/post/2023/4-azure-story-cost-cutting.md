@@ -1,6 +1,6 @@
 ---
 title: 'Cara Penulis Menghemat Tagihan Azure Hingga 70%💸'
-categories: Architecture
+categories: [Software Engineering]
 tags: [architecture, azure, tips, internet, cloud]
 date: 2023-08-24
 ---

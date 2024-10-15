@@ -1,12 +1,10 @@
 ---
 title: Azure DevOps untuk Otomatisasi Project Kamu!🪐
-categories: Tips
+categories: [Hacks]
 tags: [devops, azure, csharp, programming]
 date: 2019-07-13
 slug: azure-devops-untuk-otomatisasi-project-kamu
 ---
-
-![Gambar](https://source.unsplash.com/36Aai16fubc/1200x657)
 
 Azure DevOps merupakan layanan kolaborasi dan CI/CD yang dapat membantu perencanaan, pengujian, hingga distribusi proyek
 yang kecil hingga kelas bisnis.
@@ -28,7 +26,7 @@ Kenapa? Dalam proses pembuatan aplikasi, tentu ada tahapan tertentu seperti ranc
 proses tersebut saling terkait dan merupakan sebuah alir yang selalu berulang. DevOps hadir untuk mempersingkat waktu
 yang dibutuhkan untuk menyelesaikan produk tertentu dengan otomatisasi kerja yang berulang.
 
-![Gambar](https://source.unsplash.com/QckxruozjRg/1200x657)
+{{< unsplash "photo-1631624210938-539575f92e3c" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYzOTcyfA" "Photo by Mikhail Fesenko on Unsplash" "a man sitting at a computer with headphones on" >}}
 
 Kerja sama antar anggota tim menjadi lebih mudah.
 
@@ -68,8 +66,4 @@ Gimana cara daftarnya? Akan di bahas di artikel selanjutnya ya! Stay tuned.
 
 ## Referensi
 
-1. Mala, D.J.
-   (2019). [*Integrating the Internet of Things Into Software Engineering Practices*](https://books.google.co.uk/books?id=GPGCDwAAQBAJ&pg=PA16).
-   Advances in Systems Analysis, Software Engineering, and High Performance Computing. IGI Global.
-   p. 16. [ISBN](https://en.wikipedia.org/wiki/International_Standard_Book_Number)[978-1-5225-7791-1](https://en.wikipedia.org/wiki/Special:BookSources/978-1-5225-7791-1).
-   Diakses 14 Juli 2019.
+1. Mala, D.J. (2019). [Integrating the Internet of Things Into Software Engineering Practices](https://books.google.co.uk/books?id=GPGCDwAAQBAJ&pg=PA16). Advances in Systems Analysis, Software Engineering, and High Performance Computing. IGI Global. p. 16. [978-1-5225-7791-1](https://en.wikipedia.org/wiki/Special:BookSources/978-1-5225-7791-1). Diakses 14 Juli 2019.

@@ -1,6 +1,6 @@
 ---
 title: Yuk Belajar Docker Container!🐳 Chapter 1 & 2
-categories: Programming
+categories: [Software Engineering]
 tags: [cloud, tips, programming, tutorial]
 date: 2021-09-02
 slug: yuk-belajar-docker-container-chapter-1-2
@@ -12,7 +12,7 @@ Docker ini sejak cukup lama sebagai salah satu *killer feature* bagi *developers
 
 Apa sih Docker itu dan bagaimana cara kerjanya?
 
-![Gambar](https://source.unsplash.com/jOqJbvo1P9g)
+{{< unsplash "photo-1604778202015-3071e0d7f29b" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0NjU3fA" "Photo by Athanasios Papazacharias on Unsplash" "blue and white cargo ship on sea during daytime" >}}
 
 Sebelum memulai, teman-teman sebaiknya meng-install Docker terlebih dahulu.
 

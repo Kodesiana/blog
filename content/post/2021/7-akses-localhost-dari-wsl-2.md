@@ -1,6 +1,6 @@
 ---
 title: Cara Akses localhost dari WSL 2🔛
-categories: Tips
+categories: [Hacks]
 tags: [programming, tips, golang, pengalaman, tutorial, windows]
 date: 2021-11-12
 math: false
@@ -76,8 +76,6 @@ port yang ada pada host Windows karena aplikasi yang ingin kita gunakan mungkin 
 Teman-teman mungkin bingung maksudnya *tidak listen pada interface WSL*, padahal aplikasi dan WSL sama-sama ada di satu
 host Windows yang sama, tapi kenapa tidak bisa langsung saling akses port yang sama?
 
-![Gambar](https://source.unsplash.com/UrtxBX5i5SE)
-
 Sebagian besar aplikasi yang menjalankan server dan *listen* pada sebuah port di komputer kita biasanya hanya listen
 pada *loopback interface*, atau lebih sering kita dengar sebagai `localhost`. WSL memiliki *interface* jaringan virtual
 (vSwitch) sendiri yang terpisah dari host Windows, sehingga aplikasi yang *listen* pada *localhost* tidak akan bisa
@@ -128,9 +126,6 @@ melalui komentar pada Gist di atas atau melalui media lain pada blog ini, terima
 
 ## Referensi
 
-1. Hua, Qiu. 2021. network port forwarding in go lang (<https://gist.github.com/qhwa/cb9d3851450bff3b705e>). Diakses 01
-   November 2021.
-2. Mario. 2021. Port Forwarding with Go (<https://www.zupzup.org/go-port-forwarding/index.html>). Diakses 01
-   November 2021.
-3. Nilsson, Stefan. 2018. Format byte size as kilobytes, megabytes, gigabytes, ...
-   (<https://yourbasic.org/golang/formatting-byte-size-to-human-readable-format/>). Diakses 01 November 2021.
+1. Hua, Qiu. 2021. [network port forwarding in go lang](https://gist.github.com/qhwa/cb9d3851450bff3b705e). Diakses 01 November 2021.
+2. Mario. 2021. [Port Forwarding with Go](https://www.zupzup.org/go-port-forwarding/index.html). Diakses 01 November 2021.
+3. Nilsson, Stefan. 2018. [Format byte size as kilobytes, megabytes, gigabytes, ...](https://yourbasic.org/golang/formatting-byte-size-to-human-readable-format). Diakses 01 November 2021.

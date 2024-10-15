@@ -1,15 +1,13 @@
 ---
 title: 'Hands-on Physics-Informed Neural Network🧠 dengan PyTorch🔥'
-categories: Computer Science
+categories: [Data Science, Math and Statistics]
 tags: [machine learning, artificial intelligence, data science]
 series: [Machine Learning 101]
 date: 2023-12-23
-mathjax: true
+description: Bagaimana sebuah neural network dapat digunakan untuk menyelesaikan turunan parsial?
 ---
 
-<div class="flex justify-center">
-{{< button content="Buka Google Colab" icon="logos:jupyter" href="https://l.kodesiana.com/intro-pinn-jupyter" >}}
-</div>
+{{< button content="Buka Google Colab" icon="gilbarbara-logos-jupyter" href="https://l.kodesiana.com/intro-pinn-jupyter" >}}
 
 *Artificial intelligence (AI)* saat ini sudah menjadi bagian dari kehidupan kita. Siapa yang tidak kenal ChatGPT? *Artificial intelligence* terobosan OpenAI ini mengubah kebiasaan kita dan meningkatkan produktivitas kita melalui otomasi dan pencarian informasi sangat mudah, ditambah dengan antarmuka berupa *chatting*, membuat interaksi kita lebih natural dan bisa memberikan kita berbagai informasi yang dibutuhkan dalam sekejap mata.
 
@@ -33,9 +31,7 @@ Lalu bagaimana sebuah *neural network* bisa menghasilkan model dari data? Secara
 2. Hitung output prediksi $\hat{Y}=F(X)$, kemudian hitung *loss* atau *cost* $L = \mathcal{L}(Y, \hat{Y})$ misalnya menggunakan fungsi *mean squared error*
 3. Minimumkan fungsi $\mathcal{L}$, sehingga didapatkan suatu $\nabla W$ dan $\nabla B$ untuk mengubah nilai parameter awal sehingga $\hat{Y}$ mendekati $Y$
 
-![Neural network](https://upload.wikimedia.org/wikipedia/commons/9/99/Neural_network_example.svg)
-
-> Sumber: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Neural_network_example.svg)
+![Neural network](https://upload.wikimedia.org/wikipedia/commons/9/99/Neural_network_example.svg "Sumber: Wikimedia Commons")
 
 Bisa disimpulkan, inti dari algoritma *neural network* adalah melakukan optimasi suatu fungsi $\mathcal{L}$ untuk mendapatkan nilai $W$ dan $B$ yang optimal sehingga output prediksi $\hat{Y}$ dapat mendekati $Y$. Sama seperti model regresi linier sederhana $y = ax + b$ kita harus mencari nilai $a$ dan $b$ untuk meminimumkan *sum squared of errors*, pada *neural network* kita ingin meminimumkan *loss function* untuk mendapatkan model terbaik. Perlu diketahui proses optimasi *loss function* biasanya dilakukan menggunakan metode [*gradient descent*](https://www.kodesiana.com/post/masalah-optimasi-pada-ilmu-komputer/) karena metode ini sangat efektif untuk dapat mengoptimasi fungsi yang memiliki banyak parameter.
 
@@ -47,9 +43,7 @@ Tapi apa benar bisa begitu?
 
 ### Data-driven vs Model-driven
 
-![orange brick lot](https://source.unsplash.com/orange-brick-lot-TYiD9PaAHos/1200x657)
-
-> Sumber: Matt W Newman dari [Unsplash](https://unsplash.com/photos/orange-brick-lot-TYiD9PaAHos)
+{{< unsplash "photo-1559322575-2f4e66131d55" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYyNzk0fA" "Photo by Matt W Newman on Unsplash" "orange brick lot" >}}
 
 Kita mungkin sudah sangat familiar dengan istilah *model-driven*, yaitu pemodelan yang dilakukan berdasarkan model yang sudah diciptakan sebelumnya, misalnya model regresi linier bivariat, model kuadratik, model *logistic regression*, dan banyak jenis model lainnya. Secara umum model-model ini menjelaskan hubungan antara variabel independen dan variabel dependen dalam suatu fungsi yang sudah *pakem*, yang perlu kita lakukan adalah mencari parameter terbaik berdasarkan data input. Biasanya metode yang digunakan untuk mencari parameter terbaik tadi dilakukan menggunakan metode *least squares*.
 
@@ -65,9 +59,7 @@ Lalu bagaimana hubungan antara pendekatan *model-driven* dan *data-driven*?
 
 Pada model fisika, kita memiliki banyak model untuk menjelaskan bagaimana fenomena di dunia terjadi, seperti bagaimana gerak benda-benda dan planet dapat dijelaskan oleh hukum Newton dan pompa hidrolik dapat dijelaskan oleh hukum Pascal. Tentunya kedua model ini mudah untuk dicari parameternya untuk menjelaskan suatu fenomena fisika. Masalah pemodelan fisika mulai menjadi menarik ketika kita ingin melakukan simulasi menggunakan model yang memiliki banyak parameter seperti persamaan Navier-Stokes yaitu persamaan yang menjelaskan mekanika fluida atau persamaan fungsi gelombang seperti persamaan Schrödinger yang menjelaskan posisi dan energi suatu elektron di dalam sebuah atom.
 
-![milky way](https://source.unsplash.com/milky-way-asuyh-_ZX54/1200x657)
-
-> Sumber: Ivana Cajina dari [Unsplash](https://unsplash.com/photos/milky-way-asuyh-_ZX54)
+{{< unsplash "photo-1505506874110-6a7a69069a08" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYxMjQwfA" "Photo by Ivana Cajina on Unsplash" "Galaksi Bima Sakti" >}}
 
 Pendekatan yang umum digunakan untuk menyelesaikan model fisika tadi yang merupakan persamaan turunan parsial (*PDE/partial derivative equations*) [2] adalah dengan menggunakan metode numerik, salah satunya adalah metode *finite element method (FEM)*. Jika teman-teman pernah menggunakan aplikasi simulasi seperti Ansys, SolidWorks, SimScale, atau aplikasi simulasi lain, kemungkinan besar metode FEM adalah metode yang digunakan oleh simulator tersebut.
 
@@ -163,9 +155,7 @@ Implementasi PINN yang pertama akan kita bahas adalah mengenai hukum pendinginan
 
 > The rate of heat loss of a body is directly proportional to the difference in the temperatures between the body and its environment.
 
-![person holding white ceramic cup with hot coffee](https://source.unsplash.com/person-holding-white-ceramic-cup-with-hot-coffee-_wkd7XBRfU4/1200x657)
-
-> Sumber: Clay Banks dari [Unsplash](https://unsplash.com/photos/person-holding-white-ceramic-cup-with-hot-coffee-_wkd7XBRfU4)
+{{< unsplash "photo-1518057111178-44a106bad636" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYyNzY0fA" "Photo by Clay Banks on Unsplash" "person holding white ceramic cup with hot coffee" >}}
 
 Misalnya kita membuat kopi☕ dengan air mendidih bersuhu 90 °C kemudian kita tinggalkan di ruangan bersuhu 25 °C. Hukum Newton menyatakan bahwa laju pendinginan akan proposional antara suhu lingkungan dan suhu kopi yang dapat dinotasikan:
 
@@ -363,7 +353,7 @@ Stay tuned!
 ## Referensi📚
 
 1. But what is a neural network? | Chapter 1, Deep learning. Diakses: 22 Desember 2023. [Daring Video]. Tersedia pada: https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
-2. “Partial differential equation,” Wikipedia. 28 November 2023. Diakses: 20 Desember 2023. [Daring]. Tersedia pada: https://en.wikipedia.org/Partial_differential_equation
+2. “Partial differential equation,” Wikipedia. 28 November 2023. Diakses: 20 Desember 2023. [Daring]. Tersedia pada: https://en.wikipedia.org/wiki/Partial_differential_equation
 3. K. Hornik, M. Stinchcombe, dan H. White, “Multilayer feedforward networks are universal approximators,” Neural Networks, vol. 2, no. 5, hlm. 359–366, Jan 1989, doi: 10.1016/0893-6080(89)90020-8.
 4. M. Raissi, P. Perdikaris, dan G. E. Karniadakis, “Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations,” Journal of Computational Physics, vol. 378, hlm. 686–707, Feb 2019, doi: 10.1016/j.jcp.2018.10.045.
 5. G. E. Karniadakis, I. G. Kevrekidis, L. Lu, P. Perdikaris, S. Wang, dan L. Yang, “Physics-informed machine learning,” Nat Rev Phys, vol. 3, no. 6, hlm. 422–440, Jun 2021, doi: 10.1038/s42254-021-00314-5.

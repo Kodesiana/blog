@@ -7,7 +7,7 @@ slug: sentiment-analysis-menggunakan-accord-net
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-emotex" >}}
+{{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-emotex" >}}
 </div>
 
 Sentiment analysis itu apa? Kenapa tiba-tiba admin menulis artikel tentang sentiment analysis? Singkat kata admin sedang
@@ -59,5 +59,5 @@ Anda dapat mengunduh paper ini melalui tautan berikut.
 
 ## Referensi
 
-1. Wikipedia. 2018. Sentiment Analysis (https://en.wikipedia.org/wiki/Sentiment_analysis). Diakses 11 November 2018.
+1. Wikipedia. 2018. [Sentiment Analysis](https://en.wikipedia.org/wiki/Sentiment_analysis). Diakses 11 November 2018.
 2. Untuk referensi lebih lanjut, silakan untuk paper penelitian ini pada tautan di atas.

@@ -69,7 +69,7 @@ Keuntungan dari penggunaan data dari portal di atas adalah sebagian besar data y
 - [Global Biodiversity Information Facility GBIF](https://www.gbif.org/)
 - [iNaturalist](https://www.inaturalist.org/)
 - [UCI Machine Learning Repository](https://archive.ics.uci.edu/)
-- [data.world](https://data.world/datasets/free)
+- [data.world](https://data.world)
 - [Kaggle](https://www.kaggle.com/)
 
 Berbagai data dari portal di atas bisa kita gunakan juga untuk keperluan penelitian, tetapi perlu diingat data dari Kaggle perlu diverifikasi sumber dan bagaimana proses penyajian datanya karena Kaggle sifatnya terbuka dan semua orang bisa mengunggah datanya.

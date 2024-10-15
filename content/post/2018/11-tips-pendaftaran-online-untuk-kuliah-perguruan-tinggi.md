@@ -1,6 +1,6 @@
 ---
 title: Tips Pendaftaran Online untuk Kuliah/Perguruan Tinggi🎓
-categories: Tips
+categories: [Hacks, Life Story]
 tags: [kuliah, tips, pengalaman]
 date: 2018-07-12
 slug: tips-pendaftaran-online-untuk-kuliah-perguruan-tinggi

@@ -1,6 +1,6 @@
 ---
 title: Kelebihan Punya Sertifikasi pada Bidang IT👨‍🎓
-categories: Lainnya
+categories: [Life Story]
 tags: [tips, pengalaman, kuliah, karier]
 date: 2021-04-10
 slug: kelebihan-punya-sertifikasi-pada-bidang-it
@@ -15,8 +15,6 @@ untuk melamar pekerjaan atau untuk mendapat promosi.
 Halo semua! Sudah cukup lama aku tidak menulis di blog ini, sampai lupa bagaimana kondisi blog dan juga pembacanya. Kali
 ini aku ingin berbagi pengalamanku mengenai **sertifikasi**. Kenapa sertifikasi itu penting dan bagaimana cara kita bisa
 mendapatkan sertifikasi tersebut?
-
-![Gambar](https://source.unsplash.com/kLfkVa_4aXM)
 
 ## Revolusi Industri Digital
 
@@ -57,8 +55,6 @@ lagi yang paling cocok untuk *host* aplikasi kita selain di *cloud service?*
 
 Nah sekarang terlihat kan ternyata bukan hanya satu skill yang kita butuhkan, tapi ada banyak skill yang harus kita
 miliki untuk dapat *stand out* dibandingkan dengan SDM lainnya.
-
-![Gambar](https://source.unsplash.com/ZVprbBmT8QA)
 
 ## Tapi Sertifikasi kan Mahal?
 

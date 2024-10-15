@@ -1,6 +1,6 @@
 ---
 title: Google Foobar🍫 Cara Unik Google Merekrut Developer
-categories: Lainnya
+categories: [Life Story]
 tags: [pengalaman, programming, karier]
 date: 2021-12-30
 slug: google-foobar-cara-unik-google-merekrut-developer
@@ -63,14 +63,8 @@ Oh iya, selamat tahun baru ya!
 
 ## Referensi
 
-1. Google. 2021. Foobar (<https://foobar.withgoogle.com/>). Diakses 17 Mei 2021.
-2. Lamsal, Subarna. 2021. Getting Into Google Foobar Challenge With An Email Secrets
-   (<https://medium.com/nerd-for-tech/how-i-easily-got-into-google-foobar-challenge-with-an-e-mail-4ac31f14db54>). Diakses
-   08 Agustus 2021.
-3. Gupta, Mohit. 2018. Things you should know about Google FooBar Invitation
-   (<https://itsmohitt.medium.com/things-you-should-know-about-google-foobar-invitation-703a535bf30f>). Diakses 08
-   Agustus 2021.
-4. Notarstefano, Jacopo. 2021. Google Foobar: a Post Mortem (<http://jacquerie.github.io/google-foobar-post-mortem/>).
-   Diakses 08 Agustus 2021.
-5. Kartik & Shantnu. 2020. Everything You Need to Know About Google Foobar Challenge
-   (<https://patataeater.blogspot.com/2020/08/how-to-get-hired-by-google.html>). Diakses 08 Agustus 2021.
+1. Google. 2021. [Foobar](https://foobar.withgoogle.com/). Diakses 17 Mei 2021.
+2. Lamsal, Subarna. 2021. [Getting Into Google Foobar Challenge With An Email Secrets](https://medium.com/nerd-for-tech/how-i-easily-got-into-google-foobar-challenge-with-an-e-mail-4ac31f14db54). Diakses 08 Agustus 2021.
+3. Gupta, Mohit. 2018. [Things you should know about Google FooBar Invitation](https://itsmohitt.medium.com/things-you-should-know-about-google-foobar-invitation-703a535bf30f). Diakses 08 Agustus 2021.
+4. Notarstefano, Jacopo. 2021. [Google Foobar: a Post Mortem](http://jacquerie.github.io/google-foobar-post-mortem/). Diakses 08 Agustus 2021.
+5. Kartik & Shantnu. 2020. [Everything You Need to Know About Google Foobar Challenge](https://patataeater.blogspot.com/2020/08/how-to-get-hired-by-google.html). Diakses 08 Agustus 2021.

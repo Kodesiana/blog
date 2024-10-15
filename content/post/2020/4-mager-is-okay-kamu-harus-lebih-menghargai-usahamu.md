@@ -1,6 +1,6 @@
 ---
 title: Mager is Okay. Kamu Harus Lebih Menghargai Usahamu!😉
-categories: Lainnya
+categories: [Life Story]
 tags: [pengalaman]
 date: 2020-08-29
 slug: mager-is-okay-kamu-harus-lebih-menghargai-usahamu
@@ -16,11 +16,7 @@ Mungkin saja, tapi belum tentu begitu!
 > Catat kegiatan sehari-hari, cukupkan waktu tidur, lebih banyak apresiasi untuk diri sendiri, kurangi pendapat orang
 > lain yang mengatur hidup kamu.
 
-![man in black t-shirt and blue denim jeans sitting on tree
-branch](https://source.unsplash.com/Gx1raEg_3Zw/1200x657)
-
-Photo by [Zhang Kenny](https://unsplash.com/@kennyzhang29) on
-[Unsplash](https://unsplash.com/?utm_source=kodesiana&utm_medium=referral)
+{{< unsplash "photo-1490377009176-f10a36d75b27" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0MjQ3fA" "Photo by Kyle Peyton on Unsplash" "man wearing white knit cap and black jacket sitting on snow covered tree log" >}}
 
 Kenapa kita sering mager di tengah-tengah kesibukan kita? Padahal kerjaan numpuk untuk diselesaikan. Memahami stigma
 *mager* yang sering menjadi halangan bagi kita untuk menjadi orang yang produktif.
@@ -66,7 +62,7 @@ Gimana caranya?
 Pekerjaan merupakan salah satu alasan yang umum menjadi penyebab mager. Benar sekali, kalau kita perlu bekerja setiap
 hari untuk memenuhi kebutuhan kita, sudah pasti kita akan lelah, bukan hanya lelah fisik tetapi juga lelah emosi.
 
-![Gambar](https://source.unsplash.com/9GEzaxGFCJc/1200x657)
+{{< unsplash "photo-1608657872827-9fbdb711bdc4" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0Mjk3fA" "Photo by Johan Funke on Unsplash" "person driving car during daytime" >}}
 
 Hal ini sangat penulis rasakan. Saat ini penulis masih seorang mahasiswa semester 5 dan juga menjadi asisten dosen,
 selain itu penulis juga sudah bekerja *full time* sebagai *backend developer* di salah satu perusahaan di daerah Jakarta
@@ -96,7 +92,7 @@ rumah harus mengikuti protokol kesehatan yang ketat.
 
 Serasa semua kehidupan sudah pindah ke rumah.
 
-![Gambar](https://source.unsplash.com/1akqr5QBNTw/1200x657)
+{{< unsplash "photo-1688516786794-1b62671d00c6" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0MzY3fA" "Photo by Van Thanh on Unsplash" "a couple of cats laying on top of a wooden floor" >}}
 
 Saat mager di rumah, kita biasanya rebahan dengan cara nonton film/TV, *stalking* media sosial, buka video receh, atau
 hal-hal lain yang bisa dilakukan untuk menghabiskan waktu dan membuat kita senang.
@@ -145,7 +141,7 @@ Kejadian ini sangat sering penulis alami. Hingga pernah membuat penulis hiatus d
 introspeksi diri. Ternyata, dalam waktu tersebut penulis memang sibuk dan mengerjakan banyak proyek, tetapi penulis
 tidak menyadari berapa banyak pekerjaan yang sudah diselesaikan (*underestimate*).
 
-![Gambar](https://source.unsplash.com/mlVbMbxfWI4/1200x657)
+{{< unsplash "photo-1484480974693-6ca0a78fb36b" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYyNjU4fA" "Unsplash" "person writing bucket list on book RLw" >}}
 
 Baik itu tugas kuliah, pekerjaan di rumah, pekerjaan kantor, atau kegiatan kemahasiswaan, semua ketika kita ikut
 berkontribusi dan menyelesaikan tugas itu, kita perlu mendapat apresiasi, khususnya dari diri kita sendiri.
@@ -194,7 +190,7 @@ ingatan dan belajar sesuatu dengan efektif.
 Selain itu, tidur setidaknya 7 jam sehari dapat membantu meningkatkan ingatan, metabolisme, dan mengurangi kelelahan
 mental (Eugene dan Jolanta: 2015).
 
-![Gambar](https://source.unsplash.com/CeWNEEsHPbA/1200x657)
+{{< unsplash "photo-1541781774459-bb2af2f05b55" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYzMzk1fA" "Photo by Kate Stone Matheson on Unsplash" "white cat sleeps under white comforter" >}}
 
 Berdasarkan sumber di atas, tidur merupakan salah satu kebutuhan yang tidak dapat digantikan. Kamu tidak bisa
 menggantikan tidur dengan kopi atau *power nap*, tidur di malam hari merupakan kebutuhan wajib.
@@ -234,8 +230,5 @@ In the end, penulis hanya bisa sharing, kamulah yang bisa memilih bagaimana mema
 
 ## Referensi
 
-1. Potkin, Katya Trudeau, dan William E. Bunney Jr. “Sleep Improves Memory: The Effect of Sleep on Long Term Memory in
-   Early Adolescence.” *PLOS ONE*, vol. 7, no. 8, 07 Agu 12, hlm. e42191. *PLoS Journals*,
-   doi:10.1371/journal.pone.0042191.
-2. Eugene, Andy R., dan Jolanta Masiak. “The Neuroprotective Aspects of Sleep.”  *MEDtube science*, vol. 3, no. 1, Maret
-   2015, hlm. 35–40.
+1. Potkin, Katya Trudeau, dan William E. Bunney Jr. “Sleep Improves Memory: The Effect of Sleep on Long Term Memory in Early Adolescence.” *PLOS ONE*, vol. 7, no. 8, 07 Agu 12, hlm. e42191. *PLoS Journals*, doi:10.1371/journal.pone.0042191.
+2. Eugene, Andy R., dan Jolanta Masiak. “The Neuroprotective Aspects of Sleep.”  *MEDtube science*, vol. 3, no. 1, Maret 2015, hlm. 35–40.

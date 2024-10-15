@@ -1,6 +1,6 @@
 ---
 title: Mamba! Conda on Steroids🐍
-categories: Programming
+categories: [Software Engineering]
 tags: [tips, python, programming]
 date: 2022-01-16
 slug: mamba-conda-on-steroids
@@ -17,7 +17,7 @@ kolega atau akan di-*deploy* ke server. Dengan menggunakan *virtual environment*
 saja yang dibutuhkan oleh proyek kita sehingga kita bisa dengan mudah membuat `requirements.txt` yang hanya mencakup
 proyek yang kita kerjakan.
 
-![Gambar](https://source.unsplash.com/kgq4BjLHn1Q)
+{{< unsplash "photo-1467299705673-a8a455767418" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0ODc1fA" "Photo by Julia Joppien on Unsplash" "green snake on tree branch" >}}
 
 Tapi ada satu masalah dengan Anaconda. Teman-teman yang mungkin sudah lama menggunakan Anaconda dan banyak menginstall
 berbagai *library* baik dari `pip` dan `conda` akan mengalami masalah waktu install *package*. Sudah menjadi rahasia

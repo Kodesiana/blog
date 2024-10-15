@@ -1,6 +1,6 @@
 ---
 title: Membuat Invoice PDF menggunakan NodeJS📄
-categories: Programming
+categories: [Software Engineering]
 tags: [nodejs, tutorial, tips]
 date: 2020-09-22
 slug: membuat-invoice-pdf-menggunakan-nodejs
@@ -15,7 +15,7 @@ pembuatan PDF ini membutuhkan tenaga ekstra untuk dapat diimplementasikan dengan
 Ternyata proses pembuatan PDF tidak semudah yang kita bayangkan. Jika kita bisa dengan mudah membuat PDF dengan cara
 mengonversi file Word ke PDF, jika ingin dilakukan menggunakan program hal ini bisa jauh lebih sulit dilakukan.
 
-![Gambar](https://source.unsplash.com/iJMitgqRaZ8/1200x657)
+{{< unsplash "photo-1726137570741-ed4306ce2904" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0NDU2fA" "Photo by SumUp on Unsplash" "a person holding a credit card in front of a computer" >}}
 
 Hl ini karena fakta pembuatan PDF yang menurut kita mudah, ternyata prosesnya lebih rumit, tidak semudah membangun
 website menggunakan HTML dan CSS.
@@ -42,8 +42,6 @@ menggunakan protokol komunikasi yang didukung oleh browser tersebut (misalnya We
 
 *Puppeteer* merupakan *library* JavaScript yang menyediakan API untuk mengontrol aplikasi Chromium, bisa dibilang kamu
 menggunakan Google Chrome tetapi melalui kode program.
-
-![Gambar](https://source.unsplash.com/BbOXC95sxlE/1200x657)
 
 Dengan menggunakan *library* ini kamu bisa melakukan hampir semua kegiatan yang bisa kamu lakukan pada Chrome, membuat
 tab baru, pergi ke URL, melakukan *scraping* data, dan tentunya, menyimpan halaman sebagai PDF.
@@ -262,7 +260,7 @@ statis.
 Jika Anda ingin menggunakan kode ini pada Docker, ada beberapa hal yang perlu Anda perhatikan. Karena kita menggunakan
 teknik *headless browser*, maka kita harus memastikan bahwa browser tersebut bisa berjalan di dalam container.
 
-![Gambar](https://source.unsplash.com/l93tk44HErI/1200x657)
+{{< unsplash "photo-1632517306067-b54ab4d1f98d" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYyNjMzfA" "Unsplash" "a large cargo ship sailing in the ocean" >}}
 
 Buat file Dockerfile seperti di bawah ini.
 

@@ -1,6 +1,6 @@
 ---
 title: Code Notes, Aplikasi Catatan untuk Developer📒
-categories: Tips
+categories: [Hacks]
 tags: ['tips']
 date: 2019-02-11
 slug: code-notes-aplikasi-catatan-untuk-developer
@@ -54,8 +54,6 @@ diinginkan.
 
 ## Referensi
 
-- Thiebault, Laurent. 2018. Code Notes, The Code Snippet Manager for Developers
-  (https://lauthieb.github.io/code-notes). Diakses 11 Februari 2019.
-- Thiebault, Laurent. 2018. Code Notes, An Open Source Code Snippet Manager to Increase Our Productivity!
-  (https://dev.to/lauthieb/code-notes-an-open-source-code-snippet-manager-to-increase-our-productivity--3l6l).
+- Thiebault, Laurent. 2018. [Code Notes, The Code Snippet Manager for Developers](https://lauthieb.github.io/code-notes). Diakses 11 Februari 2019.
+- Thiebault, Laurent. 2018. [Code Notes, An Open Source Code Snippet Manager to Increase Our Productivity!](https://dev.to/lauthieb/code-notes-an-open-source-code-snippet-manager-to-increase-our-productivity--3l6l).
   Diakses 10 Februari 2019.

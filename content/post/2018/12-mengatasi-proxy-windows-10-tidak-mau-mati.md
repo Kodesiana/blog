@@ -1,6 +1,6 @@
 ---
 title: Mengatasi Proxy Windows 10 Tidak Mau Mati🛑
-categories: Tips
+categories: [Hacks]
 tags: [windows, tutorial]
 date: 2018-11-15
 slug: mengatasi-proxy-windows-10-tidak-mau-mati
@@ -59,4 +59,4 @@ kembali.
 
 ## Referensi
 
-1. Wikipedia. 2018. Proxy Server (https://en.wikipedia.org/wiki/Proxy_server). Diakses 16 November 2018.
+1. Wikipedia. 2018. [Proxy Server](https://en.wikipedia.org/wiki/Proxy_server). Diakses 16 November 2018.

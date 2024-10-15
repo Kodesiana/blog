@@ -1,13 +1,13 @@
 ---
 title: Membuat Installer Aplikasi menggunakan WiX Toolset📦
-categories: Tips
+categories: [Tutorial, Hacks]
 tags: [programming, tutorial, tips, windows]
 date: 2018-05-29
 slug: membuat-installer-aplikasi-menggunakan-wix-toolset
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-wix-installer-sample" >}}
+{{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-wix-installer-sample" >}}
 </div>
 
 Tutorial installer ini membahas cara membuat installer aplikasi menggunakan WiX Toolset. Membuat installer merupakan
@@ -857,7 +857,7 @@ Penulis biasanya mengunakan **VirtualBox** untuk membuat *virtual machine* dan
 juga biasa membuat *snapshot* saat VM pertama kali dibuat, untuk menandai *clean install*. Jadi tidak perlu melakukan
 install ulang saat perlu melakukan tes ulang.
 
-![VirtualBox Manager](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/vbox-man.png)
+![VirtualBox Manager](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/vbox-man.png "VirtualBox Manager")
 
 ## Studi Kasus Lainnya
 
@@ -876,6 +876,4 @@ dari penulis:
 
 ## Referensi
 
-1. Indonesia. 2014. How Can I Run an SQL Script in MySQL
-   ([*https://stackoverflow.com/questions/8940230/how-can-i-run-an-sql-script-in-mysql*](https://stackoverflow.com/questions/8940230/how-can-i-run-an-sql-script-in-mysql)).
-   Diakses 3 Juni 2018.
+1. Indonesia. 2014. [How Can I Run an SQL Script in MySQL](https://stackoverflow.com/questions/8940230/how-can-i-run-an-sql-script-in-mysql). Diakses 3 Juni 2018.

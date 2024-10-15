@@ -1,6 +1,6 @@
 ---
 title: Maraton 4 Lomba Data Science! I'm Top 5 IEEE CS GSC 2021😋
-categories: Lainnya
+categories: [Life Story]
 tags: [tips, programming, kuliah, pengalaman, data science]
 date: 2021-10-22
 slug: maraton-lomba-data-science-top-5-ieee-cs-gsc
@@ -32,7 +32,7 @@ Terdapat dua sesi lomba, yaitu babak penyisihan dengan tema "prediksi kapan PPKM
 mencapai 50%" dan babak final dengan tema "berapa persen kapasitas ruangan untuk WFO." Data yang digunakan oleh penulis
 bersumber dari portal data seperti kawal Covid-19, Google Mobility Index, dan Apple Mobility Index.
 
-![Gambar](https://source.unsplash.com/j2c7yf223Mk)
+{{< unsplash "photo-1518729242175-4ca26a4d355d" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0NzA2fA" "Photo by Tetiana Shevereva on Unsplash" "people crossing on road between buildings during daytime" >}}
 
 Pada kedua penelitian tersebut, peneliti menggunakan pendekatan *data mining* untuk menggali informasi dari data yang
 diberikan oleh panitia. Pada penelitian pertama penulis menggunakan metode *exponential smoothing* untuk melakukan
@@ -58,7 +58,7 @@ Teman-teman bisa mengakses paper dan *source code* yang penulis buat pada peneli
 Tapi sayang sekali, pada *event* ini penulis belum lolos sebagai pemenang. Tapi kesempatan masih terbuka lebar, masih
 benyak *event* lain yang menarik untuk diikuti, salah satunya adalah BPJS Hackathon 2021!
 
-## [2 BPJS AI Hackathon 2021](https://hackathon2021.bpjs-kesehatan.go.id)
+## [2 BPJS AI Hackathon 2021](https://healthkathon.bpjs-kesehatan.go.id/)
 
 Sesuai namanya, *event* ini diselenggarakan oleh BPJS dan terbagi menjadi tiga kegiatan, yaitu AI, IOT, dan Pentest.
 Penulis tentunya mengikuti lomba AI karena berhubungan dengan data tentunya :D. Nah pada lomba AI BPJS ini peserta
@@ -69,7 +69,7 @@ Pada lomba ini penulis mengambil kategori *fraud detection* karena penulis sudah
 modelling* dan mendapatkan akurasi yang penulis rasa cukup tinggi untuk menjadi submisi lomba. Pada saat submisi,
 penulis mendapat posisi terbaik di peringkat 7 dan terakhir kali penulis cek, penulis berada di posisi ke 10.
 
-![Gambar](https://source.unsplash.com/FCHlYvR5gJI)
+{{< unsplash "photo-1505751172876-fa1923c5c528" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYwOTAzfA" "Photo by Hush Naidoo Jade Photography on Unsplash" "black and gray stethoscope yo01Z" >}}
 
 Sayang sekali pada lomba ini hanya diberikan kesempatan tiga kali untuk melakukan submisi, sehingga penulis juga
 mengalami kesulitan untuk mencoba beberapa jenis model dan melakukan *hyperparameter tuning* untuk mendapatkan model
@@ -136,7 +136,7 @@ cukup kuat untuk memproses data dalam jumlah besar.
 Akhirnya penulis menemukan solusi dengan menggunakan Apache Spark dan Spark NLP untuk melakukan pemodelannya. Meskipun
 membutuhkan waktu sekitar 2 jam untuk melakukan satu kali *training* model, hasilnya bisa dibilang cukup memuaskan.
 
-![Gambar](https://source.unsplash.com/qkfxBc2NQ18)
+{{< unsplash "photo-1588534510807-86dfb5ed5d5b" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTY0ODA2fA" "Unsplash" "woman in black and white plaid dress shirt using laptop computer" >}}
 
 Lomba ini diselenggarakan melalui *platform* Kaggle, salah satu *platform* untuk perlombaan dan komunitas *data
 science*. Pada saat kompetisi, semua peserta bisa melihat posisinya pada *leaderboard*, penulis sendiri saat itu berada
@@ -149,7 +149,7 @@ Penulis tentu sangat terkejut karena penulis yang ada di pertengahan *leaderboar
 Setelah lolos menjadi finalist, penulis kemudian melaksanakan presentasi dan mengikuti pengumuman pada konferensi *IEEE
 IC2E Conference: 9th IEEE International Conference on Cloud Engineering*.
 
-![Gambar](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/6/ieee-cs.png)
+![Pertmuan semua finalis dan pemenang IEEE CS GSC 2021](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/6/ieee-cs.png "Pertmuan semua finalis dan pemenang IEEE CS GSC 2021")
 
 Ini merupakan salah satu momen yang paling berkesan untuk penulis karena ini pertama kalinya penulis memenangkan lomba
 tingkat internasional, meskipun belum bisa mendapat juara 1-3. *Event* ini direncanakan akan diselenggarakan secara

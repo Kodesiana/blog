@@ -6,7 +6,6 @@ tags: [kuliah, programming, python, tutorial]
 series: [Machine Learning 101]
 date: 2020-07-28
 updatedDate: 2020-07-28
-mathjax: true
 slug: klasifikasi-bunga-iris-menggunakan-knn-python
 ---
 
@@ -21,9 +20,7 @@ saat kamu pertama kali belajar membuat program. Dataset ini berisi 150 data tanp
 dataset yang paling banyak digunakan dalam pembelajaran *machine learning*. Dataset ini dapat diakses pada
 [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Iris).
 
-![Bunga iris](https://source.unsplash.com/gK6f8bKKic0/1600x900)
-
-Foto oleh Olga Mandel, sumber: [Unsplash](https://unsplash.com/photos/gK6f8bKKic0).
+{{< unsplash "photo-1652988943045-608a2edbcedd" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYzNzMzfA" "Photo by Giuli Canderle on Unsplash" "a close up of a purple flower with green leaves" >}}
 
 Selain itu, kamu juga akan belajar bagaimana melakukan *data ingestion, exploratory data analysis, preprocessing,
 training,* dan juga *evaluation* menggunakan dataset ini. Perlu diingat bahwa tidak semua proses EDA dan *preprocessing*
@@ -47,9 +44,7 @@ tiap-tiap titik data dengan data yang akan diprediksi. Pada algoritma ini metode
 jarak Euclidean. Data baru akan dibandingkan jarak terdekat dengan tetangganya, semakin banyak tetangga dengan jarak
 yang dekat, maka data tersebut akan masuk ke dalam kelas tersebut.
 
-![Visualisasi KNN](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/MsLY6Gu.png)
-
-Visualisasi KNN.
+![Visualisasi KNN](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/MsLY6Gu.png "Visualisasi KNN")
 
 Banyaknya tetangga yang akan menjadi penentu kelas data yang baru, ditentukan oleh nilai konstanta \\(k\\). Nilai ini
 bisa ditentukan secara bebas atau dengan melakukan *training* menggunakan beberapa nilai \\(k\\) hingga mendapatkan
@@ -82,11 +77,11 @@ dengan \\(x\\) dan \\(y\\) adalah dua titik pada ruang Euclidean yang akan diuku
 tinggi badan \\(y_2=150\\).
 
 $$
-\begin{align}
+\begin{aligned}
 d(x,y) &= \sqrt{ {(x_2-x_1)}^2 + {(y_2-y_1)}^2 } \\
        &= \sqrt{ {(80-70)}^2 + {(150-200)}^2 } \\
        &= 50,99
-\end{align}
+\end{aligned}
 $$
 
 Lakukan proses yang sama antara semua baris pada dataset dengan data yang akan diuji.
@@ -344,13 +339,10 @@ yang dapat dilakukan menggunakan *machine learning*. Jangan lupa untuk *subscrib
 
 Stay tuned, teman-teman!😄
 
-## Referensi📘
+## Referensi
 
-1. Fisher, R. A. “THE USE OF MULTIPLE MEASUREMENTS IN TAXONOMIC PROBLEMS.”  *Annals of Eugenics*, vol. 7, no. 2, Sept.
-   1936, pp. 179–88. *DOI.org (Crossref)*, doi:10.1111/j.1469-1809.1936.tb02137.x.
+1. Fisher, R. A. "THE USE OF MULTIPLE MEASUREMENTS IN TAXONOMIC PROBLEMS."  *Annals of Eugenics*, vol. 7, no. 2, Sept. 1936, pp. 179–88. *DOI.org (Crossref)*, doi:10.1111/j.1469-1809.1936.tb02137.x.
 2. Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. Computing in Science & Engineering, 9(3), 90–95.
 3. Oliphant, T. E. (2006). A guide to NumPy (Vol. 1). Trelgol Publishing USA.
-4. Pedregosa, F., Varoquaux, Ga"el, Gramfort, A., Michel, V., Thirion, B., Grisel, O., … others. (2011). Scikit-learn:
-   Machine learning in Python. Journal of Machine Learning Research, 12(Oct), 2825–2830.
-5. Waskom, Michael, et al. Mwaskom/Seaborn: V0.8.1 (September 2017). Zenodo, 2017. DOI.org (Datacite),
-   doi:10.5281/ZENODO.883859.
+4. Pedregosa, F., Varoquaux, Ga"el, Gramfort, A., Michel, V., Thirion, B., Grisel, O., … others. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12(Oct), 2825–2830.
+5. Waskom, Michael, et al. Mwaskom/Seaborn: V0.8.1 (September 2017). Zenodo, 2017. DOI.org (Datacite), doi:10.5281/ZENODO.883859.

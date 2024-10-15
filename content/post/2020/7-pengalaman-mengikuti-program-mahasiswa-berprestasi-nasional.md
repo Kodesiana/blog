@@ -1,6 +1,6 @@
 ---
 title: Pengalaman Mengikuti Program Mahasiswa Berprestasi Nasional👨‍🎓
-categories: Lainnya
+categories: [Life Story]
 tags: [pengalaman, tips, kuliah]
 date: 2020-10-08
 slug: pengalaman-mengikuti-program-mahasiswa-berprestasi-nasional
@@ -16,8 +16,6 @@ tahun 2020.
 Gimana sih rasanya lolos terpilih menjadi mahasiswa berprestasi? Ada tips dan saran cara mengikuti pilmapres?
 
 ## Berawal dari Kebetulan
-
-![Gambar](https://source.unsplash.com/qwtMxbbPyPI/1200x657)
 
 Bulan Maret lalu, penulis diminta oleh ketua program studi ilmu komputer untuk mewakili prodi dalam lomba pilmapres.
 Informasi ini tiba-tiba penulis dapatkan, tanpa ada tanda-tanda sebelumnya. *Eh ko jadi mapres?*
@@ -47,7 +45,7 @@ Karena waktu itu penulis sedang tidak ada ide, penulis baru ingat kalau sebelumn
 e-learning yang digunakan di laboratorium komputer FMIPA.
 
 Akhirnya, penulis mengangkat penelitian mengenai aplikasi KFlearning ini. Kamu bisa akses karya tulis yang penulis buat
-mengenai KFlearning ini di [Repositori Kodesiana](https://kodesiana.com/repositori/).
+mengenai KFlearning ini di [Repositori Kodesiana](https://github.com/Kodesiana).
 
 Proyek ini merupakan proyek yang penulis gunakan sebelumnya ketika melamar menjadi asisten praktikum (yap, penulis juga
 merupakan **asisten praktikum**). Awalnya penulis ingin menerapkan ini hanya untuk di laboratorium, tetapi ternyata
@@ -136,4 +134,4 @@ inspirasi teman-teman semua yang ingin mengikuti Pemilihan Mahasiswa Berprestasi
 
 ## Referensi
 
-1. Pusat Prestasi Nasional. 2020. https://pusatprestasinasional.kemdikbud.go.id/. Diakses 14 Agustus 2020.
+1. Pusat Prestasi Nasional. 2020. [Puspresnas](https://pusatprestasinasional.kemdikbud.go.id/). Diakses 14 Agustus 2020.

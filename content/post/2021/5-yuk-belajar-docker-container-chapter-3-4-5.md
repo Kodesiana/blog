@@ -1,6 +1,6 @@
 ---
 title: Yuk Belajar Docker Container!🐳 Chapter 3, 4, 5
-categories: Programming
+categories: [Software Engineering]
 tags: [cloud, tips, programming, tutorial]
 date: 2021-09-19
 slug: yuk-belajar-docker-container-chapter-3-4-5
@@ -457,6 +457,4 @@ Terdapat empat pilihan *restart policy* pada Docker Compose, yaitu:
 
 ## Referensi
 
-1. nodepractices. 2021. Bootstrap container using node command instead of npm
-   (<https://github.com/goldbergyoni/nodebestpractices/blob/master/sections/docker/bootstrap-using-node.md>). Diakses 19
-   September 2021.
+1. nodepractices. 2021. [Bootstrap container using node command instead of npm](https://github.com/goldbergyoni/nodebestpractices/blob/master/sections/docker/bootstrap-using-node.md). Diakses 19 September 2021.

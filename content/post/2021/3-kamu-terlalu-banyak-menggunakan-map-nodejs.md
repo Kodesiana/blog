@@ -1,14 +1,13 @@
 ---
 title: Kamu Terlalu Banyak menggunakan map(🌏) di NodeJS
-categories: Programming
+categories: [Software Engineering]
 tags: [programming, tips, nodejs]
 date: 2021-06-22
-mathjax: true
 slug: kamu-terlalu-banyak-menggunakan-map-nodejs
 ---
 
 <div class="flex justify-center">
-{{< button content="Soure Code" icon="logos:github-icon" href="https://l.kodesiana.com/legacy-node-gcc-bench" >}}
+{{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-node-gcc-bench" >}}
 </div>
 
 Fungsi `map` merupakan salah satu fungsi yang terdapat pada ECMAScript 6 yang telah ada sejak 2015 lalu. Fungsi ini
@@ -154,11 +153,7 @@ Semoga artikel kali ini bermanfaat!
 
 ## Referensi
 
-1. Indonesia. 2019. forEach vs reduce vs map vs filter vs for
-   (<https://www.measurethat.net/Benchmarks/Show/2235/0/foreach-vs-reduce-vs-map-vs-filter-vs-for>). Diakses 17 Mei 2021.
-2. Sanderson, Adam. 2011. Why JavaScript's Native Filter Method is Slow
-   (<http://www.monkeyandcrow.com/blog/why_javascripts_filter_is_slow>). Diakses 17 Mei 2021.
-3. ECMAScript. 2021. ECMAScript 2022 Language Specification (<https://tc39.es/ecma262/#sec-array.prototype.filter>).
-   Diakses 17 Mei 2021.
-4. MDN. 2021. Array.prototype.map()
-   (<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map>). Diakses 22 Juni 2021.
+1. Indonesia. 2019. [forEach vs reduce vs map vs filter vs for](https://www.measurethat.net/Benchmarks/Show/2235/0/foreach-vs-reduce-vs-map-vs-filter-vs-for). Diakses 17 Mei 2021.
+2. Sanderson, Adam. 2011. [Why JavaScript's Native Filter Method is Slow](http://www.monkeyandcrow.com/blog/why_javascripts_filter_is_slow). Diakses 17 Mei 2021.
+3. ECMAScript. 2021. [ECMAScript 2022 Language Specification](https://tc39.es/ecma262/#sec-array.prototype.filter). Diakses 17 Mei 2021.
+4. MDN. 2021. [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map). Diakses 22 Juni 2021.

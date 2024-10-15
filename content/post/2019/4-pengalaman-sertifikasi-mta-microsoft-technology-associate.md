@@ -1,6 +1,6 @@
 ---
 title: Pengalaman Sertifikasi Microsoft Technology Associate (MTA)📚
-categories: Tips
+categories: [Life Story]
 tags: [pengalaman, tips, programming, kuliah]
 date: 2019-07-13
 slug: pengalaman-sertifikasi-mta-microsoft-technology-associate
@@ -12,7 +12,7 @@ pencapaian dalam suatu bidang, khususnya teknologi.
 Bulan Mei lalu, admin mengikuti program sertifikasi Microsoft Technology Associate yang diselenggarakan oleh Computer
 Science Training Center (ComSTraC) Universitas Pakuan.
 
-![Gambar](https://source.unsplash.com/-2vD8lIhdnw/1200x657)
+{{< unsplash "photo-1494809610410-160faaed4de0" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTU5NzgyfA" "Photo by Clay Banks on Unsplash" "woman standing between library book shelves" >}}
 
 ## Awalnya
 
@@ -54,7 +54,7 @@ penulis hanya mendapat skor 70, pas dengan nilai minimum kelulusan.
 Dari situ admin terus mencoba kembali dengan paket soal lain hingga jam 10 malam, hingga berhasil mendapat skor yang
 memuaskan.
 
-![Gambar](https://source.unsplash.com/QJDzYT_K8Xg/1200x657)
+{{< unsplash "photo-1516534775068-ba3e7458af70" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYxOTE5fA" "Unsplash" "woman biting pencil while sitting on chair in front of computer during daytime " >}}
 
 Belajar dari berbagai sumber, khususnya Microsoft Learning.
 
