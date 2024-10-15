@@ -1,8 +1,14 @@
 ---
 title: Kebijakan Privasi
+date: 2020-04-11
+slug: privacy-policy
 lang: en
-date: 2020-04-11T19:15:32+08:00
 comments: false
+menu:
+    main: 
+        weight: -40
+        params:
+            icon: cookie
 ---
 
 At Kodesiana, accessible from <https://kodesiana.com>, one of our main priorities is the privacy of our visitors. This
@@ -31,7 +37,7 @@ For more general information on cookies, please read the “What Are Cookies” 
 ## Google DoubleClick DART Cookie
 
 Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site
-visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to
+visitors based upon their visit to www.kodesiana.com and other sites on the internet. However, visitors may choose to
 decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL –
 <https://policies.google.com/technologies/ads>
 

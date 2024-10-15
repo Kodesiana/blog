@@ -1,4 +1,0 @@
----
-title: Pencarian
-layout: search
----
