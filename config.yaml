@@ -1,0 +1,221 @@
+# ---------------------------------------
+# Blog Identity
+# ---------------------------------------
+
+title: Kodesiana
+copyright: Fahmi Noor Fiqri
+
+# Locale
+languageCode: id
+defaultContentLanguage: id
+hasCJKLanguage: false
+
+# Time Zone
+timeZone: Asia/Jakarta
+
+
+# ---------------------------------------
+# Permalink
+# ---------------------------------------
+
+baseURL: https://www.kodesiana.com/
+
+permalinks:
+  post: /:section/:slug/
+  page: /:slug/
+
+
+# ---------------------------------------
+# Content
+# ---------------------------------------
+
+# Revisions
+enableGitInfo: true
+
+# Pagination
+pagination:
+    pagerSize: 5
+
+# Related posts
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+        - name: categories
+          weight: 200
+
+
+# ---------------------------------------
+# Theme
+# ---------------------------------------
+
+theme: stack
+
+params:
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+
+    footer:
+        since: 2018
+        customText:
+
+    dateFormat:
+        published: 02 January 2006
+        lastUpdated: 02 January 2006 15:04 MST
+
+    sidebar:
+        emoji: ⚡
+        subtitle: "<b>#NgodingItuMudah</b><br/> Belajar bareng koding, DevOps, dan <i>machine learning</i>."
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.jpg
+
+    article:
+        math: true
+        toc: true
+        readingTime: true
+        license:
+            enabled: true
+            default: Dilisensikan di bawah CC BY-NC-SA 4.0
+
+    comments:
+        enabled: true
+        provider: giscus
+        giscus:
+            repo: Kodesiana/kodesiana-hugo
+            repoID: R_kgDOJV7_0w
+            category: General
+            categoryID: DIC_kwDOJV7_084CWClN
+            mapping: pathname
+            lightTheme:
+            darkTheme:
+            reactionsEnabled: 0
+            emitMetadata: 0
+      
+    widgets:
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 5
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
+
+    opengraph:
+        twitter:
+            site: fahminoorfiqri
+            card: summary_large_image
+
+    defaultImage:
+        opengraph:
+            enabled: false
+            local: false
+            src:
+
+    colorScheme:
+        toggle: true
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+    integrations:
+        googleAdsense: "6850104426944295"
+        googleAnalytics: "G-WCSBJTCX6E"
+        googleSiteVerification: "orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M"
+        mailchimpSignup: "c9b6346f906dad1b1a2a309c1/ed7023095897a6d39d7ca5dde"
+        microsoftClarity: "54zpth9y8i"
+
+
+# ---------------------------------------
+# Menu
+# ---------------------------------------
+
+menu:
+    main: []
+        
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/fahminlb33
+          params:
+              icon: brand-github
+        - identifier: youtube
+          name: YouTube
+          url: https://www.youtube.com/c/FahmiNoorFiqri
+          params:
+              icon: brand-youtube
+        - identifier: linkedin
+          name: LinkedIn
+          url: https://www.linkedin.com/in/fahmi-noor-fiqri
+          params:
+              icon: brand-linkedin
+        - identifier: stackoverflow
+          name: Stackoverflow
+          url: https://stackoverflow.com/users/5561144/fahmi-noor-fiqri
+          params:
+              icon: brand-stackoverflow
+        - identifier: instagram
+          name: Instagram
+          url: https://twitter.com
+          params:
+              icon: brand-instagram
+        - identifier: twitter
+          name: Twitter
+          url: https://instagram.com/fahminoorfiqri
+          params:
+              icon: brand-twitter
+        - identifier: donate
+          name: Saweria
+          url: https://saweria.co/fahminlb33
+          params:
+              icon: cash-banknote
+
+
+# ---------------------------------------
+# Markdown Config
+# ---------------------------------------
+
+markup:
+    goldmark:
+        extensions:
+            passthrough:
+                enable: true
+                delimiters:
+                    block:
+                        - - \[
+                          - \]
+                        - - $$
+                          - $$
+                    inline:
+                        - - \(
+                          - \)
+        renderer:
+            unsafe: true
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4

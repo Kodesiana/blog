@@ -1,8 +1,15 @@
-<div class="custom-button">
-  <a href="{{ .Get "href" }}">
-    {{ if .Get "icon" }}
-    {{ partial "svg.html" (dict "name" (.Get "icon")) }}
-    {{ end }}
-    <span>{{ .Get "content" }}</span>
-  </a>
+<div class="cta-button-container">
+  <div class="cta-button">
+    <a href="{{ .Get "href" }}">
+      {{ if .Get "icon" }}
+        {{- $iconFile := resources.GetMatch (printf "icons/%s.svg" (.Get "icon")) -}}
+        {{- if $iconFile -}}
+            {{- $iconFile.Content | safeHTML -}}
+        {{- else -}}
+            {{- errorf "Error: icon '%s.svg' is not found under 'assets/icons' folder" (.Get "icon") -}}
+        {{- end -}}
+      {{ end }}
+      <span>{{ .Get "content" }}</span>
+    </a>
+  </div>
 </div>

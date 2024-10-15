@@ -1,0 +1,38 @@
+.cta-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cta-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button a {
+    transition-duration: 0.2s;
+    border: 2px solid #008CBA;
+    border-radius: 4px;
+    box-shadow: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    vertical-align: middle;
+}
+
+.cta-button a:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.cta-button svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    height: 21px;
+    width: 22px;
+}
