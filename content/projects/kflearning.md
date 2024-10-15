@@ -5,10 +5,13 @@ date: 2021-03-08
 comments: false
 ---
 
-> **KFlearning v3.0.0 "Київ" / "Kyiv"** dalam status **stabil.** Berikan kritik dan saran melalui asisten praktikum Anda
-> atau form berikut: [Form Bug Report/Feedback KFlearning](https://forms.gle/cVymzViruCcVtm3W6)
+> KFlearning dalam fase **END OF LIFE (EOL)**.
+>
+> Tidak ada fitur baru maupun bugfix yang akan dikembangkan.
 
 <p style="text-align: center;"><b>Link download ada di bagian bawah laman ini.</b></p>
+
+> **KFlearning v3.0.0 "Київ" / "Kyiv"** dalam status **stabil.**
 
 ## KFlearning
 
