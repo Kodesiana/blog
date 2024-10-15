@@ -6,9 +6,7 @@ date: 2021-06-22
 slug: kamu-terlalu-banyak-menggunakan-map-nodejs
 ---
 
-<div class="flex justify-center">
 {{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-node-gcc-bench" >}}
-</div>
 
 Fungsi `map` merupakan salah satu fungsi yang terdapat pada ECMAScript 6 yang telah ada sejak 2015 lalu. Fungsi ini
 sangat digemari karena sifatnya yang sangat *versatile* dan dapat digunakan hampir untuk semua kasus. Tetapi, tahu kah

@@ -6,9 +6,7 @@ date: 2018-05-27
 slug: 16-tips-manipulasi-datetime-pada-csharp
 ---
 
-<div class="flex justify-center">
 {{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-datetime-format" >}}
-</div>
 
 Manipulasi *DateTime* merupakan hal yang wajib diketahui oleh programmer, khususnya C# dan VB.NET. *DateTime*
 ([struktur](<https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx>)) digunakan untuk menyimpan

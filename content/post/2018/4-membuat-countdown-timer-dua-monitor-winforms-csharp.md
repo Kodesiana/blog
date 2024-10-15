@@ -6,9 +6,7 @@ date: 2018-05-24
 slug: membuat-countdown-timer-dua-monitor-winforms-csharp
 ---
 
-<div class="flex justify-center">
 {{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-countdown-timer" >}}
-</div>
 
 *Countdown timer* lazim dijumpai di berbagai tempat misalnya di rumah sakit, bank, kantor servis, dan tempat lain yang
 menggunakan sistem antrean. Program ini biasanya menunjukkan berapa lama waktu sebelum antrean berikutnya dipanggil.

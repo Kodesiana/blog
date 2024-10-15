@@ -5,9 +5,7 @@ tags: [cloud, backend, javascript, typescript, cloudflare]
 date: 2024-01-01
 ---
 
-<div class="flex justify-center">
 {{< button content="Soure Code & Deploy" icon="brand-github" href="https://github.com/Kodesiana/pendekin" >}}
-</div>
 
 Halo teman-teman, ini adalah artikel pertama penulis di tahun 2024! Pada artikel kali ini penulis akan berbagi mengenai pengalaman penulis menggunakan CloudFlare Worker dengan studi kasus membuat *link shortener* dengan Worker dan KV.
 

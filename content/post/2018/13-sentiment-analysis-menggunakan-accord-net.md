@@ -6,9 +6,7 @@ date: 2018-12-26
 slug: sentiment-analysis-menggunakan-accord-net
 ---
 
-<div class="flex justify-center">
 {{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-emotex" >}}
-</div>
 
 Sentiment analysis itu apa? Kenapa tiba-tiba admin menulis artikel tentang sentiment analysis? Singkat kata admin sedang
 mengikuti lomba **Piala MIPA 2018** yang diadakan oleh **Fakultas Ilmu Pengetahuan Alam Universitas Pakuan**.

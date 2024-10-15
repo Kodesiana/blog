@@ -6,9 +6,7 @@ date: 2018-05-29
 slug: membuat-installer-aplikasi-menggunakan-wix-toolset
 ---
 
-<div class="flex justify-center">
 {{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-wix-installer-sample" >}}
-</div>
 
 Tutorial installer ini membahas cara membuat installer aplikasi menggunakan WiX Toolset. Membuat installer merupakan
 tahap akhir dari siklus pembuatan aplikasi. Setelah program aplikasi selesai dibuat dan diuji, tahap selanjutnya adalah

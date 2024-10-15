@@ -53,9 +53,7 @@ Teman-teman bisa langsung menghubungkan Raspberry Pi dengan *router* dari ISP, m
 
 Akhirnya setelah server kita sudah menyala, kita akan mulai untuk melakukan *provisioning* server. Beberapa tahapan yang akan kita lakukan adalah sebagai berikut.
 
-<div class="flex justify-center">
 {{< button content="Soure Code dan Tutorial" icon="brand-github" href="https://github.com/fahminlb33/ritsu-pi/blob/master/INSTALL.MD" >}}
-</div>
 
 ### 1️⃣ Instalasi Raspbian OS
 

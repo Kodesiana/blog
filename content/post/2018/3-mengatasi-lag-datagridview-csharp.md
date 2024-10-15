@@ -6,9 +6,7 @@ date: 2018-05-15
 slug: mengatasi-lag-datagridview-csharp
 ---
 
-<div class="flex justify-center">
 {{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-fast-datagridview" >}}
-</div>
 
 DataGridView merupakan kontrol yang sangat umum digunakan untuk menampilkan data dari *database*. Tetapi, saat
 menggunakan DataGridView dengan banyak *style* dan data, aplikasi akan menjadi *lag* atau *flickering*. Lag DataGridView

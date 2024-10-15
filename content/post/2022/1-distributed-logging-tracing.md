@@ -6,9 +6,7 @@ date: 2022-01-08
 slug: distributed-tracing-logging-pada-microservice
 ---
 
-<div class="flex justify-center">
 {{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-distributed-logging-tracing" >}}
-</div>
 
 *Distributed tracing* dan *logging* menjadi salah satu kewajiban saat kita membuat aplikasi khususnya *backend* yang
 menggunakan arsitektur *microservice*. Kenapa kita perlu *distributed tracind/logging*? Apa manfaatnya, dan bagaimana

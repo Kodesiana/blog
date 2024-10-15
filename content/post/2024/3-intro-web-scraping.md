@@ -7,9 +7,7 @@ date: 2024-02-10
 slug: web-scraping-dengan-scrapy
 ---
 
-<div class="flex justify-center">
 {{< button content="Soure Code" icon="brand-github" href="https://github.com/fahminlb33/bogor-house-price" >}}
-</div>
 
 *Web scraping* merupakan salah satu metode untuk melakukan akuisisi data dari *website* publik. Pada [artikel sebelumnya](kodesiana.com) penulis pernah menyinggung mengenai *web scraping* dan pada artikel ini penulis akan membahas secara komprehensif bagaimana cara membuat sebuah *web scraper* untuk mendapatkan data dari sebuah *website*.
 
