@@ -34,7 +34,7 @@ await checker
       "whatsapp.com",
       "reddit.com",
       "googlesyndication.com",
-      "googletagmanager.com"
+      "googletagmanager.com",
     ],
   })
   .then((results) => {

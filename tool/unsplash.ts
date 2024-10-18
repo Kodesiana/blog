@@ -44,13 +44,15 @@ const imageUrl = new URL(urls[0]);
 
 // extract credit from HTML body
 const creator = /Photo by [\w ]+ on Unsplash/;
-const creatorMatches = creator.exec(content)
-const creatorCredit = creatorMatches ?  creatorMatches[0] : "Unsplash";
+const creatorMatches = creator.exec(content);
+const creatorCredit = creatorMatches ? creatorMatches[0] : "Unsplash";
 
 // extract image caption
 const resUrl = new URL(response.url);
 let caption = resUrl.pathname.replaceAll("/photos/", "");
-caption = caption.slice(0, caption.lastIndexOf("-"))
-caption = caption.replaceAll("-", " ")
+caption = caption.slice(0, caption.lastIndexOf("-"));
+caption = caption.replaceAll("-", " ");
 
-console.log(`{{< unsplash "${imageUrl.pathname.substring(1)}" "${imageUrl.searchParams.get('ixid')}" "${creatorCredit}" "${caption}" >}}`)
+console.log(
+  `{{< unsplash "${imageUrl.pathname.substring(1)}" "${imageUrl.searchParams.get("ixid")}" "${creatorCredit}" "${caption}" >}}`,
+);
