@@ -1,19 +1,15 @@
 ---
 title: Setahun dengan PLN⚡ Mati Lisrik 81 Kali
-categories: [Data Science, Tutorial]
-tags: [data mining, tutorial]
-date: 2024-10-25
-description: Kisah lika-liku hidup di gunung. Tidak hanya sulit akses internet, tapi juga listrik.
+categories: [Data Science]
+tags: [data mining, tutorial, visualisasi, microsoft excel]
+date: 2024-11-25
+description: Kisah lika-liku hidup di gunung. Tidak hanya sulit akses internet, tapi juga listrik
 image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/setahun-pln-cover.jpg
-draft: true
 ---
 
 {{< button-group >}}
-
-{{< button content="Akses Notebook" icon="gilbarbara-logos-jupyter" href="https://l.kodesiana.com/setahun-pln-2024-colab" >}}
-
-{{< button content="Unduh Dataset" icon="download" href="https://l.kodesiana.com/setahun-pln-2024-dataset" >}}
-
+  {{< button content="Akses Notebook" icon="gilbarbara-logos-jupyter" href="https://l.kodesiana.com/setahun-pln-2024-colab" >}}
+  {{< button content="Unduh Dataset" icon="download" href="https://l.kodesiana.com/setahun-pln-2024-dataset" >}}
 {{</ button-group >}}
 
 Listrik merupakan salah satu kebutuhan primer bagi manusia di zaman digital ini. PLN sebagai penyedia layanan listrik bertanggung jawab untuk menyediakan layanan yang reliabel kepada pelanggannya, di mana pun lokasi tinggalnya. Tentu saja tidak mungkin PLN bisa menyediakan layanan tanpa pemadaman, faktor eksternal seperti cuaca dan bencana alam pasti diluar kendali PLN. Tetapi apa yang terjadi jika layanan PLN sering kali putus nyambung? Di mana batas "normal" jika terjadi pemadaman?
