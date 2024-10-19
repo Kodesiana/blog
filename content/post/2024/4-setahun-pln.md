@@ -1,8 +1,8 @@
 ---
 title: Setahun dengan PLN⚡ Mati Lisrik 81 Kali
 categories: [Data Science]
-tags: [data mining, tutorial, visualisasi, microsoft excel]
-date: 2024-12-15
+tags: [data mining, tutorial, visualisasi]
+date: 2024-09-30
 description: Kisah lika-liku hidup di gunung. Tidak hanya sulit akses internet, tapi juga listrik
 image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/setahun-pln-cover.jpg
 ---
