@@ -1,13 +1,13 @@
 ---
 title: 'Scraping dan Visualisasi Gempa BMKG dengan Microsoft Excel🌏'
-date: 2024-10-25
+date: 2024-10-31
 categories: [Data Science]
 tags: [visualisasi, microsoft excel, geoscience]
 description: Mengunduh data dari BMKG dan memproses data menggunakan Microsoft Excel
 image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/_gempa-cover_comp.png
 ---
 
-Masih dalam semangat turnamen Microsoft Excel🔥, pada artikel kali ini kita akan coba mengunduh data gempa bumi dari BMKG kemudian memvisualisasikan data tersebut menggunakan Microsoft Excel. Kita akan coba menggunakan fitur Power Query untuk mengolah data JSON dari server BMKG dan penulis juga akan berbagi data yang sudah penulis kumpulkan sendiri untuk analisis yang lebih menyeluruh
+Masih dalam semangat turnamen Microsoft Excel🔥, pada artikel kali ini kita akan coba mengunduh data gempa bumi dari BMKG kemudian memvisualisasikan data tersebut menggunakan Microsoft Excel. Kita akan coba menggunakan fitur Power Query untuk mengolah data JSON dari server BMKG dan penulis juga akan berbagi data yang sudah penulis kumpulkan sendiri untuk analisis yang lebih menyeluruh.
 
 ## Data Terbuka BMKG🔍
 
