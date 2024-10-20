@@ -1,3 +1,5 @@
+/* ---- BUTTON AND BUTTON GROUP --- */
+
 .cta-button-container {
     display: flex;
     justify-content: center;
@@ -36,4 +38,31 @@
     margin-right: 5px;
     height: 21px;
     width: 22px;
+}
+
+/* ---- IMAGE GROUP --- */
+
+.image-group-container {
+    display: flex;
+    background-color: white;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.image-group-item {
+    padding: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .image-group-item {
+        width: 100%;
+    }
+}
+
+.image-group-item img {
+    width: 100%;
+}
+
+.image-group-item figcaption {
+    color: var(--body-background) !important;
 }
