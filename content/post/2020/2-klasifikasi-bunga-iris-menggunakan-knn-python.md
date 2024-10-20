@@ -1,13 +1,15 @@
 ---
-title: Klasifikasi Bunga Iris menggunakan KNN Python🌺
-subtitle: Belajar proses membuat model machine learning sederhana
-categories: Data Science
-tags: [kuliah, programming, python, tutorial]
-series: [Machine Learning 101]
+title: Klasifikasi Bunga Iris menggunakan Metode K-Nearest Neighbor (KNN) dengan Python🌺
 date: 2020-07-28
-updatedDate: 2020-07-28
+categories: [Data Science]
+tags: [kuliah, programming, python, tutorial, knn]
+series: [Machine Learning 101]
+description: Belajar proses membuat model machine learning untuk klasifikasi
 slug: klasifikasi-bunga-iris-menggunakan-knn-python
+image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/knn-iris-cover.jpg
 ---
+
+> Foto sampul oleh Giuli Canderle dari Unsplash
 
 Klasifikasi merupakan salah satu kegiatan yang paling sering dilakukan menggunakan *machine learning*. Pada artikel ini
 kamu akan mencoba untuk membuat sebuah model untuk melakukan klasifikasi pada spesies bunga iris (Fisher, 1936). Bunga
@@ -19,8 +21,6 @@ Dataset ini merupakan dataset standar yang biasa digunakan untuk belajar *machin
 saat kamu pertama kali belajar membuat program. Dataset ini berisi 150 data tanpa adanya data kosong dan merupakan
 dataset yang paling banyak digunakan dalam pembelajaran *machine learning*. Dataset ini dapat diakses pada
 [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Iris).
-
-{{< unsplash "photo-1652988943045-608a2edbcedd" "M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzI4OTYzNzMzfA" "Photo by Giuli Canderle on Unsplash" "a close up of a purple flower with green leaves" >}}
 
 Selain itu, kamu juga akan belajar bagaimana melakukan *data ingestion, exploratory data analysis, preprocessing,
 training,* dan juga *evaluation* menggunakan dataset ini. Perlu diingat bahwa tidak semua proses EDA dan *preprocessing*
