@@ -1,5 +1,5 @@
 ---
-title: Proyek
+title: Open Source
 slug: projects
 description: Koleksi aplikasi buatan penulis Kodesiana.com
 comments: false
