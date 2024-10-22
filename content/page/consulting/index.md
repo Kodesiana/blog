@@ -33,7 +33,7 @@ Tidak terbatas pada konsultasi, kamu juga bisa berkolaborasi dengan penulis seba
 ## ❓ Kenapa Pilih Kodesiana.com?
 
 ✅ Memiliki pengalaman di industri > 5 tahun  
-✅ Cocok untuk civitas akademika (S1/S2/S3)
+✅ Cocok untuk civitas akademika (S1/S2/S3)  
 ✅ Dapat melakukan penelitian yang bersifat interdisiplin  
 ✅ Berpengalaman dalam publikasi ilmiah pada jurnal bereputasi nasional dan internasional  
 ✅ Memiliki banyak proyek *open source* sebagai bukti kemahiran pada domain penulis  
