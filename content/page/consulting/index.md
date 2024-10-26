@@ -40,7 +40,7 @@ Tidak terbatas pada konsultasi, kamu juga bisa berkolaborasi dengan penulis seba
 
 ## 💸 Biaya
 
-Biaya konsultasi bersifat *flat* sebesar **Rp150.000** per **55 menit** untuk civitas akademika. Sesi konsultasi bisa dilakukan melalui email, WhatsApp, atau interaktif melalui Zoom/Google Meet.
+Biaya konsultasi bersifat *flat* sebesar **Rp100.000** per **55 menit** untuk civitas akademika. Sesi konsultasi bisa dilakukan melalui email, WhatsApp, atau interaktif melalui Zoom/Google Meet.
 
 > Detail harga konsultasi untuk perusahaan/*enterprise* dapat menghubungi WhatsApp.
 
