@@ -29,6 +29,12 @@ permalinks:
 # Content
 # ---------------------------------------
 
+# Content taxonomies
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
 # Revisions
 enableGitInfo: true
 
@@ -58,7 +64,7 @@ params:
     mainSections:
         - post
     featuredImageField: image
-    rssFullContent: true
+    rssFullContent: false
 
     footer:
         since: 2018
@@ -110,6 +116,9 @@ params:
             - type: tag-cloud
               params:
                   limit: 10
+            - type: series-cloud
+              params:
+                  limit: 5
         page:
             - type: toc
 
