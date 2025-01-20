@@ -52,7 +52,7 @@ Melalui sistem yang sudah dibuat penulis, kita bisa mengumpulkan data kecepatan 
 
 Untuk melihat data secara *real-time*, penulis menggunakan Grafana untuk menampilkan visualisasi data dari Prometheus.
 
-![Visualisasi data Prometheus menggunakan Grafana](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/indihome-suck/grafana_viscomp.png)
+![Visualisasi data Prometheus menggunakan Grafana](https://assets.kodesiana.com/posts/2023/indihome-suck/grafana_viscomp.png)
 
 Nah dari grafik ini, sekilas kita bisa lihat kalau rata-rata kecepatan unduh Indohome ini sebesar 22,2 Mbps. Sudah terlihat kurang dari langganan Indihome penulis sebesar 30 Mbps. Untuk mempermudah mengambil data dari Prometheus, penulis menggunakan kode Python berikut.
 
@@ -105,7 +105,7 @@ Tabel sampel data Prometheus.
 | 2023-05-01 07:40:46.321000192+00:00 | 24375656.0 | speedtest_download_bits_per_second |
 | 2023-05-01 08:40:46.321000192+00:00 | 23379304.0 | speedtest_download_bits_per_second |
 
-{{< button content="Download Dataset RAW" icon="download" href="https://l.kodesiana.com/2023-1-indihome_raw.csv" >}}
+{{< button content="Download Dataset RAW" icon="download" href="https://blobs.kodesiana.com/kodesiana-data-open/indihome-uptime-2024/indihome_raw.csv" >}}
 
 Tahap selanjutnya adalah kita perlu melakukan *preprocessing* untuk memperbaiki tipe data dan struktur data.
 
@@ -167,7 +167,7 @@ ax.set_ylim(bottom=0)
 plt.show()
 ```
 
-![Kecepatan Indihome per jam](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/indihome-suck/hourlycomp.png)
+![Kecepatan Indihome per jam](https://assets.kodesiana.com/posts/2023/indihome-suck/hourlycomp.png)
 
 Woww, ternyata sering gangguan😂. Tapi ingat ini adalah data per jam, mungkin kebetulan saja koneksi internet penulis sedang gangguan atau terputus. Karena kecepatan internet per jam juga tidak begitu representatif untuk menggambarkan secara umum kecepatan internet Indihome, sekali lagi kita akan meringkas data dengan melakukan *resampling* data dengan cara merata-ratakan kecepatan internet dari per jam menjadi per hari.
 
@@ -199,7 +199,7 @@ Tabel kecepatan internet Indihome per hari.
 | 2023-05-04 | 23.79         | 10.45       |
 | 2023-05-05 | 24.12         | 10.51       |
 
-{{< button content="Download Dataset Harian" icon="download" href="https://l.kodesiana.com/2023-1-indihome_daily.csv" >}}
+{{< button content="Download Dataset Harian" icon="download" href="https://blobs.kodesiana.com/kodesiana-data-open/indihome-uptime-2024/indihome_daily.csv" >}}
 
 Setelah kita memiliki data kecepatan internet harian, kita bisa melakukan visualisasi data kembali.
 
@@ -213,7 +213,7 @@ ax.set_ylim(bottom=0)
 plt.show()
 ```
 
-![Kecepatan Indihome per hari](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/indihome-suck/dailycomp.png)
+![Kecepatan Indihome per hari](https://assets.kodesiana.com/posts/2023/indihome-suck/dailycomp.png)
 
 Dari visualisasi ini kita bisa lihat bahwa semakin hari kecepatan unduh Indihome semakin turun😓. Apakah ini hanya kebetulan atau sedang gangguan sementara?
 
@@ -381,7 +381,7 @@ sns.regplot(x="timestamp", y="download_mbps", data=df_reg)
 plt.show()
 ```
 
-![Garis regresi](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/indihome-suck/regressioncomp.png)
+![Garis regresi](https://assets.kodesiana.com/posts/2023/indihome-suck/regressioncomp.png)
 
 Nah, berdasarkan tren pada grafik di atas, dapat disimpulkan bahwa secara umum, kecepatan internet Indihome setiap harinya cenderung turun! Wahh...
 

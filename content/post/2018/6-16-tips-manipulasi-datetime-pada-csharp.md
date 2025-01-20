@@ -41,7 +41,7 @@ tanggal *bulan/tanggal/tahun* pada format EN-US dapat dengan mudah diubah menjad
 *tanggal/bulan/tahun* menggunakan kode di atas. Biasanya format tanggal dan waktu tidak perlu kustom, cukup mengubah
 kultur saja.
 
-![Demo Manipulasi DateTime](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/6/demo-datetime.png)
+![Demo Manipulasi DateTime](https://assets.kodesiana.com/posts/2018/6/demo-datetime.png)
 
 ## Format Standar DateTime
 

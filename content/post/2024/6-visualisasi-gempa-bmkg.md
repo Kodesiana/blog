@@ -4,7 +4,7 @@ date: 2024-10-31
 categories: [Data Science]
 tags: [visualisasi, microsoft excel, geoscience]
 description: Mengunduh data dari BMKG dan memproses data menggunakan Microsoft Excel
-image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/_gempa-cover_comp.png
+image: https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/_gempa-cover_comp.png
 ---
 
 Masih dalam semangat turnamen Microsoft Excel🔥, pada artikel kali ini kita akan coba mengunduh data gempa bumi dari BMKG kemudian memvisualisasikan data tersebut menggunakan Microsoft Excel. Kita akan coba menggunakan fitur Power Query untuk mengolah data JSON dari server BMKG dan penulis juga akan berbagi data yang sudah penulis kumpulkan sendiri untuk analisis yang lebih menyeluruh.
@@ -77,7 +77,7 @@ Secara umum terdapat empat langkah dalam menggunakan Power Query, yaitu:
 
 Pada artikel kali ini, kita akan melakukan tiga proses saja yaitu **Connect**, **Transform**, dan **Load** untuk mendemonstrasikan bagaimana cara menggunakan *Power Query* dan potensinya untuk melakukan analisis data. Pastikan versi Microsoft Excel kamu memiliki tab **Data** dan menu *Get & Transform Data*.
 
-![Get & Transform Data](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig1_power_query_ribbon.png)
+![Get & Transform Data](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig1_power_query_ribbon.png)
 
 ## Connect: Mengunduh Data dari BMKG📤
 
@@ -91,33 +91,33 @@ Kenapa dari dua sumber? Kita akan bahas nanti😉
 
 Pada tab **Data**, klik **From Web**. Kemudian isikan URL seperti pada tombol di atas.
 
-![Koneksi data dari API BMKG menggunakan Power Query](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig2_import_bmkg_api.png)
+![Koneksi data dari API BMKG menggunakan Power Query](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig2_import_bmkg_api.png)
 
 Setelah itu, jendela **Power Query Editor** akan muncul dan menampilkan data JSON yang sudah diunduh.
 
-![Data yang berhasil dimuat ke Excel. BMKG hanya menyediakan 15 baris data gempa terkini](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig3_transform_start.png)
+![Data yang berhasil dimuat ke Excel. BMKG hanya menyediakan 15 baris data gempa terkini](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig3_transform_start.png)
 
 Sampai di sini, kita bisa melakukan transformasi data awal agar data yang kita muat sudah dalam bentuk tabel. Ingat, data asli dari BMKG terdapat di dalam *array* `Infogempa.gempa`, sehingga kita perlu melakukan *drill down* ke *array* tersebut agar bisa dimuat sebagai tabel.
 
 Cukup *double click* pada baris [**Infogempa** Record] dan kemudian pada [**gempa** List], klik kanan dan pilih menu **To Table**.
 
-![Transformasi data menjadi tabel](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig4_to_table.png)
+![Transformasi data menjadi tabel](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig4_to_table.png)
 
-![Konfirmasi transformasi data](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig5_to_table_confirm.png)
+![Konfirmasi transformasi data](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig5_to_table_confirm.png)
 
 Setelah proses konversi dilakukan, sekarang kita sudah bisa mulai melakukan transformasi data dari format *Record* menjadi kolom. Klik pada tombol pada kolom **Column1**, kemudian hilangkan ceklis pada *Use original column name as prefix* karena kita tidak perlu nama kolom asli sebagai prefiks. Setelah itu, klik **OK**.
 
-![Lokasi tombol *expand columns*](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig6_expand_cols.png)
+![Lokasi tombol *expand columns*](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig6_expand_cols.png)
 
-![Konfirmasi *expand columns*](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig7_expand_cols_confirm.png)
+![Konfirmasi *expand columns*](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig7_expand_cols_confirm.png)
 
 Untuk memuat data dari *Power Query Editor* ke dalam *worksheet*, klik **Close & Load**.
 
-![Memuat data ke dalam *worksheet*](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig8_load_data.png)
+![Memuat data ke dalam *worksheet*](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig8_load_data.png)
 
 Selesai! Sekarang kita sudah punya dataset gempa terkini yang diambil langsung dari API BMKG.
 
-![Tampilan data yang sudah ditransformasi dan dimuat](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig9_loaded_data.png)
+![Tampilan data yang sudah ditransformasi dan dimuat](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig9_loaded_data.png)
 
 Sampai di sini kita sudah selesai memuat dan melakukan transformasi data. Tahap selanjutnya kita bisa melakukan transformasi lebih lanjut untuk mengonversi tipe data menjadi numerik misalnya pada kolom `Magnitude` dan `Kedalaman`, tetapi proses tersebut tidak akan kita lakukan menggunakan data ini karena hanya terdapat 15 data.
 
@@ -129,9 +129,9 @@ Sampai di sini kita sudah selesai memuat dan melakukan transformasi data. Tahap 
 
 Pada pembahasan sebelumnya, kita sudah lihat bahwa BMKG hanya menyediakan 15 data gampa terbaru, tidak ada data historis yang lebih lama. Maka dari itu, penulis sudah menyiapkan *script* untuk melakukan *scraping* secara berkala setiap hari agar penulis bisa mendapatkan data historis. Per 18 Oktober 2024, penulis sudah memiliki 1103 baris kejadian gempa dari BMKG. Dengan data ini, kita bisa membuat visualisasi data yang lebih menarik.
 
-{{< button content="Unduh Dataset Agregat" icon="download" href="https://blob.kodesiana.com/kodesiana-ai-public/datasets/original/gempa_bmkg_2024/gempa_dirasakan.csv" >}}
+{{< button content="Unduh Dataset Agregat" icon="download" href="https://blobs.kodesiana.com/kodesiana-data-open/bmkg-gempa-2024/gempa_dirasakan.csv" >}}
 
-> Sitasi dataset: Fiqri, F.N. (2024). Agregat data gempa terkini BMKG (Versi 1) [Dataset]. https://l.kodesiana.com/dataset-gempa-dirasakan-bmkg-2024
+> Sitasi dataset: Fiqri, F.N. (2024). Agregat data gempa terkini BMKG (Versi 1) [Dataset]. https://blobs.kodesiana.com/kodesiana-data-open/bmkg-gempa-2024/gempa_dirasakan.csv
 
 Salin tautan dataset pada tombol di atas, kemudian muat data menggunakan **Power Query** pada menu **Get & Transform Data > Get Data > From Web** seperti pada pembahasan sebelumnya. Selanjutnya, klik tombol **Load** untuk memuat data ke *sheet* `gempa_dirasakan`.
 
@@ -153,7 +153,7 @@ Oke sekarang kita bisa mulai proses transformasi data!
 
 Klik kanan pada koneksi data `gempa_dirasakan`, kemudian klik **Edit**.
 
-![Edit connection pada Power Query](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig10_edit_connection.png)
+![Edit connection pada Power Query](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig10_edit_connection.png)
 
 Pada panel kanan **Query Settings**, akan terdapat tiga tahapan pada menu **APPLIED STEPS**,
 
@@ -167,7 +167,7 @@ Ketiga tahapan ini secara otomatis ditambahkan oleh *Power Query* untuk setiap s
 
 Selanjutnya, kita akan menghapus kolom yang tidak diperlukan, yaitu kolom `tanggal`, `jam`, `lintang`, dan `bujur`. Caranya, tekan tombol CTRL pada *keyboard*, kemudian klik pada kolom-kolom tersebut. Pada tab **Home**, klik **Remove Columns**.
 
-![Menghapus kolom](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig11_remove_cols.png)
+![Menghapus kolom](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig11_remove_cols.png)
 
 Tada! Sekarang kolom tersebut sudah menghilang. Jika dilihat pada panel **Query Settings**, sekarang terdapat langkah baru yaitu **Removed Columns**. Setiap kita melakukan transformasi, semuanya akan tercatat pada panel ini, sehingga kita bisa tau persis apa saja urutan transformasi data yang kita lakukan.
 
@@ -185,13 +185,13 @@ Sekarang kita akan lanjut untuk melakukan normalisasi data pada kolom `coordinat
 
 Klik pada kolom `coordinates`, kemudian klik **Split Column > By Delimiter...**. Pilih pemisah koma kemudian klik OK.
 
-![Memisahkan kolom berdasarkan koma](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig12_split_coordinates.png)
+![Memisahkan kolom berdasarkan koma](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig12_split_coordinates.png)
 
-![Pengaturan pemisahan data](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig13_split_confirm.png)
+![Pengaturan pemisahan data](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig13_split_confirm.png)
 
 Sekarang harusnya sudah terdapat dua kolom baru, yaitu `coordinates.1` dan `coordinates.2`, tetapi nilainya ada dalam rentang ratusan hingga belasan ribu. Hal yang sama juga terjadi pada kolom `magnitude`, awalnya masih bilangan desimal tapi sekarang sudah menjadi puluhan. Hal ini disebabkan oleh adanya langkah **Changed Type** yang secara otomatis ditambahkan setelah melakukan pemisahan kolom. Hapus langkah ini dan kita lanjut proses normalisasi datanya.
 
-![Hasil split kolom dan tambahan langkah transformasi](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig14_split_cols_changed_type.png)
+![Hasil split kolom dan tambahan langkah transformasi](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig14_split_cols_changed_type.png)
 
 ```m
 = Table.SplitColumn(#"Removed Columns", "coordinates", Splitter.SplitTextByDelimiter(",", QuoteStyle.Csv), {"coordinates.1", "coordinates.2"})
@@ -203,7 +203,7 @@ Dapat dilihat bahwa output dari langkah ini adalah `coordinates.1` dan `coordina
 
 Tahap selanjutnya adalah menghapus kata " km" pada kolom `kedalaman` agar kolom ini bisa menjadi data numerik. Klik kanan pada kolom ini kemudian klik **Replace Values**.
 
-![Menu **Replace Values**](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig15_replace_values.png)
+![Menu **Replace Values**](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig15_replace_values.png)
 
 Masukkan kata " km" pada kolom *Value to Find* dan jangan isi kolom *Replace With*, kemudian klik OK.
 
@@ -240,7 +240,7 @@ Lakukan transformasi sesuai arahan berikut.
 
 Setelah semua proses transformasi dilakukan, kamu harusnya sudah mendapatkan dataset seperti berikut.
 
-![Hasil transformasi data](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig16_final_transform.png)
+![Hasil transformasi data](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig16_final_transform.png)
 
 Tahap selanjutnya adalah klik pada **Home > Close & Load**.
 
@@ -248,19 +248,19 @@ Tahap selanjutnya adalah klik pada **Home > Close & Load**.
 
 Sampai di sini kita sudah berhasil memuat dan mentransformasi data yang sesuai untuk dapat divisualisasikan. Tetapi, jika kamu gagal untuk mengikuti tahap-tahap di atas, kamu bisa mengunduh file Workbook yang sudah penulis buat.
 
-{{< button content="Unduh Workbook Excel" icon="download" href="https://l.kodesiana.com/excel-gempa-dirasakan-bmkg-2024" >}}
+{{< button content="Unduh Workbook Excel" icon="download" href="https://blobs.kodesiana.com/kodesiana-data-open/bmkg-gempa-2024/bmkg-power-query.xlsx" >}}
 
 Oke tahap terakhir dari perjalanan kita ini adalah membuat visualisasi. Kali ini kita akan menggunakan 3D Map untuk memvisualisasikan data kejadian gempa. Klik tab **Insert > 3D Map**. Jika versi Excel kamu tidak ada pilihan ini, coba *upgrade* versi Microsoft Office kamu ke versi 2019 atau coba menggunakan Office 365.
 
-![Visualisasi 3D Map](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/fig17_3d_map.png)
+![Visualisasi 3D Map](https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/fig17_3d_map.png)
 
 Secara *default*, jendela **3D Maps** akan otomatis memasukkan kolom `latitude` dan `longitude` ke lokasi data pada **Layer1**. Tambahkan kolom `magnitude` pada menu **Height** dan kolom `date_time` pada kolom **Time**. Hasilnya akan muncul sebuah *player* dan jika kita klik pada tombol *Play*, maka kita akan mendapat animasi kejadian gempa pada peta dengan tinggi grafik merepresentasikan magnitudo gempa.
 
-{{< video "https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/3dmap_bar.mp4" >}}
+{{< video "https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/3dmap_bar.mp4" >}}
 
 Selain menampilkan titik-titik gempa sebagai diagram batang, kita juga bisa mengubah visualisasi menjadi *heatmap* untuk menunjukkan *cluster* gempa bumi dengan magnitudo yang tinggi.
 
-{{< video "https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-excel/3dmap_heatmap.mp4" >}}
+{{< video "https://assets.kodesiana.com/posts/2024/gempa-bmkg-excel/3dmap_heatmap.mp4" >}}
 
 Mudah kan, memproses dan membuat visualisasi data dengan menggunakan Excel dan Power Query?
 

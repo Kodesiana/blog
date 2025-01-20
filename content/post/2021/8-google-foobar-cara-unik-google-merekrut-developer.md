@@ -19,7 +19,7 @@ bagi para developer yang sedang mencari solusi kodingan. Unik sekali ya? Lagi *s
 Pada tanggal 17 Mei 2021, penulis mendapat undangan untuk ikut Google Foobar saat *searching* tentang bug. Kalau kamu
 beruntung, kamu akan mendapatkan banner seperti di bawah ini saat *searching* menggunakan Google.
 
-![Banner Google Foobar](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/8/banner.png)
+![Banner Google Foobar](https://assets.kodesiana.com/posts/2021/8/banner.png)
 
 Kalau kamu memilih **I want to play**, kamu akan diarahkan ke halaman baru yang bertemakan terminal. Di sana kamu bisa
 menginputkan beberapa perintah seperi halnya terminal untuk mengikuti challenge yang tersedia pada Google Foobar.
@@ -40,7 +40,7 @@ menghasilkan output sesuai dengan soal dan *edge cases* unik dari setiap challen
 Setelah waktu untuk mengerjakan challenge habis, kamu tidak akan bisa lagi membuka soal dan mengunggah jawaban ke
 Foobar. Tampilan akhirnya akan menjadi seperti ini.
 
-![Console Google Foobar](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/8/foobar.png)
+![Console Google Foobar](https://assets.kodesiana.com/posts/2021/8/foobar.png)
 
 ## Rekrutmen
 

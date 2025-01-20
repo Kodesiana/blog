@@ -44,7 +44,7 @@ memiliki relasi kuat dengan faktor-faktor yang sebelumnya sudah ditentukan.
 
 Kamu bisa unduh dataset yang sudah penulis kurasi dari berbagai sumber pada tautan di bawah ini.
 
-{{< button content="Download Dataset" icon="download" href="https://l.kodesiana.com/017-pemodelan-daerah-potensial-pertanian.csv" >}}
+{{< button content="Download Dataset" icon="download" href="https://blobs.kodesiana.com/kodesiana-data-open/pemodelan-daerah-potensial-pertanian/dataset.csv" >}}
 
 | Atribut             | Tipe Data | Keterangan                                                  |
 | ------------------- | --------- | ----------------------------------------------------------- |
@@ -76,11 +76,11 @@ Buka aplikasi **Orange Data Mining**.
 Tambahkan widget **Data > File**. Setelah itu pilih file CSV yang sudah kamu unduh dari tautan di atas. Pastikan semua
 kolom dan *role* sama seperti di bawah ini.
 
-![Import data](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/4/step1-import-file.png)
+![Import data](https://assets.kodesiana.com/posts/2022/4/step1-import-file.png)
 
 Setelah kamu menambahkan widget *File*, kamu bisa menggunakan widget *Data Table* untuk melihat isi dataset.
 
-![Data table](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/4/step2-data-table.png)
+![Data table](https://assets.kodesiana.com/posts/2022/4/step2-data-table.png)
 
 Setelah kamu berhasil memuat data, tahap selanjutnya adalah memilih atribut yang akan digunakan untuk melakukan
 *clustering*. Ingat bahwa pada data ini terdapat atribut `latitude` dan `longitude` yang merupakan koordinat provinsi
@@ -90,7 +90,7 @@ maka dari itu kolom tersebut perlu dibuang terlebih dahulu.
 Tambahkan widget *Select Columns* kemudian geser atribut `latitude` dan `longitude` dari daftar *Features* ke daftar
 *Ignored*.
 
-![Select columns](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/4/step3-select-columns.png)
+![Select columns](https://assets.kodesiana.com/posts/2022/4/step3-select-columns.png)
 
 Setelah kamu memilih kolom yang akan digunakan pada proses *clustering*, tahap selanjutnya adalah menambahkan widget
 *Unsupervised > Distances* dan *Hierarchical Clustering*.
@@ -100,7 +100,7 @@ Setelah kamu memilih kolom yang akan digunakan pada proses *clustering*, tahap s
   dengan memilih atribut *provinsi* pada bagian *Annotations*. Pastikan *Top N* adalah 5 yang artinya kita akan memilih
   lima hierarki teratas sebagai *cluster*.
 
-![Distances](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/4/step4-distances-hierarchical.png)
+![Distances](https://assets.kodesiana.com/posts/2022/4/step4-distances-hierarchical.png)
 
 Sampai di sini kita sudah memiliki *cluster* untuk tiap-tiap provinsi di Indonesia. Berdasarkan dendogram di atas
 (struktur hierarki di atas disebut dendogram) bisa dilihat terdapat lima *cluster* dan masing-masing nama provinsi yang
@@ -117,7 +117,7 @@ mengenai *silhouette score* dan juga metrik-metrik lain untuk mengevaluasi *clus
 Untuk membuat plot *silhouette score*, tambahkan widget *Visualize > Silhouette Plot*, kemudian hubungkan dengan output
 dari *Hierarchical Clustering*.
 
-![Silhouette analysis](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/4/step5-silhouette.png)
+![Silhouette analysis](https://assets.kodesiana.com/posts/2022/4/step5-silhouette.png)
 
 Dapat dilihat pada plot di atas ada beberapa sampel data yang memiliki nilai *silhouette score* yang negatif, artinya
 titik data tersebut memiliki jarak yang lebih dekat dengan *cluster* tetangganya dibandingkan dengan *cluster*-nya saat
@@ -131,7 +131,7 @@ kita buat dari proses *hierarchical clustering* ke dalam dataset awal yang kita 
 Tambahkan widget *Data > Merge Data*, kemudian pilih *Append columns from Extra data* dan pilih atribut *provinsi* pada
 bagian *Row matching*. Selain itu kamu juga bisa menambahkan widget *Data Table* untuk melihat data hasil *clustering*.
 
-![Merge data](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/4/step6-merge-data.png)
+![Merge data](https://assets.kodesiana.com/posts/2022/4/step6-merge-data.png)
 
 > Workflow pada tutorial ini sedikit berbeda dengan workflow asli pada paper, tetapi output yang dihasilkan sama.
 
@@ -142,7 +142,7 @@ menggunakan *Box Plot*.
 Tambahkan widget *Visualize > Box Plot*, kemudian pilih variabel yang ingin kamu visualisasikan (misalnya
 `jumlah_hari_hujan`) dan pilih `Cluster` sebagai *Subgroups*.
 
-![Box plot](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/4/step7-box-plot.png)
+![Box plot](https://assets.kodesiana.com/posts/2022/4/step7-box-plot.png)
 
 *Box plot* terdiri atas beberapa komponen, yaitu:
 
@@ -167,7 +167,7 @@ Tambahkan widget *Geo > Geo Map*, kemudian pilih atribut `latitude` dan `longitu
 atribut `Cluster` pada kolom *Color* dan *Shape*. Untuk menampilkan daerah arsiran warna *cluster*, centang pada *Show
 color regions*.
 
-![Geomap](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/4/step8-geomap.png)
+![Geomap](https://assets.kodesiana.com/posts/2022/4/step8-geomap.png)
 
 Dapat dilihat pada peta bahwa C1 yang merupakan provinsi yang paling kering terdapat di pulau Sulawesi dan secara umum
 *cluster-cluster* pulau tersebar merata yang menunjukkan adanya variasi yang tinggi pada kondisi cuaca di Indonesia yang

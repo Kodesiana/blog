@@ -109,12 +109,12 @@ Klik *hamburger menu*, kemudian cari **Observability > APM**.
 
 > Klik pada gambar untuk memperbesar.
 
-![Elastic APM](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/1/apm-services.png)
+![Elastic APM](https://assets.kodesiana.com/posts/2022/1/apm-services.png)
 
 Pada menu ini, kita bisa melihat services yang aktif pada cluster kita. Karena kita membuat *request* ke service order,
 klik pada `order-service`.
 
-![APM Transactions](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/1/apm-transactions.png)
+![APM Transactions](https://assets.kodesiana.com/posts/2022/1/apm-transactions.png)
 
 Pada halaman ini kamu bisa melihat aktivitas service dan *metrics*-nya, seperti *latency, throughput*, dan
 *depdendencies*. Di sini kamu bisa lihat berapa lama waktu yang dibutuhkan oleh *service* untuk melayani *request*, apa
@@ -128,13 +128,13 @@ kita klik link tersebut pada tabel **Transactions**.
 Pada bagian atas halaman akan muncul beberapa grafik yang berisi metrik dan filter, tapi yang kita ingin cari adalah
 *trace sample*. *Scroll* ke bawah hingga menemukan bagian di bawah ini.
 
-![APM Trace](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/1/apm-trace.png)
+![APM Trace](https://assets.kodesiana.com/posts/2022/1/apm-trace.png)
 
 Nah pada diagram Gantt di atas kita bisa lihat, ketika kita hit API `/create-order/my-order1`, service order melalukan
 hit API ke service `basket` dan `catalogue`. Selain itu, jika kita klik menu **Investigate > Trace logs**, kita akan
 mendapatkan *log* dari semua service secara berurutan yang dihasilkan ketika kita hit API tersebut.
 
-![APM Logs](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/1/apm-logs.png)
+![APM Logs](https://assets.kodesiana.com/posts/2022/1/apm-logs.png)
 
 **WOW**😯 semua log yang dihasilkan semua service kita bisa muncul dalam satu tempat! Sekarang ketika kita ingin
 melakukan *debugging* atau melacak suatu *bug* pada *production*, kita tidak perlu repot mencari *log* dari banyak

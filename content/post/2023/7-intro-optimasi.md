@@ -300,7 +300,7 @@ Konstanta $\gamma$ disebut *step size* atau *learning rate*, konstanta ini menga
 
 Misalnya kita akan mengoptimasi fungsi $f(x) = x^2-4x+1$ dengan tebakan awal $x_0=6$ dan maksimum iterasi sebanyak 15 kali. Bagaimana hasil optimasinya menggunakan *gradient descent*?
 
-![Gradient descent](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/intro-optimasi/gradient%20descent_comp.png)
+![Gradient descent](https://assets.kodesiana.com/posts/2023/intro-optimasi/gradient%20descent_comp.png)
 
 > Gambar oleh penulis
 

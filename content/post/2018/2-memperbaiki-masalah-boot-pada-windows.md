@@ -24,7 +24,7 @@ dilakukan diagnosis terlebih dahulu.
 Sebelum melakukan perbaikan, Anda harus melakukan diagnosis untuk mengetahui masalah apa yang terdapat pada komputer
 Anda. Ikuti langkah-langkah di bawah ini.
 
-![Diskpart List Volume](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/2/diskpart-list-volume.jpg)
+![Diskpart List Volume](https://assets.kodesiana.com/posts/2018/2/diskpart-list-volume.jpg)
 
 1. *Boot* melalui DVD/USB instalasi Windows, setelah muncul tampilan untuk instalasi Windows, tekan **F10** untuk
    membuka Command Promt.

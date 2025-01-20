@@ -92,13 +92,13 @@ Pada lomba ini penulis membuat tiga dasbor yaitu:
 
 Berikut beberapa tampilan dasbor yang penulis buat.
 
-![Dashboard 1](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/6/loker1.jpg)
+![Dashboard 1](https://assets.kodesiana.com/posts/2021/6/loker1.jpg)
 
-![Dashboard 2](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/6/loker2.jpg)
+![Dashboard 2](https://assets.kodesiana.com/posts/2021/6/loker2.jpg)
 
-![Dashboard 3](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/6/sentimen.jpg)
+![Dashboard 3](https://assets.kodesiana.com/posts/2021/6/sentimen.jpg)
 
-![Dashboard 4](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/6/mobilitas.jpg)
+![Dashboard 4](https://assets.kodesiana.com/posts/2021/6/mobilitas.jpg)
 
 Pada proses *forecasting*, penulis menggunakan model **Facebook Prophet** yang merupakan model *time series forecasting*
 berbasis *bayesian statistics*. Sayangnya, karena penulis terikat dengan NDE, penulis tidak bisa mempublikasikan paper
@@ -149,7 +149,7 @@ Penulis tentu sangat terkejut karena penulis yang ada di pertengahan *leaderboar
 Setelah lolos menjadi finalist, penulis kemudian melaksanakan presentasi dan mengikuti pengumuman pada konferensi *IEEE
 IC2E Conference: 9th IEEE International Conference on Cloud Engineering*.
 
-![Pertmuan semua finalis dan pemenang IEEE CS GSC 2021](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/6/ieee-cs.png "Pertmuan semua finalis dan pemenang IEEE CS GSC 2021")
+![Pertmuan semua finalis dan pemenang IEEE CS GSC 2021](https://assets.kodesiana.com/posts/2021/6/ieee-cs.png "Pertmuan semua finalis dan pemenang IEEE CS GSC 2021")
 
 Ini merupakan salah satu momen yang paling berkesan untuk penulis karena ini pertama kalinya penulis memenangkan lomba
 tingkat internasional, meskipun belum bisa mendapat juara 1-3. *Event* ini direncanakan akan diselenggarakan secara

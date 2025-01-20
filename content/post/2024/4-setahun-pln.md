@@ -4,12 +4,12 @@ categories: [Data Science]
 tags: [data mining, tutorial, visualisasi]
 date: 2024-09-30
 description: Kisah lika-liku hidup di gunung. Tidak hanya sulit akses internet, tapi juga listrik
-image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/setahun-pln-cover.jpg
+image: https://assets.kodesiana.com/posts/2024/setahun-pln/setahun-pln-cover.jpg
 ---
 
 {{< button-group >}}
   {{< button content="Akses Notebook" icon="gilbarbara-logos-jupyter" href="https://l.kodesiana.com/setahun-pln-2024-colab" >}}
-  {{< button content="Unduh Dataset" icon="download" href="https://l.kodesiana.com/setahun-pln-2024-dataset" >}}
+  {{< button content="Unduh Dataset" icon="download" href="https://blobs.kodesiana.com/kodesiana-data-open/setahun-pln-2024/uptime.csv" >}}
 {{</ button-group >}}
 
 Listrik merupakan salah satu kebutuhan primer bagi manusia di zaman digital ini. PLN sebagai penyedia layanan listrik bertanggung jawab untuk menyediakan layanan yang reliabel kepada pelanggannya, di mana pun lokasi tinggalnya. Tentu saja tidak mungkin PLN bisa menyediakan layanan tanpa pemadaman, faktor eksternal seperti cuaca dan bencana alam pasti diluar kendali PLN. Tetapi apa yang terjadi jika layanan PLN sering kali putus nyambung? Di mana batas "normal" jika terjadi pemadaman?
@@ -33,7 +33,7 @@ sns.set_style("white")
 Tahap selanjutnya adalah memuat data yang akan kita analisis. Seperti biasa data yang akan kita gunakan sudah saya sediakan secara terbuka dan bisa digunakan dengan bebas asalkan mencantumkan nama penulis😁
 
 ```python
-df = pd.read_csv("https://l.kodesiana.com/setahun-pln-2024-dataset", storage_options={'User-Agent': 'Mozilla/5.0'})
+df = pd.read_csv("https://blobs.kodesiana.com/kodesiana-data-open/setahun-pln-2024/uptime.csv", storage_options={'User-Agent': 'Mozilla/5.0'})
 df.info()
 ```
 
@@ -96,7 +96,7 @@ df_sla = df_sla[(df_sla["downtime"].dt.total_seconds() > 0) & (df_sla["downtime"
 df_sla.head()
 ```
 
-![Tampilan data setelah praproses data](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/table1.png)
+![Tampilan data setelah praproses data](https://assets.kodesiana.com/posts/2024/setahun-pln/table1.png)
 
 ## Analisis Data
 
@@ -157,13 +157,13 @@ df_down_daily["cumsum"] = df_down_daily["downtime"].cumsum().dt.total_seconds() 
 df_down_daily.head()
 ```
 
-![Tabel durasi mati listrik kumulatif harian](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/downtime_cumulative.png)
+![Tabel durasi mati listrik kumulatif harian](https://assets.kodesiana.com/posts/2024/setahun-pln/downtime_cumulative.png)
 
 ```python
 sns.lineplot(data=df_down_daily, x="date", y="cumsum")
 ```
 
-![Grafik durasi mati listrik kumulatif harian](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/downtime_cumulative_line.png)
+![Grafik durasi mati listrik kumulatif harian](https://assets.kodesiana.com/posts/2024/setahun-pln/downtime_cumulative_line.png)
 
 Jika kita perhatikan, sekitar bulan Maret 2024 terjadi mati listrik dengan durasi yang panjang, ditandai dengan garis tegak pada bulan tersebut. Kita perlu visualisasi yang lebih ringkas untuk dapat melihat pola mati listrik ini.
 
@@ -184,7 +184,7 @@ df_down_monthly["cumsum"] = df_down_monthly["hours"].cumsum()
 df_down_monthly.head()
 ```
 
-![Tabel durasi mati listrik kumulatif bulanan](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/downtime_cumulative_monthly.png)
+![Tabel durasi mati listrik kumulatif bulanan](https://assets.kodesiana.com/posts/2024/setahun-pln/downtime_cumulative_monthly.png)
 
 Pada visualisasi kali ini kita akan membuat *combo chart* dengan menggabungkan diagram batang dan diagram garis menggunakan Matplotlib dan Seaborn.
 
@@ -205,7 +205,7 @@ for x, y in zip(ax2.get_xticks(), df_down_monthly["cumsum"]):
 plt.title("Durasi Mati Listrik Bulanan")
 ```
 
-![Grafik durasi mati listrik kumulatif bulanan](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/downtime_cumulative_monthly_chart.png)
+![Grafik durasi mati listrik kumulatif bulanan](https://assets.kodesiana.com/posts/2024/setahun-pln/downtime_cumulative_monthly_chart.png)
 
 Berdasarkan grafik di atas, kita bisa identifikasi bahwa terdapat dua bulan "musim" mati listrik, yaitu bulan September dan bulan Maret, ditandai dengan durasi mati listrik di atas 20 jam. Ada apa di bulan Maret dan September? Kenapa jadi musim mati listrik?
 
@@ -226,7 +226,7 @@ df_down_ratio["ratio"] = (df_down_ratio["downtime"].dt.total_seconds()  / 60 / 6
 df_down_ratio
 ```
 
-![Tabel rasio durasi dan banyaknya mati listrik](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/downtime_ratio.png)
+![Tabel rasio durasi dan banyaknya mati listrik](https://assets.kodesiana.com/posts/2024/setahun-pln/downtime_ratio.png)
 
 ```python
 fig, ax = plt.subplots(figsize=(12,6))
@@ -243,7 +243,7 @@ for x, y in zip(ax2.get_xticks(), df_down_ratio["count"]):
 plt.title("Rasio Durasi dan Banyaknya Kejadian Mati Listrik Bulanan")
 ```
 
-![Grafik rasio durasi dan banyaknya mati listik](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/setahun-pln/downtime_ratio_chart.png)
+![Grafik rasio durasi dan banyaknya mati listik](https://assets.kodesiana.com/posts/2024/setahun-pln/downtime_ratio_chart.png)
 
 Pada grafik di atas, terdapat beberapa bulan yang "sering mati listrik dan sekalinya mati listrik, durasinya lama" misalnya September 2023 dan 2024 dengan jumlah kejadian mati listrik lebih dari 10 kali per bulan dan durasi lebih dari 1,8 jam. Jika dilihat pada bulan Agustus 2024, hanya terjadi satu kali mati listrik, tetapi durasinya 3,79 jam.
 

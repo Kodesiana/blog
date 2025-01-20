@@ -7,7 +7,7 @@ date: 2023-07-14
 
 Azure AppInsight merupakan salah satu layanan Azure yang sangat membantu developer untuk melakukan *distributed tracing* aplikasi *backend* dan *frontend*[1]. Penulis sangat sering menggunakan layanan di beberapa proyek karena layanan ini *gratis* (selama penggunaannya di bawah 50 GB per bulan) dan juga mudah untuk diintegrasikan ke aplikasi ASP.NET Core dan Python FastAPI. Selain itu, karena AppInsight merupakan layanan Azure, penulis tidak perlu langganan ke aplikasi *3rd party* lain untuk melakukan *tracing* seperti DataDog atau Sentry = lebih mudah untuk di-*manage*. Tapi sayangnya, ketika penulis mengintegrasikan AppInsight ke aplikasi berbasis Python FastAPI, *operation name* yang seharusnya berisi *path* API yang di-*hit* malah tidak muncul🧐
 
-![Azure AppInsights](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/operation-name-azure/appinsight_comp.png)
+![Azure AppInsights](https://assets.kodesiana.com/posts/2023/operation-name-azure/appinsight_comp.png)
 
 Pada artikel ini penulis akan berbagi pengalaman mengenai metode integrasi AppInsights yang benar dan bagaimana penulis berhasil mengatasi kolom *operation name* yang tidak muncul di Azure AppInsight.
 
@@ -56,7 +56,7 @@ async def middlewareOpencensus(request: Request, call_next):
 
 Setelah kita *deploy* aplikasi kita dengan menggunakan *middleware* di atas, kita bisa melihat aplikasi kita sudah berhasil di-*trace* oleh Azure AppInsight. Tapi jika kita lihat pada menu  **Failures**, pada kolom **OPERATION NAME** isinya hanya ada *Overall* dan *<Empty>*, kenapa?🧐
 
-![Operation name tidak ada di Azure AppInsights](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/operation-name-azure/operation_name_missing_comp.png)
+![Operation name tidak ada di Azure AppInsights](https://assets.kodesiana.com/posts/2023/operation-name-azure/operation_name_missing_comp.png)
 
 ## 😫 Kenapa Operation Name tidak Muncul?
 
@@ -141,7 +141,7 @@ async def middlewareOpencensus(request: Request, call_next):
 
 Secara umum penulis menambahkan beberapa atribut baru seperti `HTTP_HOST`, `HTTP_ROUTE`, dan atribut lain untuk melengkapi data telemetri ke AppInsight. Setelah dilakukan perubahan di atas, akhirnya *operation name* muncul di menu **Failures**!
 
-![Operation name muncul di Azure AppInsights](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/operation-name-azure/opreation_name_exists_comp.png)
+![Operation name muncul di Azure AppInsights](https://assets.kodesiana.com/posts/2023/operation-name-azure/opreation_name_exists_comp.png)
 
 ### 🥳April 2023: `FastAPIMiddleware`
 

@@ -13,7 +13,7 @@ jauh terpendam.
 
 Nah, aplikasi ini bisa dipakai untuk mengatasi masalah ini!
 
-![Tampilan code notes](https://blob.kodesiana.com/kodesiana-public-assets/posts/2019/2/screen.png)
+![Tampilan code notes](https://assets.kodesiana.com/posts/2019/2/screen.png)
 
 Tampilan Code Notes. Sumber: <https://lauthieb.github.io/code-notes/>
 

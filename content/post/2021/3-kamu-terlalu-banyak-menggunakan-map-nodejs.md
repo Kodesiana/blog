@@ -36,7 +36,7 @@ Tabel Hasil Benchmark Fungsi Array dengan 1.000 Elemen (dalam detik)
 
 Plot Waktu Eksekusi per Iterasi (skala logaritmik)
 
-![Waktu eksekusi 1000 iterasi](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/3/scatter-1k.png)
+![Waktu eksekusi 1000 iterasi](https://assets.kodesiana.com/posts/2021/3/scatter-1k.png)
 
 </div>
 
@@ -54,7 +54,7 @@ Tabel Hasil Benchmark Fungsi Array dengan 1 juta Elemen (dalam detik)
 
 Plot Waktu Eksekusi per Iterasi (skala linier)
 
-![Waktu eksekusi 1 juta iterasi](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/3/scatter-1m.png)
+![Waktu eksekusi 1 juta iterasi](https://assets.kodesiana.com/posts/2021/3/scatter-1m.png)
 
 </div>
 

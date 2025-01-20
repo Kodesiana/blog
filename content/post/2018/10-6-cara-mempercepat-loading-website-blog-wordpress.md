@@ -25,7 +25,7 @@ algoritma ini dikembangkan oleh Yahoo!\[1\].
 Kedua metrik ini biasa digunakan untuk mengukur performa website/blog. Penulis menggunakan layanan
 [GTmetrix](https://gtmetrix.com) untuk mengukur dua skor metrik tersebut.
 
-![Skor GTmetrix Kodesiana.com](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/42081974795_f1df5d9997_o_d.jpg)
+![Skor GTmetrix Kodesiana.com](https://assets.kodesiana.com/posts/2018/10/42081974795_f1df5d9997_o_d.jpg)
 
 Skor GTmetrix Kodesiana.com
 
@@ -61,11 +61,11 @@ Buka cPanel kemudian buat subdomain baru. Pada contoh ini penulis membuat subdom
 dengan *target folder* */public_html*. Pastikan *target folder* adalah folder yang sama dengan website/blog Anda. Folder
 ini dapat berbeda sesuai server yang Anda gunakan.
 
-![Membuat Subdomain untuk CDN](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/42081975495_b7048e52dc_o_d.png)
+![Membuat Subdomain untuk CDN](https://assets.kodesiana.com/posts/2018/10/42081975495_b7048e52dc_o_d.png)
 
 Membuat Subdomain untuk CDN
 
-![Entri Subdomain Baru untuk CDN](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/42081975995_7123438da0_o_d.png)
+![Entri Subdomain Baru untuk CDN](https://assets.kodesiana.com/posts/2018/10/42081975995_7123438da0_o_d.png)
 
 Entri Subdomain Baru untuk CDN
 
@@ -73,7 +73,7 @@ Setelah Anda membuat subdomain baru, selanjutnya Anda buka **DNS Zone Editor** 
 yang ada pada entri baru Anda. Kemudian buat entri CNAME yang mengarah pada domain utama Anda. Pada contoh ini
 entri *cdn.kodesiana\_\_.com* hanya memiliki *CNAME* yang mengarah ke *kodesiana.com*.
 
-![Setting DNS Zone untuk Subdomain CDN](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/42265141514_d81f4ce9fb_o_d.png)
+![Setting DNS Zone untuk Subdomain CDN](https://assets.kodesiana.com/posts/2018/10/42265141514_d81f4ce9fb_o_d.png)
 
 Setting DNS Zone untuk Subdomain CDN
 
@@ -110,25 +110,25 @@ settings**.
 Buka **Performance > CDN**. kemudian pada bagian **Configuration: Objects**, tambahkan subdomain yang sebelumnya telah
 dibuat. Setelah Anda selesai, klik **Save all settings**.
 
-![Pengaturan CDN](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/42265140234_a571898563_o_d.jpg)
+![Pengaturan CDN](https://assets.kodesiana.com/posts/2018/10/42265140234_a571898563_o_d.jpg)
 
 #### Konfigurasi Minification
 
 Buka **Performance > Minify,** kemudian klik tombol **Help** pada bagian atas W3 Total Cache.
 
-![Tombol Help untuk Menambahkan Entri JS/CSS](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/41173606200_9e424281cd_o_d.jpg)
+![Tombol Help untuk Menambahkan Entri JS/CSS](https://assets.kodesiana.com/posts/2018/10/41173606200_9e424281cd_o_d.jpg)
 
 Tombol Help untuk Menambahkan Entri JS/CSS
 
 Pada bagian **JavaScript,** pilih semua file JS yang ada pada satu template, pada contoh ini penulis memilih semua file
 JS (ada 13 file) pada template *All Templates.*
 
-![Pilihan Entri JS](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/42081975325_fc49232fe4_o_d.jpg)
+![Pilihan Entri JS](https://assets.kodesiana.com/posts/2018/10/42081975325_fc49232fe4_o_d.jpg)
 
 Selanjutnya pada bagian **Cascading Style Sheets**, pilih semua CSS pada satu template, pada contoh ini penulis memilih
 semua file CSS (ada 8 file) pada template *All Templates*. Setelah semua file JS dan CSS dipilih, klik **Save & close**.
 
-![Pilihan Entri CSS](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/42265140414_fd908061ee_o_d.jpg)
+![Pilihan Entri CSS](https://assets.kodesiana.com/posts/2018/10/42265140414_fd908061ee_o_d.jpg)
 
 Sekarang Anda akan mengatur urutan loading JS dan CSS pada website/blog Anda. Anda perlu melakukan prioritas JS dan CSS
 mana yang perlu di-*load* terlebih dahulu dan mana yang tidak perlu. Selain itu, Anda juga perlu mengatur JS dan CSS
@@ -136,7 +136,7 @@ mana saja yang akan di-*load* pada website/blog Anda.
 
 Cara mengatur urutan loading JS/CSS pada W3 Total Cache:
 
-![Mengatur Urutan Load JS/CSS](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/42081980655_6dbae2ef11_o_d.jpg)
+![Mengatur Urutan Load JS/CSS](https://assets.kodesiana.com/posts/2018/10/42081980655_6dbae2ef11_o_d.jpg)
 
 Anda dapat melakukan *drag-n-drop* pada item JS/CSS untuk mengatur urutan *loading-nya.* Secara umum, Anda harus
 mengikuti aturan berikut:
@@ -165,7 +165,7 @@ Buka **WP Asset Clean Up > Home Page**, kemudian Anda akan melihat banyak file 
 untuk mencegah CSS/JS tersebut *di-load* pada *front page*. Hal ini bertujuan untuk meringankan loading *front page*.
 Anda dapat mencentang kotak *wp-embed* untuk menonaktifkan *WordPress Embed* pada *home page*.
 
-![Pengaturan WP Asset Clean Up](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/10/42983399971_714659d7fc_o_d.jpg)
+![Pengaturan WP Asset Clean Up](https://assets.kodesiana.com/posts/2018/10/42983399971_714659d7fc_o_d.jpg)
 
 Anda dapat menyesuaikan CSS/JS apa saja yang digunakan oleh website/blog Anda melalui plugin ini. Harap berhati-hati
 karena salah setting dapat menyebabkan website/blog Anda tidak beroperasi dengan baik.

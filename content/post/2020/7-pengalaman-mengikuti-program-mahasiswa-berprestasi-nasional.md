@@ -63,7 +63,7 @@ jauh berbeda dengan dua wawancara sebelumnya.
 
 Seleksi tingkat fakultas ini dilakukan selama satu hari.
 
-![Dokumentasi Pilmapres](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/7/pilmapres-fmipa-1024x768.jpeg)
+![Dokumentasi Pilmapres](https://assets.kodesiana.com/posts/2020/7/pilmapres-fmipa-1024x768.jpeg)
 
 Foto kenangan Pilmapres 2020 (penulis yang paling kiri).
 

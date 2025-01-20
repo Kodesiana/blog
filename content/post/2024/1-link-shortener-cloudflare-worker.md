@@ -154,7 +154,7 @@ Oke sekarang kita sudah sampai di tahap terakhir yaitu *deployment*. Untuk *depl
 
 Setelah proses *deploy*, teman-teman akan melihat Worker pada dasbor CloudFlare.
 
-![CloudFlare worker dashboard](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/short-link/workers-dash_comp.png)
+![CloudFlare worker dashboard](https://assets.kodesiana.com/posts/2024/short-link/workers-dash_comp.png)
 
 Sekarang teman-teman bisa meng-*import* *Postman collection* yang penuli sudah buatkan juga di repositori GitHub.
 

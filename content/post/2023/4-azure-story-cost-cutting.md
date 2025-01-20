@@ -9,7 +9,7 @@ date: 2023-08-24
 
 Kalimat di atas mungkin sudah tidak asing lagi untuk teman-teman developers yang berlangganan layanan *cloud* khususnya Azure. Azure yang merupakan salah satu penyedia layanan *cloud* adalah salah satu pilihat favorit dari *the big three AWS/AZ/GCP* karena memiliki berbagai layanan yang lengkap untuk semua kebutuhan infrastruktur *cloud*. Sayangnya, sama seperti *cloud provider* lainnya, *billing* Azure bisa dibilang tegolong mahal.
 
-![Azure billing meme](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/azure-story-cost-cutting/az-billing-meme.png)
+![Azure billing meme](https://assets.kodesiana.com/posts/2023/azure-story-cost-cutting/az-billing-meme.png)
 
 Azure sebagai salah satu penyedia layanan *cloud* memiliki lebih dari 40 layanan dan tersedia di seluruh dunia. Karena Azure menawarkan banyak layanan, sering kali developer khususnya yang baru menjajal Azure atau *cloud* pada umumnya tidak tahu cara membuat arsitektur sistem yang *cost effective*. Pada artikel ini penulis ingin berbagi pengalaman penulis ketika men-*deploy* aplikasi di Azure dan bagaimana pilihan arsitektur dapat menekan pengeluaran penulis.
 
@@ -55,7 +55,7 @@ Satu bulan setelah penulis dari Azure WebApps ke Azure VM, *invoice* penulis tur
 
 Kita bisa memanfaatkan fitur *Cost Analysis* di Azure (Cost Management + Billing > Subscriptions > Cost Analysis) untuk memahami struktur tagihan Azure. Ternyata, layanan Azure WebApp berkontribusi 66% dari total tagihan Azure. Setelah penulis pindah ke Azure VM, ternyata Azure VM hanya menghabiskan ~150k (VM B1s) dan penggunaan CPU/RAM nya juga sudah cukup (1 CPU, 1 GB RAM) untuk keperluan aplikasi penulis.
 
-![Azure cost analysis](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/azure-story-cost-cutting/azure-billing-before.png)
+![Azure cost analysis](https://assets.kodesiana.com/posts/2023/azure-story-cost-cutting/azure-billing-before.png)
 
 ### Amazon Prime juga melakukan hal yang sama!🦄
 

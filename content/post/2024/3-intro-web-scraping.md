@@ -384,7 +384,7 @@ Selanjutnya kita akan mengatur `start_url`. Variabel ini berfungsi untuk mengatu
 
 Pada kasus ini kita akan mencari properti di daerah Bogor. URL untuk halaman *listing* ini adalah https://www.rumah123.com/jual/bogor/rumah.
 
-![*Listing* properti di daerah Bogor Rumah123.com](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/scraping/rumah123_listing.png)
+![*Listing* properti di daerah Bogor Rumah123.com](https://assets.kodesiana.com/posts/2024/scraping/rumah123_listing.png)
 
 > Sumber: Penulis.
 
@@ -415,9 +415,9 @@ Fungsi `parse` pada `scrapy` akan dieksekusi setiap kali `scrapy` selesai melaku
 
 Coba kita perhatikan informasi yang ada pada halaman detail properti.
 
-![Detail properti bagian 1](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/scraping/rumah123_detail1.png)
+![Detail properti bagian 1](https://assets.kodesiana.com/posts/2024/scraping/rumah123_detail1.png)
 
-![Detail properti bagian 2](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/scraping/rumah123_detail2.png)
+![Detail properti bagian 2](https://assets.kodesiana.com/posts/2024/scraping/rumah123_detail2.png)
 
 > Sumber: Penulis
 
@@ -520,7 +520,7 @@ def extract_price(self, response):
     return None
 ```
 
-![DevTools ekstraksi harga](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/scraping/extract_harga_comp.png)
+![DevTools ekstraksi harga](https://assets.kodesiana.com/posts/2024/scraping/extract_harga_comp.png)
 
 > Lokasi elemen yang mengandung harga. Sumber: Penulis.
 

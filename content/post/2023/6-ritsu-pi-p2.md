@@ -29,7 +29,7 @@ Spesifikasi server penulis:
 
 Perlu diingat kalau kita tidak terbatas untuk menggunakan Raspberry Pi saja sebagai server, tapi kita juga bisa menggunakan mini PC lain seperti Intel NUC, OrangePi, HP MicroServer, dan lainnya apalagi jika server ini nantinya ingin digunakan untuk *streaming* atau *game server*.
 
-![Ritsu-Pi server rack](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/ritsu-pi/server-rack_comp.jpg)
+![Ritsu-Pi server rack](https://assets.kodesiana.com/posts/2023/ritsu-pi/server-rack_comp.jpg)
 
 ### Topologi Jaringan🔗
 

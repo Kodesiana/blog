@@ -49,12 +49,12 @@ Buka halaman unduh WiX Toolset: [http://wixtoolset.org/releases](http://wixtool
 v3.\*** kemudian pada halaman GitHub, klik **wix3\*\*.exe**. Pada contoh ini versi WiX yang digunakan adalah versi
 3.11.1, jadi file yang diunduh adalah **wix311.exe**. Tutup Visual Studio apabila dibuka dan pasang WiX Toolset.
 
-![Tampilan Installer WiX Toolset](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/installer-wix.png)
+![Tampilan Installer WiX Toolset](https://assets.kodesiana.com/posts/2018/8/installer-wix.png)
 
 Klik Install untuk memasang WiX Toolset. Setelah proses instalasi selesai, buka Visual Studio dan buat project baru.
 Pilih **Setup Project for WiX v3**. Setelah itu, project baru akan muncul dengan file default *Product.wxs*.
 
-![Membuat Setup Project WiX](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/project-baru-wix.png)
+![Membuat Setup Project WiX](https://assets.kodesiana.com/posts/2018/8/project-baru-wix.png)
 
 Pada tahap ini, Anda telah berhasil membuat sebuah project setup kosong.
 
@@ -114,7 +114,7 @@ Sebelum membuat installer aplikasi, pertama kita harus menentukan file apa yang 
 instalasinya. Pada contoh ini, penulis membuat folder **E:\\installer** kemudian menyalin semua file `.exe, .dll, .xml`,
 dan lainnya ke folder tersebut.
 
-![Folder Aplikasi Wiyata Bhakti](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/dir-file-aplikasi.png)
+![Folder Aplikasi Wiyata Bhakti](https://assets.kodesiana.com/posts/2018/8/dir-file-aplikasi.png)
 
 Folder di atas berisi file yang akan diinstal. Satu file *WiyataBhakti.App.exe* yang merupakan program utama,
 file *WiyataBhakti.mdf* dan *WiyataBhakti.ldf* merupakan basis data SQL Server, dan file lain seperti DLL dan XML yang
@@ -219,7 +219,7 @@ Cara menggunakan **heat**:
    tekan Enter.
 4. Buka folder `E:\installer` kemudian buka file `target.wxs`.
 
-![Penggunaan Harvest Tool](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/wix-harvest-tool.png)
+![Penggunaan Harvest Tool](https://assets.kodesiana.com/posts/2018/8/wix-harvest-tool.png)
 
 Anda mungkin perlu mengonfigurasi *environment variable* `PATH` untuk dapat menggunakan **heat**. Contoh
 file **target.wxs** hasil dari tool heat:
@@ -372,7 +372,7 @@ Sampai tahap ini, Anda sudah bisa membuat file setup MSI yang dapat diinstall. K
 membuat setup installer. Hasil akhir file MSI dapat Anda buka pada folder project Anda, biasanya terdapat pada
 folder **bin**.
 
-![Build Project ContohSetup](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/build-project1.png)
+![Build Project ContohSetup](https://assets.kodesiana.com/posts/2018/8/build-project1.png)
 
 Build Project ContohSetup
 
@@ -389,7 +389,7 @@ Untuk menambahkan tampilan persetujuan lisensi pada installer, Anda harus membua
 Penulis menyarankan untuk menggunakan aplikasi bawaan Windows WordPad untuk membuat dokumen RTF. Contoh dokumen lisensi
 menggunakan WordPad:
 
-![Edit Lisensi Menggunakan WordPad](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/edit-lisensi-wordpad.png)
+![Edit Lisensi Menggunakan WordPad](https://assets.kodesiana.com/posts/2018/8/edit-lisensi-wordpad.png)
 
 Buka file *Product.wxs* kemudian tambahkan kode berikut.
 
@@ -432,7 +432,7 @@ Untuk menggunakan kode di atas, tambahkan referensi ke `WixUIExtension.dll` den
 kemudian klik **Add > Reference...**. Pada tab *Browse*, pindah ke folder `C:\Program Files (x86)\WiX Toolset
 v3.11\bin`. Pilih `WixUIExtension.dll` kemudian klik *Add* dan klik *OK.*
 
-![Add Reference ke Project WiX](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/add-reference-wix.png)
+![Add Reference ke Project WiX](https://assets.kodesiana.com/posts/2018/8/add-reference-wix.png)
 
 ### Mengubah Ikon Program pada Control Panel
 
@@ -646,7 +646,7 @@ Penjelasan:
 Untuk *bootstrapper* ini, letakkan semua setup yang akan digabung dalam 1 folder, pada contoh ini penulis menggunakan
 folder `E:\installer_jadi`.
 
-![Folder Setup Bootstrapper](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/msi-bootstrapper.png)
+![Folder Setup Bootstrapper](https://assets.kodesiana.com/posts/2018/8/msi-bootstrapper.png)
 
 Pada gambar di atas dapat terlihat setup instalasi untuk .NET Framework 4.5.1 (`NDP451-xxx.exe`), SQL Server LocalDB 2014
 (`SqlLocalDB-2014-xx.msi`), Crystal Report Runtime (`CRRuntime*xx.msi`), dan Visual C++ 2015 Redistributable
@@ -855,7 +855,7 @@ Penulis biasanya mengunakan **VirtualBox** untuk membuat *virtual machine* dan
 juga biasa membuat *snapshot* saat VM pertama kali dibuat, untuk menandai *clean install*. Jadi tidak perlu melakukan
 install ulang saat perlu melakukan tes ulang.
 
-![VirtualBox Manager](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/8/vbox-man.png "VirtualBox Manager")
+![VirtualBox Manager](https://assets.kodesiana.com/posts/2018/8/vbox-man.png "VirtualBox Manager")
 
 ## Studi Kasus Lainnya
 

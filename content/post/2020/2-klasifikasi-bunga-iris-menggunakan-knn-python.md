@@ -6,7 +6,7 @@ tags: [kuliah, programming, python, tutorial, knn]
 series: [Machine Learning 101]
 description: Belajar proses membuat model machine learning untuk klasifikasi
 slug: klasifikasi-bunga-iris-menggunakan-knn-python
-image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/knn-iris-cover.jpg
+image: https://assets.kodesiana.com/posts/2020/2/knn-iris-cover.jpg
 math: true
 ---
 
@@ -45,7 +45,7 @@ tiap-tiap titik data dengan data yang akan diprediksi. Pada algoritma ini metode
 jarak Euclidean. Data baru akan dibandingkan jarak terdekat dengan tetangganya, semakin banyak tetangga dengan jarak
 yang dekat, maka data tersebut akan masuk ke dalam kelas tersebut.
 
-![Visualisasi KNN](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/MsLY6Gu.png "Visualisasi KNN")
+![Visualisasi KNN](https://assets.kodesiana.com/posts/2020/2/MsLY6Gu.png "Visualisasi KNN")
 
 Banyaknya tetangga yang akan menjadi penentu kelas data yang baru, ditentukan oleh nilai konstanta \\(k\\). Nilai ini
 bisa ditentukan secara bebas atau dengan melakukan *training* menggunakan beberapa nilai \\(k\\) hingga mendapatkan
@@ -121,7 +121,7 @@ Untuk membuat sebuah model klasifikasi ini, kita akan melakukan beberapa proses,
 4. *Training*, menggunakan algoritma KNN.
 5. *Evaluation*, menggunakan *confusion matrix*.
 
-![Karakteristik bunga iris](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/P1gKiep.jpg)
+![Karakteristik bunga iris](https://assets.kodesiana.com/posts/2020/2/P1gKiep.jpg)
 
 ### Data Ingestion
 
@@ -165,7 +165,7 @@ melakukan visualisasi sebaran data dan distribusinya.
 df.describe()
 ```
 
-![Pandas describe](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/qoP3W9m.png)
+![Pandas describe](https://assets.kodesiana.com/posts/2020/2/qoP3W9m.png)
 
 Dapat dilihat pada output di atas masing-masing kelas terdapat 150 data. Semua atribut memiliki *mean* dan standar
 deviasi yang berbeda-beda pula. Jika kita melihat pada *min* dan *max*, terlihat bahwa *range* antar atribut juga
@@ -181,7 +181,7 @@ maka dengan melakukan standarisasi akan mempercepat proses *training* dan mening
 df.head()
 ```
 
-![Pandas head](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/Uoqa4yh.png)
+![Pandas head](https://assets.kodesiana.com/posts/2020/2/Uoqa4yh.png)
 
 Dari output di atas dapat dilihat ternyata data di dalam file CSV disusun berurutan berdasarkan kelas. Artinya sebelum
 melakukan *training* data harus diacak dan dibagi seimbang.
@@ -194,7 +194,7 @@ Pada tahap ini kamu akan membuat pair plot untuk membantu memvisualisasikan hubu
 sns.pairplot(df, hue='class')
 ```
 
-![Seaborn pairplot](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/PDwVmDh.png)
+![Seaborn pairplot](https://assets.kodesiana.com/posts/2020/2/PDwVmDh.png)
 
 Pair Plot antar Variabel.
 
@@ -281,7 +281,7 @@ plt.ylabel('Rata-Rata Error')
 plt.show()
 ```
 
-![Plot error terhadap nilai K](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/vVbJETU.png)
+![Plot error terhadap nilai K](https://assets.kodesiana.com/posts/2020/2/vVbJETU.png)
 
 Dapat dilihat pada grafik yang dihasilkan, bahwa terdapat beberapa nilai $k$ yang dapat meminimalisasi nilai *error*.
 Contohnya nilai $k$ awal yang digunakan adalah 40, dapat dilihat pada grafik bahwa nilai $k=40$ memiliki tingkat *error*
@@ -311,7 +311,7 @@ y_pred = classifier.predict(X_test)
 print(classification_report(y_test, y_pred, target_names=lb.classes_))
 ```
 
-![Statistik klasifikasi](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/gacPCPX.png)
+![Statistik klasifikasi](https://assets.kodesiana.com/posts/2020/2/gacPCPX.png)
 
 Berdasarkan hasil output dari **classification_report**, diketahui bahwa model dapat membedakan semua data dengan
 spesies *iris-setosa* dengan sempurna. Tetapi pada kelas lain seperti *iris-versicolor* dan *iris-virginica* masih
@@ -326,7 +326,7 @@ ConfusionMatrixDisplay(cm, display_labels=lb.classes_).plot()
 ```
 
 ![Confusion matrix hasil klasifikasi menggunakan model machine
-learning](https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/xLl7GmJ.png)
+learning](https://assets.kodesiana.com/posts/2020/2/xLl7GmJ.png)
 
 ## Penutup🌌
 

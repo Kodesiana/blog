@@ -18,7 +18,7 @@ struktur folder khusus, atau harus digabung dengan file pendukung lain, atau har
 Daripada melakukan semua itu secara manual, akan lebih mudah jika ada cara untuk membuat proses tersebut menjadi
 otomatis, kan? Nah inilah tujuan dari Cake.
 
-![Tampilan Cake Build](https://blob.kodesiana.com/kodesiana-public-assets/posts/2019/3/912-cake-build-fs8.png)
+![Tampilan Cake Build](https://assets.kodesiana.com/posts/2019/3/912-cake-build-fs8.png)
 
 ## Apa itu Cake Build?
 

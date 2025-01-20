@@ -45,7 +45,7 @@ dan *compress*, penulisa biasa menggunakan menggunakan program ***Caesium Imag
 6. Pada kotak **Output Folder**, centang _Same folder as input_kemudian klik **Compress!**
 7. Setelah proses kompresi selesai, Anda dapat melihat hasilnya pada folder yang sama dengan file aslinya.
 
-[![Penggunaan Caesium Image Compressor](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/11/43311861012_972e1bd7eb_b.jpg)]
+[![Penggunaan Caesium Image Compressor](https://assets.kodesiana.com/posts/2018/11/43311861012_972e1bd7eb_b.jpg)]
 
 Jika ukuran file hasil kompresi masih belum cukup kecil, Anda dapat mengubah kualitas atau dimensi gambar hingga
 mendapatkan hasil yang diinginkan. Misalnya Anda dapat mengubah kualitas menjadi 70 dan lebar menjadi 800. Hal ini aman
@@ -64,7 +64,7 @@ YOUR OWN RISK) dan alternatif layanan gratis lainnya seperti **JPG2PDF**.
 3. Klik **Combine files** untuk membuat PDF.
 4. Klik **Save** pada *toolbar* kemudian simpan file.
 
-[![Penggunaan Combine Files Adobe Acrobat X](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/11/29490350168_d28c6ec422_b.jpg)](https://www.flickr.com/photos/158825251@N05/29490350168/in/dateposted-public/)
+[![Penggunaan Combine Files Adobe Acrobat X](https://assets.kodesiana.com/posts/2018/11/29490350168_d28c6ec422_b.jpg)](https://www.flickr.com/photos/158825251@N05/29490350168/in/dateposted-public/)
 
 ### B. Membuat PDF menggunakan JPGtoPDF
 
@@ -73,7 +73,7 @@ YOUR OWN RISK) dan alternatif layanan gratis lainnya seperti **JPG2PDF**.
 3. Tunggu semua file berhasil diunggah, kemudian klik **Combined.**
 4. File PDF akan otomatis disimpan pada komputer.
 
-[![Tutorial JPG2PDF](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/11/42457176355_cc37453e18_b.jpg)](https://www.flickr.com/photos/158825251@N05/42457176355/in/dateposted-public/)
+[![Tutorial JPG2PDF](https://assets.kodesiana.com/posts/2018/11/42457176355_cc37453e18_b.jpg)](https://www.flickr.com/photos/158825251@N05/42457176355/in/dateposted-public/)
 
 Jika hasil konversi dari kedua cara di atas terlalu besar, coba kecilkan terlebih dahulu file yang akan dibuat menjadi
 PDF melalui cara **1) Mengatasi Batasan Ukuran untuk Upload**.
@@ -93,7 +93,7 @@ merah. Berikut adalah cara untuk mengubah ukuran pas foto dan mengubah warna lat
 4. Klik tombol centang pada kanan atas Photoshop.
 5. Simpan gambar.
 
-[![Crop Pas Foto menggunakan Photoshop](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/11/29490618508_6fe17a3f79_b.jpg)](https://www.flickr.com/photos/158825251@N05/29490618508/in/dateposted-public/)
+[![Crop Pas Foto menggunakan Photoshop](https://assets.kodesiana.com/posts/2018/11/29490618508_6fe17a3f79_b.jpg)](https://www.flickr.com/photos/158825251@N05/29490618508/in/dateposted-public/)
 
 ### B. Mengubah Warna Latar Pas Foto
 
@@ -107,7 +107,7 @@ Anda dapat mencarinya di Google.
 4. Pilih warna biru yang menurut Anda bagus kemudian klik **OK**.
 5. Simpan gambar.
 
-[![Ubah Warna Latar Pas Foto](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/11/29490747058_4d9d8812cd_b.jpg)](https://www.flickr.com/photos/158825251@N05/29490747058/in/dateposted-public/)
+[![Ubah Warna Latar Pas Foto](https://assets.kodesiana.com/posts/2018/11/29490747058_4d9d8812cd_b.jpg)](https://www.flickr.com/photos/158825251@N05/29490747058/in/dateposted-public/)
 
 ## Penutup
 

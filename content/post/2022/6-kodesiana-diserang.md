@@ -55,7 +55,7 @@ Insights**.
 Di saat inilah penulis sadar, ada usaha untuk meretas sub sistem Kodesiana.com dari luar. Bagaimana penulis bisa tau ini
 usaha peretasan bukan *traffic* normal? Coba kita lihat catatan dari **Azure Application Insights**.
 
-![Azure App Insights - Failures](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/6/appinsights-failures-1.png)
+![Azure App Insights - Failures](https://assets.kodesiana.com/posts/2022/6/appinsights-failures-1.png)
 
 > Hmm, ga bener ini. Ada yang coba brute-force cek file PHP di server
 
@@ -76,7 +76,7 @@ dieksekusi di sisi server ketika ada pengguna yang membuka laman kodesiana.com. 
 CloudFlare untuk menambah lapisan keamanan dan caching dan hampir 90% *traffic* yang masuk ke kodesiana.com disajikan
 dari *cache* di CDN.
 
-![Statistik Traffic CloudFlare](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/6/cloudflare-stats-1.png)
+![Statistik Traffic CloudFlare](https://assets.kodesiana.com/posts/2022/6/cloudflare-stats-1.png)
 
 Sesuai dengan grafik *traffic* dari CloudFlare di atas, bisa kita pastikan bahwa ada usaha serangan ke Kodesiana.com
 pada pukul 14.00, tetapi ke sub sistem mana? Betul, ke sub sistem tempat aplikasi pihak ketiga yang dibuat oleh
@@ -114,7 +114,7 @@ sama mulai terlihat kembali. Penulis tidak yakin *tools* apa yang digunakan kali
 penulis masih yakin kalau penyerang masih menggunakan *tools* yang sama karena target serangan yang tercatat di sistem
 menunjukkan data file-file WordPress.
 
-![App insights failure - serangan kedua](https://blob.kodesiana.com/kodesiana-public-assets/posts/2022/6/appinsights-failures-2.png "App insights failure - serangan kedua")
+![App insights failure - serangan kedua](https://assets.kodesiana.com/posts/2022/6/appinsights-failures-2.png "App insights failure - serangan kedua")
 
 Sama seperti analisis sebelumnya, pola serangan kedua ini tidak jauh berbeda dan sekali lagi tidak ada kebocoran data
 maupun akses tidak wajar pada API Kodesiana.

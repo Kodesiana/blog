@@ -21,9 +21,9 @@ dan dapat menampilkan timer pada layar berbeda (*multi-screen*).
 Pertama buat project baru, saya menggunakan nama **CountdownScreen**. Tambahkan dua form baru kemudian tambahkan kontrol
 sesuai dengan gambar berikut.
 
-![Desain Form Setting Timer](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/4/form-utama.png)
+![Desain Form Setting Timer](https://assets.kodesiana.com/posts/2018/4/form-utama.png)
 
-![Desain Form Timer](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/4/form-countdown.png)
+![Desain Form Timer](https://assets.kodesiana.com/posts/2018/4/form-countdown.png)
 
 Untuk form **CountdownForm.cs**, set *FormBorderStyle* ke *None* dan pada label timer set *AutoSize* ke *False*
 dan *Dock* ke *Fill*. Tambahkan sebuah **Timer** dengan nama *tmrCount* dengan *Interval* 1000.Sesuaikan tampilan dan
@@ -112,9 +112,9 @@ namespace CountdownScreen {
 Setelah selesai, jalankan program dengan cara tekan **F5**. Form **MainForm** akan muncul. Pastikan komputer/laptop Anda
 terhubung dengan dua monitor dan *project mode* pada **Extend**.
 
-![Project Mode Extend](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/4/monitor-extend.jpg)
+![Project Mode Extend](https://assets.kodesiana.com/posts/2018/4/monitor-extend.jpg)
 
 Masukkan berapa lama timer dan pilihan monitor, kemudian klik **Mulai**. Countdown akan muncul pada layar yang dipilih.
 Klik **Berhenti** untuk menutup form countdown.
 
-![Tampilan Aplikasi Timer](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/4/pilihan-display.png)
+![Tampilan Aplikasi Timer](https://assets.kodesiana.com/posts/2018/4/pilihan-display.png)

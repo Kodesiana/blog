@@ -18,7 +18,7 @@ digunakan untuk meningkatkan keamanan dan menghilangkan sensor dari ISP.
 Marak laporan mengenai proxy pada Windows 10 yang tidak bisa dimatikan lewat Settings. Hal ini menyebabkan Windows tidak
 bisa mengakses internet, misalnya pada Google Chrome akan muncul *error* **ERR_PROXY_CONNECTION_FAILED**.
 
-![Setting Proxy di Windows 10](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/12/44985786865_3f03e02e25_o.png)
+![Setting Proxy di Windows 10](https://assets.kodesiana.com/posts/2018/12/44985786865_3f03e02e25_o.png)
 
 Untuk mengatasi hal tersebut, Anda dapat menggunakan file *registry* berikut untuk mematikan proxy pada jendela
 Settings.

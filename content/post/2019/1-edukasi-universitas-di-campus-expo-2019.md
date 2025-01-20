@@ -15,7 +15,7 @@ Januari 2019.
 CAMPUS EXPO 2019 adalah kegiatan tahunan dari alumni SMA Negeri 1 Leuwiliang. Pada acara ini siswa akan mendapat edukasi
 mengenai perguruan tinggi, tips SNMPTN/SBMPTN/Gap Year. Acara ini diselenggarakan di SMA Negeri 1 Leuwiliang Bogor.
 
-![Logo CAMPUS EXPO](https://blob.kodesiana.com/kodesiana-public-assets/posts/2019/1/3-1024x768.jpg)
+![Logo CAMPUS EXPO](https://assets.kodesiana.com/posts/2019/1/3-1024x768.jpg)
 
 Logo CAMPUS EXPO
 

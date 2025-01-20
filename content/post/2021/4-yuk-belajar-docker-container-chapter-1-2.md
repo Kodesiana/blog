@@ -74,7 +74,7 @@ aplikasi kita bisa dipenuhi sesuai dengan *image* yang kita buat. Mirip seperti 
 Secara garis besar jika kita lihat konsep *container* dan VM itu mirip, sama-sama menyajikan isolasi untuk mengeksekusi
 aplikasi kita. Tetapi terdapat perbedaan penting yang membedakan *Docker container* dengan *virtual machine*!
 
-![cgroup](https://blob.kodesiana.com/kodesiana-public-assets/posts/2021/4/system-calls.png)
+![cgroup](https://assets.kodesiana.com/posts/2021/4/system-calls.png)
 
 Pada sebuah VM, OS dijalankan di atas hypervisor yang akan membagi-bagi *resource host* ke VM. Pada VM, 100% semua fitur
 OS akan dijalankan oleh hypervisor. Pada *container*, Docker akan menerjemahkan *system calls* dari *binary* aplikasi

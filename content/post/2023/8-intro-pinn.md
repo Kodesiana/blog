@@ -206,7 +206,7 @@ X_train, y_train = split_train(X, y, max=400, step=20, noise=True, mean=0.0, sca
 print(X_train.shape, y_train.shape)
 ```
 
-![dataset hukum pendinginan Newton](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/intro-pinn/cooling_dataset_comp.png)
+![dataset hukum pendinginan Newton](https://assets.kodesiana.com/posts/2023/intro-pinn/cooling_dataset_comp.png)
 
 > Sumber: Penulis
 
@@ -225,7 +225,7 @@ Proses *training* dilakukan menggunakan *optimizer Adam* dengan *learning rate =
 
 > Terdapat lebih banyak grafik pada Google Colab😁
 
-![perbandingan model pendinginan Newton](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/intro-pinn/cooling_compare_comp.png)
+![perbandingan model pendinginan Newton](https://assets.kodesiana.com/posts/2023/intro-pinn/cooling_compare_comp.png)
 
 | Model   | MSE    | MAPE |
 |---------|--------|------|
@@ -306,7 +306,7 @@ X_train, y_train = split_train(X, y, max=200, step=20, noise=False)
 print(X_train.shape, y_train.shape)
 ```
 
-![dataset harmonic](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/intro-pinn/harmonic_dataset_comp.png)
+![dataset harmonic](https://assets.kodesiana.com/posts/2023/intro-pinn/harmonic_dataset_comp.png)
 
 > Sumber: Penulis
 
@@ -314,7 +314,7 @@ Jika kita perhatikan pada kasus ini data yang dibuat tidak turun secara polinomi
 
 ### Hasil dan Pembahasan
 
-![perbandingan model harmonic](https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/intro-pinn/harmonic_compare_comp.png)
+![perbandingan model harmonic](https://assets.kodesiana.com/posts/2023/intro-pinn/harmonic_compare_comp.png)
 
 > Sumber: Penulis
 
@@ -328,7 +328,7 @@ Berdasarkan grafik prediksi dapat dilihat bahwa model MLP tidak mampu mengeneral
 Teman-teman mungkin penasaran bagaimana proses *training* PINN ini berlangsung, berikut adalah visualisasi proses *training* selama 20.000 *epochs*. Perhatikan bagaimana pada awal proses *training* output dari model adalah konstan dan mulai bergeser mendekati fungsi PDE yang dimasukkan pada *loss function*.
 
 <video controls>
-<source src="https://blob.kodesiana.com/kodesiana-public-assets/posts/2023/intro-pinn/fit-harmonic.mp4">
+<source src="https://assets.kodesiana.com/posts/2023/intro-pinn/fit-harmonic.mp4">
 </video>
 
 ## Simpulan💡

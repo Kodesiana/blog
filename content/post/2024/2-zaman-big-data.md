@@ -33,7 +33,7 @@ Dari kelima karakteristik ini, masing-masing memiliki masalahnya sendiri, tetapi
 
 Sebagai *background*, penulis biasanya mendapatkan data dari portal seperti NASA (National Aeronautics and Space Administration) dan ESA (European Space Agency) dan penulis bisa mengakses semua data yang penulis butuhkan seperti peta muka bumi, evelasi, DEM, NDVI, dan lain-lain dengan hanya mendaftar akun saja. Tetapi ternyata kalau di BIG dan BPS, selain harus daftar kita juga harus beli😨
 
-![harga data BPS](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/zaman-big-data/harga%20data%20bps_comp.jpg)
+![harga data BPS](https://assets.kodesiana.com/posts/2024/zaman-big-data/harga%20data%20bps_comp.jpg)
 
 > Sumber: Penulis
 

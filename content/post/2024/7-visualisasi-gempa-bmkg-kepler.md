@@ -4,11 +4,11 @@ date: 2024-11-15
 categories: [Data Science]
 tags: [visualisasi, kepler.gl, geoscience]
 description: Visualisasi dan clustering data spasial menggunakan Kepler.gl
-image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-kepler/bmkg-kepler-cover_comp.png
+image: https://assets.kodesiana.com/posts/2024/gempa-bmkg-kepler/bmkg-kepler-cover_comp.png
 ---
 
 {{< button-group >}}
-    {{< button content="Unduh Dataset" icon="download" href="https://l.kodesiana.com/dataset-gempa-dirasakan-bmkg-2024-keplergl" >}}
+    {{< button content="Unduh Dataset" icon="download" href="https://blobs.kodesiana.com/kodesiana-data-open/bmkg-gempa-2024/gempa_dirasakan_processed.csv" >}}
     {{< button content="Akses Kepler.gl" icon="planet" href="https://kepler.gl/demo" >}}
 {{</ button-group >}}
 
@@ -28,13 +28,13 @@ Seperti yang sudah dijelaskan sebelumnya, kita akan menggunakan data yang sama s
 
 Sekarang kamu bisa buka website Kepler.gl melalui tautan pada bagian awal blog ini. Saat pertama kali membuka website Kepler.gl, kamu akan diminta untuk mengunggah data. Jika tidak muncul jendela unggah data seperti di bawah ini, klik pada tombol **+ Add Data**.
 
-![Menambahkan data ke Kepler.gl](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-kepler/fig1_add_data_comp.png)
+![Menambahkan data ke Kepler.gl](https://assets.kodesiana.com/posts/2024/gempa-bmkg-kepler/fig1_add_data_comp.png)
 
 Setelah data dimuat, kamu sekarang harusnya sudah bisa melihat titik-titik data.
 
 ## Mengatur *Layer* dan *Filters*🔍
 
-![Tapilan peta dengan titik-titik gempa](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-kepler/fig2_map_comp.png)
+![Tapilan peta dengan titik-titik gempa](https://assets.kodesiana.com/posts/2024/gempa-bmkg-kepler/fig2_map_comp.png)
 
 Pada *sidebar* kiri, kita bisa mengatur beberapa hal. Kita akan mulai dengan pengaturan pada bagian **Basic**. Pada bagian ini kita bisa memilih jenis visualisasi. Pada contoh awal ini kita akan membiarkan pilihan *default*-nya, yaitu **Point**. Jika kita *scroll* ke bawah, kita bisa lihat bahwa untuk menampilkan titik data pada peta, kita perlu memilih atribut/kolom yang berisi *latitude* dan *longitude* yang pada contoh ini sudah otomatis dipilih.
 
@@ -42,11 +42,11 @@ Kita bisa membiarkan pilihan *default* ini dan kita bisa lanjut ke pengaturan se
 
 Tahap terakhir adalah menambahkan filter pada kolom `date_time`. Tujuannya adalah agar kita bisa membuat animasi kejadian gempa bumi sepanjang tahun. Klik tab **Filters** kemudian klik **+ Add Filter** dan pilih kolom `date_time`. Berikut adalah pengaturan pada aplikasi Kepler.gl
 
-![Pengaturan **Basic** dan **Radius** serta **Filters**](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-kepler/fig3_config_comp.png)
+![Pengaturan **Basic** dan **Radius** serta **Filters**](https://assets.kodesiana.com/posts/2024/gempa-bmkg-kepler/fig3_config_comp.png)
 
 Setelah kamu mengikuti semua arahan di atas, kamu akan mendapatkan tampilan peta yang kurang lebih sama seperti berikut ini.
 
-{{< video "https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-kepler/kepler_points.mp4" >}}
+{{< video "https://assets.kodesiana.com/posts/2024/gempa-bmkg-kepler/kepler_points.mp4" >}}
 
 Kamu juga bisa berkesperimen dengan pilihan pengaturan lain pada Kepler.gl dan coba visualisasi lain misalnya *Heatmap*.
 
@@ -60,7 +60,7 @@ Untuk menampilkan data dalam bentuk heksagon, klik pada menu **Basic > Point** d
 
 Kamu juga bisa mengaktifkan mode 3D dengan cara klik tombol 3D pada pojok kanan atas peta. Hasilnya adalah sebagai berikut.
 
-{{< video "https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/gempa-bmkg-kepler/kepler_hexbin.mp4" >}}
+{{< video "https://assets.kodesiana.com/posts/2024/gempa-bmkg-kepler/kepler_hexbin.mp4" >}}
 
 Mudah kan, membuat visualisasi data spasial menggunakan Kepler.gl?
 

@@ -17,7 +17,7 @@ meningkatkan *look-and-feel* dari data yang ditampilkan. Trik utama untuk membu
 Bagaimana penggunaan warna dapat mengubah *look-and-feel*. Tanpa perlu menggunakan *library* pihak ketiga seperti
 Telerik dan DevExpress, Anda dapat membuat tampilan DataGridView yang menarik dengan kombinasi warna yang tepat.
 
-![enhanced-dgv-demo-min](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/9/42081976985_c793f5c1c1_o.png)
+![enhanced-dgv-demo-min](https://assets.kodesiana.com/posts/2018/9/42081976985_c793f5c1c1_o.png)
 
 ## Pagination
 
@@ -67,7 +67,7 @@ bereksperimen dengan kombinasi warna dengan melihat referensi palet warna sepert
 Clone repositori source code, kemudian buka **KF.DataGridEnhanced.sln**. Buat database baru dan buat tabel baru beserta
 isinya. Pada contoh ini, penulis menggunakan tabel *Product* dengan kolom sebagai berikut.
 
-![Contoh Tabel untuk Pagination](https://blob.kodesiana.com/kodesiana-public-assets/posts/2018/9/42265141214_37dcf83fae_o_d.png)
+![Contoh Tabel untuk Pagination](https://assets.kodesiana.com/posts/2018/9/42265141214_37dcf83fae_o_d.png)
 
 Contoh Tabel untuk Pagination
 
