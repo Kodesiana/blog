@@ -155,14 +155,14 @@ params:
 # ---------------------------------------
 
 menu:
-    main:
-        - identifier: kodesiana-labs
-          weight: -85
-          name: Kodesiana Labs ↗️
-          url: https://labs.kodesiana.com
-          params:
-            icon: flask
-            newTab: true
+    # main:
+    #     - identifier: kodesiana-labs
+    #       weight: -85
+    #       name: Kodesiana Labs ↗️
+    #       url: https://labs.kodesiana.com
+    #       params:
+    #         icon: flask
+    #         newTab: true
         
     social:
         - identifier: github
