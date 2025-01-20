@@ -9,7 +9,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy to CLoudflare Pages
+    name: Deploy to Cloudflare Pages
 
     steps:
       - name: Checkout
