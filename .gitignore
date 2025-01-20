@@ -46,3 +46,6 @@ data/github_repos.json
 
 # PostCSS Generated DEV files
 assets/styles/*.dev.css
+
+# Dist
+dist/

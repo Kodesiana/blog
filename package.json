@@ -1,21 +1,21 @@
 {
-  "name": "kodesiana-hugo2",
+  "name": "kodesiana-blog",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "prepare": "node ./tool/install.mjs",
-    "build": "./.bin/hugo --minify",
     "dev": "./.bin/hugo server --buildDrafts --buildFuture",
-    "deploy": "wrangler deploy",
-    "preview": "./.bin/hugo server",
+    "build": "./.bin/hugo build --minify -d ./dist",
+    "deploy": "./.bin/hugo build --minify -d ./dist && wrangler pages deploy",
+    "prepare": "node ./tool/install.mjs",
     "linkcheck": "node ./tool/deadlinks.mjs",
-    "dl:unsplash": "node ./tool/dl-unsplash.mjs",
-    "dl:tabler": "node ./tool/dl-tabler.mjs"
+    "dl:tabler": "node ./tool/dl-tabler.mjs",
+    "dl:unsplash": "node ./tool/dl-unsplash.mjs"
   },
   "devDependencies": {
     "command-line-args": "^6.0.1",
     "esbuild": "^0.19.11",
     "extract-urls": "^1.4.1",
-    "linkinator": "^6.0.3"
+    "linkinator": "^6.0.3",
+    "wrangler": "^3.103.2"
   }
 }
