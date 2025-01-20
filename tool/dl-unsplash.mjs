@@ -1,30 +1,21 @@
-import { parseArgs } from "util";
-
 import extractUrls from "extract-urls";
+import commandLineArgs from 'command-line-args'
 
-const { values } = parseArgs({
-  args: Bun.argv,
-  strict: true,
-  allowPositionals: true,
-  options: {
-    url: {
-      type: "string",
-      multiple: false,
-    },
-  },
-});
+const args = commandLineArgs([
+  { name: 'url', type: String },
+])
 
-if (!values.url) {
+if (!args.url) {
   console.error("Unsplash URL must be supplied");
   process.exit(1);
 }
 
-if (!values.url.startsWith("https://unsplash.com")) {
+if (!args.url.startsWith("https://unsplash.com")) {
   console.error("Unsplash URL must start with https://unsplash.com");
   process.exit(1);
 }
 
-const response = await fetch(values.url);
+const response = await fetch(args.url);
 const content = await response.text();
 
 // extract URL from HTML body
@@ -34,6 +25,7 @@ const urls = extractUrls(content).filter(
     x.includes("ixid") &&
     x.includes("auto="),
 );
+
 if (urls.length === 0) {
   console.log("No URL detected");
   process.exit(1);

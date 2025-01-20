@@ -1,23 +1,21 @@
 {
   "name": "kodesiana-hugo2",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
   "scripts": {
-    "prepare": "bun ./tool/install.ts",
-    "dev": "./.bin/hugo server --buildDrafts --buildFuture",
-    "preview": "./.bin/hugo server",
+    "prepare": "node ./tool/install.mjs",
     "build": "./.bin/hugo --minify",
-    "linkcheck": "bun ./tool/deadlinks.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "extract-urls": "^1.4.1",
-    "linkinator": "^6.0.3"
+    "dev": "./.bin/hugo server --buildDrafts --buildFuture",
+    "deploy": "wrangler deploy",
+    "preview": "./.bin/hugo server",
+    "linkcheck": "node ./tool/deadlinks.mjs",
+    "dl:unsplash": "node ./tool/dl-unsplash.mjs",
+    "dl:tabler": "node ./tool/dl-tabler.mjs"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.11",
-    "esbuild": "^0.19.11"
+    "command-line-args": "^6.0.1",
+    "esbuild": "^0.19.11",
+    "extract-urls": "^1.4.1",
+    "linkinator": "^6.0.3"
   }
 }

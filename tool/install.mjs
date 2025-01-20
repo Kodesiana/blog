@@ -1,21 +1,15 @@
-import { $ } from "bun";
-
-import os from "os";
-import path from "path";
-import fs from "fs/promises";
+import os from "node:os";
+import path from "node:path";
+import fs from "node:fs/promises";
+import { Readable } from 'node:stream'
+import { execSync } from "child_process";
 import { fileURLToPath } from "url";
 
-import { fileExists } from "./utils";
+import { fileExists } from "./_utils.mjs";
 
 // github release API and download directory
-const RELEASE_API =
-  "https://api.github.com/repos/gohugoio/hugo/releases/latest";
-const DOWNLOAD_DIR = path.resolve(
-  fileURLToPath(import.meta.url),
-  "..",
-  "..",
-  ".bin",
-);
+const RELEASE_API = "https://api.github.com/repos/gohugoio/hugo/releases/latest";
+const DOWNLOAD_DIR = path.resolve(fileURLToPath(import.meta.url), "..", "..", ".bin");
 
 (async () => {
   // create download directory if it doesn't exist
@@ -31,6 +25,7 @@ const DOWNLOAD_DIR = path.resolve(
   console.log("Loading Hugo release info...");
   const releaseResponse = await fetch(RELEASE_API);
   const release = await releaseResponse.json();
+  console.log("Current Hugo version:", release.tag_name);
 
   // find the correct asset for the current platform
   console.log("Finding latest Hugo release...");
@@ -54,15 +49,15 @@ const DOWNLOAD_DIR = path.resolve(
 
   // download the asset
   console.log("Downloading Hugo release...");
-  const downloadResponse = await fetch(asset.browser_download_url);
+  const hugoRes = await fetch(asset.browser_download_url);
 
   // save the asset to disk
   const saveFileName = path.resolve(DOWNLOAD_DIR, path.basename(asset.name));
-  await Bun.write(saveFileName, downloadResponse);
+  await fs.writeFile(saveFileName, Readable.fromWeb(hugoRes.body));
 
   // extract the asset
   console.log("Extracting Hugo release...");
-  await $`tar -xvzf '${saveFileName}' hugo`.cwd(DOWNLOAD_DIR);
+  execSync(`tar -xvzf '${saveFileName}' hugo`, {cwd: DOWNLOAD_DIR});
 
   // delete the downloaded asset
   console.log("Cleaning up...");

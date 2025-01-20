@@ -1,8 +1,8 @@
-import fs from "fs";
-import * as link from "linkinator";
+import fs from "node:fs";
+import { LinkChecker } from "linkinator";
 
 // create Linkinator
-const checker = new link.LinkChecker();
+const checker = new LinkChecker();
 
 // create CSV stream
 const stream = fs.createWriteStream("linkinator-report.csv");
@@ -25,6 +25,7 @@ await checker
     recurse: true,
     concurrency: 100,
     timeout: 1000,
+    userAgent: "Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1)",
     linksToSkip: [
       "linkedin.com",
       "facebook.com",
