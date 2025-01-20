@@ -10,6 +10,10 @@ stream.write("state\tstatus\turl\tparent\n");
 
 // after page is scanned, write to CSV and console
 checker.on("link", (result) => {
+  if (result.state === "OK") {
+    return;
+  }
+
   stream.write(
     `${result.state}\t${result.status}\t${result.url}\t${result.parent}\n`,
   );
