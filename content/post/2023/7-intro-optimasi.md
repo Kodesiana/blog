@@ -5,6 +5,7 @@ tags: [machine learning]
 series: [Machine Learning 101]
 date: 2023-12-20
 slug: masalah-optimasi-pada-ilmu-komputer
+math: true
 ---
 
 Optimasi merupakan salah satu kelompok masalah yang menjadi fokus penerapan ilmu komputer dalam kehidupan sehari-hari. Menemukan rute terpendek pada peta, menjadwalkan penerbangan, mengatur rute pengiriman paket jasa ekspedisi, menentukan persediaan barang di gudang untuk antisipasi kebahbisan stok, merupakan beberapa contoh masalah optimasi yang sering kita jumpai.

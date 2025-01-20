@@ -1,11 +1,12 @@
 ---
 title: 'Klasifikasi Metode K-Nearest Neighbor (KNN) menggunakan Microsoft Excel🌺'
-date: 2024-11-30
+date: 2025-01-20
 categories: [Data Science]
 tags: [kuliah, programming, python, tutorial, knn, microsoft excel]
 series: [Machine Learning 101]
 description: Membuat model machine learning menggunakan Microsoft Excel?!
 image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/knn-iris-excel/knn-iris-excel-cover_comp.jpg
+math: true
 ---
 
 > Foto sampul oleh [Julie Blake Edison](https://unsplash.com/@julieblake?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) dari [Unsplash](https://unsplash.com/photos/a-close-up-of-a-purple-and-white-flower-DjC-WvXclHA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)

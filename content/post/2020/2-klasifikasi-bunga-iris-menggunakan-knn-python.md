@@ -7,6 +7,7 @@ series: [Machine Learning 101]
 description: Belajar proses membuat model machine learning untuk klasifikasi
 slug: klasifikasi-bunga-iris-menggunakan-knn-python
 image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2020/2/knn-iris-cover.jpg
+math: true
 ---
 
 > Foto sampul oleh Giuli Canderle dari Unsplash

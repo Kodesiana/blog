@@ -39,13 +39,13 @@ Agar aplikasi di server kita bisa di akses, tentunya kita perlu menghubungkan se
 
 Berikut adalah contoh topologi jaringan di rumah penulis:
 
-{{< mermaid >}}
+```mermaid
 flowchart LR
     A[Indihome] -->|Internet| B[Mikrotik hEX]
     B -->|Access Point| C(TP-Link Archer C80)
     B -->|Streaming| D(TV)
     B -->|Home Server| E(Raspberry Pi)
-{{</ mermaid >}}
+```
 
 Teman-teman bisa langsung menghubungkan Raspberry Pi dengan *router* dari ISP, melalui *router* tambahan, melalui *switch*, atau cara lain selama teman-teman bisa mengakses Raspberry Pi melalui SSH.
 

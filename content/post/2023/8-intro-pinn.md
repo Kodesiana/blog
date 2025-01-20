@@ -5,6 +5,7 @@ tags: [machine learning, artificial intelligence, data science]
 series: [Machine Learning 101]
 date: 2023-12-23
 description: Bagaimana sebuah neural network dapat digunakan untuk menyelesaikan turunan parsial?
+math: true
 ---
 
 {{< button content="Buka Google Colab" icon="gilbarbara-logos-jupyter" href="https://l.kodesiana.com/intro-pinn-jupyter" >}}

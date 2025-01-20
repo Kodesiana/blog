@@ -2,6 +2,7 @@
 title: 'Pemodelan Daerah Potensial Pertanian di Indonesia🍚'
 categories: Data Science
 tags: [data mining, data science, machine learning, orange data mining, tutorial]
+series: [Bedah Paper]
 date: 2022-06-25
 summary:
   Pada artikel kali ini penulis akan menjabarkan proses *data mining* dari salah satu paper yang penulis buat
@@ -10,9 +11,8 @@ summary:
 slug: pemodelan-daerah-potensial-pertanian-di-indonesia-orange-data-mining
 ---
 
-> Artikel ini merupakan adaptasi dari paper berikut.
->
-> [Pemodelan Daerah Potensial Pertanian di Indonesia sebagai Usaha Restorasi Ekonomi pada Masa Pandemi COVID-19 menggunakan Metode Hierarchical Clustering](https://www.researchgate.net/publication/351079613_Pemodelan_Daerah_Potensial_Pertanian_di_Indonesia_sebagai_Usaha_Restorasi_Ekonomi_pada_Masa_Pandemi_COVID-19_menggunakan_Metode_Hierarchical_Clustering)
+> Artikel ini merupakan tutorial implementasi pada paper:  
+> Ardiansyah, M.A, Fiqri, F.N., Runanto (2020). [Pemodelan Daerah Potensial Pertanian di Indonesia sebagai Usaha Restorasi Ekonomi pada Masa Pandemi COVID-19 menggunakan Metode Hierarchical Clustering](https://www.researchgate.net/publication/351079613_Pemodelan_Daerah_Potensial_Pertanian_di_Indonesia_sebagai_Usaha_Restorasi_Ekonomi_pada_Masa_Pandemi_COVID-19_menggunakan_Metode_Hierarchical_Clustering).
 
 {{< button content="Playlist: Tutorial Orange Data Mining" icon="brand-youtube" href="https://l.kodesiana.com/orange-playlist" >}}
 
@@ -28,7 +28,7 @@ menjadi salah satu rempah yang menjadi bahan pokok di masakan lokal Indonesia, d
 oleh penulis. Setelah memilih apa komoditas yang akan dijadikan dasar pemodelan, tahap selanjutnya adalah
 mengidentifikasi apa saja variabel yang berkontribusi terhadap pertumbuhan bawang putih.
 
-{{< mermaid >}}
+```mermaid
 graph LR
     A[Bawang Putih] --> B[Variabel yang Berkontribusi]
     B -->C[Iklim, kering]
@@ -36,7 +36,7 @@ graph LR
     B -->E[Curah Hujan, 110-200mm/bulan]
     B -->F[Ketinggian, 700-1000 mdpl]
     B -->G[pH Tanah, 6-7.5]
-{{</ mermaid >}}
+```
 
 Berdasarkan variabel-variabel di atas, penulis mulai mencari sumber data dari beberapa sumber seperti BMKG dan sumber
 data terbuka di GitHub, Kaggle, dan Our World in Data. Pada akhirnya penulis berhasil mengumpulkan beberapa data yang

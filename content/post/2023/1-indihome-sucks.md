@@ -5,6 +5,7 @@ tags: [internet, data mining]
 series: [Ritsu-Pi Home Server]
 date: 2023-05-15
 slug: indihome-suck-kualitas-internet-semakin-rendah
+math: true
 ---
 
 {{< button content="Akses Jupyter Notebook" icon="gilbarbara-logos-jupyter" href="https://l.kodesiana.com/indihome-suck-jupyter" >}}
@@ -40,12 +41,12 @@ Berdasarkan rumusan masalah, dapat diambil hipotesis nol (H0) bahwa tidak ada pe
 
 Untuk menjawab hipotesis penelitian, kita perlu mengumpulkan data. Nah kebetulan sejak awal bulan Mei ini, penulis sedang membangun *home server* dengan nama **Ritsu-Pi** dan untuk melakukan akuisisi data ini, penulis akan menggunakan Prometheus untuk melakukan *speed test* setiap jam per harinya. Konsep sistem yang penulis gunakan adalah sebagai berikut.
 
-{{< mermaid >}}
+```mermaid
 graph LR
     A[Mikrotik MKTXP Exporter] --> C[Prometheus]
     B[Speedtest.net Exporter] --> C[Prometheus]
     C -->D[Grafana]
-{{</ mermaid >}}
+```
 
 Melalui sistem yang sudah dibuat penulis, kita bisa mengumpulkan data kecepatan internet per jam per hari yang berarti 24 observasi per hari. Pada penelitian ini penulis mengumpulkan data sejak 01 Mei 2023 s.d. 14 Mei 2023 atau selama dua pekan.
 

@@ -1,10 +1,14 @@
 ---
-title: Sentiment Analysis Menggunakan Accord.NET😁
+title: Sentiment Analysis menggunakan Naive Bayes dan Accord.NET😁
 categories: Data Science
 tags: [csharp, machine learning]
+series: [Bedah Paper]
 date: 2018-12-26
 slug: sentiment-analysis-menggunakan-accord-net
 ---
+
+> Artikel ini merupakan tutorial implementasi pada paper:  
+> Fiqri, F.N. (2018). [Emotex: Implementasi Sentiment Analysis menggunakan Accord.NET dan Naive Bayes Classifier](https://www.researchgate.net/publication/351079738_Emotex_Implementasi_Sentiment_Analysis_menggunakan_AccordNET_dan_Naive_Bayes_Classifier).
 
 {{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-emotex" >}}
 

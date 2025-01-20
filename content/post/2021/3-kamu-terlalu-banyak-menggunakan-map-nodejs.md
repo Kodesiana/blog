@@ -4,6 +4,7 @@ categories: [Software Engineering]
 tags: [programming, tips, nodejs]
 date: 2021-06-22
 slug: kamu-terlalu-banyak-menggunakan-map-nodejs
+math: true
 ---
 
 {{< button content="Soure Code" icon="brand-github" href="https://l.kodesiana.com/legacy-node-gcc-bench" >}}
