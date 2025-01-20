@@ -83,7 +83,6 @@ params:
             src: img/avatar.jpg
 
     article:
-        math: true
         toc: true
         readingTime: true
         license:
@@ -107,6 +106,7 @@ params:
     widgets:
         homepage:
             - type: search
+            - type: mailchimp
             - type: archives
               params:
                   limit: 5
@@ -116,7 +116,7 @@ params:
             - type: tag-cloud
               params:
                   limit: 10
-            - type: series-cloud
+            - type: series
               params:
                   limit: 5
         page:
@@ -139,15 +139,14 @@ params:
 
     imageProcessing:
         cover:
-            enabled: true
+            enabled: false
         content:
-            enabled: true
+            enabled: false
 
     integrations:
         googleAdsense: "6850104426944295"
         googleAnalytics: "G-WCSBJTCX6E"
         googleSiteVerification: "orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M"
-        mailchimpSignup: "c9b6346f906dad1b1a2a309c1/ed7023095897a6d39d7ca5dde"
         microsoftClarity: "54zpth9y8i"
 
 
@@ -156,7 +155,14 @@ params:
 # ---------------------------------------
 
 menu:
-    main: []
+    main:
+        - identifier: kodesiana-labs
+          weight: -85
+          name: Kodesiana Labs ↗️
+          url: https://labs.kodesiana.com
+          params:
+            icon: flask
+            newTab: true
         
     social:
         - identifier: github

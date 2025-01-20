@@ -66,3 +66,25 @@
 .image-group-item figcaption {
     color: var(--body-background) !important;
 }
+
+/* ---- MAILCHIMP SIGNUP FORM --- */
+
+.signup-form {
+    color: var(--body-text-color);
+}
+
+.signup-headline {
+    margin-top: 0;
+}
+
+.signup-field {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.signup-field>input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
