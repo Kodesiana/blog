@@ -1,17 +1,17 @@
 ---
-title: 'Klasifikasi Metode K-Nearest Neighbor (KNN) menggunakan Microsoft Excel🌺'
-date: 2025-01-20
+title: 'Implementasi K-Nearest Neighbor (KNN) menggunakan Microsoft Excel🌺'
+date: 2024-12-30
 categories: [Data Science]
 tags: [kuliah, programming, python, tutorial, knn, microsoft excel]
 series: [Machine Learning 101]
 description: Membuat model machine learning menggunakan Microsoft Excel?!
-image: https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/knn-iris-excel/knn-iris-excel-cover_comp.jpg
+image: https://assets.kodesiana.com/posts/2024/knn-iris-excel/knn-iris-excel-cover_comp.jpg
 math: true
 ---
 
 > Foto sampul oleh [Julie Blake Edison](https://unsplash.com/@julieblake?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) dari [Unsplash](https://unsplash.com/photos/a-close-up-of-a-purple-and-white-flower-DjC-WvXclHA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
 
-{{< button content="Unduh Dataset Iris" icon="download" href="https://blob.kodesiana.com/kodesiana-ai-public/datasets/open-data/iris.csv" >}}
+{{< button content="Unduh Dataset Iris" icon="download" href="https://blobs.kodesiana.com/kodesiana-data-open/_open-source/iris.csv" >}}
 
 Model *machine learning* biasanya dibuat menggunakan bahasa pemrograman Python atau aplikasi *data mining* seperti WEKA, Orange, dan RapidMiner. Tapi apa jadinya jika kita membuat model *machine learning* menggunakan **Microsoft Excel**?😉
 
@@ -62,7 +62,7 @@ Tahap pertama adalah membuat *workbook* baru dan membuat tiga sheet dengan nama 
 
 Silakan unduh data Iris yang terdapat pada bagian atas artikel, kemudian inputkan data tersebut ke dalam *sheet* `Dataset`. Untuk memudahkan kita untuk merujuk ke data ini dari *sheet* lain, kita bisa membuat tabel pada data Iris dengan cara klik menu **Insert > Table** dan jangan lupa centang *My table has header*. Beri nama tabel ini sebagai `dataset` pada *ribbon* **Table Design**.
 
-![Tabel dataset](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/knn-iris-excel/fig1_dataset_comp.png)
+![Tabel dataset](https://assets.kodesiana.com/posts/2024/knn-iris-excel/fig1_dataset_comp.png)
 
 Pastikan kamu sudah memiliki tabel seperti yang terdapat pada gambar di atas.
 
@@ -72,7 +72,7 @@ Pastikan kamu sudah memiliki tabel seperti yang terdapat pada gambar di atas.
 
 Tahap selanjutnya adalah membuat *sheet* untuk menginputkan parameter KNN dan input data untuk prediksi. Parameter yang akan kita gunakan adalah (1) banyaknya *nearest neighbor* dan (2) ukuran jarak (Euclidean dan Manhattan). Selain itu kita juga akan membuat input data untuk prediksi. Pada bagian akhir kita akan membuat bagian output klasifikasi.
 
-![Form input](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/knn-iris-excel/fig2_input_form_comp.png)
+![Form input](https://assets.kodesiana.com/posts/2024/knn-iris-excel/fig2_input_form_comp.png)
 
 Pada contoh di atas, sel `D9` berisi input berapa banyak *nearest neighbor* dan `D10` berisi ukuran jarak. Kamu juga bisa menambahkan *data validation* pada sel `D10` untuk mencegah kesalahan pengisian nama ukuran jarak.
 
@@ -82,7 +82,7 @@ Pada contoh di atas, sel `D9` berisi input berapa banyak *nearest neighbor* dan 
 
 Pada tahap ini kita akan mengimplementasikan proses KNN dengan menggunakan banyak fungsi *dynamic array*. Kita akan membuat *sheet* proses seperti berikut ini.
 
-![*Sheet* implementasi KNN](https://blob.kodesiana.com/kodesiana-public-assets/posts/2024/knn-iris-excel/fig3_process_comp.png)
+![*Sheet* implementasi KNN](https://assets.kodesiana.com/posts/2024/knn-iris-excel/fig3_process_comp.png)
 
 #### Menghitung Jarak Euclidean dan Manhattan
 
