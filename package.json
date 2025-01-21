@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "./.bin/hugo server --buildDrafts --buildFuture",
+    "dev": "./.bin/hugo server -d ./dist --buildDrafts --buildFuture",
     "build": "./.bin/hugo build --minify -d ./dist",
     "deploy": "./.bin/hugo build --minify -d ./dist && wrangler pages deploy",
     "prepare": "node ./tool/install.mjs",
