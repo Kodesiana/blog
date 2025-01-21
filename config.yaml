@@ -18,7 +18,7 @@ timeZone: Asia/Jakarta
 # Permalink
 # ---------------------------------------
 
-baseURL: https://www.kodesiana.com/
+baseURL: https://kodesiana.com/
 
 permalinks:
   post: /:section/:slug/
