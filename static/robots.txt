@@ -1,6 +1,3 @@
-User-Agent: *
-Sitemap: https://kodesiana.com/sitemap.xml
-
 User-Agent: AI2Bot
 User-Agent: Ai2Bot-Dolma
 User-Agent: Amazonbot
@@ -20,6 +17,7 @@ User-Agent: DuckAssistBot
 User-Agent: FacebookBot
 User-Agent: FriendlyCrawler
 User-Agent: Google-Extended
+User-Agent: Google-CloudVertexBot
 User-Agent: GoogleOther
 User-Agent: GoogleOther-Image
 User-Agent: GoogleOther-Video
@@ -46,3 +44,5 @@ User-Agent: VelenPublicWebCrawler
 User-Agent: Webzio-Extended
 User-Agent: YouBot
 Disallow: /
+
+Sitemap: https://kodesiana.com/sitemap.xml
