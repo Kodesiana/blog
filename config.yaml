@@ -40,7 +40,7 @@ enableGitInfo: true
 
 # Pagination
 pagination:
-    pagerSize: 5
+    pagerSize: 7
 
 # Related posts
 related:
