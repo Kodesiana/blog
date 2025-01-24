@@ -1,10 +1,11 @@
 ---
 title: 'Alat Monitoring Suhu Server dengan ESP8266 dan Prometheus🌡️'
+date: 2025-01-24
 categories: Embedded System
 tags: [tutorial, iot, arduino]
 series: [Ritsu-Pi Home Server]
-date: 2025-01-24
 slug: alat-monitoring-suhu-server-dengan-esp8266-dan-prometheus
+description: Membuat prototipe alat monitoring suhu server menggunakan ESP8266 dan DHT22
 image: https://assets.kodesiana.com/posts/2025/sensor-suhu-server/nodemcu-dht22_comp.jpg
 ---
 
