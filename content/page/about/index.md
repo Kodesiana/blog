@@ -24,6 +24,8 @@ Penulis adalah seorang *software engineer* dengan pengalaman +5 tahun sebagai *b
 
 Penulis suka melakukan penelitian, mulai dari *applied machine learning* dalam domain *geoscience*, *remote sending*, *computer vision*, hingga *natural language processing*. Penulis juga suka membuat aplikasi *web* dan *desktop* menggunakan C#, Python, JS/TS (Node/Bun), dan Golang.
 
+## Kontak Penulis
+
 Tertarik untuk berkolaborasi atau punya *job offer* yang cocok dengan *skill set* penulis?
 
 Kamu bisa menghubungi penulis melakui media sosial atau utamanya melalui email `fahmi@kodesiana.com`
