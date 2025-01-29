@@ -1,4 +1,4 @@
 <figure>
-    <img src="https://images.unsplash.com/{{ .Get 0 | safeURL }}?auto=format&fit=crop&q=60&crop=entropy&w=1920&h=1080&ixid={{ .Get 1 | safeURL }}" alt="{{ .Get 3 }}">
+    <img src="https://images.unsplash.com/{{ .Get 0 | safeURL }}?auto=format&fit=crop&q=60&crop=center,edges&w=1920&h=1080&ixid={{ .Get 1 | safeURL }}" alt="{{ .Get 3 }}">
     <figcaption>{{ .Get 3 }} - {{ .Get 2 }}</figcaption>
 </figure>
