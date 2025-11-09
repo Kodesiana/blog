@@ -106,7 +106,6 @@ params:
     widgets:
         homepage:
             - type: search
-            - type: mailchimp
             - type: archives
               params:
                   limit: 5
