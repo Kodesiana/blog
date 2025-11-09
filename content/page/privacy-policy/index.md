@@ -2,7 +2,6 @@
 title: Kebijakan Privasi
 date: 2020-04-11
 slug: privacy-policy
-lang: en
 comments: false
 menu:
     main: 
