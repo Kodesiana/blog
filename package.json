@@ -13,9 +13,9 @@
   },
   "devDependencies": {
     "command-line-args": "^6.0.1",
-    "esbuild": "^0.19.11",
-    "jsdom": "^26.0.0",
-    "linkinator": "^6.0.3",
-    "wrangler": "^3.103.2"
+    "esbuild": "^0.25.12",
+    "jsdom": "^27.1.0",
+    "linkinator": "^7.5.0",
+    "wrangler": "^4.46.0"
   }
 }
