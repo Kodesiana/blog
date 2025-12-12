@@ -1,7 +1,7 @@
 ---
 title: Data BMKG
 description: Arsip data gempa bumi dan peringatan cuaca BMKG
-date: 2025-12-07
+date: 2025-12-12
 comments: false
 ---
 
@@ -13,21 +13,17 @@ Sumber data: [Data Terbuka BMKG](https://data.bmkg.go.id)
 
 ## 🗃️ Akses Data
 
-<p id="last-update">Terakhir diperbarui: </p>
-
 <table>
     <thead>
         <tr>
-            <th>Dataset (Data terlama)</th>
-            <th>Total Item</th>
+            <th>Dataset</th>
             <th>Level</th>
             <th>Tipe Data</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2">Gempa Terkini (2023-04-28)</td>
-            <td rowspan="2" id="gempa-terkini">0</td>
+            <td rowspan="2">Gempa Terkini</td>
             <td>Level 1</td>
             <td>
                 <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_dirasakan/gempa_dirasakan-L1.csv">CSV</a>,
@@ -39,8 +35,7 @@ Sumber data: [Data Terbuka BMKG](https://data.bmkg.go.id)
             <td>CSV, JSON Lines, GeoPackage GeoJSON</td>
         </tr>
         <tr>
-            <td rowspan="2">Gempa Dirasakan (2023-05-09)</td>
-            <td rowspan="2" id="gempa-dirasakan">0</td>
+            <td rowspan="2">Gempa Dirasakan</td>
             <td>Level 1</td>
             <td>
                 <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_terkini/gempa_terkini-L1.csv">CSV</a>,
@@ -52,8 +47,7 @@ Sumber data: [Data Terbuka BMKG](https://data.bmkg.go.id)
             <td>CSV, JSON Lines, GeoPackage, GeoJSON</td>
         </tr>
         <tr>
-            <td rowspan="2">Peringatan Cuaca (2025-11-28)</td>
-            <td rowspan="2" id="peringatan-cuaca">0</td>
+            <td rowspan="2">Peringatan Cuaca</td>
             <td>Level 1</td>
             <td>
                 <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/peringatan_cuaca/peringatan_cuaca-L1.csv">CSV</a>,
@@ -290,17 +284,3 @@ Jangan lupa untuk memberikan sitasi sebagai bentuk atribusi dari kebermanfaatan 
 
 1. BMKG. [tahun sekarang]. BMKG Open Data. https://data.bmkg.go.id
 2. Fiqri, Fahmi Noor. [tahun sekarang]. Arsip Data BMKG. https://kodesiana.com/projects/data-bmkg
-
-<script>
-    document.addEventListener("DOMContentLoaded", async (event) => {
-        const res = await fetch("https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/last_update.json");
-        const body = await res.json()
-
-        const lastUpdateElem = document.getElementById("last-update");
-        lastUpdateElem.textContent = `Terakhir diperbarui: ` + new Date(body.last_update).toLocaleString();
-
-        document.getElementById("gempa-terkini").textContent = body.gempa_terkini;
-        document.getElementById("gempa-dirasakan").textContent = body.gempa_dirasakan;
-        document.getElementById("peringatan-cuaca").textContent = body.peringatan_cuaca;
-    });
-</script>
