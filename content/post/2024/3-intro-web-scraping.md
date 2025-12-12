@@ -141,7 +141,7 @@ Nah kita sudah bahas konsep dasar sebuah *website*, sekarang kita akan coba liha
 
 Jika teman-teman salin dan simpan kode di atas dalam file .html, teman-teman akan melihat halaman sebagai berikut (gambar mungkin berbeda).
 
-![contoh halaman website sederhana](https://kodesianastorage.blob.core.windows.net/kodesiana-public-assets/posts/2024/scraping/sample-page_comp.png)
+![contoh halaman website sederhana](https://assets.kodesiana.com/posts/2024/scraping/sample-page_comp.png)
 
 > Laman web sederhana. Sumber: Penulis
 
@@ -161,7 +161,7 @@ Cara paling mudah untuk menginspeksi elemen-elemen sebuah halaman *website* adal
 
 Cara mengaksesnya adalah klik kanan pada halaman *web*, kemudian pilih **Inspect**.
 
-![DevTools Inspector](https://kodesianastorage.blob.core.windows.net/kodesiana-public-assets/posts/2024/scraping/devtools_comp.png)
+![DevTools Inspector](https://assets.kodesiana.com/posts/2024/scraping/devtools_comp.png)
 
 > Chromium DevTools. Sumber: Penulis
 
@@ -203,11 +203,11 @@ Beberapa contoh pengaplikasian *CSS selector* pada halaman HTML yang sudah dibua
 
 Contoh 1: pencarian berdasarkan tag HTML `<img>`
 
-![CSS selector 1](https://kodesianastorage.blob.core.windows.net/kodesiana-public-assets/posts/2024/scraping/css-example-1_comp.png)
+![CSS selector 1](https://assets.kodesiana.com/posts/2024/scraping/css-example-1_comp.png)
 
 Contoh 2: pencarian berdasarkan tag `<p>` yang memiliki atribut `class` yang berisi kata "merah"
 
-![CSS selector 2](https://kodesianastorage.blob.core.windows.net/kodesiana-public-assets/posts/2024/scraping/css-example-2_comp.png)
+![CSS selector 2](https://assets.kodesiana.com/posts/2024/scraping/css-example-2_comp.png)
 
 > Jangan lupa latihan untuk membuat *selector* 🫡
 
