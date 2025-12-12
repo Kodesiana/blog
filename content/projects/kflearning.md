@@ -13,8 +13,6 @@ comments: false
 
 > **KFlearning v3.0.0 "Київ" / "Kyiv"** dalam status **stabil.**
 
-## KFlearning
-
 KFlearning merupakan aplikasi e-learning yang digunakan untuk membantu kegiatan praktikum di laboratorium komputer.
 Aplikasi ini bersifat open-source dan dilisensikan oleh [Kodesiana.com](https://kodesiana.com) kepada LABKOM-MAROON di
 bawah lisensi [MIT](https://github.com/fahminlb33/KFlearning/blob/master/LICENSE.md). Anda dapat melihat source code
