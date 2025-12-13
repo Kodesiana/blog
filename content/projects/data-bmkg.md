@@ -1,7 +1,7 @@
 ---
 title: Data BMKG
 description: Arsip data gempa bumi dan peringatan cuaca BMKG
-date: 2025-12-07
+date: 2025-12-13
 comments: false
 ---
 
@@ -18,15 +18,15 @@ Sumber data: [Data Terbuka BMKG](https://data.bmkg.go.id)
 <table>
     <thead>
         <tr>
-            <th>Dataset (Data terlama)</th>
-            <th>Total Item</th>
+            <th>Dataset</th>
+            <th>Total Data</th>
             <th>Level</th>
             <th>Tipe Data</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan="2">Gempa Terkini (2023-04-28)</td>
+            <td rowspan="2">Gempa Terkini</td>
             <td rowspan="2" id="gempa-terkini">0</td>
             <td>Level 1</td>
             <td>
@@ -39,7 +39,7 @@ Sumber data: [Data Terbuka BMKG](https://data.bmkg.go.id)
             <td>CSV, JSON Lines, GeoPackage GeoJSON</td>
         </tr>
         <tr>
-            <td rowspan="2">Gempa Dirasakan (2023-05-09)</td>
+            <td rowspan="2">Gempa Dirasakan</td>
             <td rowspan="2" id="gempa-dirasakan">0</td>
             <td>Level 1</td>
             <td>
@@ -52,7 +52,7 @@ Sumber data: [Data Terbuka BMKG](https://data.bmkg.go.id)
             <td>CSV, JSON Lines, GeoPackage, GeoJSON</td>
         </tr>
         <tr>
-            <td rowspan="2">Peringatan Cuaca (2025-11-28)</td>
+            <td rowspan="2">Peringatan Cuaca</td>
             <td rowspan="2" id="peringatan-cuaca">0</td>
             <td>Level 1</td>
             <td>
@@ -297,7 +297,7 @@ Jangan lupa untuk memberikan sitasi sebagai bentuk atribusi dari kebermanfaatan 
         const body = await res.json()
 
         const lastUpdateElem = document.getElementById("last-update");
-        lastUpdateElem.textContent = `Terakhir diperbarui: ` + new Date(body.last_update).toLocaleString();
+        lastUpdateElem.textContent = `Terakhir diperbarui: ` + new Date(body.last_update * 1000).toLocaleString();
 
         document.getElementById("gempa-terkini").textContent = body.gempa_terkini;
         document.getElementById("gempa-dirasakan").textContent = body.gempa_dirasakan;
