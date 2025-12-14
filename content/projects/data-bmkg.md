@@ -30,8 +30,8 @@ Sumber data: [Data Terbuka BMKG](https://data.bmkg.go.id)
             <td rowspan="2" id="gempa-terkini">0</td>
             <td>Level 1</td>
             <td>
-                <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_dirasakan/gempa_dirasakan-L1.csv">CSV</a>,
-                <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_dirasakan/gempa_dirasakan-L1.jsonl">JSON Lines</a>
+                <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_terkini/gempa_terkini-L1.csv">CSV</a>,
+                <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_terkini/gempa_terkini-L1.jsonl">JSON Lines</a>
             </td>
         </tr>
         <tr>
@@ -43,8 +43,8 @@ Sumber data: [Data Terbuka BMKG](https://data.bmkg.go.id)
             <td rowspan="2" id="gempa-dirasakan">0</td>
             <td>Level 1</td>
             <td>
-                <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_terkini/gempa_terkini-L1.csv">CSV</a>,
-                <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_terkini/gempa_terkini-L1.jsonl">JSON Lines</a>
+                <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_dirasakan/gempa_dirasakan-L1.csv">CSV</a>,
+                <a class="link" href="https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/gempa_dirasakan/gempa_dirasakan-L1.jsonl">JSON Lines</a>
             </td>
         </tr>
         <tr>
