@@ -294,10 +294,17 @@ Jangan lupa untuk memberikan sitasi sebagai bentuk atribusi dari kebermanfaatan 
 <script>
     document.addEventListener("DOMContentLoaded", async (event) => {
         const res = await fetch("https://blobs.kodesiana.com/kodesiana-data-open/_bmkg-data/last_update.json");
-        const body = await res.json()
+        const body = await res.json();
+
+        const lastUpdateDate = new Date(body.last_update * 1000);
+        const year = lastUpdateDate.getFullYear();
+        const month = (lastUpdateDate.getMonth() + 1).toString().padStart(2, '0'); // Months are 0-indexed
+        const day = lastUpdateDate.getDate().toString().padStart(2, '0');
+        const hours = lastUpdateDate.getHours().toString().padStart(2, '0');
+        const minutes = lastUpdateDate.getMinutes().toString().padStart(2, '0');
 
         const lastUpdateElem = document.getElementById("last-update");
-        lastUpdateElem.textContent = `Terakhir diperbarui: ` + new Date(body.last_update * 1000).toLocaleString();
+        lastUpdateElem.textContent = `Terakhir diperbarui: ${year}/${month}/${day} ${hours}:${minutes}`;
 
         document.getElementById("gempa-terkini").textContent = body.gempa_terkini;
         document.getElementById("gempa-dirasakan").textContent = body.gempa_dirasakan;
