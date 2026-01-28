@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "./.bin/hugo server --buildDrafts --buildFuture --cleanDestinationDir --destination ./dist",
     "build": "./.bin/hugo build --minify --destination ./dist",
-    "deploy": "./.bin/hugo build --minify --destination ./dist && wrangler pages deploy",
+    "deploy": "./.bin/hugo build --minify --destination ./dist && wrangler deploy",
     "prepare": "node ./tool/install.mjs",
     "linkcheck": "node ./tool/deadlinks.mjs",
     "dl:tabler": "node ./tool/dl-tabler.mjs",
@@ -13,9 +13,9 @@
   },
   "devDependencies": {
     "command-line-args": "^6.0.1",
-    "esbuild": "^0.27.1",
-    "jsdom": "^27.3.0",
-    "linkinator": "^7.5.1",
-    "wrangler": "^4.54.0"
+    "esbuild": "^0.27.2",
+    "jsdom": "^27.4.0",
+    "linkinator": "^7.5.3",
+    "wrangler": "^4.61.0"
   }
 }
