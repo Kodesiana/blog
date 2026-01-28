@@ -1,0 +1,9 @@
+{{- $filePath := .Get 0 -}}
+{{ with .Page.Resources.Get $filePath }}
+  {{ .Content | safeHTML }}
+{{ else }}
+  {{- $fileContents := readFile $filePath | safeHTML -}}
+  {{ $fileContents | safeHTML }}
+{{ end }}
+
+
