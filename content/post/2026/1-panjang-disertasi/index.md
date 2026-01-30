@@ -11,6 +11,8 @@ math: true
 ---
 
 > Photo by [Charles DeLoye](https://unsplash.com/@charlesdeloye?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/man-wearing-academic-gown-2RouMSg9Rnw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+>
+> Baca bagian kedua: [Mencari Promotor melalui Co-authorship Network Peneliti IPB🧑‍🏫](/post/mencari-promotor-melalui-co-authorship-network-peneliti-ipb/)
 
 Awal tahun 2026 ini penulis berencana ingin melanjutkan studi doktoral😉 Tentunya ini bukanlah sesuatu yang sederhana dan perlu banyak persiapan yang matang, apalagi jika penulis ingin melanjutkan kuliah di luar negeri. Berbeda dengan S2 yang masih kental oleh kegiatan perkuliahan, program PhD lebih menekankan pada berfikir kritis, kreatif, manajemen waktu, dan menjadi peneliti yang independen.
 
