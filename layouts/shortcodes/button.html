@@ -1,5 +1,5 @@
 <div class="cta-button">
-  <a href="{{ .Get "href" }}">
+  <a href="{{ .Get "href" }}" target="_blank">
     {{ if .Get "icon" }}
       {{- $iconFile := resources.GetMatch (printf "icons/%s.svg" (.Get "icon")) -}}
       {{- if $iconFile -}}
