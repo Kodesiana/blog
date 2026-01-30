@@ -58,7 +58,7 @@ Oke, sampai di sini kita sudah belajar beberapa istilah: **vertex/node, edge, de
 
 {{< button-group >}}
 {{< button content="Soure Code" icon="brand-github" href="https://github.com/Kodesiana/ipb-repo-analysis" >}}
-{{< button content="Unduh Dataset" icon="download" href="https://github.com/Kodesiana/ipb-repo-analysis" >}}
+{{< button content="Unduh Dataset" icon="download" href="https://l.kodesiana.com/dataset-panjang-disertasi-20250128" >}}
 {{</ button-group >}}
 
 Seperti biasa, teman-teman bisa akses kode dan dataset yang akan kita gunakan pada proyek ini dengan klik tombol di atas. Silakan persiapkan *virtual environment* Python yang baru sebelum kita mulai. *Install library* `pandas`, `networkx`, dan `hvplot`. Ketiga *library* ini adalah pondasi kita untuk melakukan analisis.
@@ -202,6 +202,10 @@ G_largest = nx.convert_node_labels_to_integers(G_largest, label_attribute="name"
 ```
 
 `G_largest` berisi graf dengan jumlah *nodes* terbanyak dan graf ini yang akan kita gunakan untuk analisis selanjutnya. Kamu juga bisa menyimpan graf ini dalam format *GraphML* untuk analisis terpisah nantinya menggunakan aplikasi Cytoscape: `nx.write_graphml(G_largest, "ipb.graphml")`
+
+Kamu bisa unduh data graf ini dalam format GraphML dengan klik tombol berikut.
+
+{{< button content="Unduh Dataset" icon="download" href="https://l.kodesiana.com/ipb-promotor-network-graphml-20250128" >}}
 
 Sekarang kita sudah bisa melakukan visualisasi data. Tetapi, kita tidak bisa langsung memvisualisasikan graf `G_largest` karena graf kita memiliki 3.525 *nodes* dan 13.971 *edges*. Program Python kita pasti akan *crash* jika kita memvisualisasikan semua data sekaligus. Maka dari itu, kita bisa ambil subgraf dari keseluruhan graf, misal *node* 44 beserta tetangganya:
 
