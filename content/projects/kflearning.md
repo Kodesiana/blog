@@ -5,9 +5,7 @@ date: 2021-03-08
 comments: false
 ---
 
-> KFlearning dalam fase **END OF LIFE (EOL)**.
->
-> Tidak ada fitur baru maupun bugfix yang akan dikembangkan.
+> **KFlearning** dalam fase **End-of-Life**
 
 <p style="text-align: center;"><b>Link download ada di bagian bawah laman ini.</b></p>
 
@@ -22,14 +20,14 @@ Aplikasi ini menggunakan **Visual Studio Code** sebagai code editor dan bertujua
 Sublime Text, Notepad++, dan program editor sejenis. KFlearning sudah diintegrasikan dengan Visual Studio Code agar
 dapat digunakan secara maksimal untuk melakukan segala jenis pemrograman.
 
-### Development Support
+## Development Support
 
 - Full Stack Web Development (PHP, HTML, CSS, JS)
 - Desktop with C++ and MinGW-w64 Compiler (Console, GUI)
 - Data Science (Python, Jupyter Notebook)
 - Mobile with Flutter
 
-### Kebutuhan Sistem
+## Kebutuhan Sistem
 
 - Windows 7 SP1 32-bit/64-bit.
 - .NET 6

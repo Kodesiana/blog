@@ -1,11 +1,11 @@
 ---
 title: Data BMKG
 description: Arsip data gempa bumi dan peringatan cuaca BMKG
-date: 2025-12-13
+date: 2026-02-12
 comments: false
 ---
 
-> Sistem **Data BMKG** dalam fase **Production**.
+> Sistem **Data BMKG** dalam fase **Production**
 
 Arsip Data BMKG merupakan program pengarsipan data gempa bumi dan peringatan cuaca untuk keperluan penelitian dan riset khususnya di lingkungan kampus.
 
